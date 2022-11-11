@@ -1,0 +1,34 @@
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.csproj.AssemblyReference.cache
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.Camp.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.City.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.EventEnd.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.ExitSure.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.Hero_level.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.JourneyMap.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.Level.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.LevelPreviewNew.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.MainMenu.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.NGGlobalDetails.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.RoleplayDetails.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.NGRoleplayDetails_info.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.PlayerTurn_info.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.Properties.Resources.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.ShowMessage.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.ShowMessage_ChooseFrom2.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.TESTForm.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.TutorialForm.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.csproj.GenerateResource.cache
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.AssemblyInfoInputs.cache
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.AssemblyInfo.cs
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.csproj.CoreCompileInputs.cache
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\bin\Debug\net6.0-windows\Sword and flame.exe
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\bin\Debug\net6.0-windows\Sword and flame.deps.json
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\bin\Debug\net6.0-windows\Sword and flame.runtimeconfig.json
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\bin\Debug\net6.0-windows\Sword and flame.dll
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\bin\Debug\net6.0-windows\Sword and flame.pdb
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.dll
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\refint\Sword and flame.dll
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.pdb
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.genruntimeconfig.cache
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\ref\Sword and flame.dll

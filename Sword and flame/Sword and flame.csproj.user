@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Camp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="City.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EventEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ExitSure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Hero_level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="JourneyMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LevelPreviewNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NGGlobalDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NGRoleplayDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NGRoleplayDetails_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PlayerTurn_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ShowMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ShowMessage_ChooseFrom2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TutorialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

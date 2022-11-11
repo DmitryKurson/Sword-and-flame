@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A80BC75-1F76-4AA1-8EBE-5C53CC50829A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Castle_Crushers</RootNamespace>
+    <AssemblyName>Castle Crushers</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="rd world.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rd world.Designer.cs">
+      <DependentUpon>rd world.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Camp.Designer.cs">
+      <DependentUpon>Camp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City.Designer.cs">
+      <DependentUpon>City.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventEnd.Designer.cs">
+      <DependentUpon>EventEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boss.cs" />
+    <Compile Include="ExitSure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitSure.Designer.cs">
+      <DependentUpon>ExitSure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameGlobalData.cs" />
+    <Compile Include="Hero.cs" />
+    <Compile Include="Hero_level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hero_level.Designer.cs">
+      <DependentUpon>Hero_level.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JourneyMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JourneyMap.Designer.cs">
+      <DependentUpon>JourneyMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level.Designer.cs">
+      <DependentUpon>Level.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelObjects.cs" />
+    <Compile Include="LevelPreviewNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelPreviewNew.Designer.cs">
+      <DependentUpon>LevelPreviewNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loot.cs" />
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monster.cs" />
+    <Compile Include="NGGlobalDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NGGlobalDetails.Designer.cs">
+      <DependentUpon>NGGlobalDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NGRoleplayDetails_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NGRoleplayDetails_info.Designer.cs">
+      <DependentUpon>NGRoleplayDetails_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerTurn_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerTurn_info.Designer.cs">
+      <DependentUpon>PlayerTurn_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NGRoleplayDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NGRoleplayDetails.Designer.cs">
+      <DependentUpon>NGRoleplayDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowMessage.Designer.cs">
+      <DependentUpon>ShowMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMessage_ChooseFrom2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowMessage_ChooseFrom2.Designer.cs">
+      <DependentUpon>ShowMessage_ChooseFrom2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorialForm.Designer.cs">
+      <DependentUpon>TutorialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="World.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="World.Designer.cs">
+      <DependentUpon>World.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelProperties.cs" />
+    <EmbeddedResource Include="rd world.resx">
+      <DependentUpon>rd world.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Camp.resx">
+      <DependentUpon>Camp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City.resx">
+      <DependentUpon>City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventEnd.resx">
+      <DependentUpon>EventEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitSure.resx">
+      <DependentUpon>ExitSure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hero_level.resx">
+      <DependentUpon>Hero_level.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JourneyMap.resx">
+      <DependentUpon>JourneyMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level.resx">
+      <DependentUpon>Level.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelPreviewNew.resx">
+      <DependentUpon>LevelPreviewNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NGGlobalDetails.resx">
+      <DependentUpon>NGGlobalDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NGRoleplayDetails.resx">
+      <DependentUpon>NGRoleplayDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NGRoleplayDetails_info.resx">
+      <DependentUpon>NGRoleplayDetails_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerTurn_info.resx">
+      <DependentUpon>PlayerTurn_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMessage.resx">
+      <DependentUpon>ShowMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMessage_ChooseFrom2.resx">
+      <DependentUpon>ShowMessage_ChooseFrom2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorialForm.resx">
+      <DependentUpon>TutorialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="World.resx">
+      <DependentUpon>World.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\global_details_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_flag_test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_menu_and_global_details_img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roleplay_details_img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-bjSEW9cRuwBJUX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two_hands_torse_helmet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-3r1pMVmzU8qweGke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-4ufm19R9bgupca2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helmet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-tqZQ04faq98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helmet %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armor %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-IIOal5Br9Qnp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swordright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-efAdu1gZqv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-X0FzG8ibdRQb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-RbLf13LYuzlP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\global_details_img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1642082339_15-abrakadabra-fun-p-tekstura-svitka-29aad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null-removebg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-3jdxEU1NYJrav.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-2bcHTLAl8SNW1mP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-2bcHTLAl8SNW1mP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armour %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\axe %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-EYlqUiGAETrgo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-Isyq32Yf4iS58pRN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armor %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-iqf8SuZtiwRi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-Isyq32Yf4iS58pRN1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armor %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helmet %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helmet %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\global_details_img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1642082339_15-abrakadabra-fun-p-tekstura-svitka-29aadasd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-EYlqUiGAETrgo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-iqf8SuZtiwRi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-hSFtA4WrylT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-5k6lS8pYClna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_flag_tes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-nUShKqGfjaIbpgUz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_banner-removebg-preview-removebg-preview %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-4uEe2tkShnnzxI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Transparent-backgr-zUqLSMB3mjks5r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hero_contour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hero_contour1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_banner1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_banner1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_banner1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camp_img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camp_main_panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hero_contour2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camp_info_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camp_info_img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINAL_MAP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\428048-artwork-digital-art-fantasy-art-forest.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

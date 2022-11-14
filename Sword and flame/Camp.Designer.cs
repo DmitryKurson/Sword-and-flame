@@ -125,10 +125,11 @@ namespace Castle_Crushers
             // 
             // table
             // 
-            this.table.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.table.Location = new System.Drawing.Point(1280, 56);
+            this.table.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.table.Location = new System.Drawing.Point(1491, 47);
+            this.table.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.table.Name = "table";
-            this.table.Size = new System.Drawing.Size(399, 100);
+            this.table.Size = new System.Drawing.Size(399, 125);
             this.table.TabIndex = 19;
             this.table.Text = "Покласти на стіл";
             this.table.UseVisualStyleBackColor = true;
@@ -156,187 +157,188 @@ namespace Castle_Crushers
             this.camp_lootinfo_panel.Controls.Add(this.camp_lootinfo_speedBonus_lbl);
             this.camp_lootinfo_panel.Controls.Add(this.camp_lootinfo_healthBonus_lbl);
             this.camp_lootinfo_panel.Controls.Add(this.camp_lootinfo_typeValue_lbl);
-            this.camp_lootinfo_panel.Location = new System.Drawing.Point(40, 20);
+            this.camp_lootinfo_panel.Location = new System.Drawing.Point(0, 0);
+            this.camp_lootinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.camp_lootinfo_panel.Name = "camp_lootinfo_panel";
-            this.camp_lootinfo_panel.Size = new System.Drawing.Size(286, 323);
+            this.camp_lootinfo_panel.Size = new System.Drawing.Size(300, 282);
             this.camp_lootinfo_panel.TabIndex = 102;
             // 
             // camp_lootinfo_name_lbl
             // 
             this.camp_lootinfo_name_lbl.AutoSize = true;
-            this.camp_lootinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.camp_lootinfo_name_lbl.Location = new System.Drawing.Point(78, 3);
+            this.camp_lootinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.camp_lootinfo_name_lbl.Location = new System.Drawing.Point(35, 0);
             this.camp_lootinfo_name_lbl.Name = "camp_lootinfo_name_lbl";
-            this.camp_lootinfo_name_lbl.Size = new System.Drawing.Size(119, 20);
+            this.camp_lootinfo_name_lbl.Size = new System.Drawing.Size(229, 20);
             this.camp_lootinfo_name_lbl.TabIndex = 101;
-            this.camp_lootinfo_name_lbl.Text = "XXXXXXXXXX";
+            this.camp_lootinfo_name_lbl.Text = "XXXXXXXXXXXXXXXXXXXX";
             // 
             // camp_lootinfo_PriceValue_lbl
             // 
             this.camp_lootinfo_PriceValue_lbl.AutoSize = true;
-            this.camp_lootinfo_PriceValue_lbl.Location = new System.Drawing.Point(145, 251);
+            this.camp_lootinfo_PriceValue_lbl.Location = new System.Drawing.Point(155, 240);
             this.camp_lootinfo_PriceValue_lbl.Name = "camp_lootinfo_PriceValue_lbl";
-            this.camp_lootinfo_PriceValue_lbl.Size = new System.Drawing.Size(46, 17);
+            this.camp_lootinfo_PriceValue_lbl.Size = new System.Drawing.Size(50, 20);
             this.camp_lootinfo_PriceValue_lbl.TabIndex = 101;
             this.camp_lootinfo_PriceValue_lbl.Text = "label4";
             // 
             // camp_lootinfo_playerclassValue_lbl
             // 
             this.camp_lootinfo_playerclassValue_lbl.AutoSize = true;
-            this.camp_lootinfo_playerclassValue_lbl.Location = new System.Drawing.Point(145, 71);
+            this.camp_lootinfo_playerclassValue_lbl.Location = new System.Drawing.Point(53, 60);
             this.camp_lootinfo_playerclassValue_lbl.Name = "camp_lootinfo_playerclassValue_lbl";
-            this.camp_lootinfo_playerclassValue_lbl.Size = new System.Drawing.Size(46, 17);
+            this.camp_lootinfo_playerclassValue_lbl.Size = new System.Drawing.Size(231, 20);
             this.camp_lootinfo_playerclassValue_lbl.TabIndex = 109;
-            this.camp_lootinfo_playerclassValue_lbl.Text = "label1";
+            this.camp_lootinfo_playerclassValue_lbl.Text = "Воїн, Паладін, Лучник, Чарівник";
             // 
             // camp_lootinfo_minlevelValue_lbl
             // 
             this.camp_lootinfo_minlevelValue_lbl.AutoSize = true;
-            this.camp_lootinfo_minlevelValue_lbl.Location = new System.Drawing.Point(145, 101);
+            this.camp_lootinfo_minlevelValue_lbl.Location = new System.Drawing.Point(155, 90);
             this.camp_lootinfo_minlevelValue_lbl.Name = "camp_lootinfo_minlevelValue_lbl";
-            this.camp_lootinfo_minlevelValue_lbl.Size = new System.Drawing.Size(46, 17);
+            this.camp_lootinfo_minlevelValue_lbl.Size = new System.Drawing.Size(50, 20);
             this.camp_lootinfo_minlevelValue_lbl.TabIndex = 108;
             this.camp_lootinfo_minlevelValue_lbl.Text = "label1";
             // 
             // camp_lootinfo_Price_lbl
             // 
             this.camp_lootinfo_Price_lbl.AutoSize = true;
-            this.camp_lootinfo_Price_lbl.Location = new System.Drawing.Point(3, 251);
+            this.camp_lootinfo_Price_lbl.Location = new System.Drawing.Point(3, 240);
             this.camp_lootinfo_Price_lbl.Name = "camp_lootinfo_Price_lbl";
-            this.camp_lootinfo_Price_lbl.Size = new System.Drawing.Size(42, 17);
+            this.camp_lootinfo_Price_lbl.Size = new System.Drawing.Size(44, 20);
             this.camp_lootinfo_Price_lbl.TabIndex = 46;
             this.camp_lootinfo_Price_lbl.Text = "Ціна:";
             // 
             // camp_lootinfo_playerclass_lbl
             // 
             this.camp_lootinfo_playerclass_lbl.AutoSize = true;
-            this.camp_lootinfo_playerclass_lbl.Location = new System.Drawing.Point(3, 71);
+            this.camp_lootinfo_playerclass_lbl.Location = new System.Drawing.Point(3, 60);
             this.camp_lootinfo_playerclass_lbl.Name = "camp_lootinfo_playerclass_lbl";
-            this.camp_lootinfo_playerclass_lbl.Size = new System.Drawing.Size(44, 17);
+            this.camp_lootinfo_playerclass_lbl.Size = new System.Drawing.Size(44, 20);
             this.camp_lootinfo_playerclass_lbl.TabIndex = 106;
             this.camp_lootinfo_playerclass_lbl.Text = "Клас:";
             // 
             // camp_lootinfo_minlevel_lbl
             // 
             this.camp_lootinfo_minlevel_lbl.AutoSize = true;
-            this.camp_lootinfo_minlevel_lbl.Location = new System.Drawing.Point(3, 101);
+            this.camp_lootinfo_minlevel_lbl.Location = new System.Drawing.Point(3, 90);
             this.camp_lootinfo_minlevel_lbl.Name = "camp_lootinfo_minlevel_lbl";
-            this.camp_lootinfo_minlevel_lbl.Size = new System.Drawing.Size(138, 17);
+            this.camp_lootinfo_minlevel_lbl.Size = new System.Drawing.Size(154, 20);
             this.camp_lootinfo_minlevel_lbl.TabIndex = 100;
             this.camp_lootinfo_minlevel_lbl.Text = "Мінімальний рівень:";
             // 
             // camp_lootinfo_healthBonusValue_lbl
             // 
             this.camp_lootinfo_healthBonusValue_lbl.AutoSize = true;
-            this.camp_lootinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(145, 191);
+            this.camp_lootinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(155, 180);
             this.camp_lootinfo_healthBonusValue_lbl.Name = "camp_lootinfo_healthBonusValue_lbl";
-            this.camp_lootinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(46, 17);
+            this.camp_lootinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
             this.camp_lootinfo_healthBonusValue_lbl.TabIndex = 99;
             this.camp_lootinfo_healthBonusValue_lbl.Text = "label2";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(7, 420);
+            this.label23.Location = new System.Drawing.Point(7, 525);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(71, 17);
+            this.label23.Size = new System.Drawing.Size(79, 20);
             this.label23.TabIndex = 50;
             this.label23.Text = "Можливо:";
             // 
             // camp_lootinfo_strengthBonusValue_lbl
             // 
             this.camp_lootinfo_strengthBonusValue_lbl.AutoSize = true;
-            this.camp_lootinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(145, 131);
+            this.camp_lootinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(155, 120);
             this.camp_lootinfo_strengthBonusValue_lbl.Name = "camp_lootinfo_strengthBonusValue_lbl";
-            this.camp_lootinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(54, 17);
+            this.camp_lootinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(58, 20);
             this.camp_lootinfo_strengthBonusValue_lbl.TabIndex = 49;
             this.camp_lootinfo_strengthBonusValue_lbl.Text = "label10";
             // 
             // camp_lootinfo_speedBonusValue_lbl
             // 
             this.camp_lootinfo_speedBonusValue_lbl.AutoSize = true;
-            this.camp_lootinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(145, 221);
+            this.camp_lootinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(155, 210);
             this.camp_lootinfo_speedBonusValue_lbl.Name = "camp_lootinfo_speedBonusValue_lbl";
-            this.camp_lootinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(46, 17);
+            this.camp_lootinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
             this.camp_lootinfo_speedBonusValue_lbl.TabIndex = 48;
             this.camp_lootinfo_speedBonusValue_lbl.Text = "label9";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(97, 420);
+            this.label26.Location = new System.Drawing.Point(97, 525);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(46, 17);
+            this.label26.Size = new System.Drawing.Size(50, 20);
             this.label26.TabIndex = 47;
             this.label26.Text = "label8";
             // 
             // camp_lootinfo_defenseBonusValue_lbl
             // 
             this.camp_lootinfo_defenseBonusValue_lbl.AutoSize = true;
-            this.camp_lootinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(145, 161);
+            this.camp_lootinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(155, 150);
             this.camp_lootinfo_defenseBonusValue_lbl.Name = "camp_lootinfo_defenseBonusValue_lbl";
-            this.camp_lootinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(46, 17);
+            this.camp_lootinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
             this.camp_lootinfo_defenseBonusValue_lbl.TabIndex = 44;
             this.camp_lootinfo_defenseBonusValue_lbl.Text = "label5";
             // 
             // camp_lootinfo_type_lbl
             // 
             this.camp_lootinfo_type_lbl.AutoSize = true;
-            this.camp_lootinfo_type_lbl.Location = new System.Drawing.Point(3, 41);
+            this.camp_lootinfo_type_lbl.Location = new System.Drawing.Point(3, 30);
             this.camp_lootinfo_type_lbl.Name = "camp_lootinfo_type_lbl";
-            this.camp_lootinfo_type_lbl.Size = new System.Drawing.Size(37, 17);
+            this.camp_lootinfo_type_lbl.Size = new System.Drawing.Size(38, 20);
             this.camp_lootinfo_type_lbl.TabIndex = 40;
             this.camp_lootinfo_type_lbl.Text = "Тип:";
             // 
             // camp_lootinfo_strengthBonus_lbl
             // 
             this.camp_lootinfo_strengthBonus_lbl.AutoSize = true;
-            this.camp_lootinfo_strengthBonus_lbl.Location = new System.Drawing.Point(3, 131);
+            this.camp_lootinfo_strengthBonus_lbl.Location = new System.Drawing.Point(3, 120);
             this.camp_lootinfo_strengthBonus_lbl.Name = "camp_lootinfo_strengthBonus_lbl";
-            this.camp_lootinfo_strengthBonus_lbl.Size = new System.Drawing.Size(106, 17);
+            this.camp_lootinfo_strengthBonus_lbl.Size = new System.Drawing.Size(111, 20);
             this.camp_lootinfo_strengthBonus_lbl.TabIndex = 41;
             this.camp_lootinfo_strengthBonus_lbl.Text = "Бонус до сили:";
             // 
             // camp_lootinfo_defenseBonus_lbl
             // 
             this.camp_lootinfo_defenseBonus_lbl.AutoSize = true;
-            this.camp_lootinfo_defenseBonus_lbl.Location = new System.Drawing.Point(3, 161);
+            this.camp_lootinfo_defenseBonus_lbl.Location = new System.Drawing.Point(3, 150);
             this.camp_lootinfo_defenseBonus_lbl.Name = "camp_lootinfo_defenseBonus_lbl";
-            this.camp_lootinfo_defenseBonus_lbl.Size = new System.Drawing.Size(125, 17);
+            this.camp_lootinfo_defenseBonus_lbl.Size = new System.Drawing.Size(129, 20);
             this.camp_lootinfo_defenseBonus_lbl.TabIndex = 38;
             this.camp_lootinfo_defenseBonus_lbl.Text = "Бонус до захисту:";
             // 
             // camp_lootinfo_speedBonus_lbl
             // 
             this.camp_lootinfo_speedBonus_lbl.AutoSize = true;
-            this.camp_lootinfo_speedBonus_lbl.Location = new System.Drawing.Point(3, 221);
+            this.camp_lootinfo_speedBonus_lbl.Location = new System.Drawing.Point(3, 210);
             this.camp_lootinfo_speedBonus_lbl.Name = "camp_lootinfo_speedBonus_lbl";
-            this.camp_lootinfo_speedBonus_lbl.Size = new System.Drawing.Size(141, 17);
+            this.camp_lootinfo_speedBonus_lbl.Size = new System.Drawing.Size(148, 20);
             this.camp_lootinfo_speedBonus_lbl.TabIndex = 39;
             this.camp_lootinfo_speedBonus_lbl.Text = "Бонус до швидкості:";
             // 
             // camp_lootinfo_healthBonus_lbl
             // 
             this.camp_lootinfo_healthBonus_lbl.AutoSize = true;
-            this.camp_lootinfo_healthBonus_lbl.Location = new System.Drawing.Point(3, 191);
+            this.camp_lootinfo_healthBonus_lbl.Location = new System.Drawing.Point(3, 180);
             this.camp_lootinfo_healthBonus_lbl.Name = "camp_lootinfo_healthBonus_lbl";
-            this.camp_lootinfo_healthBonus_lbl.Size = new System.Drawing.Size(132, 17);
+            this.camp_lootinfo_healthBonus_lbl.Size = new System.Drawing.Size(139, 20);
             this.camp_lootinfo_healthBonus_lbl.TabIndex = 42;
             this.camp_lootinfo_healthBonus_lbl.Text = "Бонус до здоров\'я:";
             // 
             // camp_lootinfo_typeValue_lbl
             // 
             this.camp_lootinfo_typeValue_lbl.AutoSize = true;
-            this.camp_lootinfo_typeValue_lbl.Location = new System.Drawing.Point(145, 41);
+            this.camp_lootinfo_typeValue_lbl.Location = new System.Drawing.Point(155, 30);
             this.camp_lootinfo_typeValue_lbl.Name = "camp_lootinfo_typeValue_lbl";
-            this.camp_lootinfo_typeValue_lbl.Size = new System.Drawing.Size(46, 17);
+            this.camp_lootinfo_typeValue_lbl.Size = new System.Drawing.Size(50, 20);
             this.camp_lootinfo_typeValue_lbl.TabIndex = 36;
             this.camp_lootinfo_typeValue_lbl.Text = "label4";
             // 
             // player1_name_lbl
             // 
             this.player1_name_lbl.AutoSize = true;
-            this.player1_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.player1_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player1_name_lbl.Location = new System.Drawing.Point(119, 0);
             this.player1_name_lbl.Name = "player1_name_lbl";
             this.player1_name_lbl.Size = new System.Drawing.Size(162, 26);
@@ -348,9 +350,10 @@ namespace Castle_Crushers
             this.player1_overal_panel.BackColor = System.Drawing.Color.Transparent;
             this.player1_overal_panel.Controls.Add(this.player1_main_panel);
             this.player1_overal_panel.Controls.Add(this.player1_name_lbl);
-            this.player1_overal_panel.Location = new System.Drawing.Point(135, 30);
+            this.player1_overal_panel.Location = new System.Drawing.Point(135, 40);
+            this.player1_overal_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_overal_panel.Name = "player1_overal_panel";
-            this.player1_overal_panel.Size = new System.Drawing.Size(400, 650);
+            this.player1_overal_panel.Size = new System.Drawing.Size(400, 690);
             this.player1_overal_panel.TabIndex = 108;
             this.player1_overal_panel.MouseLeave += new System.EventHandler(this.player1_overal_panel_MouseLeave);
             this.player1_overal_panel.MouseHover += new System.EventHandler(this.player1_overal_panel_MouseHover);
@@ -368,9 +371,10 @@ namespace Castle_Crushers
             this.player1_main_panel.Controls.Add(this.player1_righthand_btn);
             this.player1_main_panel.Controls.Add(this.player1_lefthand_btn);
             this.player1_main_panel.Controls.Add(this.player1_torso_btn);
-            this.player1_main_panel.Location = new System.Drawing.Point(0, 45);
+            this.player1_main_panel.Location = new System.Drawing.Point(0, 50);
+            this.player1_main_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_main_panel.Name = "player1_main_panel";
-            this.player1_main_panel.Size = new System.Drawing.Size(400, 605);
+            this.player1_main_panel.Size = new System.Drawing.Size(400, 640);
             this.player1_main_panel.TabIndex = 1;
             this.player1_main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -379,8 +383,9 @@ namespace Castle_Crushers
             this.player1_gold_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(192)))), ((int)(((byte)(126)))));
             this.player1_gold_btn.BackgroundImage = global::Sword_and_flame.Properties.Resources.coin;
             this.player1_gold_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player1_gold_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player1_gold_btn.Location = new System.Drawing.Point(270, 502);
+            this.player1_gold_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player1_gold_btn.Location = new System.Drawing.Point(270, 530);
+            this.player1_gold_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_gold_btn.Name = "player1_gold_btn";
             this.player1_gold_btn.Size = new System.Drawing.Size(100, 100);
             this.player1_gold_btn.TabIndex = 32;
@@ -393,8 +398,9 @@ namespace Castle_Crushers
             // 
             this.player1_inventory2_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player1_inventory2_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player1_inventory2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player1_inventory2_btn.Location = new System.Drawing.Point(150, 502);
+            this.player1_inventory2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player1_inventory2_btn.Location = new System.Drawing.Point(150, 530);
+            this.player1_inventory2_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_inventory2_btn.Name = "player1_inventory2_btn";
             this.player1_inventory2_btn.Size = new System.Drawing.Size(100, 100);
             this.player1_inventory2_btn.TabIndex = 31;
@@ -407,8 +413,9 @@ namespace Castle_Crushers
             // 
             this.player1_inventory1_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player1_inventory1_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player1_inventory1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player1_inventory1_btn.Location = new System.Drawing.Point(30, 502);
+            this.player1_inventory1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player1_inventory1_btn.Location = new System.Drawing.Point(30, 530);
+            this.player1_inventory1_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_inventory1_btn.Name = "player1_inventory1_btn";
             this.player1_inventory1_btn.Size = new System.Drawing.Size(100, 100);
             this.player1_inventory1_btn.TabIndex = 30;
@@ -421,8 +428,9 @@ namespace Castle_Crushers
             // 
             this.player1_legs_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player1_legs_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player1_legs_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player1_legs_btn.Location = new System.Drawing.Point(150, 290);
+            this.player1_legs_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player1_legs_btn.Location = new System.Drawing.Point(150, 362);
+            this.player1_legs_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_legs_btn.Name = "player1_legs_btn";
             this.player1_legs_btn.Size = new System.Drawing.Size(100, 100);
             this.player1_legs_btn.TabIndex = 29;
@@ -435,9 +443,10 @@ namespace Castle_Crushers
             // 
             this.player1_head_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player1_head_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player1_head_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.player1_head_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player1_head_btn.ForeColor = System.Drawing.Color.Black;
             this.player1_head_btn.Location = new System.Drawing.Point(150, 0);
+            this.player1_head_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_head_btn.Name = "player1_head_btn";
             this.player1_head_btn.Size = new System.Drawing.Size(100, 100);
             this.player1_head_btn.TabIndex = 17;
@@ -450,8 +459,9 @@ namespace Castle_Crushers
             // 
             this.player1_righthand_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player1_righthand_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player1_righthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player1_righthand_btn.Location = new System.Drawing.Point(30, 230);
+            this.player1_righthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player1_righthand_btn.Location = new System.Drawing.Point(15, 250);
+            this.player1_righthand_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_righthand_btn.Name = "player1_righthand_btn";
             this.player1_righthand_btn.Size = new System.Drawing.Size(100, 100);
             this.player1_righthand_btn.TabIndex = 28;
@@ -464,8 +474,9 @@ namespace Castle_Crushers
             // 
             this.player1_lefthand_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player1_lefthand_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player1_lefthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player1_lefthand_btn.Location = new System.Drawing.Point(270, 230);
+            this.player1_lefthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player1_lefthand_btn.Location = new System.Drawing.Point(285, 250);
+            this.player1_lefthand_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_lefthand_btn.Name = "player1_lefthand_btn";
             this.player1_lefthand_btn.Size = new System.Drawing.Size(100, 100);
             this.player1_lefthand_btn.TabIndex = 27;
@@ -478,8 +489,9 @@ namespace Castle_Crushers
             // 
             this.player1_torso_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player1_torso_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player1_torso_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player1_torso_btn.Location = new System.Drawing.Point(150, 110);
+            this.player1_torso_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player1_torso_btn.Location = new System.Drawing.Point(150, 138);
+            this.player1_torso_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player1_torso_btn.Name = "player1_torso_btn";
             this.player1_torso_btn.Size = new System.Drawing.Size(100, 100);
             this.player1_torso_btn.TabIndex = 16;
@@ -493,13 +505,15 @@ namespace Castle_Crushers
             this.camp_main_panel.BackColor = System.Drawing.Color.Transparent;
             this.camp_main_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.camp_main_panel;
             this.camp_main_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.camp_main_panel.Controls.Add(this.camp_img_panel);
             this.camp_main_panel.Controls.Add(this.player2_overal_panel);
             this.camp_main_panel.Controls.Add(this.player3_overal_panel);
             this.camp_main_panel.Controls.Add(this.player4_overal_panel);
             this.camp_main_panel.Controls.Add(this.player1_overal_panel);
-            this.camp_main_panel.Location = new System.Drawing.Point(0, 313);
+            this.camp_main_panel.Location = new System.Drawing.Point(10, 0);
+            this.camp_main_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.camp_main_panel.Name = "camp_main_panel";
-            this.camp_main_panel.Size = new System.Drawing.Size(1900, 717);
+            this.camp_main_panel.Size = new System.Drawing.Size(1900, 1030);
             this.camp_main_panel.TabIndex = 50;
             this.camp_main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.camp_main_panel_Paint);
             // 
@@ -508,9 +522,10 @@ namespace Castle_Crushers
             this.player2_overal_panel.BackColor = System.Drawing.Color.Transparent;
             this.player2_overal_panel.Controls.Add(this.player2_main_panel);
             this.player2_overal_panel.Controls.Add(this.player2_name_lbl);
-            this.player2_overal_panel.Location = new System.Drawing.Point(565, 30);
+            this.player2_overal_panel.Location = new System.Drawing.Point(565, 40);
+            this.player2_overal_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_overal_panel.Name = "player2_overal_panel";
-            this.player2_overal_panel.Size = new System.Drawing.Size(400, 650);
+            this.player2_overal_panel.Size = new System.Drawing.Size(400, 690);
             this.player2_overal_panel.TabIndex = 109;
             this.player2_overal_panel.MouseLeave += new System.EventHandler(this.player2_overal_panel_MouseLeave);
             this.player2_overal_panel.MouseHover += new System.EventHandler(this.player2_overal_panel_MouseHover);
@@ -528,9 +543,10 @@ namespace Castle_Crushers
             this.player2_main_panel.Controls.Add(this.player2_righthand_btn);
             this.player2_main_panel.Controls.Add(this.player2_lefthand_btn);
             this.player2_main_panel.Controls.Add(this.player2_torso_btn);
-            this.player2_main_panel.Location = new System.Drawing.Point(0, 45);
+            this.player2_main_panel.Location = new System.Drawing.Point(0, 50);
+            this.player2_main_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_main_panel.Name = "player2_main_panel";
-            this.player2_main_panel.Size = new System.Drawing.Size(400, 605);
+            this.player2_main_panel.Size = new System.Drawing.Size(400, 640);
             this.player2_main_panel.TabIndex = 1;
             // 
             // player2_gold_btn
@@ -538,8 +554,9 @@ namespace Castle_Crushers
             this.player2_gold_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(192)))), ((int)(((byte)(126)))));
             this.player2_gold_btn.BackgroundImage = global::Sword_and_flame.Properties.Resources.coin;
             this.player2_gold_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player2_gold_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player2_gold_btn.Location = new System.Drawing.Point(270, 502);
+            this.player2_gold_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2_gold_btn.Location = new System.Drawing.Point(270, 530);
+            this.player2_gold_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_gold_btn.Name = "player2_gold_btn";
             this.player2_gold_btn.Size = new System.Drawing.Size(100, 100);
             this.player2_gold_btn.TabIndex = 32;
@@ -550,8 +567,9 @@ namespace Castle_Crushers
             // 
             this.player2_inventory2_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player2_inventory2_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player2_inventory2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player2_inventory2_btn.Location = new System.Drawing.Point(150, 502);
+            this.player2_inventory2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2_inventory2_btn.Location = new System.Drawing.Point(150, 530);
+            this.player2_inventory2_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_inventory2_btn.Name = "player2_inventory2_btn";
             this.player2_inventory2_btn.Size = new System.Drawing.Size(100, 100);
             this.player2_inventory2_btn.TabIndex = 31;
@@ -564,8 +582,9 @@ namespace Castle_Crushers
             // 
             this.player2_inventory1_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player2_inventory1_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player2_inventory1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player2_inventory1_btn.Location = new System.Drawing.Point(30, 502);
+            this.player2_inventory1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2_inventory1_btn.Location = new System.Drawing.Point(30, 530);
+            this.player2_inventory1_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_inventory1_btn.Name = "player2_inventory1_btn";
             this.player2_inventory1_btn.Size = new System.Drawing.Size(100, 100);
             this.player2_inventory1_btn.TabIndex = 30;
@@ -578,8 +597,9 @@ namespace Castle_Crushers
             // 
             this.player2_legs_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player2_legs_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player2_legs_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player2_legs_btn.Location = new System.Drawing.Point(150, 290);
+            this.player2_legs_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2_legs_btn.Location = new System.Drawing.Point(150, 362);
+            this.player2_legs_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_legs_btn.Name = "player2_legs_btn";
             this.player2_legs_btn.Size = new System.Drawing.Size(100, 100);
             this.player2_legs_btn.TabIndex = 29;
@@ -592,9 +612,10 @@ namespace Castle_Crushers
             // 
             this.player2_head_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player2_head_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player2_head_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.player2_head_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player2_head_btn.ForeColor = System.Drawing.Color.Black;
             this.player2_head_btn.Location = new System.Drawing.Point(150, 0);
+            this.player2_head_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_head_btn.Name = "player2_head_btn";
             this.player2_head_btn.Size = new System.Drawing.Size(100, 100);
             this.player2_head_btn.TabIndex = 17;
@@ -606,9 +627,11 @@ namespace Castle_Crushers
             // player2_righthand_btn
             // 
             this.player2_righthand_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
+            this.player2_righthand_btn.BackgroundImage = global::Sword_and_flame.Properties.Resources.right;
             this.player2_righthand_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player2_righthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player2_righthand_btn.Location = new System.Drawing.Point(30, 230);
+            this.player2_righthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2_righthand_btn.Location = new System.Drawing.Point(15, 250);
+            this.player2_righthand_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_righthand_btn.Name = "player2_righthand_btn";
             this.player2_righthand_btn.Size = new System.Drawing.Size(100, 100);
             this.player2_righthand_btn.TabIndex = 28;
@@ -620,9 +643,11 @@ namespace Castle_Crushers
             // player2_lefthand_btn
             // 
             this.player2_lefthand_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
+            this.player2_lefthand_btn.BackgroundImage = global::Sword_and_flame.Properties.Resources.left;
             this.player2_lefthand_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player2_lefthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player2_lefthand_btn.Location = new System.Drawing.Point(270, 230);
+            this.player2_lefthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2_lefthand_btn.Location = new System.Drawing.Point(285, 250);
+            this.player2_lefthand_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_lefthand_btn.Name = "player2_lefthand_btn";
             this.player2_lefthand_btn.Size = new System.Drawing.Size(100, 100);
             this.player2_lefthand_btn.TabIndex = 27;
@@ -635,8 +660,9 @@ namespace Castle_Crushers
             // 
             this.player2_torso_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player2_torso_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player2_torso_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player2_torso_btn.Location = new System.Drawing.Point(150, 110);
+            this.player2_torso_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2_torso_btn.Location = new System.Drawing.Point(150, 138);
+            this.player2_torso_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player2_torso_btn.Name = "player2_torso_btn";
             this.player2_torso_btn.Size = new System.Drawing.Size(100, 100);
             this.player2_torso_btn.TabIndex = 16;
@@ -648,7 +674,7 @@ namespace Castle_Crushers
             // player2_name_lbl
             // 
             this.player2_name_lbl.AutoSize = true;
-            this.player2_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.player2_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player2_name_lbl.Location = new System.Drawing.Point(119, 0);
             this.player2_name_lbl.Name = "player2_name_lbl";
             this.player2_name_lbl.Size = new System.Drawing.Size(162, 26);
@@ -660,9 +686,10 @@ namespace Castle_Crushers
             this.player3_overal_panel.BackColor = System.Drawing.Color.Transparent;
             this.player3_overal_panel.Controls.Add(this.player3_main_panel);
             this.player3_overal_panel.Controls.Add(this.player3_name_lbl);
-            this.player3_overal_panel.Location = new System.Drawing.Point(993, 30);
+            this.player3_overal_panel.Location = new System.Drawing.Point(993, 40);
+            this.player3_overal_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_overal_panel.Name = "player3_overal_panel";
-            this.player3_overal_panel.Size = new System.Drawing.Size(400, 650);
+            this.player3_overal_panel.Size = new System.Drawing.Size(400, 690);
             this.player3_overal_panel.TabIndex = 109;
             this.player3_overal_panel.MouseLeave += new System.EventHandler(this.player3_overal_panel_MouseLeave);
             this.player3_overal_panel.MouseHover += new System.EventHandler(this.player3_overal_panel_MouseHover);
@@ -680,9 +707,10 @@ namespace Castle_Crushers
             this.player3_main_panel.Controls.Add(this.player3_righthand_btn);
             this.player3_main_panel.Controls.Add(this.player3_lefthand_btn);
             this.player3_main_panel.Controls.Add(this.player3_torso_btn);
-            this.player3_main_panel.Location = new System.Drawing.Point(0, 45);
+            this.player3_main_panel.Location = new System.Drawing.Point(0, 50);
+            this.player3_main_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_main_panel.Name = "player3_main_panel";
-            this.player3_main_panel.Size = new System.Drawing.Size(400, 605);
+            this.player3_main_panel.Size = new System.Drawing.Size(400, 640);
             this.player3_main_panel.TabIndex = 1;
             // 
             // player3_gold_btn
@@ -690,8 +718,9 @@ namespace Castle_Crushers
             this.player3_gold_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(192)))), ((int)(((byte)(126)))));
             this.player3_gold_btn.BackgroundImage = global::Sword_and_flame.Properties.Resources.coin;
             this.player3_gold_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player3_gold_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player3_gold_btn.Location = new System.Drawing.Point(270, 502);
+            this.player3_gold_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player3_gold_btn.Location = new System.Drawing.Point(270, 530);
+            this.player3_gold_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_gold_btn.Name = "player3_gold_btn";
             this.player3_gold_btn.Size = new System.Drawing.Size(100, 100);
             this.player3_gold_btn.TabIndex = 32;
@@ -702,8 +731,9 @@ namespace Castle_Crushers
             // 
             this.player3_inventory2_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player3_inventory2_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player3_inventory2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player3_inventory2_btn.Location = new System.Drawing.Point(150, 502);
+            this.player3_inventory2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player3_inventory2_btn.Location = new System.Drawing.Point(150, 530);
+            this.player3_inventory2_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_inventory2_btn.Name = "player3_inventory2_btn";
             this.player3_inventory2_btn.Size = new System.Drawing.Size(100, 100);
             this.player3_inventory2_btn.TabIndex = 31;
@@ -716,8 +746,9 @@ namespace Castle_Crushers
             // 
             this.player3_inventory1_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player3_inventory1_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player3_inventory1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player3_inventory1_btn.Location = new System.Drawing.Point(30, 502);
+            this.player3_inventory1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player3_inventory1_btn.Location = new System.Drawing.Point(30, 530);
+            this.player3_inventory1_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_inventory1_btn.Name = "player3_inventory1_btn";
             this.player3_inventory1_btn.Size = new System.Drawing.Size(100, 100);
             this.player3_inventory1_btn.TabIndex = 30;
@@ -730,8 +761,9 @@ namespace Castle_Crushers
             // 
             this.player3_legs_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player3_legs_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player3_legs_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player3_legs_btn.Location = new System.Drawing.Point(150, 290);
+            this.player3_legs_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player3_legs_btn.Location = new System.Drawing.Point(150, 362);
+            this.player3_legs_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_legs_btn.Name = "player3_legs_btn";
             this.player3_legs_btn.Size = new System.Drawing.Size(100, 100);
             this.player3_legs_btn.TabIndex = 29;
@@ -744,9 +776,10 @@ namespace Castle_Crushers
             // 
             this.player3_head_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player3_head_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player3_head_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.player3_head_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player3_head_btn.ForeColor = System.Drawing.Color.Black;
             this.player3_head_btn.Location = new System.Drawing.Point(150, 0);
+            this.player3_head_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_head_btn.Name = "player3_head_btn";
             this.player3_head_btn.Size = new System.Drawing.Size(100, 100);
             this.player3_head_btn.TabIndex = 17;
@@ -759,8 +792,9 @@ namespace Castle_Crushers
             // 
             this.player3_righthand_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player3_righthand_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player3_righthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player3_righthand_btn.Location = new System.Drawing.Point(30, 230);
+            this.player3_righthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player3_righthand_btn.Location = new System.Drawing.Point(15, 250);
+            this.player3_righthand_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_righthand_btn.Name = "player3_righthand_btn";
             this.player3_righthand_btn.Size = new System.Drawing.Size(100, 100);
             this.player3_righthand_btn.TabIndex = 28;
@@ -773,8 +807,9 @@ namespace Castle_Crushers
             // 
             this.player3_lefthand_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player3_lefthand_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player3_lefthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player3_lefthand_btn.Location = new System.Drawing.Point(270, 230);
+            this.player3_lefthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player3_lefthand_btn.Location = new System.Drawing.Point(285, 250);
+            this.player3_lefthand_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_lefthand_btn.Name = "player3_lefthand_btn";
             this.player3_lefthand_btn.Size = new System.Drawing.Size(100, 100);
             this.player3_lefthand_btn.TabIndex = 27;
@@ -787,8 +822,9 @@ namespace Castle_Crushers
             // 
             this.player3_torso_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player3_torso_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player3_torso_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player3_torso_btn.Location = new System.Drawing.Point(150, 110);
+            this.player3_torso_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player3_torso_btn.Location = new System.Drawing.Point(150, 138);
+            this.player3_torso_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player3_torso_btn.Name = "player3_torso_btn";
             this.player3_torso_btn.Size = new System.Drawing.Size(100, 100);
             this.player3_torso_btn.TabIndex = 16;
@@ -800,7 +836,7 @@ namespace Castle_Crushers
             // player3_name_lbl
             // 
             this.player3_name_lbl.AutoSize = true;
-            this.player3_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.player3_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player3_name_lbl.Location = new System.Drawing.Point(119, 0);
             this.player3_name_lbl.Name = "player3_name_lbl";
             this.player3_name_lbl.Size = new System.Drawing.Size(162, 26);
@@ -812,9 +848,10 @@ namespace Castle_Crushers
             this.player4_overal_panel.BackColor = System.Drawing.Color.Transparent;
             this.player4_overal_panel.Controls.Add(this.player4_main_panel);
             this.player4_overal_panel.Controls.Add(this.player4_name_lbl);
-            this.player4_overal_panel.Location = new System.Drawing.Point(1425, 30);
+            this.player4_overal_panel.Location = new System.Drawing.Point(1425, 40);
+            this.player4_overal_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_overal_panel.Name = "player4_overal_panel";
-            this.player4_overal_panel.Size = new System.Drawing.Size(400, 650);
+            this.player4_overal_panel.Size = new System.Drawing.Size(400, 690);
             this.player4_overal_panel.TabIndex = 109;
             this.player4_overal_panel.MouseLeave += new System.EventHandler(this.player4_overal_panel_MouseLeave);
             this.player4_overal_panel.MouseHover += new System.EventHandler(this.player4_overal_panel_MouseHover);
@@ -832,9 +869,10 @@ namespace Castle_Crushers
             this.player4_main_panel.Controls.Add(this.player4_righthand_btn);
             this.player4_main_panel.Controls.Add(this.player4_lefthand_btn);
             this.player4_main_panel.Controls.Add(this.player4_torso_btn);
-            this.player4_main_panel.Location = new System.Drawing.Point(0, 45);
+            this.player4_main_panel.Location = new System.Drawing.Point(0, 50);
+            this.player4_main_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_main_panel.Name = "player4_main_panel";
-            this.player4_main_panel.Size = new System.Drawing.Size(400, 605);
+            this.player4_main_panel.Size = new System.Drawing.Size(400, 650);
             this.player4_main_panel.TabIndex = 1;
             // 
             // player4_gold_btn
@@ -842,8 +880,9 @@ namespace Castle_Crushers
             this.player4_gold_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(192)))), ((int)(((byte)(126)))));
             this.player4_gold_btn.BackgroundImage = global::Sword_and_flame.Properties.Resources.coin;
             this.player4_gold_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.player4_gold_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player4_gold_btn.Location = new System.Drawing.Point(270, 502);
+            this.player4_gold_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player4_gold_btn.Location = new System.Drawing.Point(270, 530);
+            this.player4_gold_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_gold_btn.Name = "player4_gold_btn";
             this.player4_gold_btn.Size = new System.Drawing.Size(100, 100);
             this.player4_gold_btn.TabIndex = 32;
@@ -854,8 +893,9 @@ namespace Castle_Crushers
             // 
             this.player4_inventory2_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player4_inventory2_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player4_inventory2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player4_inventory2_btn.Location = new System.Drawing.Point(150, 502);
+            this.player4_inventory2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player4_inventory2_btn.Location = new System.Drawing.Point(150, 530);
+            this.player4_inventory2_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_inventory2_btn.Name = "player4_inventory2_btn";
             this.player4_inventory2_btn.Size = new System.Drawing.Size(100, 100);
             this.player4_inventory2_btn.TabIndex = 31;
@@ -868,8 +908,9 @@ namespace Castle_Crushers
             // 
             this.player4_inventory1_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player4_inventory1_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player4_inventory1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player4_inventory1_btn.Location = new System.Drawing.Point(30, 502);
+            this.player4_inventory1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player4_inventory1_btn.Location = new System.Drawing.Point(30, 530);
+            this.player4_inventory1_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_inventory1_btn.Name = "player4_inventory1_btn";
             this.player4_inventory1_btn.Size = new System.Drawing.Size(100, 100);
             this.player4_inventory1_btn.TabIndex = 30;
@@ -882,8 +923,9 @@ namespace Castle_Crushers
             // 
             this.player4_legs_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player4_legs_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player4_legs_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player4_legs_btn.Location = new System.Drawing.Point(150, 290);
+            this.player4_legs_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player4_legs_btn.Location = new System.Drawing.Point(150, 362);
+            this.player4_legs_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_legs_btn.Name = "player4_legs_btn";
             this.player4_legs_btn.Size = new System.Drawing.Size(100, 100);
             this.player4_legs_btn.TabIndex = 29;
@@ -896,9 +938,10 @@ namespace Castle_Crushers
             // 
             this.player4_head_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player4_head_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player4_head_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.player4_head_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player4_head_btn.ForeColor = System.Drawing.Color.Black;
             this.player4_head_btn.Location = new System.Drawing.Point(150, 0);
+            this.player4_head_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_head_btn.Name = "player4_head_btn";
             this.player4_head_btn.Size = new System.Drawing.Size(100, 100);
             this.player4_head_btn.TabIndex = 17;
@@ -911,8 +954,9 @@ namespace Castle_Crushers
             // 
             this.player4_righthand_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player4_righthand_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player4_righthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player4_righthand_btn.Location = new System.Drawing.Point(30, 230);
+            this.player4_righthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player4_righthand_btn.Location = new System.Drawing.Point(15, 250);
+            this.player4_righthand_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_righthand_btn.Name = "player4_righthand_btn";
             this.player4_righthand_btn.Size = new System.Drawing.Size(100, 100);
             this.player4_righthand_btn.TabIndex = 28;
@@ -925,8 +969,9 @@ namespace Castle_Crushers
             // 
             this.player4_lefthand_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player4_lefthand_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player4_lefthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player4_lefthand_btn.Location = new System.Drawing.Point(270, 230);
+            this.player4_lefthand_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player4_lefthand_btn.Location = new System.Drawing.Point(285, 250);
+            this.player4_lefthand_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_lefthand_btn.Name = "player4_lefthand_btn";
             this.player4_lefthand_btn.Size = new System.Drawing.Size(100, 100);
             this.player4_lefthand_btn.TabIndex = 27;
@@ -939,8 +984,9 @@ namespace Castle_Crushers
             // 
             this.player4_torso_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(195)))), ((int)(((byte)(126)))));
             this.player4_torso_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player4_torso_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.player4_torso_btn.Location = new System.Drawing.Point(150, 110);
+            this.player4_torso_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player4_torso_btn.Location = new System.Drawing.Point(150, 138);
+            this.player4_torso_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.player4_torso_btn.Name = "player4_torso_btn";
             this.player4_torso_btn.Size = new System.Drawing.Size(100, 100);
             this.player4_torso_btn.TabIndex = 16;
@@ -952,7 +998,7 @@ namespace Castle_Crushers
             // player4_name_lbl
             // 
             this.player4_name_lbl.AutoSize = true;
-            this.player4_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.player4_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player4_name_lbl.Location = new System.Drawing.Point(119, 0);
             this.player4_name_lbl.Name = "player4_name_lbl";
             this.player4_name_lbl.Size = new System.Drawing.Size(162, 26);
@@ -965,7 +1011,6 @@ namespace Castle_Crushers
             this.camp_heroinfo_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_level_lbl);
             this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_levelValue_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_lootinfo_panel);
             this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_strengthValue_lbl);
             this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_defenseValue_lbl);
             this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_healthValue_lbl);
@@ -976,105 +1021,106 @@ namespace Castle_Crushers
             this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_health_lbl);
             this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_name_lbl);
             this.camp_heroinfo_panel.Location = new System.Drawing.Point(0, 0);
+            this.camp_heroinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.camp_heroinfo_panel.Name = "camp_heroinfo_panel";
-            this.camp_heroinfo_panel.Size = new System.Drawing.Size(340, 317);
+            this.camp_heroinfo_panel.Size = new System.Drawing.Size(200, 200);
             this.camp_heroinfo_panel.TabIndex = 110;
             // 
             // camp_heroinfo_level_lbl
             // 
             this.camp_heroinfo_level_lbl.AutoSize = true;
-            this.camp_heroinfo_level_lbl.Location = new System.Drawing.Point(100, 95);
+            this.camp_heroinfo_level_lbl.Location = new System.Drawing.Point(3, 30);
             this.camp_heroinfo_level_lbl.Name = "camp_heroinfo_level_lbl";
-            this.camp_heroinfo_level_lbl.Size = new System.Drawing.Size(54, 17);
+            this.camp_heroinfo_level_lbl.Size = new System.Drawing.Size(57, 20);
             this.camp_heroinfo_level_lbl.TabIndex = 100;
             this.camp_heroinfo_level_lbl.Text = "Рівень:";
             // 
             // camp_heroinfo_levelValue_lbl
             // 
             this.camp_heroinfo_levelValue_lbl.AutoSize = true;
-            this.camp_heroinfo_levelValue_lbl.Location = new System.Drawing.Point(200, 95);
+            this.camp_heroinfo_levelValue_lbl.Location = new System.Drawing.Point(85, 30);
             this.camp_heroinfo_levelValue_lbl.Name = "camp_heroinfo_levelValue_lbl";
-            this.camp_heroinfo_levelValue_lbl.Size = new System.Drawing.Size(16, 17);
+            this.camp_heroinfo_levelValue_lbl.Size = new System.Drawing.Size(17, 20);
             this.camp_heroinfo_levelValue_lbl.TabIndex = 99;
             this.camp_heroinfo_levelValue_lbl.Text = "0";
             // 
             // camp_heroinfo_strengthValue_lbl
             // 
             this.camp_heroinfo_strengthValue_lbl.AutoSize = true;
-            this.camp_heroinfo_strengthValue_lbl.Location = new System.Drawing.Point(200, 125);
+            this.camp_heroinfo_strengthValue_lbl.Location = new System.Drawing.Point(85, 60);
             this.camp_heroinfo_strengthValue_lbl.Name = "camp_heroinfo_strengthValue_lbl";
-            this.camp_heroinfo_strengthValue_lbl.Size = new System.Drawing.Size(16, 17);
+            this.camp_heroinfo_strengthValue_lbl.Size = new System.Drawing.Size(17, 20);
             this.camp_heroinfo_strengthValue_lbl.TabIndex = 49;
             this.camp_heroinfo_strengthValue_lbl.Text = "0";
             // 
             // camp_heroinfo_defenseValue_lbl
             // 
             this.camp_heroinfo_defenseValue_lbl.AutoSize = true;
-            this.camp_heroinfo_defenseValue_lbl.Location = new System.Drawing.Point(200, 155);
+            this.camp_heroinfo_defenseValue_lbl.Location = new System.Drawing.Point(85, 90);
             this.camp_heroinfo_defenseValue_lbl.Name = "camp_heroinfo_defenseValue_lbl";
-            this.camp_heroinfo_defenseValue_lbl.Size = new System.Drawing.Size(16, 17);
+            this.camp_heroinfo_defenseValue_lbl.Size = new System.Drawing.Size(17, 20);
             this.camp_heroinfo_defenseValue_lbl.TabIndex = 45;
             this.camp_heroinfo_defenseValue_lbl.Text = "0";
             // 
             // camp_heroinfo_healthValue_lbl
             // 
             this.camp_heroinfo_healthValue_lbl.AutoSize = true;
-            this.camp_heroinfo_healthValue_lbl.Location = new System.Drawing.Point(200, 185);
+            this.camp_heroinfo_healthValue_lbl.Location = new System.Drawing.Point(85, 120);
             this.camp_heroinfo_healthValue_lbl.Name = "camp_heroinfo_healthValue_lbl";
-            this.camp_heroinfo_healthValue_lbl.Size = new System.Drawing.Size(16, 17);
+            this.camp_heroinfo_healthValue_lbl.Size = new System.Drawing.Size(17, 20);
             this.camp_heroinfo_healthValue_lbl.TabIndex = 44;
             this.camp_heroinfo_healthValue_lbl.Text = "0";
             // 
             // camp_heroinfo_speedValue_lbl
             // 
             this.camp_heroinfo_speedValue_lbl.AutoSize = true;
-            this.camp_heroinfo_speedValue_lbl.Location = new System.Drawing.Point(200, 215);
+            this.camp_heroinfo_speedValue_lbl.Location = new System.Drawing.Point(85, 150);
             this.camp_heroinfo_speedValue_lbl.Name = "camp_heroinfo_speedValue_lbl";
-            this.camp_heroinfo_speedValue_lbl.Size = new System.Drawing.Size(16, 17);
+            this.camp_heroinfo_speedValue_lbl.Size = new System.Drawing.Size(17, 20);
             this.camp_heroinfo_speedValue_lbl.TabIndex = 43;
             this.camp_heroinfo_speedValue_lbl.Text = "0";
             // 
             // camp_heroinfo_strength_lbl
             // 
             this.camp_heroinfo_strength_lbl.AutoSize = true;
-            this.camp_heroinfo_strength_lbl.Location = new System.Drawing.Point(100, 125);
+            this.camp_heroinfo_strength_lbl.Location = new System.Drawing.Point(3, 60);
             this.camp_heroinfo_strength_lbl.Name = "camp_heroinfo_strength_lbl";
-            this.camp_heroinfo_strength_lbl.Size = new System.Drawing.Size(45, 17);
+            this.camp_heroinfo_strength_lbl.Size = new System.Drawing.Size(46, 20);
             this.camp_heroinfo_strength_lbl.TabIndex = 41;
             this.camp_heroinfo_strength_lbl.Text = "Сила:";
             // 
             // camp_heroinfo_defense_lbl
             // 
             this.camp_heroinfo_defense_lbl.AutoSize = true;
-            this.camp_heroinfo_defense_lbl.Location = new System.Drawing.Point(100, 155);
+            this.camp_heroinfo_defense_lbl.Location = new System.Drawing.Point(3, 90);
             this.camp_heroinfo_defense_lbl.Name = "camp_heroinfo_defense_lbl";
-            this.camp_heroinfo_defense_lbl.Size = new System.Drawing.Size(57, 17);
+            this.camp_heroinfo_defense_lbl.Size = new System.Drawing.Size(57, 20);
             this.camp_heroinfo_defense_lbl.TabIndex = 38;
             this.camp_heroinfo_defense_lbl.Text = "Захист:";
             // 
             // camp_heroinfo_speed_lbl
             // 
             this.camp_heroinfo_speed_lbl.AutoSize = true;
-            this.camp_heroinfo_speed_lbl.Location = new System.Drawing.Point(100, 215);
+            this.camp_heroinfo_speed_lbl.Location = new System.Drawing.Point(3, 150);
             this.camp_heroinfo_speed_lbl.Name = "camp_heroinfo_speed_lbl";
-            this.camp_heroinfo_speed_lbl.Size = new System.Drawing.Size(77, 17);
+            this.camp_heroinfo_speed_lbl.Size = new System.Drawing.Size(83, 20);
             this.camp_heroinfo_speed_lbl.TabIndex = 39;
             this.camp_heroinfo_speed_lbl.Text = "Швидкість:";
             // 
             // camp_heroinfo_health_lbl
             // 
             this.camp_heroinfo_health_lbl.AutoSize = true;
-            this.camp_heroinfo_health_lbl.Location = new System.Drawing.Point(100, 185);
+            this.camp_heroinfo_health_lbl.Location = new System.Drawing.Point(3, 120);
             this.camp_heroinfo_health_lbl.Name = "camp_heroinfo_health_lbl";
-            this.camp_heroinfo_health_lbl.Size = new System.Drawing.Size(71, 17);
+            this.camp_heroinfo_health_lbl.Size = new System.Drawing.Size(74, 20);
             this.camp_heroinfo_health_lbl.TabIndex = 42;
             this.camp_heroinfo_health_lbl.Text = "Здоров\'я:";
             // 
             // camp_heroinfo_name_lbl
             // 
             this.camp_heroinfo_name_lbl.AutoSize = true;
-            this.camp_heroinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.camp_heroinfo_name_lbl.Location = new System.Drawing.Point(110, 53);
+            this.camp_heroinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.camp_heroinfo_name_lbl.Location = new System.Drawing.Point(40, 0);
             this.camp_heroinfo_name_lbl.Name = "camp_heroinfo_name_lbl";
             this.camp_heroinfo_name_lbl.Size = new System.Drawing.Size(119, 20);
             this.camp_heroinfo_name_lbl.TabIndex = 35;
@@ -1083,23 +1129,25 @@ namespace Castle_Crushers
             // camp_img_panel
             // 
             this.camp_img_panel.BackColor = System.Drawing.Color.Transparent;
-            this.camp_img_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.camp_info_img;
             this.camp_img_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.camp_img_panel.Controls.Add(this.camp_lootinfo_panel);
             this.camp_img_panel.Controls.Add(this.camp_heroinfo_panel);
-            this.camp_img_panel.Location = new System.Drawing.Point(111, 0);
+            this.camp_img_panel.Location = new System.Drawing.Point(190, 730);
+            this.camp_img_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.camp_img_panel.Name = "camp_img_panel";
-            this.camp_img_panel.Size = new System.Drawing.Size(340, 317);
+            this.camp_img_panel.Size = new System.Drawing.Size(930, 400);
             this.camp_img_panel.TabIndex = 111;
             // 
             // Camp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sword_and_flame.Properties.Resources.camp_img;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
-            this.Controls.Add(this.camp_img_panel);
             this.Controls.Add(this.camp_main_panel);
             this.Controls.Add(this.table);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Camp";
             this.Text = "Camp";
             this.Load += new System.EventHandler(this.Camp_Load);

@@ -20,9 +20,10 @@ namespace Castle_Crushers
         public int min_level { get; set; }
         public string equipment_class { get; set; }
         public int price { get; set; }
-        public Image loot_image { get; set; }
+        public Image loot_image_right { get; set; }
+        public Image loot_image_left { get; set; }
 
-        public Loot(string loot_index, string name, string type_of_bodypart, string equipment_class, int min_level, int x, int y, int strength_bonus, int random_strength_bonus, int defense_bonus, int random_defense_bonus, int health_bonus, int speed_bonus, int price, Image loot_image) : base(name, x, y)
+        public Loot(string loot_index, string name, string type_of_bodypart, string equipment_class, int min_level, int x, int y, int strength_bonus, int random_strength_bonus, int defense_bonus, int random_defense_bonus, int health_bonus, int speed_bonus, int price, Image loot_image_right, Image loot_image_left) : base(name, x, y)
         {
             this.loot_index = loot_index;
             this.name = name;
@@ -36,7 +37,8 @@ namespace Castle_Crushers
             this.min_level = min_level;
             this.equipment_class = equipment_class;
             this.price = price;
-            this.loot_image = loot_image;
+            this.loot_image_right = loot_image_right;
+            this.loot_image_left = loot_image_left;
         }
         public static List<Loot> LootList = new List<Loot>() {};
     }

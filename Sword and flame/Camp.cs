@@ -12,8 +12,9 @@ namespace Castle_Crushers
 {
     public partial class Camp : Form
     {
-        Loot loot_buffer;
-        Button some_painted_button;
+        static Loot loot_buffer { get; set; }
+        static Button some_painted_button_before { get; set; } // needed for button paint buffer
+
         public Camp()
         {
             InitializeComponent();
@@ -88,451 +89,345 @@ namespace Castle_Crushers
 
         private void set_looticon()
         {
-            player1_head_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[0].loot_image;
-            player1_torso_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[1].loot_image;
-            player1_righthand_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[2].loot_image;
-            player1_lefthand_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[3].loot_image;
-            player1_legs_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[4].loot_image;
-            player1_inventory1_btn.BackgroundImage = GameGlobalData.HeroList[0].inventory[0].loot_image;
-            player1_inventory2_btn.BackgroundImage = GameGlobalData.HeroList[0].inventory[1].loot_image;
-            player2_head_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[0].loot_image;
-            player2_torso_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[1].loot_image;
-            player2_righthand_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[2].loot_image;
-            player2_lefthand_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[3].loot_image;
-            player2_legs_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[4].loot_image;
-            player2_inventory1_btn.BackgroundImage = GameGlobalData.HeroList[1].inventory[0].loot_image;
-            player2_inventory2_btn.BackgroundImage = GameGlobalData.HeroList[1].inventory[1].loot_image;
-            player3_head_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[0].loot_image;
-            player3_torso_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[1].loot_image;
-            player3_righthand_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[2].loot_image;
-            player3_lefthand_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[3].loot_image;
-            player3_legs_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[4].loot_image;
-            player3_inventory1_btn.BackgroundImage = GameGlobalData.HeroList[2].inventory[0].loot_image;
-            player3_inventory2_btn.BackgroundImage = GameGlobalData.HeroList[2].inventory[1].loot_image;
-            player4_head_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[0].loot_image;
-            player4_torso_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[1].loot_image;
-            player4_righthand_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[2].loot_image;
-            player4_lefthand_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[3].loot_image;
-            player4_legs_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[4].loot_image;
-            player4_inventory1_btn.BackgroundImage = GameGlobalData.HeroList[3].inventory[0].loot_image;
-            player4_inventory2_btn.BackgroundImage = GameGlobalData.HeroList[3].inventory[1].loot_image;
+            player1_head_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[0].loot_image_right;
+            player1_torso_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[1].loot_image_right;
+            player1_righthand_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[2].loot_image_right;
+            player1_lefthand_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[3].loot_image_right;
+            player1_legs_btn.BackgroundImage = GameGlobalData.HeroList[0].equiped_loot[4].loot_image_right;
+            player1_inventory1_btn.BackgroundImage = GameGlobalData.HeroList[0].inventory[0].loot_image_right;
+            player1_inventory2_btn.BackgroundImage = GameGlobalData.HeroList[0].inventory[1].loot_image_right;
+            player2_head_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[0].loot_image_right;
+            player2_torso_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[1].loot_image_right;
+            player2_righthand_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[2].loot_image_right;
+            player2_lefthand_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[3].loot_image_right;
+            player2_legs_btn.BackgroundImage = GameGlobalData.HeroList[1].equiped_loot[4].loot_image_right;
+            player2_inventory1_btn.BackgroundImage = GameGlobalData.HeroList[1].inventory[0].loot_image_right;
+            player2_inventory2_btn.BackgroundImage = GameGlobalData.HeroList[1].inventory[1].loot_image_right;
+            player3_head_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[0].loot_image_right;
+            player3_torso_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[1].loot_image_right;
+            player3_righthand_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[2].loot_image_right;
+            player3_lefthand_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[3].loot_image_right;
+            player3_legs_btn.BackgroundImage = GameGlobalData.HeroList[2].equiped_loot[4].loot_image_right;
+            player3_inventory1_btn.BackgroundImage = GameGlobalData.HeroList[2].inventory[0].loot_image_right;
+            player3_inventory2_btn.BackgroundImage = GameGlobalData.HeroList[2].inventory[1].loot_image_right;
+            player4_head_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[0].loot_image_right;
+            player4_torso_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[1].loot_image_right;
+            player4_righthand_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[2].loot_image_right;
+            player4_lefthand_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[3].loot_image_right;
+            player4_legs_btn.BackgroundImage = GameGlobalData.HeroList[3].equiped_loot[4].loot_image_right;
+            player4_inventory1_btn.BackgroundImage = GameGlobalData.HeroList[3].inventory[0].loot_image_right;
+            player4_inventory2_btn.BackgroundImage = GameGlobalData.HeroList[3].inventory[1].loot_image_right;
         }
-
-        private void some_button_click(Button pressed_button, Loot variable_loot, Button some_painted_button)
-        {          
-            if (variable_loot == null)
+        private Loot loot_take_off(Hero hero, int equipped_index)
+        {
+            Loot variable_buffer;
+            variable_buffer = hero.equiped_loot[equipped_index];
+            hero.equiped_loot[equipped_index] = null;
+            return variable_buffer;
+        }
+        private void put_some_loot_in_buffer(Hero hero, string key, int loot_index, Button pressed_button)
+        {
+            bool success_putting = false;
+            if (key == "eqp")
+            {
+                if (hero.equiped_loot[loot_index].type_of_bodypart == "Дворучне")
+                {
+                    loot_buffer = hero.equiped_loot[loot_index];
+                    hero.equiped_loot[2] = null;
+                    hero.equiped_loot[3] = null;
+                    success_putting = true;
+                }
+                else
+                {
+                    if (hero.equiped_loot[loot_index] != null)
+                    {
+                        loot_buffer = hero.equiped_loot[loot_index];
+                        hero.equiped_loot[loot_index] = null;
+                        success_putting = true;
+                    }
+                }                               
+            }
+            else if (key == "inv")
+            {
+                if (hero.inventory[loot_index].type_of_bodypart == "Дворучне")
+                {
+                    loot_buffer = hero.inventory[loot_index];
+                    hero.inventory[loot_index] = null;
+                    success_putting = true;
+                }
+                else
+                {
+                    if (hero.inventory[loot_index] != null)
+                    {
+                        loot_buffer = hero.inventory[loot_index];
+                        hero.inventory[loot_index] = null;
+                        success_putting = true;
+                    }
+                }                
+            }
+            if (success_putting == true)
             {
                 pressed_button.BackColor = Color.Green;
-                some_painted_button = pressed_button;                
+                some_painted_button_before = pressed_button;
+            }
+        }
+        private void some_button_click (Button pressed_button)
+        {                     
+            if (loot_buffer == null)
+            {                              
                 switch (pressed_button.Name)
                 {
                     case "player1_head_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[0] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[0].equiped_loot[0];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[0], "eqp", 0, pressed_button);
                         break;
                     case "player1_torso_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[1] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[0].equiped_loot[1];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[0], "eqp", 1, pressed_button);
                         break;
                     case "player1_righthand_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[2] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[0].equiped_loot[2];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[0], "eqp", 2, pressed_button);
                         break;
                     case "player1_lefthand_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[3] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[0].equiped_loot[3];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[0], "eqp", 3, pressed_button);
                         break;
                     case "player1_legs_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[4] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[0].equiped_loot[4];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[0], "eqp", 4, pressed_button);
                         break;
                     case "player1_inventory1_btn":
-                        if (GameGlobalData.HeroList[0].inventory[0] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[0].inventory[0];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[0], "inv", 0, pressed_button);
                         break;
                     case "player1_inventory2_btn":
-                        if (GameGlobalData.HeroList[0].inventory[1] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[0].inventory[1];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[0], "inv", 1, pressed_button);
                         break;
                     case "player2_head_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[0] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[1].equiped_loot[0];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[1], "eqp", 0, pressed_button);
                         break;
                     case "player2_torso_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[1] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[1].equiped_loot[1];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[1], "eqp", 1, pressed_button);
                         break;
                     case "player2_righthand_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[2] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[1].equiped_loot[2];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[1], "eqp", 2, pressed_button);
                         break;
                     case "player2_lefthand_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[3] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[1].equiped_loot[3];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[1], "eqp", 3, pressed_button);
                         break;
                     case "player2_legs_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[4] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[1].equiped_loot[4];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[1], "eqp", 4, pressed_button);
                         break;
                     case "player2_inventory1_btn":
-                        if (GameGlobalData.HeroList[1].inventory[0] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[1].inventory[0];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[1], "inv", 0, pressed_button);
                         break;
                     case "player2_inventory2_btn":
-                        if (GameGlobalData.HeroList[1].inventory[1] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[1].inventory[1];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[1], "inv", 1, pressed_button);
                         break;
                     case "player3_head_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[0] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[2].equiped_loot[0];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[2], "eqp", 0, pressed_button);
                         break;
                     case "player3_torso_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[1] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[2].equiped_loot[1];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[2], "eqp", 1, pressed_button);
                         break;
                     case "player3_righthand_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[2] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[2].equiped_loot[2];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[2], "eqp", 2, pressed_button);
                         break;
                     case "player3_lefthand_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[3] != null)
-                        {
-                             variable_loot = GameGlobalData.HeroList[2].equiped_loot[3];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[2], "eqp", 3, pressed_button);
                         break;
                     case "player3_legs_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[4] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[2].equiped_loot[4];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[2], "eqp", 4, pressed_button);
                         break;
                     case "player3_inventory1_btn":
-                        if (GameGlobalData.HeroList[2].inventory[0] != null)
-                        {
-                           variable_loot = GameGlobalData.HeroList[2].inventory[0];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[2], "inv", 0, pressed_button);
                         break;
                     case "player3_inventory2_btn":
-                        if (GameGlobalData.HeroList[2].inventory[1] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[2].inventory[1];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[2], "inv", 1, pressed_button);
                         break;
                     case "player4_head_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[0] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[3].equiped_loot[0];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[3], "eqp", 0, pressed_button);
                         break;
                     case "player4_torso_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[1] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[3].equiped_loot[1];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[3], "eqp", 1, pressed_button);
                         break;
                     case "player4_righthand_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[2] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[3].equiped_loot[2];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[3], "eqp", 2, pressed_button);
                         break;
                     case "player4_lefthand_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[3] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[3].equiped_loot[3];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[3], "eqp", 3, pressed_button);
                         break;
                     case "player4_legs_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[4] != null)
-                        {
-                           variable_loot = GameGlobalData.HeroList[3].equiped_loot[4];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[3], "eqp", 4, pressed_button);
                         break;
                     case "player4_inventory1_btn":
-                        if (GameGlobalData.HeroList[3].inventory[0] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[3].inventory[0];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[3], "inv", 0, pressed_button);
                         break;
                     case "player4_inventory2_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[1] != null)
-                        {
-                            variable_loot = GameGlobalData.HeroList[3].equiped_loot[1];
-                        }
+                        put_some_loot_in_buffer(GameGlobalData.HeroList[3], "inv", 1, pressed_button);
                         break;
                 }
             }
             else
-            {
-                some_painted_button.BackColor = Color.Transparent;
+            {              
                 switch (pressed_button.Name)
                 {
                     case "player1_head_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[0] == null)
-                        {
-                            GameGlobalData.HeroList[0].equiped_loot[0] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Голова", GameGlobalData.HeroList[0], 0);
                         break;
                     case "player1_torso_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[1] == null)
-                        {
-                            GameGlobalData.HeroList[0].equiped_loot[1] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Торс", GameGlobalData.HeroList[0], 1);                        
                         break;
                     case "player1_righthand_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[2] == null)
-                        {
-                            GameGlobalData.HeroList[0].equiped_loot[2] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Рука", GameGlobalData.HeroList[0], 2);
                         break;
                     case "player1_lefthand_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[3] == null)
-                        {
-                            GameGlobalData.HeroList[0].equiped_loot[3] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Рука", GameGlobalData.HeroList[0], 3);
                         break;
                     case "player1_legs_btn":
-                        if (GameGlobalData.HeroList[0].equiped_loot[4] == null)
-                        {
-                            GameGlobalData.HeroList[0].equiped_loot[4] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Ноги", GameGlobalData.HeroList[0], 4);
                         break;
                     case "player1_inventory1_btn":
-                        if (GameGlobalData.HeroList[0].inventory[0] == null)
-                        {
-                            GameGlobalData.HeroList[0].inventory[0] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        
                         break;
                     case "player1_inventory2_btn":
-                        if (GameGlobalData.HeroList[0].inventory[1] == null)
-                        {
-                            GameGlobalData.HeroList[0].inventory[1] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        
                         break;
                     case "player2_head_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[0] == null)
-                        {
-                            GameGlobalData.HeroList[1].equiped_loot[0] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Голова", GameGlobalData.HeroList[1], 0);
                         break;
                     case "player2_torso_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[1] == null)
-                        {
-                            GameGlobalData.HeroList[1].equiped_loot[1] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Торс", GameGlobalData.HeroList[1], 1);
                         break;
                     case "player2_righthand_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[2] == null)
-                        {
-                            GameGlobalData.HeroList[1].equiped_loot[2] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-
-                        }
+                        loot_equip("Рука", GameGlobalData.HeroList[1], 2);
                         break;
                     case "player2_lefthand_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[3] == null)
-                        {
-                            GameGlobalData.HeroList[1].equiped_loot[3] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Рука", GameGlobalData.HeroList[1], 3);
                         break;
                     case "player2_legs_btn":
-                        if (GameGlobalData.HeroList[1].equiped_loot[4] == null)
-                        {
-                            GameGlobalData.HeroList[1].equiped_loot[4] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Ноги", GameGlobalData.HeroList[1], 4);
                         break;
                     case "player2_inventory1_btn":
-                        if (GameGlobalData.HeroList[1].inventory[0] == null)
-                        {
-                            GameGlobalData.HeroList[1].inventory[0] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                       
                         break;
                     case "player2_inventory2_btn":
-                        if (GameGlobalData.HeroList[1].inventory[1] == null)
-                        {
-                            GameGlobalData.HeroList[1].inventory[1] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        
                         break;
                     case "player3_head_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[0] == null)
-                        {
-                            GameGlobalData.HeroList[2].equiped_loot[0] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Голова", GameGlobalData.HeroList[2], 0);
                         break;
                     case "player3_torso_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[1] == null)
-                        {
-                            GameGlobalData.HeroList[2].equiped_loot[1] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Торс", GameGlobalData.HeroList[2], 1);
                         break;
                     case "player3_righthand_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[2] == null)
-                        {
-                            GameGlobalData.HeroList[2].equiped_loot[2] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Рука", GameGlobalData.HeroList[2], 2);
                         break;
                     case "player3_lefthand_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[3] == null)
-                        {
-                            GameGlobalData.HeroList[2].equiped_loot[3] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Рука", GameGlobalData.HeroList[2], 3);
                         break;
                     case "player3_legs_btn":
-                        if (GameGlobalData.HeroList[2].equiped_loot[4] == null)
-                        {
-                            GameGlobalData.HeroList[2].equiped_loot[4] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Ноги", GameGlobalData.HeroList[2], 4);
                         break;
                     case "player3_inventory1_btn":
-                        if (GameGlobalData.HeroList[2].inventory[0] == null)
-                        {
-                            GameGlobalData.HeroList[2].inventory[0] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        
                         break;
                     case "player3_inventory2_btn":
-                        if (GameGlobalData.HeroList[2].inventory[1] == null)
-                        {
-                            GameGlobalData.HeroList[2].inventory[1] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        
                         break;
                     case "player4_head_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[0] == null)
-                        {
-                            GameGlobalData.HeroList[3].equiped_loot[0] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Голова", GameGlobalData.HeroList[3], 0);
                         break;
                     case "player4_torso_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[1] == null)
-                        {
-                            GameGlobalData.HeroList[3].equiped_loot[1] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Торс", GameGlobalData.HeroList[3], 1);
                         break;
                     case "player4_righthand_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[2] == null)
-                        {
-                            GameGlobalData.HeroList[3].equiped_loot[2] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Рука", GameGlobalData.HeroList[3], 2);
                         break;
                     case "player4_lefthand_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[3] == null)
-                        {
-                            GameGlobalData.HeroList[3].equiped_loot[3] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Рука", GameGlobalData.HeroList[3], 3);
                         break;
                     case "player4_legs_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[4] == null)
-                        {
-                            GameGlobalData.HeroList[3].equiped_loot[4] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                        loot_equip("Ноги", GameGlobalData.HeroList[3], 4);
                         break;
-                    case "player4_inventory1_btn":
-                        if (GameGlobalData.HeroList[3].inventory[0] == null)
-                        {
-                            GameGlobalData.HeroList[3].inventory[0] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
+                    case "player4_inventory1_btn":         
+                        
                         break;
                     case "player4_inventory2_btn":
-                        if (GameGlobalData.HeroList[3].equiped_loot[1] == null)
-                        {
-                            GameGlobalData.HeroList[3].equiped_loot[1] = variable_loot;
-                            set_looticon();
-                            variable_loot = null;
-                        }
-                        break;                   
-                }
+                        
+                        break;                       
+                }               
+                set_looticon();
             }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void loot_move_to_inventory(Button pressed_button)
+        {
+
+        }
+        private void loot_equip(string loot_bodytype_in_equipped, Hero hero, int equipped_index)
+        {
+            if (loot_buffer.type_of_bodypart == "Дворучне")
+            {
+                if (hero.equiped_loot[2] == null && hero.equiped_loot[2] == null)
+                {
+                    if (loot_bodytype_in_equipped == "Рука")
+                    {
+                        if (hero.level >= loot_buffer.min_level)
+                        {
+                            hero.equiped_loot[2] = loot_buffer;
+                            hero.equiped_loot[3] = loot_buffer;
+                            some_painted_button_before.BackColor = Color.FromArgb(223, 195, 126);
+                            loot_buffer = null;
+                        }
+                        else
+                        {
+                            ShowMessage showMessage_obj = new ShowMessage(" Недостатній рівень");
+                            showMessage_obj.ShowDialog();
+                        }
+                    }
+                    else
+                    {
+                        ShowMessage showMessage_obj = new ShowMessage(" Не можливо екіпірувати");
+                        showMessage_obj.ShowDialog();
+                    }
+                }
+                else
+                {
+                    ShowMessage showMessage_obj = new ShowMessage(" Для того, щоб екіпірувати дворучну зброю маю бути вільні обидві руки");
+                    showMessage_obj.ShowDialog();
+                }
+            }
+            else
+            {
+                if (hero.equiped_loot[equipped_index] == null)
+                {
+                    if (loot_bodytype_in_equipped == loot_buffer.type_of_bodypart)
+                    {
+                        if (hero.level >= loot_buffer.min_level)
+                        {
+                            hero.equiped_loot[equipped_index] = loot_buffer;
+                            some_painted_button_before.BackColor = Color.FromArgb(223, 195, 126);
+                            loot_buffer = null;
+                        }
+                        else
+                        {
+                            ShowMessage showMessage_obj = new ShowMessage(" Недостатній рівень");
+                            showMessage_obj.ShowDialog();
+                        }
+                    }
+                    else
+                    {
+                        ShowMessage showMessage_obj = new ShowMessage(" Не можливо екіпірувати");
+                        showMessage_obj.ShowDialog();
+                    }
+                }
+                else
+                {
+                    ShowMessage showMessage_obj = new ShowMessage(" Ця комірка зайнята");
+                    showMessage_obj.ShowDialog();
+                }
+            }           
         }
 
         // PLAYER 1
@@ -546,7 +441,7 @@ namespace Castle_Crushers
         }        
         private void player1_head_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player1_head_btn, loot_buffer, some_painted_button);
+            some_button_click(player1_head_btn);
         }
         private void player1_head_btn_MouseHover(object sender, EventArgs e)
         {
@@ -558,7 +453,7 @@ namespace Castle_Crushers
         }
         private void player1_torso_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player1_torso_btn, loot_buffer, some_painted_button);
+            some_button_click(player1_torso_btn);
         }
         private void player1_torso_btn_MouseHover(object sender, EventArgs e)
         {
@@ -570,7 +465,7 @@ namespace Castle_Crushers
         }
         private void player1_righthand_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player1_righthand_btn, loot_buffer, some_painted_button);
+            some_button_click(player1_righthand_btn);
         }
         private void player1_righthand_btn_MouseHover(object sender, EventArgs e)
         {
@@ -582,7 +477,7 @@ namespace Castle_Crushers
         }
         private void player1_lefthand_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player1_lefthand_btn, loot_buffer, some_painted_button);
+            some_button_click(player1_lefthand_btn);
         }
         private void player1_lefthand_btn_MouseHover(object sender, EventArgs e)
         {
@@ -594,7 +489,7 @@ namespace Castle_Crushers
         }
         private void player1_legs_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player1_legs_btn, loot_buffer, some_painted_button);
+            some_button_click(player1_legs_btn);
         }
         private void player1_legs_btn_MouseHover(object sender, EventArgs e)
         {
@@ -606,7 +501,7 @@ namespace Castle_Crushers
         }
         private void player1_inventory1_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player1_inventory1_btn, loot_buffer, some_painted_button);
+            some_button_click(player1_inventory1_btn);
         }
         private void player1_inventory1_btn_MouseHover(object sender, EventArgs e)
         {
@@ -618,7 +513,7 @@ namespace Castle_Crushers
         }
         private void player1_inventory2_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player1_inventory2_btn, loot_buffer, some_painted_button);
+            some_button_click(player1_inventory2_btn);
         }
         private void player1_inventory2_btn_MouseHover(object sender, EventArgs e)
         {
@@ -652,7 +547,7 @@ namespace Castle_Crushers
         }
         private void player2_head_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player2_head_btn, loot_buffer, some_painted_button);
+            some_button_click(player2_head_btn);
         }
         private void player2_head_btn_MouseHover(object sender, EventArgs e)
         {
@@ -664,7 +559,7 @@ namespace Castle_Crushers
         }
         private void player2_torso_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player2_torso_btn, loot_buffer, some_painted_button);
+            some_button_click(player2_torso_btn);
         }       
         private void player2_torso_btn_MouseHover(object sender, EventArgs e)
         {
@@ -676,7 +571,7 @@ namespace Castle_Crushers
         }
         private void player2_righthand_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player2_righthand_btn, loot_buffer, some_painted_button);
+            some_button_click(player2_righthand_btn);
         }
         private void player2_righthand_btn_MouseHover(object sender, EventArgs e)
         {
@@ -688,7 +583,7 @@ namespace Castle_Crushers
         }
         private void player2_lefthand_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player2_lefthand_btn, loot_buffer, some_painted_button);
+            some_button_click(player2_lefthand_btn);
         }
         private void player2_lefthand_btn_MouseHover(object sender, EventArgs e)
         {
@@ -700,7 +595,7 @@ namespace Castle_Crushers
         }
         private void player2_legs_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player2_legs_btn, loot_buffer, some_painted_button);
+            some_button_click(player2_legs_btn);
         }
         private void player2_legs_btn_MouseHover(object sender, EventArgs e)
         {
@@ -712,7 +607,7 @@ namespace Castle_Crushers
         }
         private void player2_inventory1_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player2_inventory1_btn, loot_buffer, some_painted_button);
+            some_button_click(player2_inventory1_btn);
         }
         private void player2_inventory1_btn_MouseHover(object sender, EventArgs e)
         {
@@ -724,7 +619,7 @@ namespace Castle_Crushers
         }
         private void player2_inventory2_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player2_inventory2_btn, loot_buffer, some_painted_button);
+            some_button_click(player2_inventory2_btn);
         }
         private void player2_inventory2_btn_MouseHover(object sender, EventArgs e)
         {
@@ -750,7 +645,7 @@ namespace Castle_Crushers
         }
         private void player3_head_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player3_head_btn, loot_buffer, some_painted_button);
+            some_button_click(player3_head_btn);
         }
         private void player3_head_btn_MouseHover(object sender, EventArgs e)
         {
@@ -762,7 +657,7 @@ namespace Castle_Crushers
         }
         private void player3_torso_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player3_torso_btn, loot_buffer, some_painted_button);
+            some_button_click(player3_torso_btn);
         }
         private void player3_torso_btn_MouseHover(object sender, EventArgs e)
         {
@@ -774,7 +669,7 @@ namespace Castle_Crushers
         }
         private void player3_righthand_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player3_righthand_btn, loot_buffer, some_painted_button);
+            some_button_click(player3_righthand_btn);
         }
         private void player3_righthand_btn_MouseHover(object sender, EventArgs e)
         {
@@ -786,7 +681,7 @@ namespace Castle_Crushers
         }
         private void player3_lefthand_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player3_lefthand_btn, loot_buffer, some_painted_button);
+            some_button_click(player3_lefthand_btn);
         }
         private void player3_lefthand_btn_MouseHover(object sender, EventArgs e)
         {
@@ -798,7 +693,7 @@ namespace Castle_Crushers
         }
         private void player3_legs_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player3_legs_btn, loot_buffer, some_painted_button);
+            some_button_click(player3_legs_btn);
         }
         private void player3_legs_btn_MouseHover(object sender, EventArgs e)
         {
@@ -810,7 +705,7 @@ namespace Castle_Crushers
         }
         private void player3_inventory1_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player3_inventory1_btn, loot_buffer, some_painted_button);
+            some_button_click(player3_inventory1_btn);
         }
         private void player3_inventory1_btn_MouseHover(object sender, EventArgs e)
         {
@@ -822,7 +717,7 @@ namespace Castle_Crushers
         }
         private void player3_inventory2_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player3_inventory2_btn, loot_buffer, some_painted_button);
+            some_button_click(player3_inventory2_btn);
         }
         private void player3_inventory2_btn_MouseHover(object sender, EventArgs e)
         {
@@ -849,7 +744,7 @@ namespace Castle_Crushers
         }
         private void player4_head_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player4_head_btn, loot_buffer, some_painted_button);
+            some_button_click(player4_head_btn);
         }
         private void player4_head_btn_MouseHover(object sender, EventArgs e)
         {
@@ -863,7 +758,7 @@ namespace Castle_Crushers
 
         private void player4_torso_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player4_torso_btn, loot_buffer, some_painted_button);
+            some_button_click(player4_torso_btn);
         }
         private void player4_torso_btn_MouseHover(object sender, EventArgs e)
         {
@@ -875,7 +770,7 @@ namespace Castle_Crushers
         }
         private void player4_righthand_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player4_righthand_btn, loot_buffer, some_painted_button);
+            some_button_click(player4_righthand_btn);
         }
         private void player4_righthand_btn_MouseHover(object sender, EventArgs e)
         {
@@ -887,7 +782,7 @@ namespace Castle_Crushers
         }
         private void player4_lefthand_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player4_lefthand_btn, loot_buffer, some_painted_button);
+            some_button_click(player4_lefthand_btn);
         }
         private void player4_lefthand_btn_MouseHover(object sender, EventArgs e)
         {
@@ -899,7 +794,7 @@ namespace Castle_Crushers
         }
         private void player4_legs_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player4_legs_btn, loot_buffer, some_painted_button);
+            some_button_click(player4_legs_btn);
         }
         private void player4_legs_btn_MouseHover(object sender, EventArgs e)
         {
@@ -911,7 +806,7 @@ namespace Castle_Crushers
         }
         private void player4_inventory1_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player4_inventory1_btn, loot_buffer, some_painted_button);
+            some_button_click(player4_inventory1_btn);
         }
         private void player4_inventory1_btn_MouseHover(object sender, EventArgs e)
         {
@@ -923,7 +818,7 @@ namespace Castle_Crushers
         }
         private void player4_inventory2_btn_Click(object sender, EventArgs e)
         {
-            some_button_click(player4_inventory2_btn, loot_buffer, some_painted_button);
+            some_button_click(player4_inventory2_btn);
         }
         private void player4_inventory2_btn_MouseHover(object sender, EventArgs e)
         {

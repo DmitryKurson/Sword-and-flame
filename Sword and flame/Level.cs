@@ -258,19 +258,24 @@ namespace Castle_Crushers
                 {
                     level_heroobjinfo_inventory01Value_lbl.Text = "Пусто";
                     level_heroobjinfo_inventory02Value_lbl.Visible = false;
-                    level_heroobjinfo_inventory03Value_lbl.Visible = false;
                 }
                 else if (variable_hero.inventory.Count == 1)
                 {             
                     level_heroobjinfo_inventory01Value_lbl.Text = variable_hero.inventory[0].name;
                     level_heroobjinfo_inventory02Value_lbl.Visible = false;
-                    level_heroobjinfo_inventory03Value_lbl.Visible = false;
                 }
                 else if (variable_hero.inventory.Count == 2)
                 {                   
                     level_heroobjinfo_inventory01Value_lbl.Text = variable_hero.inventory[0].name;
                     level_heroobjinfo_inventory02Value_lbl.Text = variable_hero.inventory[1].name;
-                    level_heroobjinfo_inventory03Value_lbl.Visible = false;
+                }
+                if (variable_hero.current_health <= 0)
+                {
+                    level_heroobjInfo_able_reanimate_lbl.Visible = true;
+                }
+                else
+                {
+                    level_heroobjInfo_able_reanimate_lbl.Visible = false;
                 }
             }
             else if (level_map[x, y] is Monster)
@@ -406,6 +411,14 @@ namespace Castle_Crushers
                 level_lootobjinfo_speedBonusValue_lbl.Text = variable_loot.speed_bonus.ToString();
                 level_lootobjinfo_minlevelValue_lbl.Text = variable_loot.min_level.ToString();
                 level_lootobjinfo_lootPriceValue_lbl.Text = variable_loot.price.ToString();
+                level_lootobjinfo_able_to_pickup_lbl.Visible = false;
+                if (level_map[x, y].x == hero.x || level_map[x, y].y == hero.y)
+                {
+                    if (Math.Abs(level_map[x, y].x - hero.x) == 1 || Math.Abs(level_map[x, y].y - hero.y) == 1)
+                    {
+                        level_lootobjinfo_able_to_pickup_lbl.Visible = true;
+                    }                   
+                }
             }
             else
             {
@@ -887,14 +900,7 @@ namespace Castle_Crushers
                     }
                     if (level_map[x, y] is Loot)                // PAINT LOOT
                     {
-                        set_static_color(x, y, "loot");
-                        if (level_map[x, y].x == hero.x || level_map[x, y].y == hero.y)
-                        {
-                            if (Math.Abs(level_map[x, y].x - hero.x) == 1 || Math.Abs(level_map[x, y].y - hero.y) == 1)
-                            {
-                                level_map[x, y].name += "\n Можна підібрати";
-                            }
-                        }
+                        set_static_color(x, y, "loot");                        
                     }
                     if (level_map[x, y] is Hero && level_map[x, y].name != hero.name)                // PAINT ALLYES
                     {

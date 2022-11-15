@@ -93,14 +93,12 @@ namespace Castle_Crushers
             this.level_btn14 = new System.Windows.Forms.Button();
             this.level_heroobjinfo_name_lbl = new System.Windows.Forms.Label();
             this.level_heroinfo_panel = new System.Windows.Forms.Panel();
-            this.level_heroobjinfo_inventory03Value_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_level_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_levelValue_lbl = new System.Windows.Forms.Label();
-            this.level_heroobjInfo_options_lbl = new System.Windows.Forms.Label();
+            this.level_heroobjInfo_able_reanimate_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_inventory02Value_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_strengthValue_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_inventory01Value_lbl = new System.Windows.Forms.Label();
-            this.level_heroobjInfo_optionsValue_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_defenseValue_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_healthValue_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_speedValue_lbl = new System.Windows.Forms.Label();
@@ -112,10 +110,9 @@ namespace Castle_Crushers
             this.level_lootobjinfo_playerclass_lbl = new System.Windows.Forms.Label();
             this.level_lootobjinfo_minlevel_lbl = new System.Windows.Forms.Label();
             this.level_lootobjinfo_healthBonusValue_lbl = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_able_to_pickup_lbl = new System.Windows.Forms.Label();
             this.level_lootobjinfo_strengthBonusValue_lbl = new System.Windows.Forms.Label();
             this.level_lootobjinfo_speedBonusValue_lbl = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.level_lootobjinfo_defenseBonusValue_lbl = new System.Windows.Forms.Label();
             this.level_lootobjinfo_name_lbl = new System.Windows.Forms.Label();
             this.level_lootobjinfo_type_lbl = new System.Windows.Forms.Label();
@@ -132,7 +129,6 @@ namespace Castle_Crushers
             this.level_monsterobjinfo_healthValue_lbl = new System.Windows.Forms.Label();
             this.level_monsterinfo_battle_panel = new System.Windows.Forms.Panel();
             this.level_monsterobjinfo_posibilities_main_lbl = new System.Windows.Forms.Label();
-            this.level_monsterobjinfo_posibilities_consequences_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_posibilities_main_defense_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_posibilities_hero_health_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_posibilities_main_health_lbl = new System.Windows.Forms.Label();
@@ -152,34 +148,32 @@ namespace Castle_Crushers
             this.level_monsterobjinfo_nameValue_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_main_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_typeValue_lbl = new System.Windows.Forms.Label();
+            this.level_monsterobjinfo_posibilities_consequences_lbl = new System.Windows.Forms.Label();
             this.battle_panel = new System.Windows.Forms.Panel();
             this.turn_owner_lbl = new System.Windows.Forms.Label();
             this.turn_owner = new System.Windows.Forms.Label();
             this.level_round_count_lbl = new System.Windows.Forms.Label();
             this.level_round_count = new System.Windows.Forms.Label();
             this.level_name_lbl = new System.Windows.Forms.Label();
-            this.level_turninfo_panel = new System.Windows.Forms.Panel();
+            this.level_maininfo_panel = new System.Windows.Forms.Panel();
             this.level_count_of_moves_lbl = new System.Windows.Forms.Label();
             this.level_main_mission_lbl = new System.Windows.Forms.Label();
             this.level_count_of_moves = new System.Windows.Forms.Label();
-            this.Level_info_image_panel = new System.Windows.Forms.Panel();
-            this.background_parallax_panel = new System.Windows.Forms.Panel();
             this.level_heroinfo_panel.SuspendLayout();
             this.level_lootinfo_panel.SuspendLayout();
             this.level_monsterinfo_panel.SuspendLayout();
             this.level_monsterinfo_battle_panel.SuspendLayout();
             this.battle_panel.SuspendLayout();
-            this.level_turninfo_panel.SuspendLayout();
-            this.Level_info_image_panel.SuspendLayout();
-            this.background_parallax_panel.SuspendLayout();
+            this.level_maininfo_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Main_level_lbl
             // 
             this.Main_level_lbl.AutoSize = true;
-            this.Main_level_lbl.Location = new System.Drawing.Point(115, 70);
+            this.Main_level_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Main_level_lbl.Location = new System.Drawing.Point(116, 96);
             this.Main_level_lbl.Name = "Main_level_lbl";
-            this.Main_level_lbl.Size = new System.Drawing.Size(50, 20);
+            this.Main_level_lbl.Size = new System.Drawing.Size(58, 22);
             this.Main_level_lbl.TabIndex = 1;
             this.Main_level_lbl.Text = "label1";
             // 
@@ -199,7 +193,7 @@ namespace Castle_Crushers
             // 
             this.next_turn_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(210)))), ((int)(((byte)(173)))));
             this.next_turn_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.next_turn_btn.Location = new System.Drawing.Point(90, 240);
+            this.next_turn_btn.Location = new System.Drawing.Point(107, 240);
             this.next_turn_btn.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.next_turn_btn.Name = "next_turn_btn";
             this.next_turn_btn.Size = new System.Drawing.Size(170, 60);
@@ -221,19 +215,20 @@ namespace Castle_Crushers
             // level_heroobjinfo_nameValue_lbl
             // 
             this.level_heroobjinfo_nameValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_nameValue_lbl.Location = new System.Drawing.Point(85, 50);
+            this.level_heroobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_nameValue_lbl.Location = new System.Drawing.Point(105, 45);
             this.level_heroobjinfo_nameValue_lbl.Name = "level_heroobjinfo_nameValue_lbl";
-            this.level_heroobjinfo_nameValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_heroobjinfo_nameValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_heroobjinfo_nameValue_lbl.TabIndex = 34;
             this.level_heroobjinfo_nameValue_lbl.Text = "label2";
             // 
             // level_heroobjinfo_main_lbl
             // 
             this.level_heroobjinfo_main_lbl.AutoSize = true;
-            this.level_heroobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_main_lbl.Location = new System.Drawing.Point(91, 6);
+            this.level_heroobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_main_lbl.Location = new System.Drawing.Point(62, 0);
             this.level_heroobjinfo_main_lbl.Name = "level_heroobjinfo_main_lbl";
-            this.level_heroobjinfo_main_lbl.Size = new System.Drawing.Size(105, 20);
+            this.level_heroobjinfo_main_lbl.Size = new System.Drawing.Size(123, 25);
             this.level_heroobjinfo_main_lbl.TabIndex = 35;
             this.level_heroobjinfo_main_lbl.Text = "Інформація";
             this.level_heroobjinfo_main_lbl.Click += new System.EventHandler(this.label3_Click);
@@ -241,63 +236,70 @@ namespace Castle_Crushers
             // level_heroobjinfo_typeValue_lbl
             // 
             this.level_heroobjinfo_typeValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_typeValue_lbl.Location = new System.Drawing.Point(85, 88);
+            this.level_heroobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_typeValue_lbl.Location = new System.Drawing.Point(105, 80);
             this.level_heroobjinfo_typeValue_lbl.Name = "level_heroobjinfo_typeValue_lbl";
-            this.level_heroobjinfo_typeValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_heroobjinfo_typeValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_heroobjinfo_typeValue_lbl.TabIndex = 36;
             this.level_heroobjinfo_typeValue_lbl.Text = "label4";
             // 
             // level_heroobjinfo_inventory_lbl
             // 
             this.level_heroobjinfo_inventory_lbl.AutoSize = true;
-            this.level_heroobjinfo_inventory_lbl.Location = new System.Drawing.Point(5, 312);
+            this.level_heroobjinfo_inventory_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_inventory_lbl.Location = new System.Drawing.Point(5, 290);
             this.level_heroobjinfo_inventory_lbl.Name = "level_heroobjinfo_inventory_lbl";
-            this.level_heroobjinfo_inventory_lbl.Size = new System.Drawing.Size(73, 20);
+            this.level_heroobjinfo_inventory_lbl.Size = new System.Drawing.Size(87, 22);
             this.level_heroobjinfo_inventory_lbl.TabIndex = 37;
             this.level_heroobjinfo_inventory_lbl.Text = "Інвентар:";
             // 
             // level_heroobjinfo_defense_lbl
             // 
             this.level_heroobjinfo_defense_lbl.AutoSize = true;
-            this.level_heroobjinfo_defense_lbl.Location = new System.Drawing.Point(5, 162);
+            this.level_heroobjinfo_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_defense_lbl.Location = new System.Drawing.Point(5, 150);
             this.level_heroobjinfo_defense_lbl.Name = "level_heroobjinfo_defense_lbl";
-            this.level_heroobjinfo_defense_lbl.Size = new System.Drawing.Size(57, 20);
+            this.level_heroobjinfo_defense_lbl.Size = new System.Drawing.Size(72, 22);
             this.level_heroobjinfo_defense_lbl.TabIndex = 38;
             this.level_heroobjinfo_defense_lbl.Text = "Захист:";
             // 
             // level_heroobjinfo_speed_lbl
             // 
             this.level_heroobjinfo_speed_lbl.AutoSize = true;
-            this.level_heroobjinfo_speed_lbl.Location = new System.Drawing.Point(5, 238);
+            this.level_heroobjinfo_speed_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_speed_lbl.Location = new System.Drawing.Point(5, 220);
             this.level_heroobjinfo_speed_lbl.Name = "level_heroobjinfo_speed_lbl";
-            this.level_heroobjinfo_speed_lbl.Size = new System.Drawing.Size(83, 20);
+            this.level_heroobjinfo_speed_lbl.Size = new System.Drawing.Size(100, 22);
             this.level_heroobjinfo_speed_lbl.TabIndex = 39;
             this.level_heroobjinfo_speed_lbl.Text = "Швидкість:";
             // 
             // level_heroobjinfo_type_lbl
             // 
             this.level_heroobjinfo_type_lbl.AutoSize = true;
-            this.level_heroobjinfo_type_lbl.Location = new System.Drawing.Point(5, 88);
+            this.level_heroobjinfo_type_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_type_lbl.Location = new System.Drawing.Point(5, 80);
             this.level_heroobjinfo_type_lbl.Name = "level_heroobjinfo_type_lbl";
-            this.level_heroobjinfo_type_lbl.Size = new System.Drawing.Size(38, 20);
+            this.level_heroobjinfo_type_lbl.Size = new System.Drawing.Size(47, 22);
             this.level_heroobjinfo_type_lbl.TabIndex = 40;
             this.level_heroobjinfo_type_lbl.Text = "Тип:";
             // 
             // level_heroobjinfo_strength_lbl
             // 
             this.level_heroobjinfo_strength_lbl.AutoSize = true;
-            this.level_heroobjinfo_strength_lbl.Location = new System.Drawing.Point(5, 125);
+            this.level_heroobjinfo_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_strength_lbl.Location = new System.Drawing.Point(5, 115);
             this.level_heroobjinfo_strength_lbl.Name = "level_heroobjinfo_strength_lbl";
-            this.level_heroobjinfo_strength_lbl.Size = new System.Drawing.Size(46, 20);
+            this.level_heroobjinfo_strength_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_heroobjinfo_strength_lbl.TabIndex = 41;
             this.level_heroobjinfo_strength_lbl.Text = "Сила:";
             // 
             // level_heroobjinfo_health_lbl
             // 
             this.level_heroobjinfo_health_lbl.AutoSize = true;
-            this.level_heroobjinfo_health_lbl.Location = new System.Drawing.Point(5, 200);
+            this.level_heroobjinfo_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_health_lbl.Location = new System.Drawing.Point(5, 185);
             this.level_heroobjinfo_health_lbl.Name = "level_heroobjinfo_health_lbl";
-            this.level_heroobjinfo_health_lbl.Size = new System.Drawing.Size(74, 20);
+            this.level_heroobjinfo_health_lbl.Size = new System.Drawing.Size(91, 22);
             this.level_heroobjinfo_health_lbl.TabIndex = 42;
             this.level_heroobjinfo_health_lbl.Text = "Здоров\'я:";
             // 
@@ -893,23 +895,22 @@ namespace Castle_Crushers
             // level_heroobjinfo_name_lbl
             // 
             this.level_heroobjinfo_name_lbl.AutoSize = true;
-            this.level_heroobjinfo_name_lbl.Location = new System.Drawing.Point(5, 50);
+            this.level_heroobjinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_name_lbl.Location = new System.Drawing.Point(5, 45);
             this.level_heroobjinfo_name_lbl.Name = "level_heroobjinfo_name_lbl";
-            this.level_heroobjinfo_name_lbl.Size = new System.Drawing.Size(38, 20);
+            this.level_heroobjinfo_name_lbl.Size = new System.Drawing.Size(46, 22);
             this.level_heroobjinfo_name_lbl.TabIndex = 0;
             this.level_heroobjinfo_name_lbl.Text = "Ім\'я:";
             // 
             // level_heroinfo_panel
             // 
             this.level_heroinfo_panel.BackColor = System.Drawing.Color.Transparent;
-            this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_inventory03Value_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_level_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_levelValue_lbl);
-            this.level_heroinfo_panel.Controls.Add(this.level_heroobjInfo_options_lbl);
+            this.level_heroinfo_panel.Controls.Add(this.level_heroobjInfo_able_reanimate_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_inventory02Value_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_strengthValue_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_inventory01Value_lbl);
-            this.level_heroinfo_panel.Controls.Add(this.level_heroobjInfo_optionsValue_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_defenseValue_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_healthValue_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_speedValue_lbl);
@@ -923,114 +924,105 @@ namespace Castle_Crushers
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_nameValue_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_main_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_typeValue_lbl);
-            this.level_heroinfo_panel.Location = new System.Drawing.Point(14, 0);
+            this.level_heroinfo_panel.Location = new System.Drawing.Point(67, 320);
             this.level_heroinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.level_heroinfo_panel.Name = "level_heroinfo_panel";
-            this.level_heroinfo_panel.Size = new System.Drawing.Size(286, 625);
+            this.level_heroinfo_panel.Size = new System.Drawing.Size(270, 400);
             this.level_heroinfo_panel.TabIndex = 97;
-            // 
-            // level_heroobjinfo_inventory03Value_lbl
-            // 
-            this.level_heroobjinfo_inventory03Value_lbl.AutoSize = true;
-            this.level_heroobjinfo_inventory03Value_lbl.Location = new System.Drawing.Point(85, 388);
-            this.level_heroobjinfo_inventory03Value_lbl.Name = "level_heroobjinfo_inventory03Value_lbl";
-            this.level_heroobjinfo_inventory03Value_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_heroobjinfo_inventory03Value_lbl.TabIndex = 102;
-            this.level_heroobjinfo_inventory03Value_lbl.Text = "label1";
             // 
             // level_heroobjinfo_level_lbl
             // 
             this.level_heroobjinfo_level_lbl.AutoSize = true;
-            this.level_heroobjinfo_level_lbl.Location = new System.Drawing.Point(5, 275);
+            this.level_heroobjinfo_level_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_level_lbl.Location = new System.Drawing.Point(5, 255);
             this.level_heroobjinfo_level_lbl.Name = "level_heroobjinfo_level_lbl";
-            this.level_heroobjinfo_level_lbl.Size = new System.Drawing.Size(57, 20);
+            this.level_heroobjinfo_level_lbl.Size = new System.Drawing.Size(70, 22);
             this.level_heroobjinfo_level_lbl.TabIndex = 100;
             this.level_heroobjinfo_level_lbl.Text = "Рівень:";
             // 
             // level_heroobjinfo_levelValue_lbl
             // 
             this.level_heroobjinfo_levelValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_levelValue_lbl.Location = new System.Drawing.Point(85, 275);
+            this.level_heroobjinfo_levelValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_levelValue_lbl.Location = new System.Drawing.Point(105, 255);
             this.level_heroobjinfo_levelValue_lbl.Name = "level_heroobjinfo_levelValue_lbl";
-            this.level_heroobjinfo_levelValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_heroobjinfo_levelValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_heroobjinfo_levelValue_lbl.TabIndex = 99;
             this.level_heroobjinfo_levelValue_lbl.Text = "label2";
             // 
-            // level_heroobjInfo_options_lbl
+            // level_heroobjInfo_able_reanimate_lbl
             // 
-            this.level_heroobjInfo_options_lbl.AutoSize = true;
-            this.level_heroobjInfo_options_lbl.Location = new System.Drawing.Point(5, 479);
-            this.level_heroobjInfo_options_lbl.Name = "level_heroobjInfo_options_lbl";
-            this.level_heroobjInfo_options_lbl.Size = new System.Drawing.Size(79, 20);
-            this.level_heroobjInfo_options_lbl.TabIndex = 50;
-            this.level_heroobjInfo_options_lbl.Text = "Можливо:";
+            this.level_heroobjInfo_able_reanimate_lbl.AutoSize = true;
+            this.level_heroobjInfo_able_reanimate_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjInfo_able_reanimate_lbl.ForeColor = System.Drawing.Color.Lime;
+            this.level_heroobjInfo_able_reanimate_lbl.Location = new System.Drawing.Point(36, 370);
+            this.level_heroobjInfo_able_reanimate_lbl.Name = "level_heroobjInfo_able_reanimate_lbl";
+            this.level_heroobjInfo_able_reanimate_lbl.Size = new System.Drawing.Size(177, 22);
+            this.level_heroobjInfo_able_reanimate_lbl.TabIndex = 50;
+            this.level_heroobjInfo_able_reanimate_lbl.Text = "Можна реанімувати";
             // 
             // level_heroobjinfo_inventory02Value_lbl
             // 
             this.level_heroobjinfo_inventory02Value_lbl.AutoSize = true;
-            this.level_heroobjinfo_inventory02Value_lbl.Location = new System.Drawing.Point(85, 350);
+            this.level_heroobjinfo_inventory02Value_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_inventory02Value_lbl.Location = new System.Drawing.Point(105, 325);
             this.level_heroobjinfo_inventory02Value_lbl.Name = "level_heroobjinfo_inventory02Value_lbl";
-            this.level_heroobjinfo_inventory02Value_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_heroobjinfo_inventory02Value_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_heroobjinfo_inventory02Value_lbl.TabIndex = 98;
             this.level_heroobjinfo_inventory02Value_lbl.Text = "label1";
             // 
             // level_heroobjinfo_strengthValue_lbl
             // 
             this.level_heroobjinfo_strengthValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(85, 125);
+            this.level_heroobjinfo_strengthValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(105, 115);
             this.level_heroobjinfo_strengthValue_lbl.Name = "level_heroobjinfo_strengthValue_lbl";
-            this.level_heroobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(58, 20);
+            this.level_heroobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(68, 22);
             this.level_heroobjinfo_strengthValue_lbl.TabIndex = 49;
             this.level_heroobjinfo_strengthValue_lbl.Text = "label10";
             // 
             // level_heroobjinfo_inventory01Value_lbl
             // 
             this.level_heroobjinfo_inventory01Value_lbl.AutoSize = true;
-            this.level_heroobjinfo_inventory01Value_lbl.Location = new System.Drawing.Point(85, 312);
+            this.level_heroobjinfo_inventory01Value_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_inventory01Value_lbl.Location = new System.Drawing.Point(105, 290);
             this.level_heroobjinfo_inventory01Value_lbl.Name = "level_heroobjinfo_inventory01Value_lbl";
-            this.level_heroobjinfo_inventory01Value_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_heroobjinfo_inventory01Value_lbl.Size = new System.Drawing.Size(250, 22);
             this.level_heroobjinfo_inventory01Value_lbl.TabIndex = 48;
-            this.level_heroobjinfo_inventory01Value_lbl.Text = "label9";
-            // 
-            // level_heroobjInfo_optionsValue_lbl
-            // 
-            this.level_heroobjInfo_optionsValue_lbl.AutoSize = true;
-            this.level_heroobjInfo_optionsValue_lbl.Location = new System.Drawing.Point(85, 479);
-            this.level_heroobjInfo_optionsValue_lbl.Name = "level_heroobjInfo_optionsValue_lbl";
-            this.level_heroobjInfo_optionsValue_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_heroobjInfo_optionsValue_lbl.TabIndex = 47;
-            this.level_heroobjInfo_optionsValue_lbl.Text = "label8";
+            this.level_heroobjinfo_inventory01Value_lbl.Text = "XXXXXXXXXXXXXXXXXXXX";
             // 
             // level_heroobjinfo_defenseValue_lbl
             // 
             this.level_heroobjinfo_defenseValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(85, 162);
+            this.level_heroobjinfo_defenseValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(105, 150);
             this.level_heroobjinfo_defenseValue_lbl.Name = "level_heroobjinfo_defenseValue_lbl";
-            this.level_heroobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_heroobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_heroobjinfo_defenseValue_lbl.TabIndex = 45;
             this.level_heroobjinfo_defenseValue_lbl.Text = "label6";
             // 
             // level_heroobjinfo_healthValue_lbl
             // 
             this.level_heroobjinfo_healthValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_healthValue_lbl.Location = new System.Drawing.Point(85, 200);
+            this.level_heroobjinfo_healthValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_healthValue_lbl.Location = new System.Drawing.Point(105, 185);
             this.level_heroobjinfo_healthValue_lbl.Name = "level_heroobjinfo_healthValue_lbl";
-            this.level_heroobjinfo_healthValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_heroobjinfo_healthValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_heroobjinfo_healthValue_lbl.TabIndex = 44;
             this.level_heroobjinfo_healthValue_lbl.Text = "label5";
             // 
             // level_heroobjinfo_speedValue_lbl
             // 
             this.level_heroobjinfo_speedValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_speedValue_lbl.Location = new System.Drawing.Point(85, 238);
+            this.level_heroobjinfo_speedValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_speedValue_lbl.Location = new System.Drawing.Point(105, 220);
             this.level_heroobjinfo_speedValue_lbl.Name = "level_heroobjinfo_speedValue_lbl";
-            this.level_heroobjinfo_speedValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_heroobjinfo_speedValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_heroobjinfo_speedValue_lbl.TabIndex = 43;
             this.level_heroobjinfo_speedValue_lbl.Text = "label1";
             // 
             // level_lootinfo_panel
             // 
-            this.level_lootinfo_panel.Controls.Add(this.level_monsterinfo_panel);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_lootPriceValue_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_playerclassValue_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_minlevelValue_lbl);
@@ -1038,10 +1030,9 @@ namespace Castle_Crushers
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_playerclass_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_minlevel_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_healthBonusValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.label23);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_able_to_pickup_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_strengthBonusValue_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_speedBonusValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.label26);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_defenseBonusValue_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_name_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_type_lbl);
@@ -1052,46 +1043,50 @@ namespace Castle_Crushers
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_nameValue_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_main_lbl);
             this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_typeValue_lbl);
-            this.level_lootinfo_panel.Location = new System.Drawing.Point(14, 0);
+            this.level_lootinfo_panel.Location = new System.Drawing.Point(67, 320);
             this.level_lootinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.level_lootinfo_panel.Name = "level_lootinfo_panel";
-            this.level_lootinfo_panel.Size = new System.Drawing.Size(286, 625);
+            this.level_lootinfo_panel.Size = new System.Drawing.Size(270, 400);
             this.level_lootinfo_panel.TabIndex = 101;
             this.level_lootinfo_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.level_lootinfo_panel_Paint);
             // 
             // level_lootobjinfo_lootPriceValue_lbl
             // 
             this.level_lootobjinfo_lootPriceValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_lootPriceValue_lbl.Location = new System.Drawing.Point(205, 354);
+            this.level_lootobjinfo_lootPriceValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_lootPriceValue_lbl.Location = new System.Drawing.Point(189, 325);
             this.level_lootobjinfo_lootPriceValue_lbl.Name = "level_lootobjinfo_lootPriceValue_lbl";
-            this.level_lootobjinfo_lootPriceValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_lootPriceValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_lootobjinfo_lootPriceValue_lbl.TabIndex = 101;
             this.level_lootobjinfo_lootPriceValue_lbl.Text = "label4";
             // 
             // level_lootobjinfo_playerclassValue_lbl
             // 
             this.level_lootobjinfo_playerclassValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_playerclassValue_lbl.Location = new System.Drawing.Point(60, 125);
+            this.level_lootobjinfo_playerclassValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_playerclassValue_lbl.Location = new System.Drawing.Point(74, 115);
             this.level_lootobjinfo_playerclassValue_lbl.Name = "level_lootobjinfo_playerclassValue_lbl";
-            this.level_lootobjinfo_playerclassValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_playerclassValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_lootobjinfo_playerclassValue_lbl.TabIndex = 109;
             this.level_lootobjinfo_playerclassValue_lbl.Text = "label1";
             // 
             // level_lootobjinfo_minlevelValue_lbl
             // 
             this.level_lootobjinfo_minlevelValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_minlevelValue_lbl.Location = new System.Drawing.Point(205, 312);
+            this.level_lootobjinfo_minlevelValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_minlevelValue_lbl.Location = new System.Drawing.Point(189, 290);
             this.level_lootobjinfo_minlevelValue_lbl.Name = "level_lootobjinfo_minlevelValue_lbl";
-            this.level_lootobjinfo_minlevelValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_minlevelValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_lootobjinfo_minlevelValue_lbl.TabIndex = 108;
             this.level_lootobjinfo_minlevelValue_lbl.Text = "label1";
             // 
             // level_lootobjinfo_lootPrice_lbl
             // 
             this.level_lootobjinfo_lootPrice_lbl.AutoSize = true;
-            this.level_lootobjinfo_lootPrice_lbl.Location = new System.Drawing.Point(5, 350);
+            this.level_lootobjinfo_lootPrice_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_lootPrice_lbl.Location = new System.Drawing.Point(5, 325);
             this.level_lootobjinfo_lootPrice_lbl.Name = "level_lootobjinfo_lootPrice_lbl";
-            this.level_lootobjinfo_lootPrice_lbl.Size = new System.Drawing.Size(44, 20);
+            this.level_lootobjinfo_lootPrice_lbl.Size = new System.Drawing.Size(52, 22);
             this.level_lootobjinfo_lootPrice_lbl.TabIndex = 46;
             this.level_lootobjinfo_lootPrice_lbl.Text = "Ціна:";
             this.level_lootobjinfo_lootPrice_lbl.Click += new System.EventHandler(this.level_objinfo_lootPrice_lbl_Click);
@@ -1099,154 +1094,161 @@ namespace Castle_Crushers
             // level_lootobjinfo_playerclass_lbl
             // 
             this.level_lootobjinfo_playerclass_lbl.AutoSize = true;
-            this.level_lootobjinfo_playerclass_lbl.Location = new System.Drawing.Point(5, 125);
+            this.level_lootobjinfo_playerclass_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_playerclass_lbl.Location = new System.Drawing.Point(5, 115);
             this.level_lootobjinfo_playerclass_lbl.Name = "level_lootobjinfo_playerclass_lbl";
-            this.level_lootobjinfo_playerclass_lbl.Size = new System.Drawing.Size(44, 20);
+            this.level_lootobjinfo_playerclass_lbl.Size = new System.Drawing.Size(56, 22);
             this.level_lootobjinfo_playerclass_lbl.TabIndex = 106;
             this.level_lootobjinfo_playerclass_lbl.Text = "Клас:";
             // 
             // level_lootobjinfo_minlevel_lbl
             // 
             this.level_lootobjinfo_minlevel_lbl.AutoSize = true;
-            this.level_lootobjinfo_minlevel_lbl.Location = new System.Drawing.Point(5, 312);
+            this.level_lootobjinfo_minlevel_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_minlevel_lbl.Location = new System.Drawing.Point(5, 290);
             this.level_lootobjinfo_minlevel_lbl.Name = "level_lootobjinfo_minlevel_lbl";
-            this.level_lootobjinfo_minlevel_lbl.Size = new System.Drawing.Size(154, 20);
+            this.level_lootobjinfo_minlevel_lbl.Size = new System.Drawing.Size(177, 22);
             this.level_lootobjinfo_minlevel_lbl.TabIndex = 100;
             this.level_lootobjinfo_minlevel_lbl.Text = "Мінімальний рівень:";
             // 
             // level_lootobjinfo_healthBonusValue_lbl
             // 
             this.level_lootobjinfo_healthBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(205, 238);
+            this.level_lootobjinfo_healthBonusValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(189, 220);
             this.level_lootobjinfo_healthBonusValue_lbl.Name = "level_lootobjinfo_healthBonusValue_lbl";
-            this.level_lootobjinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_lootobjinfo_healthBonusValue_lbl.TabIndex = 99;
             this.level_lootobjinfo_healthBonusValue_lbl.Text = "label2";
             // 
-            // label23
+            // level_lootobjinfo_able_to_pickup_lbl
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(7, 525);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(79, 20);
-            this.label23.TabIndex = 50;
-            this.label23.Text = "Можливо:";
+            this.level_lootobjinfo_able_to_pickup_lbl.AutoSize = true;
+            this.level_lootobjinfo_able_to_pickup_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_able_to_pickup_lbl.ForeColor = System.Drawing.Color.Lime;
+            this.level_lootobjinfo_able_to_pickup_lbl.Location = new System.Drawing.Point(50, 370);
+            this.level_lootobjinfo_able_to_pickup_lbl.Name = "level_lootobjinfo_able_to_pickup_lbl";
+            this.level_lootobjinfo_able_to_pickup_lbl.Size = new System.Drawing.Size(150, 22);
+            this.level_lootobjinfo_able_to_pickup_lbl.TabIndex = 50;
+            this.level_lootobjinfo_able_to_pickup_lbl.Text = "Можна підібрати";
             // 
             // level_lootobjinfo_strengthBonusValue_lbl
             // 
             this.level_lootobjinfo_strengthBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(205, 162);
+            this.level_lootobjinfo_strengthBonusValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(189, 150);
             this.level_lootobjinfo_strengthBonusValue_lbl.Name = "level_lootobjinfo_strengthBonusValue_lbl";
-            this.level_lootobjinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(58, 20);
+            this.level_lootobjinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(68, 22);
             this.level_lootobjinfo_strengthBonusValue_lbl.TabIndex = 49;
             this.level_lootobjinfo_strengthBonusValue_lbl.Text = "label10";
             // 
             // level_lootobjinfo_speedBonusValue_lbl
             // 
             this.level_lootobjinfo_speedBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(205, 275);
+            this.level_lootobjinfo_speedBonusValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(189, 255);
             this.level_lootobjinfo_speedBonusValue_lbl.Name = "level_lootobjinfo_speedBonusValue_lbl";
-            this.level_lootobjinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_lootobjinfo_speedBonusValue_lbl.TabIndex = 48;
             this.level_lootobjinfo_speedBonusValue_lbl.Text = "label9";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(97, 525);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(50, 20);
-            this.label26.TabIndex = 47;
-            this.label26.Text = "label8";
             // 
             // level_lootobjinfo_defenseBonusValue_lbl
             // 
             this.level_lootobjinfo_defenseBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(205, 200);
+            this.level_lootobjinfo_defenseBonusValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(189, 185);
             this.level_lootobjinfo_defenseBonusValue_lbl.Name = "level_lootobjinfo_defenseBonusValue_lbl";
-            this.level_lootobjinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_lootobjinfo_defenseBonusValue_lbl.TabIndex = 44;
             this.level_lootobjinfo_defenseBonusValue_lbl.Text = "label5";
             // 
             // level_lootobjinfo_name_lbl
             // 
             this.level_lootobjinfo_name_lbl.AutoSize = true;
-            this.level_lootobjinfo_name_lbl.Location = new System.Drawing.Point(5, 50);
+            this.level_lootobjinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_name_lbl.Location = new System.Drawing.Point(5, 45);
             this.level_lootobjinfo_name_lbl.Name = "level_lootobjinfo_name_lbl";
-            this.level_lootobjinfo_name_lbl.Size = new System.Drawing.Size(54, 20);
+            this.level_lootobjinfo_name_lbl.Size = new System.Drawing.Size(67, 22);
             this.level_lootobjinfo_name_lbl.TabIndex = 0;
             this.level_lootobjinfo_name_lbl.Text = "Назва:";
             // 
             // level_lootobjinfo_type_lbl
             // 
             this.level_lootobjinfo_type_lbl.AutoSize = true;
-            this.level_lootobjinfo_type_lbl.Location = new System.Drawing.Point(5, 88);
+            this.level_lootobjinfo_type_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_type_lbl.Location = new System.Drawing.Point(5, 80);
             this.level_lootobjinfo_type_lbl.Name = "level_lootobjinfo_type_lbl";
-            this.level_lootobjinfo_type_lbl.Size = new System.Drawing.Size(38, 20);
+            this.level_lootobjinfo_type_lbl.Size = new System.Drawing.Size(47, 22);
             this.level_lootobjinfo_type_lbl.TabIndex = 40;
             this.level_lootobjinfo_type_lbl.Text = "Тип:";
             // 
             // level_lootobjinfo_strengthBonus_lbl
             // 
             this.level_lootobjinfo_strengthBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_strengthBonus_lbl.Location = new System.Drawing.Point(5, 162);
+            this.level_lootobjinfo_strengthBonus_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_strengthBonus_lbl.Location = new System.Drawing.Point(5, 150);
             this.level_lootobjinfo_strengthBonus_lbl.Name = "level_lootobjinfo_strengthBonus_lbl";
-            this.level_lootobjinfo_strengthBonus_lbl.Size = new System.Drawing.Size(111, 20);
+            this.level_lootobjinfo_strengthBonus_lbl.Size = new System.Drawing.Size(135, 22);
             this.level_lootobjinfo_strengthBonus_lbl.TabIndex = 41;
             this.level_lootobjinfo_strengthBonus_lbl.Text = "Бонус до сили:";
             // 
             // level_lootobjinfo_defenseBonus_lbl
             // 
             this.level_lootobjinfo_defenseBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_defenseBonus_lbl.Location = new System.Drawing.Point(5, 200);
+            this.level_lootobjinfo_defenseBonus_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_defenseBonus_lbl.Location = new System.Drawing.Point(5, 185);
             this.level_lootobjinfo_defenseBonus_lbl.Name = "level_lootobjinfo_defenseBonus_lbl";
-            this.level_lootobjinfo_defenseBonus_lbl.Size = new System.Drawing.Size(129, 20);
+            this.level_lootobjinfo_defenseBonus_lbl.Size = new System.Drawing.Size(160, 22);
             this.level_lootobjinfo_defenseBonus_lbl.TabIndex = 38;
             this.level_lootobjinfo_defenseBonus_lbl.Text = "Бонус до захисту:";
             // 
             // level_lootobjinfo_speedBonus_lbl
             // 
             this.level_lootobjinfo_speedBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_speedBonus_lbl.Location = new System.Drawing.Point(5, 275);
+            this.level_lootobjinfo_speedBonus_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_speedBonus_lbl.Location = new System.Drawing.Point(5, 255);
             this.level_lootobjinfo_speedBonus_lbl.Name = "level_lootobjinfo_speedBonus_lbl";
-            this.level_lootobjinfo_speedBonus_lbl.Size = new System.Drawing.Size(148, 20);
+            this.level_lootobjinfo_speedBonus_lbl.Size = new System.Drawing.Size(181, 22);
             this.level_lootobjinfo_speedBonus_lbl.TabIndex = 39;
             this.level_lootobjinfo_speedBonus_lbl.Text = "Бонус до швидкості:";
             // 
             // level_lootobjinfo_healthBonus_lbl
             // 
             this.level_lootobjinfo_healthBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_healthBonus_lbl.Location = new System.Drawing.Point(5, 238);
+            this.level_lootobjinfo_healthBonus_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_healthBonus_lbl.Location = new System.Drawing.Point(5, 220);
             this.level_lootobjinfo_healthBonus_lbl.Name = "level_lootobjinfo_healthBonus_lbl";
-            this.level_lootobjinfo_healthBonus_lbl.Size = new System.Drawing.Size(139, 20);
+            this.level_lootobjinfo_healthBonus_lbl.Size = new System.Drawing.Size(170, 22);
             this.level_lootobjinfo_healthBonus_lbl.TabIndex = 42;
             this.level_lootobjinfo_healthBonus_lbl.Text = "Бонус до здоров\'я:";
             // 
             // level_lootobjinfo_nameValue_lbl
             // 
             this.level_lootobjinfo_nameValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_nameValue_lbl.Location = new System.Drawing.Point(60, 50);
+            this.level_lootobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_nameValue_lbl.Location = new System.Drawing.Point(74, 45);
             this.level_lootobjinfo_nameValue_lbl.Name = "level_lootobjinfo_nameValue_lbl";
-            this.level_lootobjinfo_nameValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_nameValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_lootobjinfo_nameValue_lbl.TabIndex = 34;
             this.level_lootobjinfo_nameValue_lbl.Text = "label2";
             // 
             // level_lootobjinfo_main_lbl
             // 
             this.level_lootobjinfo_main_lbl.AutoSize = true;
-            this.level_lootobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_main_lbl.Location = new System.Drawing.Point(91, 6);
+            this.level_lootobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_main_lbl.Location = new System.Drawing.Point(62, 0);
             this.level_lootobjinfo_main_lbl.Name = "level_lootobjinfo_main_lbl";
-            this.level_lootobjinfo_main_lbl.Size = new System.Drawing.Size(105, 20);
+            this.level_lootobjinfo_main_lbl.Size = new System.Drawing.Size(123, 25);
             this.level_lootobjinfo_main_lbl.TabIndex = 35;
             this.level_lootobjinfo_main_lbl.Text = "Інформація";
             // 
             // level_lootobjinfo_typeValue_lbl
             // 
             this.level_lootobjinfo_typeValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_typeValue_lbl.Location = new System.Drawing.Point(60, 88);
+            this.level_lootobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_typeValue_lbl.Location = new System.Drawing.Point(74, 80);
             this.level_lootobjinfo_typeValue_lbl.Name = "level_lootobjinfo_typeValue_lbl";
-            this.level_lootobjinfo_typeValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_typeValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_lootobjinfo_typeValue_lbl.TabIndex = 36;
             this.level_lootobjinfo_typeValue_lbl.Text = "label4";
             // 
@@ -1266,44 +1268,46 @@ namespace Castle_Crushers
             this.level_monsterinfo_panel.Controls.Add(this.level_monsterobjinfo_nameValue_lbl);
             this.level_monsterinfo_panel.Controls.Add(this.level_monsterobjinfo_main_lbl);
             this.level_monsterinfo_panel.Controls.Add(this.level_monsterobjinfo_typeValue_lbl);
-            this.level_monsterinfo_panel.Location = new System.Drawing.Point(0, 0);
+            this.level_monsterinfo_panel.Location = new System.Drawing.Point(67, 320);
             this.level_monsterinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.level_monsterinfo_panel.Name = "level_monsterinfo_panel";
-            this.level_monsterinfo_panel.Size = new System.Drawing.Size(286, 625);
+            this.level_monsterinfo_panel.Size = new System.Drawing.Size(250, 625);
             this.level_monsterinfo_panel.TabIndex = 101;
             this.level_monsterinfo_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.level_monsterinfo_panel_Paint);
             // 
             // level_monsterobjinfo_strengthValue_lbl
             // 
             this.level_monsterobjinfo_strengthValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(85, 125);
+            this.level_monsterobjinfo_strengthValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(105, 115);
             this.level_monsterobjinfo_strengthValue_lbl.Name = "level_monsterobjinfo_strengthValue_lbl";
-            this.level_monsterobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(58, 20);
+            this.level_monsterobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(68, 22);
             this.level_monsterobjinfo_strengthValue_lbl.TabIndex = 49;
             this.level_monsterobjinfo_strengthValue_lbl.Text = "label10";
             // 
             // level_monsterobjinfo_defenseValue_lbl
             // 
             this.level_monsterobjinfo_defenseValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(85, 162);
+            this.level_monsterobjinfo_defenseValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(105, 150);
             this.level_monsterobjinfo_defenseValue_lbl.Name = "level_monsterobjinfo_defenseValue_lbl";
-            this.level_monsterobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_monsterobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_monsterobjinfo_defenseValue_lbl.TabIndex = 45;
             this.level_monsterobjinfo_defenseValue_lbl.Text = "label6";
             // 
             // level_monsterobjinfo_healthValue_lbl
             // 
             this.level_monsterobjinfo_healthValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_healthValue_lbl.Location = new System.Drawing.Point(85, 200);
+            this.level_monsterobjinfo_healthValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_healthValue_lbl.Location = new System.Drawing.Point(105, 185);
             this.level_monsterobjinfo_healthValue_lbl.Name = "level_monsterobjinfo_healthValue_lbl";
-            this.level_monsterobjinfo_healthValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_monsterobjinfo_healthValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_monsterobjinfo_healthValue_lbl.TabIndex = 44;
             this.level_monsterobjinfo_healthValue_lbl.Text = "label5";
             // 
             // level_monsterinfo_battle_panel
             // 
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_main_lbl);
-            this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_consequences_lbl);
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_main_defense_lbl);
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_hero_health_lbl);
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_main_health_lbl);
@@ -1316,62 +1320,56 @@ namespace Castle_Crushers
             this.level_monsterinfo_battle_panel.Location = new System.Drawing.Point(0, 270);
             this.level_monsterinfo_battle_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.level_monsterinfo_battle_panel.Name = "level_monsterinfo_battle_panel";
-            this.level_monsterinfo_battle_panel.Size = new System.Drawing.Size(286, 355);
+            this.level_monsterinfo_battle_panel.Size = new System.Drawing.Size(250, 300);
             this.level_monsterinfo_battle_panel.TabIndex = 110;
             // 
             // level_monsterobjinfo_posibilities_main_lbl
             // 
             this.level_monsterobjinfo_posibilities_main_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_monsterobjinfo_posibilities_main_lbl.Location = new System.Drawing.Point(124, 0);
+            this.level_monsterobjinfo_posibilities_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_main_lbl.Location = new System.Drawing.Point(107, 0);
             this.level_monsterobjinfo_posibilities_main_lbl.Name = "level_monsterobjinfo_posibilities_main_lbl";
-            this.level_monsterobjinfo_posibilities_main_lbl.Size = new System.Drawing.Size(35, 20);
+            this.level_monsterobjinfo_posibilities_main_lbl.Size = new System.Drawing.Size(39, 25);
             this.level_monsterobjinfo_posibilities_main_lbl.TabIndex = 50;
             this.level_monsterobjinfo_posibilities_main_lbl.Text = "Бій";
-            // 
-            // level_monsterobjinfo_posibilities_consequences_lbl
-            // 
-            this.level_monsterobjinfo_posibilities_consequences_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Location = new System.Drawing.Point(18, 275);
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Name = "level_monsterobjinfo_posibilities_consequences_lbl";
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Size = new System.Drawing.Size(76, 20);
-            this.level_monsterobjinfo_posibilities_consequences_lbl.TabIndex = 113;
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Text = "Висновок";
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Click += new System.EventHandler(this.level_monsterobjinfo_posibilities_consequences_lbl_Click);
             // 
             // level_monsterobjinfo_posibilities_main_defense_lbl
             // 
             this.level_monsterobjinfo_posibilities_main_defense_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_main_defense_lbl.Location = new System.Drawing.Point(116, 119);
+            this.level_monsterobjinfo_posibilities_main_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_main_defense_lbl.Location = new System.Drawing.Point(91, 119);
             this.level_monsterobjinfo_posibilities_main_defense_lbl.Name = "level_monsterobjinfo_posibilities_main_defense_lbl";
-            this.level_monsterobjinfo_posibilities_main_defense_lbl.Size = new System.Drawing.Size(54, 20);
+            this.level_monsterobjinfo_posibilities_main_defense_lbl.Size = new System.Drawing.Size(67, 22);
             this.level_monsterobjinfo_posibilities_main_defense_lbl.TabIndex = 114;
             this.level_monsterobjinfo_posibilities_main_defense_lbl.Text = "Захист";
             // 
             // level_monsterobjinfo_posibilities_hero_health_lbl
             // 
             this.level_monsterobjinfo_posibilities_hero_health_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_hero_health_lbl.Location = new System.Drawing.Point(85, 231);
+            this.level_monsterobjinfo_posibilities_hero_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_hero_health_lbl.Location = new System.Drawing.Point(60, 231);
             this.level_monsterobjinfo_posibilities_hero_health_lbl.Name = "level_monsterobjinfo_posibilities_hero_health_lbl";
-            this.level_monsterobjinfo_posibilities_hero_health_lbl.Size = new System.Drawing.Size(17, 20);
+            this.level_monsterobjinfo_posibilities_hero_health_lbl.Size = new System.Drawing.Size(20, 22);
             this.level_monsterobjinfo_posibilities_hero_health_lbl.TabIndex = 111;
             this.level_monsterobjinfo_posibilities_hero_health_lbl.Text = "0";
             // 
             // level_monsterobjinfo_posibilities_main_health_lbl
             // 
             this.level_monsterobjinfo_posibilities_main_health_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_main_health_lbl.Location = new System.Drawing.Point(109, 194);
+            this.level_monsterobjinfo_posibilities_main_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_main_health_lbl.Location = new System.Drawing.Point(82, 194);
             this.level_monsterobjinfo_posibilities_main_health_lbl.Name = "level_monsterobjinfo_posibilities_main_health_lbl";
-            this.level_monsterobjinfo_posibilities_main_health_lbl.Size = new System.Drawing.Size(71, 20);
+            this.level_monsterobjinfo_posibilities_main_health_lbl.Size = new System.Drawing.Size(86, 22);
             this.level_monsterobjinfo_posibilities_main_health_lbl.TabIndex = 112;
             this.level_monsterobjinfo_posibilities_main_health_lbl.Text = "Здоров\'я";
             // 
             // level_monsterobjinfo_posibilities_monster_health_lbl
             // 
             this.level_monsterobjinfo_posibilities_monster_health_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_monster_health_lbl.Location = new System.Drawing.Point(185, 231);
+            this.level_monsterobjinfo_posibilities_monster_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_monster_health_lbl.Location = new System.Drawing.Point(170, 231);
             this.level_monsterobjinfo_posibilities_monster_health_lbl.Name = "level_monsterobjinfo_posibilities_monster_health_lbl";
-            this.level_monsterobjinfo_posibilities_monster_health_lbl.Size = new System.Drawing.Size(17, 20);
+            this.level_monsterobjinfo_posibilities_monster_health_lbl.Size = new System.Drawing.Size(20, 22);
             this.level_monsterobjinfo_posibilities_monster_health_lbl.TabIndex = 106;
             this.level_monsterobjinfo_posibilities_monster_health_lbl.Text = "0";
             this.level_monsterobjinfo_posibilities_monster_health_lbl.Click += new System.EventHandler(this.level_monsterobjinfo_posibilities_monster_health_lbl_Click);
@@ -1379,142 +1377,167 @@ namespace Castle_Crushers
             // level_monsterobjinfo_posibilities_main_strength_lbl
             // 
             this.level_monsterobjinfo_posibilities_main_strength_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_main_strength_lbl.Location = new System.Drawing.Point(122, 44);
+            this.level_monsterobjinfo_posibilities_main_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_main_strength_lbl.Location = new System.Drawing.Point(98, 44);
             this.level_monsterobjinfo_posibilities_main_strength_lbl.Name = "level_monsterobjinfo_posibilities_main_strength_lbl";
-            this.level_monsterobjinfo_posibilities_main_strength_lbl.Size = new System.Drawing.Size(43, 20);
+            this.level_monsterobjinfo_posibilities_main_strength_lbl.Size = new System.Drawing.Size(53, 22);
             this.level_monsterobjinfo_posibilities_main_strength_lbl.TabIndex = 107;
             this.level_monsterobjinfo_posibilities_main_strength_lbl.Text = "Сила";
             // 
             // level_monsterobjinfo_posibilities_hero_strength_lbl
             // 
             this.level_monsterobjinfo_posibilities_hero_strength_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_hero_strength_lbl.Location = new System.Drawing.Point(71, 81);
+            this.level_monsterobjinfo_posibilities_hero_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_hero_strength_lbl.Location = new System.Drawing.Point(50, 81);
             this.level_monsterobjinfo_posibilities_hero_strength_lbl.Name = "level_monsterobjinfo_posibilities_hero_strength_lbl";
-            this.level_monsterobjinfo_posibilities_hero_strength_lbl.Size = new System.Drawing.Size(39, 20);
+            this.level_monsterobjinfo_posibilities_hero_strength_lbl.Size = new System.Drawing.Size(47, 22);
             this.level_monsterobjinfo_posibilities_hero_strength_lbl.TabIndex = 47;
             this.level_monsterobjinfo_posibilities_hero_strength_lbl.Text = "0 (0)";
             // 
             // level_monsterobjinfo_posibilities_monster_strength_lbl
             // 
             this.level_monsterobjinfo_posibilities_monster_strength_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_monster_strength_lbl.Location = new System.Drawing.Point(177, 81);
+            this.level_monsterobjinfo_posibilities_monster_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_monster_strength_lbl.Location = new System.Drawing.Point(153, 81);
             this.level_monsterobjinfo_posibilities_monster_strength_lbl.Name = "level_monsterobjinfo_posibilities_monster_strength_lbl";
-            this.level_monsterobjinfo_posibilities_monster_strength_lbl.Size = new System.Drawing.Size(39, 20);
+            this.level_monsterobjinfo_posibilities_monster_strength_lbl.Size = new System.Drawing.Size(47, 22);
             this.level_monsterobjinfo_posibilities_monster_strength_lbl.TabIndex = 110;
             this.level_monsterobjinfo_posibilities_monster_strength_lbl.Text = "0 (0)";
             // 
             // level_monsterobjinfo_posibilities_monster_defense_lbl
             // 
             this.level_monsterobjinfo_posibilities_monster_defense_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_monster_defense_lbl.Location = new System.Drawing.Point(177, 156);
+            this.level_monsterobjinfo_posibilities_monster_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_monster_defense_lbl.Location = new System.Drawing.Point(153, 156);
             this.level_monsterobjinfo_posibilities_monster_defense_lbl.Name = "level_monsterobjinfo_posibilities_monster_defense_lbl";
-            this.level_monsterobjinfo_posibilities_monster_defense_lbl.Size = new System.Drawing.Size(39, 20);
+            this.level_monsterobjinfo_posibilities_monster_defense_lbl.Size = new System.Drawing.Size(47, 22);
             this.level_monsterobjinfo_posibilities_monster_defense_lbl.TabIndex = 108;
             this.level_monsterobjinfo_posibilities_monster_defense_lbl.Text = "0 (0)";
             // 
             // level_monsterobjinfo_posibilities_hero_defense_lbl
             // 
             this.level_monsterobjinfo_posibilities_hero_defense_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_hero_defense_lbl.Location = new System.Drawing.Point(71, 156);
+            this.level_monsterobjinfo_posibilities_hero_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_hero_defense_lbl.Location = new System.Drawing.Point(50, 156);
             this.level_monsterobjinfo_posibilities_hero_defense_lbl.Name = "level_monsterobjinfo_posibilities_hero_defense_lbl";
-            this.level_monsterobjinfo_posibilities_hero_defense_lbl.Size = new System.Drawing.Size(39, 20);
+            this.level_monsterobjinfo_posibilities_hero_defense_lbl.Size = new System.Drawing.Size(47, 22);
             this.level_monsterobjinfo_posibilities_hero_defense_lbl.TabIndex = 109;
             this.level_monsterobjinfo_posibilities_hero_defense_lbl.Text = "0 (0)";
             // 
             // level_monsterobjinfo_speedValue_lbl
             // 
             this.level_monsterobjinfo_speedValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_speedValue_lbl.Location = new System.Drawing.Point(85, 238);
+            this.level_monsterobjinfo_speedValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_speedValue_lbl.Location = new System.Drawing.Point(105, 220);
             this.level_monsterobjinfo_speedValue_lbl.Name = "level_monsterobjinfo_speedValue_lbl";
-            this.level_monsterobjinfo_speedValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_monsterobjinfo_speedValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_monsterobjinfo_speedValue_lbl.TabIndex = 43;
             this.level_monsterobjinfo_speedValue_lbl.Text = "label1";
             // 
             // level_monsterobjinfo_name_lbl
             // 
             this.level_monsterobjinfo_name_lbl.AutoSize = true;
-            this.level_monsterobjinfo_name_lbl.Location = new System.Drawing.Point(5, 50);
+            this.level_monsterobjinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_name_lbl.Location = new System.Drawing.Point(5, 45);
             this.level_monsterobjinfo_name_lbl.Name = "level_monsterobjinfo_name_lbl";
-            this.level_monsterobjinfo_name_lbl.Size = new System.Drawing.Size(54, 20);
+            this.level_monsterobjinfo_name_lbl.Size = new System.Drawing.Size(67, 22);
             this.level_monsterobjinfo_name_lbl.TabIndex = 0;
             this.level_monsterobjinfo_name_lbl.Text = "Назва:";
             // 
             // level_monsterobjinfo_type_lbl
             // 
             this.level_monsterobjinfo_type_lbl.AutoSize = true;
-            this.level_monsterobjinfo_type_lbl.Location = new System.Drawing.Point(5, 88);
+            this.level_monsterobjinfo_type_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_type_lbl.Location = new System.Drawing.Point(5, 80);
             this.level_monsterobjinfo_type_lbl.Name = "level_monsterobjinfo_type_lbl";
-            this.level_monsterobjinfo_type_lbl.Size = new System.Drawing.Size(38, 20);
+            this.level_monsterobjinfo_type_lbl.Size = new System.Drawing.Size(47, 22);
             this.level_monsterobjinfo_type_lbl.TabIndex = 40;
             this.level_monsterobjinfo_type_lbl.Text = "Тип:";
             // 
             // level_monsterobjinfo_strength_lbl
             // 
             this.level_monsterobjinfo_strength_lbl.AutoSize = true;
-            this.level_monsterobjinfo_strength_lbl.Location = new System.Drawing.Point(5, 125);
+            this.level_monsterobjinfo_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_strength_lbl.Location = new System.Drawing.Point(5, 115);
             this.level_monsterobjinfo_strength_lbl.Name = "level_monsterobjinfo_strength_lbl";
-            this.level_monsterobjinfo_strength_lbl.Size = new System.Drawing.Size(46, 20);
+            this.level_monsterobjinfo_strength_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_monsterobjinfo_strength_lbl.TabIndex = 41;
             this.level_monsterobjinfo_strength_lbl.Text = "Сила:";
             // 
             // level_monsterobjinfo_defense_lbl
             // 
             this.level_monsterobjinfo_defense_lbl.AutoSize = true;
-            this.level_monsterobjinfo_defense_lbl.Location = new System.Drawing.Point(5, 162);
+            this.level_monsterobjinfo_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_defense_lbl.Location = new System.Drawing.Point(5, 150);
             this.level_monsterobjinfo_defense_lbl.Name = "level_monsterobjinfo_defense_lbl";
-            this.level_monsterobjinfo_defense_lbl.Size = new System.Drawing.Size(57, 20);
+            this.level_monsterobjinfo_defense_lbl.Size = new System.Drawing.Size(72, 22);
             this.level_monsterobjinfo_defense_lbl.TabIndex = 38;
             this.level_monsterobjinfo_defense_lbl.Text = "Захист:";
             // 
             // level_monsterobjinfo_speed_lbl
             // 
             this.level_monsterobjinfo_speed_lbl.AutoSize = true;
-            this.level_monsterobjinfo_speed_lbl.Location = new System.Drawing.Point(5, 238);
+            this.level_monsterobjinfo_speed_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_speed_lbl.Location = new System.Drawing.Point(5, 220);
             this.level_monsterobjinfo_speed_lbl.Name = "level_monsterobjinfo_speed_lbl";
-            this.level_monsterobjinfo_speed_lbl.Size = new System.Drawing.Size(83, 20);
+            this.level_monsterobjinfo_speed_lbl.Size = new System.Drawing.Size(100, 22);
             this.level_monsterobjinfo_speed_lbl.TabIndex = 39;
             this.level_monsterobjinfo_speed_lbl.Text = "Швидкість:";
             // 
             // level_monsterobjinfo_health_lbl
             // 
             this.level_monsterobjinfo_health_lbl.AutoSize = true;
-            this.level_monsterobjinfo_health_lbl.Location = new System.Drawing.Point(5, 200);
+            this.level_monsterobjinfo_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_health_lbl.Location = new System.Drawing.Point(5, 185);
             this.level_monsterobjinfo_health_lbl.Name = "level_monsterobjinfo_health_lbl";
-            this.level_monsterobjinfo_health_lbl.Size = new System.Drawing.Size(74, 20);
+            this.level_monsterobjinfo_health_lbl.Size = new System.Drawing.Size(91, 22);
             this.level_monsterobjinfo_health_lbl.TabIndex = 42;
             this.level_monsterobjinfo_health_lbl.Text = "Здоров\'я:";
             // 
             // level_monsterobjinfo_nameValue_lbl
             // 
             this.level_monsterobjinfo_nameValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_nameValue_lbl.Location = new System.Drawing.Point(85, 50);
+            this.level_monsterobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_nameValue_lbl.Location = new System.Drawing.Point(105, 45);
             this.level_monsterobjinfo_nameValue_lbl.Name = "level_monsterobjinfo_nameValue_lbl";
-            this.level_monsterobjinfo_nameValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_monsterobjinfo_nameValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_monsterobjinfo_nameValue_lbl.TabIndex = 34;
             this.level_monsterobjinfo_nameValue_lbl.Text = "label2";
             // 
             // level_monsterobjinfo_main_lbl
             // 
             this.level_monsterobjinfo_main_lbl.AutoSize = true;
-            this.level_monsterobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_monsterobjinfo_main_lbl.Location = new System.Drawing.Point(91, 6);
+            this.level_monsterobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_main_lbl.Location = new System.Drawing.Point(62, 0);
             this.level_monsterobjinfo_main_lbl.Name = "level_monsterobjinfo_main_lbl";
-            this.level_monsterobjinfo_main_lbl.Size = new System.Drawing.Size(105, 20);
+            this.level_monsterobjinfo_main_lbl.Size = new System.Drawing.Size(123, 25);
             this.level_monsterobjinfo_main_lbl.TabIndex = 35;
             this.level_monsterobjinfo_main_lbl.Text = "Інформація";
             // 
             // level_monsterobjinfo_typeValue_lbl
             // 
             this.level_monsterobjinfo_typeValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_typeValue_lbl.Location = new System.Drawing.Point(85, 88);
+            this.level_monsterobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_typeValue_lbl.Location = new System.Drawing.Point(105, 80);
             this.level_monsterobjinfo_typeValue_lbl.Name = "level_monsterobjinfo_typeValue_lbl";
-            this.level_monsterobjinfo_typeValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_monsterobjinfo_typeValue_lbl.Size = new System.Drawing.Size(58, 22);
             this.level_monsterobjinfo_typeValue_lbl.TabIndex = 36;
             this.level_monsterobjinfo_typeValue_lbl.Text = "label4";
+            // 
+            // level_monsterobjinfo_posibilities_consequences_lbl
+            // 
+            this.level_monsterobjinfo_posibilities_consequences_lbl.AutoSize = true;
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Location = new System.Drawing.Point(3, 624);
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Name = "level_monsterobjinfo_posibilities_consequences_lbl";
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Size = new System.Drawing.Size(76, 20);
+            this.level_monsterobjinfo_posibilities_consequences_lbl.TabIndex = 113;
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Text = "Висновок";
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Click += new System.EventHandler(this.level_monsterobjinfo_posibilities_consequences_lbl_Click);
             // 
             // battle_panel
             // 
             this.battle_panel.Controls.Add(this.level_btn00);
+            this.battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_consequences_lbl);
             this.battle_panel.Controls.Add(this.level_btn10);
             this.battle_panel.Controls.Add(this.level_btn01);
             this.battle_panel.Controls.Add(this.level_btn94);
@@ -1564,7 +1587,7 @@ namespace Castle_Crushers
             this.battle_panel.Controls.Add(this.level_btn31);
             this.battle_panel.Controls.Add(this.level_btn41);
             this.battle_panel.Controls.Add(this.level_btn80);
-            this.battle_panel.Location = new System.Drawing.Point(311, 380);
+            this.battle_panel.Location = new System.Drawing.Point(400, 380);
             this.battle_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.battle_panel.Name = "battle_panel";
             this.battle_panel.Size = new System.Drawing.Size(1500, 650);
@@ -1573,129 +1596,115 @@ namespace Castle_Crushers
             // turn_owner_lbl
             // 
             this.turn_owner_lbl.AutoSize = true;
-            this.turn_owner_lbl.Location = new System.Drawing.Point(40, 110);
+            this.turn_owner_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.turn_owner_lbl.Location = new System.Drawing.Point(41, 131);
             this.turn_owner_lbl.Name = "turn_owner_lbl";
-            this.turn_owner_lbl.Size = new System.Drawing.Size(61, 20);
+            this.turn_owner_lbl.Size = new System.Drawing.Size(75, 22);
             this.turn_owner_lbl.TabIndex = 43;
             this.turn_owner_lbl.Text = "Ходить:";
             // 
             // turn_owner
             // 
             this.turn_owner.AutoSize = true;
-            this.turn_owner.Location = new System.Drawing.Point(115, 110);
+            this.turn_owner.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.turn_owner.Location = new System.Drawing.Point(116, 131);
             this.turn_owner.Name = "turn_owner";
-            this.turn_owner.Size = new System.Drawing.Size(89, 20);
+            this.turn_owner.Size = new System.Drawing.Size(108, 22);
             this.turn_owner.TabIndex = 101;
             this.turn_owner.Text = "ShackMulda";
             // 
             // level_round_count_lbl
             // 
             this.level_round_count_lbl.AutoSize = true;
-            this.level_round_count_lbl.Location = new System.Drawing.Point(40, 150);
+            this.level_round_count_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_round_count_lbl.Location = new System.Drawing.Point(41, 166);
             this.level_round_count_lbl.Name = "level_round_count_lbl";
-            this.level_round_count_lbl.Size = new System.Drawing.Size(52, 20);
+            this.level_round_count_lbl.Size = new System.Drawing.Size(67, 22);
             this.level_round_count_lbl.TabIndex = 103;
             this.level_round_count_lbl.Text = "Раунд:";
             // 
             // level_round_count
             // 
             this.level_round_count.AutoSize = true;
-            this.level_round_count.Location = new System.Drawing.Point(115, 150);
+            this.level_round_count.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_round_count.Location = new System.Drawing.Point(116, 166);
             this.level_round_count.Name = "level_round_count";
-            this.level_round_count.Size = new System.Drawing.Size(17, 20);
+            this.level_round_count.Size = new System.Drawing.Size(20, 22);
             this.level_round_count.TabIndex = 104;
             this.level_round_count.Text = "0";
             // 
             // level_name_lbl
             // 
             this.level_name_lbl.AutoSize = true;
-            this.level_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.level_name_lbl.Location = new System.Drawing.Point(108, 20);
+            this.level_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_name_lbl.Location = new System.Drawing.Point(104, 50);
             this.level_name_lbl.Name = "level_name_lbl";
-            this.level_name_lbl.Size = new System.Drawing.Size(133, 20);
+            this.level_name_lbl.Size = new System.Drawing.Size(176, 29);
             this.level_name_lbl.TabIndex = 105;
             this.level_name_lbl.Text = "level_name_lbl";
             // 
-            // level_turninfo_panel
+            // level_maininfo_panel
             // 
-            this.level_turninfo_panel.BackColor = System.Drawing.Color.Transparent;
-            this.level_turninfo_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.global_details_img;
-            this.level_turninfo_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.level_turninfo_panel.Controls.Add(this.level_count_of_moves_lbl);
-            this.level_turninfo_panel.Controls.Add(this.level_main_mission_lbl);
-            this.level_turninfo_panel.Controls.Add(this.turn_owner_lbl);
-            this.level_turninfo_panel.Controls.Add(this.level_count_of_moves);
-            this.level_turninfo_panel.Controls.Add(this.turn_owner);
-            this.level_turninfo_panel.Controls.Add(this.level_round_count_lbl);
-            this.level_turninfo_panel.Controls.Add(this.level_name_lbl);
-            this.level_turninfo_panel.Controls.Add(this.Main_level_lbl);
-            this.level_turninfo_panel.Controls.Add(this.level_round_count);
-            this.level_turninfo_panel.Controls.Add(this.next_turn_btn);
-            this.level_turninfo_panel.Location = new System.Drawing.Point(5, 0);
-            this.level_turninfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.level_turninfo_panel.Name = "level_turninfo_panel";
-            this.level_turninfo_panel.Size = new System.Drawing.Size(350, 350);
-            this.level_turninfo_panel.TabIndex = 106;
+            this.level_maininfo_panel.BackColor = System.Drawing.Color.Transparent;
+            this.level_maininfo_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.first_ch_removebg_preview___копія_removebg_preview__1_;
+            this.level_maininfo_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.level_maininfo_panel.Controls.Add(this.level_heroinfo_panel);
+            this.level_maininfo_panel.Controls.Add(this.level_monsterinfo_panel);
+            this.level_maininfo_panel.Controls.Add(this.level_lootinfo_panel);
+            this.level_maininfo_panel.Controls.Add(this.level_count_of_moves_lbl);
+            this.level_maininfo_panel.Controls.Add(this.level_main_mission_lbl);
+            this.level_maininfo_panel.Controls.Add(this.turn_owner_lbl);
+            this.level_maininfo_panel.Controls.Add(this.level_count_of_moves);
+            this.level_maininfo_panel.Controls.Add(this.turn_owner);
+            this.level_maininfo_panel.Controls.Add(this.level_round_count_lbl);
+            this.level_maininfo_panel.Controls.Add(this.level_name_lbl);
+            this.level_maininfo_panel.Controls.Add(this.Main_level_lbl);
+            this.level_maininfo_panel.Controls.Add(this.level_round_count);
+            this.level_maininfo_panel.Controls.Add(this.next_turn_btn);
+            this.level_maininfo_panel.Location = new System.Drawing.Point(10, 0);
+            this.level_maininfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.level_maininfo_panel.Name = "level_maininfo_panel";
+            this.level_maininfo_panel.Size = new System.Drawing.Size(385, 895);
+            this.level_maininfo_panel.TabIndex = 106;
             // 
             // level_count_of_moves_lbl
             // 
             this.level_count_of_moves_lbl.AutoSize = true;
-            this.level_count_of_moves_lbl.Location = new System.Drawing.Point(40, 190);
+            this.level_count_of_moves_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_count_of_moves_lbl.Location = new System.Drawing.Point(41, 201);
             this.level_count_of_moves_lbl.Name = "level_count_of_moves_lbl";
-            this.level_count_of_moves_lbl.Size = new System.Drawing.Size(225, 20);
+            this.level_count_of_moves_lbl.Size = new System.Drawing.Size(268, 22);
             this.level_count_of_moves_lbl.TabIndex = 113;
             this.level_count_of_moves_lbl.Text = "Поточна кількість переміщень:";
             // 
             // level_main_mission_lbl
             // 
             this.level_main_mission_lbl.AutoSize = true;
-            this.level_main_mission_lbl.Location = new System.Drawing.Point(40, 70);
+            this.level_main_mission_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_main_mission_lbl.Location = new System.Drawing.Point(41, 96);
             this.level_main_mission_lbl.Name = "level_main_mission_lbl";
-            this.level_main_mission_lbl.Size = new System.Drawing.Size(47, 20);
+            this.level_main_mission_lbl.Size = new System.Drawing.Size(57, 22);
             this.level_main_mission_lbl.TabIndex = 111;
             this.level_main_mission_lbl.Text = "Мета:";
             // 
             // level_count_of_moves
             // 
             this.level_count_of_moves.AutoSize = true;
-            this.level_count_of_moves.Location = new System.Drawing.Point(271, 190);
+            this.level_count_of_moves.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_count_of_moves.Location = new System.Drawing.Point(315, 201);
             this.level_count_of_moves.Name = "level_count_of_moves";
-            this.level_count_of_moves.Size = new System.Drawing.Size(17, 20);
+            this.level_count_of_moves.Size = new System.Drawing.Size(20, 22);
             this.level_count_of_moves.TabIndex = 106;
             this.level_count_of_moves.Text = "0";
-            // 
-            // Level_info_image_panel
-            // 
-            this.Level_info_image_panel.BackColor = System.Drawing.Color.Transparent;
-            this.Level_info_image_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.first_ch_removebg_preview___копія_removebg_preview__1_;
-            this.Level_info_image_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Level_info_image_panel.Controls.Add(this.level_heroinfo_panel);
-            this.Level_info_image_panel.Controls.Add(this.level_lootinfo_panel);
-            this.Level_info_image_panel.Location = new System.Drawing.Point(0, 380);
-            this.Level_info_image_panel.Name = "Level_info_image_panel";
-            this.Level_info_image_panel.Size = new System.Drawing.Size(300, 625);
-            this.Level_info_image_panel.TabIndex = 113;
-            // 
-            // background_parallax_panel
-            // 
-            this.background_parallax_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.main_menu_and_global_details_img;
-            this.background_parallax_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.background_parallax_panel.Controls.Add(this.level_turninfo_panel);
-            this.background_parallax_panel.Location = new System.Drawing.Point(0, 0);
-            this.background_parallax_panel.Name = "background_parallax_panel";
-            this.background_parallax_panel.Size = new System.Drawing.Size(1900, 375);
-            this.background_parallax_panel.TabIndex = 114;
-            this.background_parallax_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.background_parallax_panel_Paint);
             // 
             // Level
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
-            this.Controls.Add(this.background_parallax_panel);
-            this.Controls.Add(this.Level_info_image_panel);
             this.Controls.Add(this.battle_panel);
             this.Controls.Add(this.button5);
+            this.Controls.Add(this.level_maininfo_panel);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Level";
@@ -1710,10 +1719,9 @@ namespace Castle_Crushers
             this.level_monsterinfo_battle_panel.ResumeLayout(false);
             this.level_monsterinfo_battle_panel.PerformLayout();
             this.battle_panel.ResumeLayout(false);
-            this.level_turninfo_panel.ResumeLayout(false);
-            this.level_turninfo_panel.PerformLayout();
-            this.Level_info_image_panel.ResumeLayout(false);
-            this.background_parallax_panel.ResumeLayout(false);
+            this.battle_panel.PerformLayout();
+            this.level_maininfo_panel.ResumeLayout(false);
+            this.level_maininfo_panel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1784,10 +1792,9 @@ namespace Castle_Crushers
         private System.Windows.Forms.Button level_btn14;
         private System.Windows.Forms.Label level_heroobjinfo_name_lbl;
         private System.Windows.Forms.Panel level_heroinfo_panel;
-        private System.Windows.Forms.Label level_heroobjInfo_options_lbl;
+        private System.Windows.Forms.Label level_heroobjInfo_able_reanimate_lbl;
         private System.Windows.Forms.Label level_heroobjinfo_strengthValue_lbl;
         private System.Windows.Forms.Label level_heroobjinfo_inventory01Value_lbl;
-        private System.Windows.Forms.Label level_heroobjInfo_optionsValue_lbl;
         private System.Windows.Forms.Label level_lootobjinfo_lootPrice_lbl;
         private System.Windows.Forms.Label level_heroobjinfo_defenseValue_lbl;
         private System.Windows.Forms.Label level_heroobjinfo_healthValue_lbl;
@@ -1800,10 +1807,9 @@ namespace Castle_Crushers
         private System.Windows.Forms.Panel level_lootinfo_panel;
         private System.Windows.Forms.Label level_lootobjinfo_minlevel_lbl;
         private System.Windows.Forms.Label level_lootobjinfo_healthBonusValue_lbl;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label level_lootobjinfo_able_to_pickup_lbl;
         private System.Windows.Forms.Label level_lootobjinfo_strengthBonusValue_lbl;
         private System.Windows.Forms.Label level_lootobjinfo_speedBonusValue_lbl;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label level_lootobjinfo_defenseBonusValue_lbl;
         private System.Windows.Forms.Label turn_owner_lbl;
         private System.Windows.Forms.Label level_lootobjinfo_name_lbl;
@@ -1831,7 +1837,6 @@ namespace Castle_Crushers
         private System.Windows.Forms.Label level_monsterobjinfo_nameValue_lbl;
         private System.Windows.Forms.Label level_monsterobjinfo_main_lbl;
         private System.Windows.Forms.Label level_monsterobjinfo_typeValue_lbl;
-        private System.Windows.Forms.Label level_heroobjinfo_inventory03Value_lbl;
         private System.Windows.Forms.Label turn_owner;
         private System.Windows.Forms.Label level_round_count_lbl;
         private System.Windows.Forms.Label level_round_count;
@@ -1839,7 +1844,7 @@ namespace Castle_Crushers
         private System.Windows.Forms.Label level_lootobjinfo_playerclass_lbl;
         private System.Windows.Forms.Label level_lootobjinfo_minlevelValue_lbl;
         private System.Windows.Forms.Label level_lootobjinfo_playerclassValue_lbl;
-        private System.Windows.Forms.Panel level_turninfo_panel;
+        private System.Windows.Forms.Panel level_maininfo_panel;
         private System.Windows.Forms.Label level_monsterobjinfo_posibilities_hero_health_lbl;
         private System.Windows.Forms.Label level_monsterobjinfo_posibilities_monster_health_lbl;
         private System.Windows.Forms.Label level_monsterobjinfo_posibilities_main_strength_lbl;
@@ -1853,7 +1858,5 @@ namespace Castle_Crushers
         private System.Windows.Forms.Label level_count_of_moves;
         private System.Windows.Forms.Label level_count_of_moves_lbl;
         private System.Windows.Forms.Label level_main_mission_lbl;
-        private Panel Level_info_image_panel;
-        private Panel background_parallax_panel;
     }
 }

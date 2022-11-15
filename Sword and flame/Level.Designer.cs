@@ -31,14 +31,8 @@ namespace Castle_Crushers
         {
             this.Main_level_lbl = new System.Windows.Forms.Label();
             this.level_btn84 = new System.Windows.Forms.Button();
-            this.Level_next_btn = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
             this.next_turn_btn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.level_heroobjinfo_nameValue_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_main_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_typeValue_lbl = new System.Windows.Forms.Label();
@@ -50,8 +44,6 @@ namespace Castle_Crushers
             this.level_heroobjinfo_health_lbl = new System.Windows.Forms.Label();
             this.level_btn44 = new System.Windows.Forms.Button();
             this.level_btn41 = new System.Windows.Forms.Button();
-            this.pl4_show_info = new System.Windows.Forms.Button();
-            this.pl3_show_info = new System.Windows.Forms.Button();
             this.level_btn32 = new System.Windows.Forms.Button();
             this.level_btn42 = new System.Windows.Forms.Button();
             this.level_btn34 = new System.Windows.Forms.Button();
@@ -64,7 +56,6 @@ namespace Castle_Crushers
             this.level_btn93 = new System.Windows.Forms.Button();
             this.level_btn83 = new System.Windows.Forms.Button();
             this.level_btn30 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
             this.level_btn74 = new System.Windows.Forms.Button();
             this.level_btn73 = new System.Windows.Forms.Button();
             this.level_btn72 = new System.Windows.Forms.Button();
@@ -113,12 +104,35 @@ namespace Castle_Crushers
             this.level_heroobjinfo_defenseValue_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_healthValue_lbl = new System.Windows.Forms.Label();
             this.level_heroobjinfo_speedValue_lbl = new System.Windows.Forms.Label();
+            this.level_lootinfo_panel = new System.Windows.Forms.Panel();
+            this.level_lootobjinfo_lootPriceValue_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_playerclassValue_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_minlevelValue_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_lootPrice_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_playerclass_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_minlevel_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_healthBonusValue_lbl = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_strengthBonusValue_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_speedBonusValue_lbl = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_defenseBonusValue_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_name_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_type_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_strengthBonus_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_defenseBonus_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_speedBonus_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_healthBonus_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_nameValue_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_main_lbl = new System.Windows.Forms.Label();
+            this.level_lootobjinfo_typeValue_lbl = new System.Windows.Forms.Label();
             this.level_monsterinfo_panel = new System.Windows.Forms.Panel();
             this.level_monsterobjinfo_strengthValue_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_defenseValue_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_healthValue_lbl = new System.Windows.Forms.Label();
             this.level_monsterinfo_battle_panel = new System.Windows.Forms.Panel();
             this.level_monsterobjinfo_posibilities_main_lbl = new System.Windows.Forms.Label();
+            this.level_monsterobjinfo_posibilities_consequences_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_posibilities_main_defense_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_posibilities_hero_health_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_posibilities_main_health_lbl = new System.Windows.Forms.Label();
@@ -138,30 +152,7 @@ namespace Castle_Crushers
             this.level_monsterobjinfo_nameValue_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_main_lbl = new System.Windows.Forms.Label();
             this.level_monsterobjinfo_typeValue_lbl = new System.Windows.Forms.Label();
-            this.level_monsterobjinfo_posibilities_consequences_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_lootPriceValue_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_lootPrice_lbl = new System.Windows.Forms.Label();
             this.battle_panel = new System.Windows.Forms.Panel();
-            this.level_lootinfo_panel = new System.Windows.Forms.Panel();
-            this.level_lootobjinfo_playerclassValue_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_minlevelValue_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_playerclass_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_minlevel_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_healthBonusValue_lbl = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_strengthBonusValue_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_speedBonusValue_lbl = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_defenseBonusValue_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_name_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_type_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_strengthBonus_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_defenseBonus_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_speedBonus_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_healthBonus_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_nameValue_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_main_lbl = new System.Windows.Forms.Label();
-            this.level_lootobjinfo_typeValue_lbl = new System.Windows.Forms.Label();
             this.turn_owner_lbl = new System.Windows.Forms.Label();
             this.turn_owner = new System.Windows.Forms.Label();
             this.level_round_count_lbl = new System.Windows.Forms.Label();
@@ -171,21 +162,22 @@ namespace Castle_Crushers
             this.level_count_of_moves_lbl = new System.Windows.Forms.Label();
             this.level_main_mission_lbl = new System.Windows.Forms.Label();
             this.level_count_of_moves = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.Level_info_image_panel = new System.Windows.Forms.Panel();
+            this.background_parallax_panel = new System.Windows.Forms.Panel();
             this.level_heroinfo_panel.SuspendLayout();
+            this.level_lootinfo_panel.SuspendLayout();
             this.level_monsterinfo_panel.SuspendLayout();
             this.level_monsterinfo_battle_panel.SuspendLayout();
             this.battle_panel.SuspendLayout();
-            this.level_lootinfo_panel.SuspendLayout();
             this.level_turninfo_panel.SuspendLayout();
             this.Level_info_image_panel.SuspendLayout();
+            this.background_parallax_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Main_level_lbl
             // 
             this.Main_level_lbl.AutoSize = true;
-            this.Main_level_lbl.Location = new System.Drawing.Point(60, 44);
+            this.Main_level_lbl.Location = new System.Drawing.Point(115, 70);
             this.Main_level_lbl.Name = "Main_level_lbl";
             this.Main_level_lbl.Size = new System.Drawing.Size(50, 20);
             this.Main_level_lbl.TabIndex = 1;
@@ -203,69 +195,18 @@ namespace Castle_Crushers
             this.level_btn84.Click += new System.EventHandler(this.level_btn84_Click);
             this.level_btn84.MouseHover += new System.EventHandler(this.level_btn84_MouseHover);
             // 
-            // Level_next_btn
-            // 
-            this.Level_next_btn.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Level_next_btn.Location = new System.Drawing.Point(1661, 152);
-            this.Level_next_btn.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.Level_next_btn.Name = "Level_next_btn";
-            this.Level_next_btn.Size = new System.Drawing.Size(150, 100);
-            this.Level_next_btn.TabIndex = 25;
-            this.Level_next_btn.Text = "Далі";
-            this.Level_next_btn.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.Location = new System.Drawing.Point(1156, 59);
-            this.button25.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 62);
-            this.button25.TabIndex = 26;
-            this.button25.Text = "button25";
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(508, 226);
-            this.button26.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 62);
-            this.button26.TabIndex = 27;
-            this.button26.Text = "button26";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
             // next_turn_btn
             // 
+            this.next_turn_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(210)))), ((int)(((byte)(173)))));
             this.next_turn_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.next_turn_btn.Location = new System.Drawing.Point(0, 192);
+            this.next_turn_btn.Location = new System.Drawing.Point(90, 240);
             this.next_turn_btn.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.next_turn_btn.Name = "next_turn_btn";
-            this.next_turn_btn.Size = new System.Drawing.Size(260, 108);
+            this.next_turn_btn.Size = new System.Drawing.Size(170, 60);
             this.next_turn_btn.TabIndex = 29;
             this.next_turn_btn.Text = "Наступний хід";
-            this.next_turn_btn.UseVisualStyleBackColor = true;
+            this.next_turn_btn.UseVisualStyleBackColor = false;
             this.next_turn_btn.Click += new System.EventHandler(this.next_turn_btn_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(836, 143);
-            this.button3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 62);
-            this.button3.TabIndex = 30;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(454, 92);
-            this.button4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 62);
-            this.button4.TabIndex = 31;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -276,16 +217,6 @@ namespace Castle_Crushers
             this.button5.TabIndex = 32;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(604, 113);
-            this.button6.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 62);
-            this.button6.TabIndex = 33;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // level_heroobjinfo_nameValue_lbl
             // 
@@ -393,27 +324,6 @@ namespace Castle_Crushers
             this.level_btn41.UseVisualStyleBackColor = true;
             this.level_btn41.Click += new System.EventHandler(this.level_btn41_Click);
             this.level_btn41.MouseHover += new System.EventHandler(this.level_btn41_MouseHover);
-            // 
-            // pl4_show_info
-            // 
-            this.pl4_show_info.Location = new System.Drawing.Point(720, 75);
-            this.pl4_show_info.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.pl4_show_info.Name = "pl4_show_info";
-            this.pl4_show_info.Size = new System.Drawing.Size(75, 62);
-            this.pl4_show_info.TabIndex = 45;
-            this.pl4_show_info.Text = "Інформація 4";
-            this.pl4_show_info.UseVisualStyleBackColor = true;
-            // 
-            // pl3_show_info
-            // 
-            this.pl3_show_info.Location = new System.Drawing.Point(405, 190);
-            this.pl3_show_info.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.pl3_show_info.Name = "pl3_show_info";
-            this.pl3_show_info.Size = new System.Drawing.Size(75, 62);
-            this.pl3_show_info.TabIndex = 46;
-            this.pl3_show_info.Text = "Інформація 3";
-            this.pl3_show_info.UseVisualStyleBackColor = true;
-            this.pl3_show_info.Click += new System.EventHandler(this.pl3_show_info_Click);
             // 
             // level_btn32
             // 
@@ -558,16 +468,6 @@ namespace Castle_Crushers
             this.level_btn30.UseVisualStyleBackColor = true;
             this.level_btn30.Click += new System.EventHandler(this.level_btn30_Click);
             this.level_btn30.MouseHover += new System.EventHandler(this.level_btn30_MouseHover);
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(667, 207);
-            this.button20.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 62);
-            this.button20.TabIndex = 60;
-            this.button20.Text = "button20";
-            this.button20.UseVisualStyleBackColor = true;
             // 
             // level_btn74
             // 
@@ -1001,9 +901,9 @@ namespace Castle_Crushers
             // 
             // level_heroinfo_panel
             // 
+            this.level_heroinfo_panel.BackColor = System.Drawing.Color.Transparent;
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_inventory03Value_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_level_lbl);
-            this.level_heroinfo_panel.Controls.Add(this.level_lootinfo_panel);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_levelValue_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjInfo_options_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_inventory02Value_lbl);
@@ -1023,7 +923,7 @@ namespace Castle_Crushers
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_nameValue_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_main_lbl);
             this.level_heroinfo_panel.Controls.Add(this.level_heroobjinfo_typeValue_lbl);
-            this.level_heroinfo_panel.Location = new System.Drawing.Point(7, 0);
+            this.level_heroinfo_panel.Location = new System.Drawing.Point(14, 0);
             this.level_heroinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.level_heroinfo_panel.Name = "level_heroinfo_panel";
             this.level_heroinfo_panel.Size = new System.Drawing.Size(286, 625);
@@ -1128,6 +1028,228 @@ namespace Castle_Crushers
             this.level_heroobjinfo_speedValue_lbl.TabIndex = 43;
             this.level_heroobjinfo_speedValue_lbl.Text = "label1";
             // 
+            // level_lootinfo_panel
+            // 
+            this.level_lootinfo_panel.Controls.Add(this.level_monsterinfo_panel);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_lootPriceValue_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_playerclassValue_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_minlevelValue_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_lootPrice_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_playerclass_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_minlevel_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_healthBonusValue_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.label23);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_strengthBonusValue_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_speedBonusValue_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.label26);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_defenseBonusValue_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_name_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_type_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_strengthBonus_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_defenseBonus_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_speedBonus_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_healthBonus_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_nameValue_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_main_lbl);
+            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_typeValue_lbl);
+            this.level_lootinfo_panel.Location = new System.Drawing.Point(14, 0);
+            this.level_lootinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.level_lootinfo_panel.Name = "level_lootinfo_panel";
+            this.level_lootinfo_panel.Size = new System.Drawing.Size(286, 625);
+            this.level_lootinfo_panel.TabIndex = 101;
+            this.level_lootinfo_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.level_lootinfo_panel_Paint);
+            // 
+            // level_lootobjinfo_lootPriceValue_lbl
+            // 
+            this.level_lootobjinfo_lootPriceValue_lbl.AutoSize = true;
+            this.level_lootobjinfo_lootPriceValue_lbl.Location = new System.Drawing.Point(205, 354);
+            this.level_lootobjinfo_lootPriceValue_lbl.Name = "level_lootobjinfo_lootPriceValue_lbl";
+            this.level_lootobjinfo_lootPriceValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_lootPriceValue_lbl.TabIndex = 101;
+            this.level_lootobjinfo_lootPriceValue_lbl.Text = "label4";
+            // 
+            // level_lootobjinfo_playerclassValue_lbl
+            // 
+            this.level_lootobjinfo_playerclassValue_lbl.AutoSize = true;
+            this.level_lootobjinfo_playerclassValue_lbl.Location = new System.Drawing.Point(60, 125);
+            this.level_lootobjinfo_playerclassValue_lbl.Name = "level_lootobjinfo_playerclassValue_lbl";
+            this.level_lootobjinfo_playerclassValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_playerclassValue_lbl.TabIndex = 109;
+            this.level_lootobjinfo_playerclassValue_lbl.Text = "label1";
+            // 
+            // level_lootobjinfo_minlevelValue_lbl
+            // 
+            this.level_lootobjinfo_minlevelValue_lbl.AutoSize = true;
+            this.level_lootobjinfo_minlevelValue_lbl.Location = new System.Drawing.Point(205, 312);
+            this.level_lootobjinfo_minlevelValue_lbl.Name = "level_lootobjinfo_minlevelValue_lbl";
+            this.level_lootobjinfo_minlevelValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_minlevelValue_lbl.TabIndex = 108;
+            this.level_lootobjinfo_minlevelValue_lbl.Text = "label1";
+            // 
+            // level_lootobjinfo_lootPrice_lbl
+            // 
+            this.level_lootobjinfo_lootPrice_lbl.AutoSize = true;
+            this.level_lootobjinfo_lootPrice_lbl.Location = new System.Drawing.Point(5, 350);
+            this.level_lootobjinfo_lootPrice_lbl.Name = "level_lootobjinfo_lootPrice_lbl";
+            this.level_lootobjinfo_lootPrice_lbl.Size = new System.Drawing.Size(44, 20);
+            this.level_lootobjinfo_lootPrice_lbl.TabIndex = 46;
+            this.level_lootobjinfo_lootPrice_lbl.Text = "Ціна:";
+            this.level_lootobjinfo_lootPrice_lbl.Click += new System.EventHandler(this.level_objinfo_lootPrice_lbl_Click);
+            // 
+            // level_lootobjinfo_playerclass_lbl
+            // 
+            this.level_lootobjinfo_playerclass_lbl.AutoSize = true;
+            this.level_lootobjinfo_playerclass_lbl.Location = new System.Drawing.Point(5, 125);
+            this.level_lootobjinfo_playerclass_lbl.Name = "level_lootobjinfo_playerclass_lbl";
+            this.level_lootobjinfo_playerclass_lbl.Size = new System.Drawing.Size(44, 20);
+            this.level_lootobjinfo_playerclass_lbl.TabIndex = 106;
+            this.level_lootobjinfo_playerclass_lbl.Text = "Клас:";
+            // 
+            // level_lootobjinfo_minlevel_lbl
+            // 
+            this.level_lootobjinfo_minlevel_lbl.AutoSize = true;
+            this.level_lootobjinfo_minlevel_lbl.Location = new System.Drawing.Point(5, 312);
+            this.level_lootobjinfo_minlevel_lbl.Name = "level_lootobjinfo_minlevel_lbl";
+            this.level_lootobjinfo_minlevel_lbl.Size = new System.Drawing.Size(154, 20);
+            this.level_lootobjinfo_minlevel_lbl.TabIndex = 100;
+            this.level_lootobjinfo_minlevel_lbl.Text = "Мінімальний рівень:";
+            // 
+            // level_lootobjinfo_healthBonusValue_lbl
+            // 
+            this.level_lootobjinfo_healthBonusValue_lbl.AutoSize = true;
+            this.level_lootobjinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(205, 238);
+            this.level_lootobjinfo_healthBonusValue_lbl.Name = "level_lootobjinfo_healthBonusValue_lbl";
+            this.level_lootobjinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_healthBonusValue_lbl.TabIndex = 99;
+            this.level_lootobjinfo_healthBonusValue_lbl.Text = "label2";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(7, 525);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(79, 20);
+            this.label23.TabIndex = 50;
+            this.label23.Text = "Можливо:";
+            // 
+            // level_lootobjinfo_strengthBonusValue_lbl
+            // 
+            this.level_lootobjinfo_strengthBonusValue_lbl.AutoSize = true;
+            this.level_lootobjinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(205, 162);
+            this.level_lootobjinfo_strengthBonusValue_lbl.Name = "level_lootobjinfo_strengthBonusValue_lbl";
+            this.level_lootobjinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(58, 20);
+            this.level_lootobjinfo_strengthBonusValue_lbl.TabIndex = 49;
+            this.level_lootobjinfo_strengthBonusValue_lbl.Text = "label10";
+            // 
+            // level_lootobjinfo_speedBonusValue_lbl
+            // 
+            this.level_lootobjinfo_speedBonusValue_lbl.AutoSize = true;
+            this.level_lootobjinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(205, 275);
+            this.level_lootobjinfo_speedBonusValue_lbl.Name = "level_lootobjinfo_speedBonusValue_lbl";
+            this.level_lootobjinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_speedBonusValue_lbl.TabIndex = 48;
+            this.level_lootobjinfo_speedBonusValue_lbl.Text = "label9";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(97, 525);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(50, 20);
+            this.label26.TabIndex = 47;
+            this.label26.Text = "label8";
+            // 
+            // level_lootobjinfo_defenseBonusValue_lbl
+            // 
+            this.level_lootobjinfo_defenseBonusValue_lbl.AutoSize = true;
+            this.level_lootobjinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(205, 200);
+            this.level_lootobjinfo_defenseBonusValue_lbl.Name = "level_lootobjinfo_defenseBonusValue_lbl";
+            this.level_lootobjinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_defenseBonusValue_lbl.TabIndex = 44;
+            this.level_lootobjinfo_defenseBonusValue_lbl.Text = "label5";
+            // 
+            // level_lootobjinfo_name_lbl
+            // 
+            this.level_lootobjinfo_name_lbl.AutoSize = true;
+            this.level_lootobjinfo_name_lbl.Location = new System.Drawing.Point(5, 50);
+            this.level_lootobjinfo_name_lbl.Name = "level_lootobjinfo_name_lbl";
+            this.level_lootobjinfo_name_lbl.Size = new System.Drawing.Size(54, 20);
+            this.level_lootobjinfo_name_lbl.TabIndex = 0;
+            this.level_lootobjinfo_name_lbl.Text = "Назва:";
+            // 
+            // level_lootobjinfo_type_lbl
+            // 
+            this.level_lootobjinfo_type_lbl.AutoSize = true;
+            this.level_lootobjinfo_type_lbl.Location = new System.Drawing.Point(5, 88);
+            this.level_lootobjinfo_type_lbl.Name = "level_lootobjinfo_type_lbl";
+            this.level_lootobjinfo_type_lbl.Size = new System.Drawing.Size(38, 20);
+            this.level_lootobjinfo_type_lbl.TabIndex = 40;
+            this.level_lootobjinfo_type_lbl.Text = "Тип:";
+            // 
+            // level_lootobjinfo_strengthBonus_lbl
+            // 
+            this.level_lootobjinfo_strengthBonus_lbl.AutoSize = true;
+            this.level_lootobjinfo_strengthBonus_lbl.Location = new System.Drawing.Point(5, 162);
+            this.level_lootobjinfo_strengthBonus_lbl.Name = "level_lootobjinfo_strengthBonus_lbl";
+            this.level_lootobjinfo_strengthBonus_lbl.Size = new System.Drawing.Size(111, 20);
+            this.level_lootobjinfo_strengthBonus_lbl.TabIndex = 41;
+            this.level_lootobjinfo_strengthBonus_lbl.Text = "Бонус до сили:";
+            // 
+            // level_lootobjinfo_defenseBonus_lbl
+            // 
+            this.level_lootobjinfo_defenseBonus_lbl.AutoSize = true;
+            this.level_lootobjinfo_defenseBonus_lbl.Location = new System.Drawing.Point(5, 200);
+            this.level_lootobjinfo_defenseBonus_lbl.Name = "level_lootobjinfo_defenseBonus_lbl";
+            this.level_lootobjinfo_defenseBonus_lbl.Size = new System.Drawing.Size(129, 20);
+            this.level_lootobjinfo_defenseBonus_lbl.TabIndex = 38;
+            this.level_lootobjinfo_defenseBonus_lbl.Text = "Бонус до захисту:";
+            // 
+            // level_lootobjinfo_speedBonus_lbl
+            // 
+            this.level_lootobjinfo_speedBonus_lbl.AutoSize = true;
+            this.level_lootobjinfo_speedBonus_lbl.Location = new System.Drawing.Point(5, 275);
+            this.level_lootobjinfo_speedBonus_lbl.Name = "level_lootobjinfo_speedBonus_lbl";
+            this.level_lootobjinfo_speedBonus_lbl.Size = new System.Drawing.Size(148, 20);
+            this.level_lootobjinfo_speedBonus_lbl.TabIndex = 39;
+            this.level_lootobjinfo_speedBonus_lbl.Text = "Бонус до швидкості:";
+            // 
+            // level_lootobjinfo_healthBonus_lbl
+            // 
+            this.level_lootobjinfo_healthBonus_lbl.AutoSize = true;
+            this.level_lootobjinfo_healthBonus_lbl.Location = new System.Drawing.Point(5, 238);
+            this.level_lootobjinfo_healthBonus_lbl.Name = "level_lootobjinfo_healthBonus_lbl";
+            this.level_lootobjinfo_healthBonus_lbl.Size = new System.Drawing.Size(139, 20);
+            this.level_lootobjinfo_healthBonus_lbl.TabIndex = 42;
+            this.level_lootobjinfo_healthBonus_lbl.Text = "Бонус до здоров\'я:";
+            // 
+            // level_lootobjinfo_nameValue_lbl
+            // 
+            this.level_lootobjinfo_nameValue_lbl.AutoSize = true;
+            this.level_lootobjinfo_nameValue_lbl.Location = new System.Drawing.Point(60, 50);
+            this.level_lootobjinfo_nameValue_lbl.Name = "level_lootobjinfo_nameValue_lbl";
+            this.level_lootobjinfo_nameValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_nameValue_lbl.TabIndex = 34;
+            this.level_lootobjinfo_nameValue_lbl.Text = "label2";
+            // 
+            // level_lootobjinfo_main_lbl
+            // 
+            this.level_lootobjinfo_main_lbl.AutoSize = true;
+            this.level_lootobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_main_lbl.Location = new System.Drawing.Point(91, 6);
+            this.level_lootobjinfo_main_lbl.Name = "level_lootobjinfo_main_lbl";
+            this.level_lootobjinfo_main_lbl.Size = new System.Drawing.Size(105, 20);
+            this.level_lootobjinfo_main_lbl.TabIndex = 35;
+            this.level_lootobjinfo_main_lbl.Text = "Інформація";
+            // 
+            // level_lootobjinfo_typeValue_lbl
+            // 
+            this.level_lootobjinfo_typeValue_lbl.AutoSize = true;
+            this.level_lootobjinfo_typeValue_lbl.Location = new System.Drawing.Point(60, 88);
+            this.level_lootobjinfo_typeValue_lbl.Name = "level_lootobjinfo_typeValue_lbl";
+            this.level_lootobjinfo_typeValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.level_lootobjinfo_typeValue_lbl.TabIndex = 36;
+            this.level_lootobjinfo_typeValue_lbl.Text = "label4";
+            // 
             // level_monsterinfo_panel
             // 
             this.level_monsterinfo_panel.Controls.Add(this.level_monsterobjinfo_strengthValue_lbl);
@@ -1181,6 +1303,7 @@ namespace Castle_Crushers
             // level_monsterinfo_battle_panel
             // 
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_main_lbl);
+            this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_consequences_lbl);
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_main_defense_lbl);
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_hero_health_lbl);
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_main_health_lbl);
@@ -1190,10 +1313,10 @@ namespace Castle_Crushers
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_monster_strength_lbl);
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_monster_defense_lbl);
             this.level_monsterinfo_battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_hero_defense_lbl);
-            this.level_monsterinfo_battle_panel.Location = new System.Drawing.Point(0, 300);
+            this.level_monsterinfo_battle_panel.Location = new System.Drawing.Point(0, 270);
             this.level_monsterinfo_battle_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.level_monsterinfo_battle_panel.Name = "level_monsterinfo_battle_panel";
-            this.level_monsterinfo_battle_panel.Size = new System.Drawing.Size(286, 325);
+            this.level_monsterinfo_battle_panel.Size = new System.Drawing.Size(286, 355);
             this.level_monsterinfo_battle_panel.TabIndex = 110;
             // 
             // level_monsterobjinfo_posibilities_main_lbl
@@ -1205,6 +1328,16 @@ namespace Castle_Crushers
             this.level_monsterobjinfo_posibilities_main_lbl.Size = new System.Drawing.Size(35, 20);
             this.level_monsterobjinfo_posibilities_main_lbl.TabIndex = 50;
             this.level_monsterobjinfo_posibilities_main_lbl.Text = "Бій";
+            // 
+            // level_monsterobjinfo_posibilities_consequences_lbl
+            // 
+            this.level_monsterobjinfo_posibilities_consequences_lbl.AutoSize = true;
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Location = new System.Drawing.Point(18, 275);
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Name = "level_monsterobjinfo_posibilities_consequences_lbl";
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Size = new System.Drawing.Size(76, 20);
+            this.level_monsterobjinfo_posibilities_consequences_lbl.TabIndex = 113;
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Text = "Висновок";
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Click += new System.EventHandler(this.level_monsterobjinfo_posibilities_consequences_lbl_Click);
             // 
             // level_monsterobjinfo_posibilities_main_defense_lbl
             // 
@@ -1379,39 +1512,9 @@ namespace Castle_Crushers
             this.level_monsterobjinfo_typeValue_lbl.TabIndex = 36;
             this.level_monsterobjinfo_typeValue_lbl.Text = "label4";
             // 
-            // level_monsterobjinfo_posibilities_consequences_lbl
-            // 
-            this.level_monsterobjinfo_posibilities_consequences_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Location = new System.Drawing.Point(3, 626);
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Name = "level_monsterobjinfo_posibilities_consequences_lbl";
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Size = new System.Drawing.Size(76, 20);
-            this.level_monsterobjinfo_posibilities_consequences_lbl.TabIndex = 113;
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Text = "Висновок";
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Click += new System.EventHandler(this.level_monsterobjinfo_posibilities_consequences_lbl_Click);
-            // 
-            // level_lootobjinfo_lootPriceValue_lbl
-            // 
-            this.level_lootobjinfo_lootPriceValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_lootPriceValue_lbl.Location = new System.Drawing.Point(205, 354);
-            this.level_lootobjinfo_lootPriceValue_lbl.Name = "level_lootobjinfo_lootPriceValue_lbl";
-            this.level_lootobjinfo_lootPriceValue_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_lootobjinfo_lootPriceValue_lbl.TabIndex = 101;
-            this.level_lootobjinfo_lootPriceValue_lbl.Text = "label4";
-            // 
-            // level_lootobjinfo_lootPrice_lbl
-            // 
-            this.level_lootobjinfo_lootPrice_lbl.AutoSize = true;
-            this.level_lootobjinfo_lootPrice_lbl.Location = new System.Drawing.Point(5, 350);
-            this.level_lootobjinfo_lootPrice_lbl.Name = "level_lootobjinfo_lootPrice_lbl";
-            this.level_lootobjinfo_lootPrice_lbl.Size = new System.Drawing.Size(44, 20);
-            this.level_lootobjinfo_lootPrice_lbl.TabIndex = 46;
-            this.level_lootobjinfo_lootPrice_lbl.Text = "Ціна:";
-            this.level_lootobjinfo_lootPrice_lbl.Click += new System.EventHandler(this.level_objinfo_lootPrice_lbl_Click);
-            // 
             // battle_panel
             // 
             this.battle_panel.Controls.Add(this.level_btn00);
-            this.battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_consequences_lbl);
             this.battle_panel.Controls.Add(this.level_btn10);
             this.battle_panel.Controls.Add(this.level_btn01);
             this.battle_panel.Controls.Add(this.level_btn94);
@@ -1467,213 +1570,10 @@ namespace Castle_Crushers
             this.battle_panel.Size = new System.Drawing.Size(1500, 650);
             this.battle_panel.TabIndex = 99;
             // 
-            // level_lootinfo_panel
-            // 
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_lootPriceValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_playerclassValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_monsterinfo_panel);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_minlevelValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_lootPrice_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_playerclass_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_minlevel_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_healthBonusValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.label23);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_strengthBonusValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_speedBonusValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.label26);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_defenseBonusValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_name_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_type_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_strengthBonus_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_defenseBonus_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_speedBonus_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_healthBonus_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_nameValue_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_main_lbl);
-            this.level_lootinfo_panel.Controls.Add(this.level_lootobjinfo_typeValue_lbl);
-            this.level_lootinfo_panel.Location = new System.Drawing.Point(0, 0);
-            this.level_lootinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.level_lootinfo_panel.Name = "level_lootinfo_panel";
-            this.level_lootinfo_panel.Size = new System.Drawing.Size(286, 625);
-            this.level_lootinfo_panel.TabIndex = 101;
-            this.level_lootinfo_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.level_lootinfo_panel_Paint);
-            // 
-            // level_lootobjinfo_playerclassValue_lbl
-            // 
-            this.level_lootobjinfo_playerclassValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_playerclassValue_lbl.Location = new System.Drawing.Point(60, 125);
-            this.level_lootobjinfo_playerclassValue_lbl.Name = "level_lootobjinfo_playerclassValue_lbl";
-            this.level_lootobjinfo_playerclassValue_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_lootobjinfo_playerclassValue_lbl.TabIndex = 109;
-            this.level_lootobjinfo_playerclassValue_lbl.Text = "label1";
-            // 
-            // level_lootobjinfo_minlevelValue_lbl
-            // 
-            this.level_lootobjinfo_minlevelValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_minlevelValue_lbl.Location = new System.Drawing.Point(205, 312);
-            this.level_lootobjinfo_minlevelValue_lbl.Name = "level_lootobjinfo_minlevelValue_lbl";
-            this.level_lootobjinfo_minlevelValue_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_lootobjinfo_minlevelValue_lbl.TabIndex = 108;
-            this.level_lootobjinfo_minlevelValue_lbl.Text = "label1";
-            // 
-            // level_lootobjinfo_playerclass_lbl
-            // 
-            this.level_lootobjinfo_playerclass_lbl.AutoSize = true;
-            this.level_lootobjinfo_playerclass_lbl.Location = new System.Drawing.Point(5, 125);
-            this.level_lootobjinfo_playerclass_lbl.Name = "level_lootobjinfo_playerclass_lbl";
-            this.level_lootobjinfo_playerclass_lbl.Size = new System.Drawing.Size(44, 20);
-            this.level_lootobjinfo_playerclass_lbl.TabIndex = 106;
-            this.level_lootobjinfo_playerclass_lbl.Text = "Клас:";
-            // 
-            // level_lootobjinfo_minlevel_lbl
-            // 
-            this.level_lootobjinfo_minlevel_lbl.AutoSize = true;
-            this.level_lootobjinfo_minlevel_lbl.Location = new System.Drawing.Point(5, 312);
-            this.level_lootobjinfo_minlevel_lbl.Name = "level_lootobjinfo_minlevel_lbl";
-            this.level_lootobjinfo_minlevel_lbl.Size = new System.Drawing.Size(154, 20);
-            this.level_lootobjinfo_minlevel_lbl.TabIndex = 100;
-            this.level_lootobjinfo_minlevel_lbl.Text = "Мінімальний рівень:";
-            // 
-            // level_lootobjinfo_healthBonusValue_lbl
-            // 
-            this.level_lootobjinfo_healthBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(205, 238);
-            this.level_lootobjinfo_healthBonusValue_lbl.Name = "level_lootobjinfo_healthBonusValue_lbl";
-            this.level_lootobjinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_lootobjinfo_healthBonusValue_lbl.TabIndex = 99;
-            this.level_lootobjinfo_healthBonusValue_lbl.Text = "label2";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(7, 525);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(79, 20);
-            this.label23.TabIndex = 50;
-            this.label23.Text = "Можливо:";
-            // 
-            // level_lootobjinfo_strengthBonusValue_lbl
-            // 
-            this.level_lootobjinfo_strengthBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(205, 162);
-            this.level_lootobjinfo_strengthBonusValue_lbl.Name = "level_lootobjinfo_strengthBonusValue_lbl";
-            this.level_lootobjinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(58, 20);
-            this.level_lootobjinfo_strengthBonusValue_lbl.TabIndex = 49;
-            this.level_lootobjinfo_strengthBonusValue_lbl.Text = "label10";
-            // 
-            // level_lootobjinfo_speedBonusValue_lbl
-            // 
-            this.level_lootobjinfo_speedBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(205, 275);
-            this.level_lootobjinfo_speedBonusValue_lbl.Name = "level_lootobjinfo_speedBonusValue_lbl";
-            this.level_lootobjinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_lootobjinfo_speedBonusValue_lbl.TabIndex = 48;
-            this.level_lootobjinfo_speedBonusValue_lbl.Text = "label9";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(97, 525);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(50, 20);
-            this.label26.TabIndex = 47;
-            this.label26.Text = "label8";
-            // 
-            // level_lootobjinfo_defenseBonusValue_lbl
-            // 
-            this.level_lootobjinfo_defenseBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(205, 200);
-            this.level_lootobjinfo_defenseBonusValue_lbl.Name = "level_lootobjinfo_defenseBonusValue_lbl";
-            this.level_lootobjinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_lootobjinfo_defenseBonusValue_lbl.TabIndex = 44;
-            this.level_lootobjinfo_defenseBonusValue_lbl.Text = "label5";
-            // 
-            // level_lootobjinfo_name_lbl
-            // 
-            this.level_lootobjinfo_name_lbl.AutoSize = true;
-            this.level_lootobjinfo_name_lbl.Location = new System.Drawing.Point(5, 50);
-            this.level_lootobjinfo_name_lbl.Name = "level_lootobjinfo_name_lbl";
-            this.level_lootobjinfo_name_lbl.Size = new System.Drawing.Size(54, 20);
-            this.level_lootobjinfo_name_lbl.TabIndex = 0;
-            this.level_lootobjinfo_name_lbl.Text = "Назва:";
-            // 
-            // level_lootobjinfo_type_lbl
-            // 
-            this.level_lootobjinfo_type_lbl.AutoSize = true;
-            this.level_lootobjinfo_type_lbl.Location = new System.Drawing.Point(5, 88);
-            this.level_lootobjinfo_type_lbl.Name = "level_lootobjinfo_type_lbl";
-            this.level_lootobjinfo_type_lbl.Size = new System.Drawing.Size(38, 20);
-            this.level_lootobjinfo_type_lbl.TabIndex = 40;
-            this.level_lootobjinfo_type_lbl.Text = "Тип:";
-            // 
-            // level_lootobjinfo_strengthBonus_lbl
-            // 
-            this.level_lootobjinfo_strengthBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_strengthBonus_lbl.Location = new System.Drawing.Point(5, 162);
-            this.level_lootobjinfo_strengthBonus_lbl.Name = "level_lootobjinfo_strengthBonus_lbl";
-            this.level_lootobjinfo_strengthBonus_lbl.Size = new System.Drawing.Size(111, 20);
-            this.level_lootobjinfo_strengthBonus_lbl.TabIndex = 41;
-            this.level_lootobjinfo_strengthBonus_lbl.Text = "Бонус до сили:";
-            // 
-            // level_lootobjinfo_defenseBonus_lbl
-            // 
-            this.level_lootobjinfo_defenseBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_defenseBonus_lbl.Location = new System.Drawing.Point(5, 200);
-            this.level_lootobjinfo_defenseBonus_lbl.Name = "level_lootobjinfo_defenseBonus_lbl";
-            this.level_lootobjinfo_defenseBonus_lbl.Size = new System.Drawing.Size(129, 20);
-            this.level_lootobjinfo_defenseBonus_lbl.TabIndex = 38;
-            this.level_lootobjinfo_defenseBonus_lbl.Text = "Бонус до захисту:";
-            // 
-            // level_lootobjinfo_speedBonus_lbl
-            // 
-            this.level_lootobjinfo_speedBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_speedBonus_lbl.Location = new System.Drawing.Point(5, 275);
-            this.level_lootobjinfo_speedBonus_lbl.Name = "level_lootobjinfo_speedBonus_lbl";
-            this.level_lootobjinfo_speedBonus_lbl.Size = new System.Drawing.Size(148, 20);
-            this.level_lootobjinfo_speedBonus_lbl.TabIndex = 39;
-            this.level_lootobjinfo_speedBonus_lbl.Text = "Бонус до швидкості:";
-            // 
-            // level_lootobjinfo_healthBonus_lbl
-            // 
-            this.level_lootobjinfo_healthBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_healthBonus_lbl.Location = new System.Drawing.Point(5, 238);
-            this.level_lootobjinfo_healthBonus_lbl.Name = "level_lootobjinfo_healthBonus_lbl";
-            this.level_lootobjinfo_healthBonus_lbl.Size = new System.Drawing.Size(139, 20);
-            this.level_lootobjinfo_healthBonus_lbl.TabIndex = 42;
-            this.level_lootobjinfo_healthBonus_lbl.Text = "Бонус до здоров\'я:";
-            // 
-            // level_lootobjinfo_nameValue_lbl
-            // 
-            this.level_lootobjinfo_nameValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_nameValue_lbl.Location = new System.Drawing.Point(60, 50);
-            this.level_lootobjinfo_nameValue_lbl.Name = "level_lootobjinfo_nameValue_lbl";
-            this.level_lootobjinfo_nameValue_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_lootobjinfo_nameValue_lbl.TabIndex = 34;
-            this.level_lootobjinfo_nameValue_lbl.Text = "label2";
-            // 
-            // level_lootobjinfo_main_lbl
-            // 
-            this.level_lootobjinfo_main_lbl.AutoSize = true;
-            this.level_lootobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_main_lbl.Location = new System.Drawing.Point(91, 6);
-            this.level_lootobjinfo_main_lbl.Name = "level_lootobjinfo_main_lbl";
-            this.level_lootobjinfo_main_lbl.Size = new System.Drawing.Size(105, 20);
-            this.level_lootobjinfo_main_lbl.TabIndex = 35;
-            this.level_lootobjinfo_main_lbl.Text = "Інформація";
-            // 
-            // level_lootobjinfo_typeValue_lbl
-            // 
-            this.level_lootobjinfo_typeValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_typeValue_lbl.Location = new System.Drawing.Point(60, 88);
-            this.level_lootobjinfo_typeValue_lbl.Name = "level_lootobjinfo_typeValue_lbl";
-            this.level_lootobjinfo_typeValue_lbl.Size = new System.Drawing.Size(50, 20);
-            this.level_lootobjinfo_typeValue_lbl.TabIndex = 36;
-            this.level_lootobjinfo_typeValue_lbl.Text = "label4";
-            // 
             // turn_owner_lbl
             // 
             this.turn_owner_lbl.AutoSize = true;
-            this.turn_owner_lbl.Location = new System.Drawing.Point(0, 81);
+            this.turn_owner_lbl.Location = new System.Drawing.Point(40, 110);
             this.turn_owner_lbl.Name = "turn_owner_lbl";
             this.turn_owner_lbl.Size = new System.Drawing.Size(61, 20);
             this.turn_owner_lbl.TabIndex = 43;
@@ -1682,7 +1582,7 @@ namespace Castle_Crushers
             // turn_owner
             // 
             this.turn_owner.AutoSize = true;
-            this.turn_owner.Location = new System.Drawing.Point(60, 81);
+            this.turn_owner.Location = new System.Drawing.Point(115, 110);
             this.turn_owner.Name = "turn_owner";
             this.turn_owner.Size = new System.Drawing.Size(89, 20);
             this.turn_owner.TabIndex = 101;
@@ -1691,7 +1591,7 @@ namespace Castle_Crushers
             // level_round_count_lbl
             // 
             this.level_round_count_lbl.AutoSize = true;
-            this.level_round_count_lbl.Location = new System.Drawing.Point(0, 119);
+            this.level_round_count_lbl.Location = new System.Drawing.Point(40, 150);
             this.level_round_count_lbl.Name = "level_round_count_lbl";
             this.level_round_count_lbl.Size = new System.Drawing.Size(52, 20);
             this.level_round_count_lbl.TabIndex = 103;
@@ -1700,7 +1600,7 @@ namespace Castle_Crushers
             // level_round_count
             // 
             this.level_round_count.AutoSize = true;
-            this.level_round_count.Location = new System.Drawing.Point(60, 119);
+            this.level_round_count.Location = new System.Drawing.Point(115, 150);
             this.level_round_count.Name = "level_round_count";
             this.level_round_count.Size = new System.Drawing.Size(17, 20);
             this.level_round_count.TabIndex = 104;
@@ -1710,7 +1610,7 @@ namespace Castle_Crushers
             // 
             this.level_name_lbl.AutoSize = true;
             this.level_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.level_name_lbl.Location = new System.Drawing.Point(65, 0);
+            this.level_name_lbl.Location = new System.Drawing.Point(108, 20);
             this.level_name_lbl.Name = "level_name_lbl";
             this.level_name_lbl.Size = new System.Drawing.Size(133, 20);
             this.level_name_lbl.TabIndex = 105;
@@ -1718,6 +1618,9 @@ namespace Castle_Crushers
             // 
             // level_turninfo_panel
             // 
+            this.level_turninfo_panel.BackColor = System.Drawing.Color.Transparent;
+            this.level_turninfo_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.global_details_img;
+            this.level_turninfo_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.level_turninfo_panel.Controls.Add(this.level_count_of_moves_lbl);
             this.level_turninfo_panel.Controls.Add(this.level_main_mission_lbl);
             this.level_turninfo_panel.Controls.Add(this.turn_owner_lbl);
@@ -1728,16 +1631,16 @@ namespace Castle_Crushers
             this.level_turninfo_panel.Controls.Add(this.Main_level_lbl);
             this.level_turninfo_panel.Controls.Add(this.level_round_count);
             this.level_turninfo_panel.Controls.Add(this.next_turn_btn);
-            this.level_turninfo_panel.Location = new System.Drawing.Point(10, 15);
+            this.level_turninfo_panel.Location = new System.Drawing.Point(5, 0);
             this.level_turninfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.level_turninfo_panel.Name = "level_turninfo_panel";
-            this.level_turninfo_panel.Size = new System.Drawing.Size(260, 300);
+            this.level_turninfo_panel.Size = new System.Drawing.Size(350, 350);
             this.level_turninfo_panel.TabIndex = 106;
             // 
             // level_count_of_moves_lbl
             // 
             this.level_count_of_moves_lbl.AutoSize = true;
-            this.level_count_of_moves_lbl.Location = new System.Drawing.Point(-1, 161);
+            this.level_count_of_moves_lbl.Location = new System.Drawing.Point(40, 190);
             this.level_count_of_moves_lbl.Name = "level_count_of_moves_lbl";
             this.level_count_of_moves_lbl.Size = new System.Drawing.Size(225, 20);
             this.level_count_of_moves_lbl.TabIndex = 113;
@@ -1746,7 +1649,7 @@ namespace Castle_Crushers
             // level_main_mission_lbl
             // 
             this.level_main_mission_lbl.AutoSize = true;
-            this.level_main_mission_lbl.Location = new System.Drawing.Point(0, 44);
+            this.level_main_mission_lbl.Location = new System.Drawing.Point(40, 70);
             this.level_main_mission_lbl.Name = "level_main_mission_lbl";
             this.level_main_mission_lbl.Size = new System.Drawing.Size(47, 20);
             this.level_main_mission_lbl.TabIndex = 111;
@@ -1755,48 +1658,44 @@ namespace Castle_Crushers
             // level_count_of_moves
             // 
             this.level_count_of_moves.AutoSize = true;
-            this.level_count_of_moves.Location = new System.Drawing.Point(220, 161);
+            this.level_count_of_moves.Location = new System.Drawing.Point(271, 190);
             this.level_count_of_moves.Name = "level_count_of_moves";
             this.level_count_of_moves.Size = new System.Drawing.Size(17, 20);
             this.level_count_of_moves.TabIndex = 106;
             this.level_count_of_moves.Text = "0";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1004, 113);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 20);
-            this.label3.TabIndex = 112;
-            this.label3.Text = "label1";
-            // 
             // Level_info_image_panel
             // 
+            this.Level_info_image_panel.BackColor = System.Drawing.Color.Transparent;
+            this.Level_info_image_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.first_ch_removebg_preview___копія_removebg_preview__1_;
+            this.Level_info_image_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Level_info_image_panel.Controls.Add(this.level_heroinfo_panel);
-            this.Level_info_image_panel.Location = new System.Drawing.Point(10, 380);
+            this.Level_info_image_panel.Controls.Add(this.level_lootinfo_panel);
+            this.Level_info_image_panel.Location = new System.Drawing.Point(0, 380);
             this.Level_info_image_panel.Name = "Level_info_image_panel";
             this.Level_info_image_panel.Size = new System.Drawing.Size(300, 625);
             this.Level_info_image_panel.TabIndex = 113;
+            // 
+            // background_parallax_panel
+            // 
+            this.background_parallax_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.main_menu_and_global_details_img;
+            this.background_parallax_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.background_parallax_panel.Controls.Add(this.level_turninfo_panel);
+            this.background_parallax_panel.Location = new System.Drawing.Point(0, 0);
+            this.background_parallax_panel.Name = "background_parallax_panel";
+            this.background_parallax_panel.Size = new System.Drawing.Size(1900, 375);
+            this.background_parallax_panel.TabIndex = 114;
+            this.background_parallax_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.background_parallax_panel_Paint);
             // 
             // Level
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.background_parallax_panel);
             this.Controls.Add(this.Level_info_image_panel);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.level_turninfo_panel);
             this.Controls.Add(this.battle_panel);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.pl3_show_info);
-            this.Controls.Add(this.pl4_show_info);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button26);
-            this.Controls.Add(this.button25);
-            this.Controls.Add(this.Level_next_btn);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Level";
@@ -1804,19 +1703,18 @@ namespace Castle_Crushers
             this.Load += new System.EventHandler(this.Level_Load);
             this.level_heroinfo_panel.ResumeLayout(false);
             this.level_heroinfo_panel.PerformLayout();
+            this.level_lootinfo_panel.ResumeLayout(false);
+            this.level_lootinfo_panel.PerformLayout();
             this.level_monsterinfo_panel.ResumeLayout(false);
             this.level_monsterinfo_panel.PerformLayout();
             this.level_monsterinfo_battle_panel.ResumeLayout(false);
             this.level_monsterinfo_battle_panel.PerformLayout();
             this.battle_panel.ResumeLayout(false);
-            this.battle_panel.PerformLayout();
-            this.level_lootinfo_panel.ResumeLayout(false);
-            this.level_lootinfo_panel.PerformLayout();
             this.level_turninfo_panel.ResumeLayout(false);
             this.level_turninfo_panel.PerformLayout();
             this.Level_info_image_panel.ResumeLayout(false);
+            this.background_parallax_panel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1824,14 +1722,8 @@ namespace Castle_Crushers
 
         private System.Windows.Forms.Label Main_level_lbl;
         private System.Windows.Forms.Button level_btn84;
-        private System.Windows.Forms.Button Level_next_btn;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button next_turn_btn;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label level_heroobjinfo_nameValue_lbl;
         private System.Windows.Forms.Label level_heroobjinfo_main_lbl;
         private System.Windows.Forms.Label level_heroobjinfo_typeValue_lbl;
@@ -1843,8 +1735,6 @@ namespace Castle_Crushers
         private System.Windows.Forms.Label level_heroobjinfo_health_lbl;
         private System.Windows.Forms.Button level_btn44;
         private System.Windows.Forms.Button level_btn41;
-        private System.Windows.Forms.Button pl4_show_info;
-        private System.Windows.Forms.Button pl3_show_info;
         private System.Windows.Forms.Button level_btn32;
         private System.Windows.Forms.Button level_btn42;
         private System.Windows.Forms.Button level_btn34;
@@ -1857,7 +1747,6 @@ namespace Castle_Crushers
         private System.Windows.Forms.Button level_btn93;
         private System.Windows.Forms.Button level_btn83;
         private System.Windows.Forms.Button level_btn30;
-        private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button level_btn74;
         private System.Windows.Forms.Button level_btn73;
         private System.Windows.Forms.Button level_btn72;
@@ -1964,7 +1853,7 @@ namespace Castle_Crushers
         private System.Windows.Forms.Label level_count_of_moves;
         private System.Windows.Forms.Label level_count_of_moves_lbl;
         private System.Windows.Forms.Label level_main_mission_lbl;
-        private System.Windows.Forms.Label label3;
         private Panel Level_info_image_panel;
+        private Panel background_parallax_panel;
     }
 }

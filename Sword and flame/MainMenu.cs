@@ -170,8 +170,8 @@ namespace Castle_Crushers
                     LevelProperties LP_city_obj1 = new LevelProperties("45", 0, "Вістред", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/wistred.jpg"));
                     LevelProperties LP_city_obj2 = new LevelProperties("46", 0, "Кверат", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/wistred.jpg")); //////
                     LevelProperties LP_city_obj3 = new LevelProperties("47", 0, "Данкірм", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/dankirm.jpg"));
-                    LevelProperties LP_city_obj5 = new LevelProperties("48", 0, "Тайрен", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/tiren.jpg"));
-                    LevelProperties LP_city_obj4 = new LevelProperties("49", 0, "Еквінсет", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/equinset.jpg"));
+                    LevelProperties LP_city_obj4 = new LevelProperties("48", 0, "Тайрен", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/tiren.jpg"));
+                    LevelProperties LP_city_obj5 = new LevelProperties("49", 0, "Еквінсет", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/equinset.jpg"));
                     LevelProperties LP_city_obj6 = new LevelProperties("50", 0, "Асемель", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/asemel.jpg"));
                     LevelProperties LP_city_obj7 = new LevelProperties("51", 0, "Розенест", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/rosennest.jpg"));
                     LevelProperties LP_city_obj8 = new LevelProperties("52", 0, "Аурефорт", "story", false, "bm", 1, "sm", Image.FromFile("D:/Dmitry/Саморозвиток/Прорамування/Мої проекти/Sword and flame/Зображення/Wallpaper/Рівні/Cities/aurefort.jpg"));
@@ -270,13 +270,6 @@ namespace Castle_Crushers
 
         private void MM_NG_btn_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 5; i++)
-            {
-                Console.WriteLine(i + " " + LevelProperties.level_list[i].level_name);
-                Console.WriteLine("a");
-            }
-
-
             Hide();
             NGGlobalDetails NGGlobalDetails_obj = new NGGlobalDetails();
             NGGlobalDetails_obj.Show();

@@ -88,7 +88,7 @@ namespace Castle_Crushers
             this.pl2_panel_RPD.Controls.Add(this.pl2_name_RPD_lbl);
             this.pl2_panel_RPD.Controls.Add(this.pl2_name_tbx);
             this.pl2_panel_RPD.Controls.Add(this.pl2_class_RPD_lbl);
-            this.pl2_panel_RPD.Location = new System.Drawing.Point(520, 100);
+            this.pl2_panel_RPD.Location = new System.Drawing.Point(510, 100);
             this.pl2_panel_RPD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl2_panel_RPD.Name = "pl2_panel_RPD";
             this.pl2_panel_RPD.Size = new System.Drawing.Size(400, 675);
@@ -173,7 +173,7 @@ namespace Castle_Crushers
             this.pl3_panel_RPD.Controls.Add(this.pl3_name_RPD_lbl);
             this.pl3_panel_RPD.Controls.Add(this.pl3_name_tbx);
             this.pl3_panel_RPD.Controls.Add(this.pl3_class_RPD_lbl);
-            this.pl3_panel_RPD.Location = new System.Drawing.Point(1020, 100);
+            this.pl3_panel_RPD.Location = new System.Drawing.Point(1010, 100);
             this.pl3_panel_RPD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl3_panel_RPD.Name = "pl3_panel_RPD";
             this.pl3_panel_RPD.Size = new System.Drawing.Size(400, 675);
@@ -257,7 +257,7 @@ namespace Castle_Crushers
             this.pl4_panel_RPD.Controls.Add(this.pl4_name_RPD_lbl);
             this.pl4_panel_RPD.Controls.Add(this.pl4_name_tbx);
             this.pl4_panel_RPD.Controls.Add(this.pl4_class_RPD_lbl);
-            this.pl4_panel_RPD.Location = new System.Drawing.Point(1520, 100);
+            this.pl4_panel_RPD.Location = new System.Drawing.Point(1510, 100);
             this.pl4_panel_RPD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl4_panel_RPD.Name = "pl4_panel_RPD";
             this.pl4_panel_RPD.Size = new System.Drawing.Size(400, 675);
@@ -350,7 +350,7 @@ namespace Castle_Crushers
             this.pl1_panel_RPD.Controls.Add(this.pl1_name_RPD_lbl);
             this.pl1_panel_RPD.Controls.Add(this.pl1_name_tbx);
             this.pl1_panel_RPD.Controls.Add(this.pl1_class_RPD_lbl);
-            this.pl1_panel_RPD.Location = new System.Drawing.Point(20, 100);
+            this.pl1_panel_RPD.Location = new System.Drawing.Point(10, 100);
             this.pl1_panel_RPD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl1_panel_RPD.Name = "pl1_panel_RPD";
             this.pl1_panel_RPD.Size = new System.Drawing.Size(400, 675);

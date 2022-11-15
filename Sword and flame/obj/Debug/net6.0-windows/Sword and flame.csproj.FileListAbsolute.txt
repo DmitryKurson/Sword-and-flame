@@ -15,7 +15,6 @@ C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-wi
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.Properties.Resources.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.ShowMessage.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.ShowMessage_ChooseFrom2.resources
-C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.TESTForm.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.TutorialForm.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.csproj.GenerateResource.cache
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.GeneratedMSBuildEditorConfig.editorconfig

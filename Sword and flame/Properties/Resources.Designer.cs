@@ -93,6 +93,16 @@ namespace Sword_and_flame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap camp_info_panel {
+            get {
+                object obj = ResourceManager.GetObject("camp_info_panel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap camp_main_panel {
             get {
                 object obj = ResourceManager.GetObject("camp_main_panel", resourceCulture);
@@ -116,6 +126,16 @@ namespace Sword_and_flame.Properties {
         internal static System.Drawing.Bitmap FINAL_MAP {
             get {
                 object obj = ResourceManager.GetObject("FINAL_MAP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap first_ch_removebg_preview___копія_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("first_ch-removebg-preview___копія-removebg-preview (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -84,25 +84,21 @@ namespace Castle_Crushers
                     {
                         LevPrev_pl1_Inventory01Value_lbl.Text = "Пусто";
                         LevPrev_pl1_Inventory02Value_lbl.Visible = false;
-                        LevPrev_pl1_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 1)
                     {
                         LevPrev_pl1_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl1_Inventory02Value_lbl.Visible = false;
-                        LevPrev_pl1_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 2)
                     {
                         LevPrev_pl1_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl1_Inventory02Value_lbl.Text = hero.inventory[1].name;
-                        LevPrev_pl1_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 3)
                     {
                         LevPrev_pl1_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl1_Inventory02Value_lbl.Text = hero.inventory[1].name;
-                        LevPrev_pl1_Inventory03Value_lbl.Text = hero.inventory[2].name;
                     }
                     break;
                 case 2:
@@ -117,25 +113,21 @@ namespace Castle_Crushers
                     {
                         LevPrev_pl2_Inventory01Value_lbl.Text = "Пусто";
                         LevPrev_pl2_Inventory02Value_lbl.Visible = false;
-                        LevPrev_pl2_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 1)
                     {
                         LevPrev_pl2_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl2_Inventory02Value_lbl.Visible = false;
-                        LevPrev_pl2_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 2)
                     {
                         LevPrev_pl2_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl2_Inventory02Value_lbl.Text = hero.inventory[1].name;
-                        LevPrev_pl2_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 3)
                     {
                         LevPrev_pl2_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl2_Inventory02Value_lbl.Text = hero.inventory[1].name;
-                        LevPrev_pl2_Inventory03Value_lbl.Text = hero.inventory[2].name;
                     }
                     break;
                 case 3:
@@ -150,25 +142,21 @@ namespace Castle_Crushers
                     {
                         LevPrev_pl3_Inventory01Value_lbl.Text = "Пусто";
                         LevPrev_pl3_Inventory02Value_lbl.Visible = false;
-                        LevPrev_pl3_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 1)
                     {
                         LevPrev_pl3_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl3_Inventory02Value_lbl.Visible = false;
-                        LevPrev_pl3_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 2)
                     {
                         LevPrev_pl3_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl3_Inventory02Value_lbl.Text = hero.inventory[1].name;
-                        LevPrev_pl3_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 3)
                     {
                         LevPrev_pl3_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl3_Inventory02Value_lbl.Text = hero.inventory[1].name;
-                        LevPrev_pl3_Inventory03Value_lbl.Text = hero.inventory[2].name;
                     }
                     break;
                 case 4:
@@ -183,25 +171,21 @@ namespace Castle_Crushers
                     {
                         LevPrev_pl4_Inventory01Value_lbl.Text = "Пусто";
                         LevPrev_pl4_Inventory02Value_lbl.Visible = false;
-                        LevPrev_pl4_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 1)
                     {
                         LevPrev_pl4_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl4_Inventory02Value_lbl.Visible = false;
-                        LevPrev_pl4_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 2)
                     {
                         LevPrev_pl4_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl4_Inventory02Value_lbl.Text = hero.inventory[1].name;
-                        LevPrev_pl4_Inventory03Value_lbl.Visible = false;
                     }
                     else if (hero.inventory.Count == 3)
                     {
                         LevPrev_pl4_Inventory01Value_lbl.Text = hero.inventory[0].name;
                         LevPrev_pl4_Inventory02Value_lbl.Text = hero.inventory[1].name;
-                        LevPrev_pl4_Inventory03Value_lbl.Text = hero.inventory[2].name;
                     }
                     break;
             }
@@ -234,6 +218,11 @@ namespace Castle_Crushers
         }
 
         private void LevPrev_level_name_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LevPrev_pl2_panel_Paint(object sender, PaintEventArgs e)
         {
 
         }

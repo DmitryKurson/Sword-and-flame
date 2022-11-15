@@ -63,6 +63,19 @@ namespace Castle_Crushers
             this.player1_lefthand_btn = new System.Windows.Forms.Button();
             this.player1_torso_btn = new System.Windows.Forms.Button();
             this.camp_main_panel = new System.Windows.Forms.Panel();
+            this.camp_img_panel = new System.Windows.Forms.Panel();
+            this.camp_heroinfo_panel = new System.Windows.Forms.Panel();
+            this.camp_heroinfo_level_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_levelValue_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_strengthValue_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_defenseValue_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_healthValue_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_speedValue_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_strength_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_defense_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_speed_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_health_lbl = new System.Windows.Forms.Label();
+            this.camp_heroinfo_name_lbl = new System.Windows.Forms.Label();
             this.player2_overal_panel = new System.Windows.Forms.Panel();
             this.player2_main_panel = new System.Windows.Forms.Panel();
             this.player2_gold_btn = new System.Windows.Forms.Button();
@@ -96,31 +109,18 @@ namespace Castle_Crushers
             this.player4_lefthand_btn = new System.Windows.Forms.Button();
             this.player4_torso_btn = new System.Windows.Forms.Button();
             this.player4_name_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_panel = new System.Windows.Forms.Panel();
-            this.camp_heroinfo_level_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_levelValue_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_strengthValue_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_defenseValue_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_healthValue_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_speedValue_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_strength_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_defense_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_speed_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_health_lbl = new System.Windows.Forms.Label();
-            this.camp_heroinfo_name_lbl = new System.Windows.Forms.Label();
-            this.camp_img_panel = new System.Windows.Forms.Panel();
             this.camp_lootinfo_panel.SuspendLayout();
             this.player1_overal_panel.SuspendLayout();
             this.player1_main_panel.SuspendLayout();
             this.camp_main_panel.SuspendLayout();
+            this.camp_img_panel.SuspendLayout();
+            this.camp_heroinfo_panel.SuspendLayout();
             this.player2_overal_panel.SuspendLayout();
             this.player2_main_panel.SuspendLayout();
             this.player3_overal_panel.SuspendLayout();
             this.player3_main_panel.SuspendLayout();
             this.player4_overal_panel.SuspendLayout();
             this.player4_main_panel.SuspendLayout();
-            this.camp_heroinfo_panel.SuspendLayout();
-            this.camp_img_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // table
@@ -516,6 +516,139 @@ namespace Castle_Crushers
             this.camp_main_panel.Size = new System.Drawing.Size(1900, 1030);
             this.camp_main_panel.TabIndex = 50;
             this.camp_main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.camp_main_panel_Paint);
+            // 
+            // camp_img_panel
+            // 
+            this.camp_img_panel.BackColor = System.Drawing.Color.Transparent;
+            this.camp_img_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.camp_img_panel.Controls.Add(this.camp_lootinfo_panel);
+            this.camp_img_panel.Controls.Add(this.camp_heroinfo_panel);
+            this.camp_img_panel.Location = new System.Drawing.Point(190, 730);
+            this.camp_img_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.camp_img_panel.Name = "camp_img_panel";
+            this.camp_img_panel.Size = new System.Drawing.Size(530, 285);
+            this.camp_img_panel.TabIndex = 111;
+            // 
+            // camp_heroinfo_panel
+            // 
+            this.camp_heroinfo_panel.BackColor = System.Drawing.Color.Transparent;
+            this.camp_heroinfo_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_level_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_levelValue_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_strengthValue_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_defenseValue_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_healthValue_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_speedValue_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_strength_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_defense_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_speed_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_health_lbl);
+            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_name_lbl);
+            this.camp_heroinfo_panel.Location = new System.Drawing.Point(0, 0);
+            this.camp_heroinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.camp_heroinfo_panel.Name = "camp_heroinfo_panel";
+            this.camp_heroinfo_panel.Size = new System.Drawing.Size(200, 200);
+            this.camp_heroinfo_panel.TabIndex = 110;
+            // 
+            // camp_heroinfo_level_lbl
+            // 
+            this.camp_heroinfo_level_lbl.AutoSize = true;
+            this.camp_heroinfo_level_lbl.Location = new System.Drawing.Point(3, 30);
+            this.camp_heroinfo_level_lbl.Name = "camp_heroinfo_level_lbl";
+            this.camp_heroinfo_level_lbl.Size = new System.Drawing.Size(57, 20);
+            this.camp_heroinfo_level_lbl.TabIndex = 100;
+            this.camp_heroinfo_level_lbl.Text = "Рівень:";
+            // 
+            // camp_heroinfo_levelValue_lbl
+            // 
+            this.camp_heroinfo_levelValue_lbl.AutoSize = true;
+            this.camp_heroinfo_levelValue_lbl.Location = new System.Drawing.Point(85, 30);
+            this.camp_heroinfo_levelValue_lbl.Name = "camp_heroinfo_levelValue_lbl";
+            this.camp_heroinfo_levelValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_levelValue_lbl.TabIndex = 99;
+            this.camp_heroinfo_levelValue_lbl.Text = "0";
+            // 
+            // camp_heroinfo_strengthValue_lbl
+            // 
+            this.camp_heroinfo_strengthValue_lbl.AutoSize = true;
+            this.camp_heroinfo_strengthValue_lbl.Location = new System.Drawing.Point(85, 60);
+            this.camp_heroinfo_strengthValue_lbl.Name = "camp_heroinfo_strengthValue_lbl";
+            this.camp_heroinfo_strengthValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_strengthValue_lbl.TabIndex = 49;
+            this.camp_heroinfo_strengthValue_lbl.Text = "0";
+            // 
+            // camp_heroinfo_defenseValue_lbl
+            // 
+            this.camp_heroinfo_defenseValue_lbl.AutoSize = true;
+            this.camp_heroinfo_defenseValue_lbl.Location = new System.Drawing.Point(85, 90);
+            this.camp_heroinfo_defenseValue_lbl.Name = "camp_heroinfo_defenseValue_lbl";
+            this.camp_heroinfo_defenseValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_defenseValue_lbl.TabIndex = 45;
+            this.camp_heroinfo_defenseValue_lbl.Text = "0";
+            // 
+            // camp_heroinfo_healthValue_lbl
+            // 
+            this.camp_heroinfo_healthValue_lbl.AutoSize = true;
+            this.camp_heroinfo_healthValue_lbl.Location = new System.Drawing.Point(85, 120);
+            this.camp_heroinfo_healthValue_lbl.Name = "camp_heroinfo_healthValue_lbl";
+            this.camp_heroinfo_healthValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_healthValue_lbl.TabIndex = 44;
+            this.camp_heroinfo_healthValue_lbl.Text = "0";
+            // 
+            // camp_heroinfo_speedValue_lbl
+            // 
+            this.camp_heroinfo_speedValue_lbl.AutoSize = true;
+            this.camp_heroinfo_speedValue_lbl.Location = new System.Drawing.Point(85, 150);
+            this.camp_heroinfo_speedValue_lbl.Name = "camp_heroinfo_speedValue_lbl";
+            this.camp_heroinfo_speedValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_speedValue_lbl.TabIndex = 43;
+            this.camp_heroinfo_speedValue_lbl.Text = "0";
+            // 
+            // camp_heroinfo_strength_lbl
+            // 
+            this.camp_heroinfo_strength_lbl.AutoSize = true;
+            this.camp_heroinfo_strength_lbl.Location = new System.Drawing.Point(3, 60);
+            this.camp_heroinfo_strength_lbl.Name = "camp_heroinfo_strength_lbl";
+            this.camp_heroinfo_strength_lbl.Size = new System.Drawing.Size(46, 20);
+            this.camp_heroinfo_strength_lbl.TabIndex = 41;
+            this.camp_heroinfo_strength_lbl.Text = "Сила:";
+            // 
+            // camp_heroinfo_defense_lbl
+            // 
+            this.camp_heroinfo_defense_lbl.AutoSize = true;
+            this.camp_heroinfo_defense_lbl.Location = new System.Drawing.Point(3, 90);
+            this.camp_heroinfo_defense_lbl.Name = "camp_heroinfo_defense_lbl";
+            this.camp_heroinfo_defense_lbl.Size = new System.Drawing.Size(57, 20);
+            this.camp_heroinfo_defense_lbl.TabIndex = 38;
+            this.camp_heroinfo_defense_lbl.Text = "Захист:";
+            // 
+            // camp_heroinfo_speed_lbl
+            // 
+            this.camp_heroinfo_speed_lbl.AutoSize = true;
+            this.camp_heroinfo_speed_lbl.Location = new System.Drawing.Point(3, 150);
+            this.camp_heroinfo_speed_lbl.Name = "camp_heroinfo_speed_lbl";
+            this.camp_heroinfo_speed_lbl.Size = new System.Drawing.Size(83, 20);
+            this.camp_heroinfo_speed_lbl.TabIndex = 39;
+            this.camp_heroinfo_speed_lbl.Text = "Швидкість:";
+            // 
+            // camp_heroinfo_health_lbl
+            // 
+            this.camp_heroinfo_health_lbl.AutoSize = true;
+            this.camp_heroinfo_health_lbl.Location = new System.Drawing.Point(3, 120);
+            this.camp_heroinfo_health_lbl.Name = "camp_heroinfo_health_lbl";
+            this.camp_heroinfo_health_lbl.Size = new System.Drawing.Size(74, 20);
+            this.camp_heroinfo_health_lbl.TabIndex = 42;
+            this.camp_heroinfo_health_lbl.Text = "Здоров\'я:";
+            // 
+            // camp_heroinfo_name_lbl
+            // 
+            this.camp_heroinfo_name_lbl.AutoSize = true;
+            this.camp_heroinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.camp_heroinfo_name_lbl.Location = new System.Drawing.Point(40, 0);
+            this.camp_heroinfo_name_lbl.Name = "camp_heroinfo_name_lbl";
+            this.camp_heroinfo_name_lbl.Size = new System.Drawing.Size(119, 20);
+            this.camp_heroinfo_name_lbl.TabIndex = 35;
+            this.camp_heroinfo_name_lbl.Text = "XXXXXXXXXX";
             // 
             // player2_overal_panel
             // 
@@ -1005,139 +1138,6 @@ namespace Castle_Crushers
             this.player4_name_lbl.TabIndex = 0;
             this.player4_name_lbl.Text = "ХХХХХХХХХХ";
             // 
-            // camp_heroinfo_panel
-            // 
-            this.camp_heroinfo_panel.BackColor = System.Drawing.Color.Transparent;
-            this.camp_heroinfo_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_level_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_levelValue_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_strengthValue_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_defenseValue_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_healthValue_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_speedValue_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_strength_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_defense_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_speed_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_health_lbl);
-            this.camp_heroinfo_panel.Controls.Add(this.camp_heroinfo_name_lbl);
-            this.camp_heroinfo_panel.Location = new System.Drawing.Point(0, 0);
-            this.camp_heroinfo_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.camp_heroinfo_panel.Name = "camp_heroinfo_panel";
-            this.camp_heroinfo_panel.Size = new System.Drawing.Size(200, 200);
-            this.camp_heroinfo_panel.TabIndex = 110;
-            // 
-            // camp_heroinfo_level_lbl
-            // 
-            this.camp_heroinfo_level_lbl.AutoSize = true;
-            this.camp_heroinfo_level_lbl.Location = new System.Drawing.Point(3, 30);
-            this.camp_heroinfo_level_lbl.Name = "camp_heroinfo_level_lbl";
-            this.camp_heroinfo_level_lbl.Size = new System.Drawing.Size(57, 20);
-            this.camp_heroinfo_level_lbl.TabIndex = 100;
-            this.camp_heroinfo_level_lbl.Text = "Рівень:";
-            // 
-            // camp_heroinfo_levelValue_lbl
-            // 
-            this.camp_heroinfo_levelValue_lbl.AutoSize = true;
-            this.camp_heroinfo_levelValue_lbl.Location = new System.Drawing.Point(85, 30);
-            this.camp_heroinfo_levelValue_lbl.Name = "camp_heroinfo_levelValue_lbl";
-            this.camp_heroinfo_levelValue_lbl.Size = new System.Drawing.Size(17, 20);
-            this.camp_heroinfo_levelValue_lbl.TabIndex = 99;
-            this.camp_heroinfo_levelValue_lbl.Text = "0";
-            // 
-            // camp_heroinfo_strengthValue_lbl
-            // 
-            this.camp_heroinfo_strengthValue_lbl.AutoSize = true;
-            this.camp_heroinfo_strengthValue_lbl.Location = new System.Drawing.Point(85, 60);
-            this.camp_heroinfo_strengthValue_lbl.Name = "camp_heroinfo_strengthValue_lbl";
-            this.camp_heroinfo_strengthValue_lbl.Size = new System.Drawing.Size(17, 20);
-            this.camp_heroinfo_strengthValue_lbl.TabIndex = 49;
-            this.camp_heroinfo_strengthValue_lbl.Text = "0";
-            // 
-            // camp_heroinfo_defenseValue_lbl
-            // 
-            this.camp_heroinfo_defenseValue_lbl.AutoSize = true;
-            this.camp_heroinfo_defenseValue_lbl.Location = new System.Drawing.Point(85, 90);
-            this.camp_heroinfo_defenseValue_lbl.Name = "camp_heroinfo_defenseValue_lbl";
-            this.camp_heroinfo_defenseValue_lbl.Size = new System.Drawing.Size(17, 20);
-            this.camp_heroinfo_defenseValue_lbl.TabIndex = 45;
-            this.camp_heroinfo_defenseValue_lbl.Text = "0";
-            // 
-            // camp_heroinfo_healthValue_lbl
-            // 
-            this.camp_heroinfo_healthValue_lbl.AutoSize = true;
-            this.camp_heroinfo_healthValue_lbl.Location = new System.Drawing.Point(85, 120);
-            this.camp_heroinfo_healthValue_lbl.Name = "camp_heroinfo_healthValue_lbl";
-            this.camp_heroinfo_healthValue_lbl.Size = new System.Drawing.Size(17, 20);
-            this.camp_heroinfo_healthValue_lbl.TabIndex = 44;
-            this.camp_heroinfo_healthValue_lbl.Text = "0";
-            // 
-            // camp_heroinfo_speedValue_lbl
-            // 
-            this.camp_heroinfo_speedValue_lbl.AutoSize = true;
-            this.camp_heroinfo_speedValue_lbl.Location = new System.Drawing.Point(85, 150);
-            this.camp_heroinfo_speedValue_lbl.Name = "camp_heroinfo_speedValue_lbl";
-            this.camp_heroinfo_speedValue_lbl.Size = new System.Drawing.Size(17, 20);
-            this.camp_heroinfo_speedValue_lbl.TabIndex = 43;
-            this.camp_heroinfo_speedValue_lbl.Text = "0";
-            // 
-            // camp_heroinfo_strength_lbl
-            // 
-            this.camp_heroinfo_strength_lbl.AutoSize = true;
-            this.camp_heroinfo_strength_lbl.Location = new System.Drawing.Point(3, 60);
-            this.camp_heroinfo_strength_lbl.Name = "camp_heroinfo_strength_lbl";
-            this.camp_heroinfo_strength_lbl.Size = new System.Drawing.Size(46, 20);
-            this.camp_heroinfo_strength_lbl.TabIndex = 41;
-            this.camp_heroinfo_strength_lbl.Text = "Сила:";
-            // 
-            // camp_heroinfo_defense_lbl
-            // 
-            this.camp_heroinfo_defense_lbl.AutoSize = true;
-            this.camp_heroinfo_defense_lbl.Location = new System.Drawing.Point(3, 90);
-            this.camp_heroinfo_defense_lbl.Name = "camp_heroinfo_defense_lbl";
-            this.camp_heroinfo_defense_lbl.Size = new System.Drawing.Size(57, 20);
-            this.camp_heroinfo_defense_lbl.TabIndex = 38;
-            this.camp_heroinfo_defense_lbl.Text = "Захист:";
-            // 
-            // camp_heroinfo_speed_lbl
-            // 
-            this.camp_heroinfo_speed_lbl.AutoSize = true;
-            this.camp_heroinfo_speed_lbl.Location = new System.Drawing.Point(3, 150);
-            this.camp_heroinfo_speed_lbl.Name = "camp_heroinfo_speed_lbl";
-            this.camp_heroinfo_speed_lbl.Size = new System.Drawing.Size(83, 20);
-            this.camp_heroinfo_speed_lbl.TabIndex = 39;
-            this.camp_heroinfo_speed_lbl.Text = "Швидкість:";
-            // 
-            // camp_heroinfo_health_lbl
-            // 
-            this.camp_heroinfo_health_lbl.AutoSize = true;
-            this.camp_heroinfo_health_lbl.Location = new System.Drawing.Point(3, 120);
-            this.camp_heroinfo_health_lbl.Name = "camp_heroinfo_health_lbl";
-            this.camp_heroinfo_health_lbl.Size = new System.Drawing.Size(74, 20);
-            this.camp_heroinfo_health_lbl.TabIndex = 42;
-            this.camp_heroinfo_health_lbl.Text = "Здоров\'я:";
-            // 
-            // camp_heroinfo_name_lbl
-            // 
-            this.camp_heroinfo_name_lbl.AutoSize = true;
-            this.camp_heroinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.camp_heroinfo_name_lbl.Location = new System.Drawing.Point(40, 0);
-            this.camp_heroinfo_name_lbl.Name = "camp_heroinfo_name_lbl";
-            this.camp_heroinfo_name_lbl.Size = new System.Drawing.Size(119, 20);
-            this.camp_heroinfo_name_lbl.TabIndex = 35;
-            this.camp_heroinfo_name_lbl.Text = "XXXXXXXXXX";
-            // 
-            // camp_img_panel
-            // 
-            this.camp_img_panel.BackColor = System.Drawing.Color.Transparent;
-            this.camp_img_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.camp_img_panel.Controls.Add(this.camp_lootinfo_panel);
-            this.camp_img_panel.Controls.Add(this.camp_heroinfo_panel);
-            this.camp_img_panel.Location = new System.Drawing.Point(190, 730);
-            this.camp_img_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.camp_img_panel.Name = "camp_img_panel";
-            this.camp_img_panel.Size = new System.Drawing.Size(930, 400);
-            this.camp_img_panel.TabIndex = 111;
-            // 
             // Camp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1157,6 +1157,9 @@ namespace Castle_Crushers
             this.player1_overal_panel.PerformLayout();
             this.player1_main_panel.ResumeLayout(false);
             this.camp_main_panel.ResumeLayout(false);
+            this.camp_img_panel.ResumeLayout(false);
+            this.camp_heroinfo_panel.ResumeLayout(false);
+            this.camp_heroinfo_panel.PerformLayout();
             this.player2_overal_panel.ResumeLayout(false);
             this.player2_overal_panel.PerformLayout();
             this.player2_main_panel.ResumeLayout(false);
@@ -1166,9 +1169,6 @@ namespace Castle_Crushers
             this.player4_overal_panel.ResumeLayout(false);
             this.player4_overal_panel.PerformLayout();
             this.player4_main_panel.ResumeLayout(false);
-            this.camp_heroinfo_panel.ResumeLayout(false);
-            this.camp_heroinfo_panel.PerformLayout();
-            this.camp_img_panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -95,28 +95,21 @@ namespace Castle_Crushers
 
         
         public void Turn(List<Loot> loot, List<Hero> hero, LevelObjects[,] level_map, int j)
-        {
-            turn_owner.Text = hero[j].name;
+        {           
             if (hero[j].current_health <= 0)
             {
-                if (GameGlobalData.count_of_players == 1)
-                {
-                    Console.WriteLine("Кінець гри");
-                }
-                else
-                {
-                    Console.WriteLine("игрок " + hero[j].name + " мертв. пропуск хода...");
-                    Turn(loot, hero, level_map, j + 1);
-                }                
+                Console.WriteLine("игрок " + hero[j].name + " мертв. пропуск хода...");
+                Turn(loot, hero, level_map, j + 1);               
             }
             else
             {
+                turn_owner.Text = hero[j].name;
+                GameGlobalData.current_turn_player_name = hero[j].name;
                 GameGlobalData.count_of_moves = hero[j].current_speed;
                 level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
-                ShowMessage player_turn_info = new ShowMessage(hero[j].name);
-                GameGlobalData.current_turn_player_name = hero[j].name;
-                player_turn_info.ShowDialog();
                 paint_buttons(level_map, hero[j]);
+                ShowMessage player_turn_info = new ShowMessage(hero[j].name);
+                player_turn_info.ShowDialog();                
             }
             //hero[j].inventory[0].
             
@@ -163,16 +156,32 @@ namespace Castle_Crushers
                     {
                         if (Math.Abs(monster.x - heroes[i].x) == 1 || Math.Abs(monster.y - heroes[i].y) == 1)
                         {
-                            Hero.Attack(heroes[i], monster, level_map);
+                            if (Hero.Attack(heroes[i], monster, level_map) == true)
+                            {
+                                count_of_monsters--;
+                                victory_check();
+                            }
                             set_null_obj(level_map);
                             button_set_text(level_map);
                             set_static_color();
-                            paint_buttons(level_map, heroes[i]);
+                            paint_buttons(level_map, heroes[i]);                           
                         }
                     }
                 }
             }
         }
+
+        private void victory_check()
+        {
+            if (count_of_monsters == 0)
+            {
+                ShowMessage showMessage_obj = new ShowMessage("Рівень пройдено");
+                showMessage_obj.ShowDialog();
+                EventEnd eventEnd_obj = new EventEnd();
+                eventEnd_obj.ShowDialog();
+            }
+        }
+
         private void MoveCheck(List <Hero> heroes, int position_to_move_X, int position_to_move_Y)
         {         
             for (int i = 0; i < heroes.Count; i++)
@@ -263,12 +272,6 @@ namespace Castle_Crushers
                     level_heroobjinfo_inventory02Value_lbl.Text = variable_hero.inventory[1].name;
                     level_heroobjinfo_inventory03Value_lbl.Visible = false;
                 }
-                else if (variable_hero.inventory.Count == 3)
-                {
-                    level_heroobjinfo_inventory01Value_lbl.Text = variable_hero.inventory[0].name;
-                    level_heroobjinfo_inventory02Value_lbl.Text = variable_hero.inventory[1].name;
-                    level_heroobjinfo_inventory03Value_lbl.Text = variable_hero.inventory[2].name;
-                }
             }
             else if (level_map[x, y] is Monster)
             {
@@ -291,20 +294,82 @@ namespace Castle_Crushers
                         int maximum_damage_to_hero = variable_monster.monster_strength + variable_monster.monster_random_strength - hero.current_defense;
                         int minimum_damage_to_monster = hero.current_strength - (variable_monster.monster_defense + variable_monster.monster_random_defense);
                         int maximum_damage_to_monster = hero.current_strength + hero.current_random_strength - variable_monster.monster_defense;
-                        if (minimum_damage_to_hero < 0)
+                        if (minimum_damage_to_hero <= 0)
                         {
                             minimum_damage_to_hero = 0;
+                            battle_result = "\t"+ hero.name + ":\n не отримає поранень";
                         }
-                        if (minimum_damage_to_monster < 0)
+                        else
+                        {
+                            if (hero.current_health - minimum_damage_to_hero < 0)
+                            {
+                                battle_result = "\t" + hero.name + ":\n точно загине";
+                            }
+                            else
+                            {
+                                if (hero.current_health - maximum_damage_to_hero > 0)
+                                {
+                                    if (maximum_damage_to_monster == minimum_damage_to_monster)
+                                    {
+                                        battle_result = "\t" + hero.name + ":\n зазнає поранень (" + maximum_damage_to_hero + "), проте не загине.";
+                                    }
+                                    else
+                                    {
+                                        battle_result = "\t" + hero.name + ":\n зазнає поранень (" + minimum_damage_to_hero + "-" + maximum_damage_to_hero + "), проте не загине.";
+                                    }
+                                }
+                                else
+                                {
+                                    if (maximum_damage_to_monster == minimum_damage_to_monster)
+                                    {
+                                        battle_result = "\t" + hero.name + ":\n зазнає поранень (" + maximum_damage_to_hero + "), можливо загине.";
+                                    }
+                                    else
+                                    {
+                                        battle_result = "\t" + hero.name + ":\n зазнає поранень (" + minimum_damage_to_hero + "-" + maximum_damage_to_hero + "), можливо загине.";
+                                    }
+                                }
+                            }
+                        }
+                        if (minimum_damage_to_monster <= 0)
                         {
                             minimum_damage_to_monster = 0;
+                            battle_result += "\n\t" + variable_monster.name + ":\n не отримає поранень";
                         }
-                        
+                        else
+                        {
+                            if (variable_monster.monster_health - minimum_damage_to_monster <= 0)
+                            {
+                                battle_result += "\n\t" + variable_monster.name + ":\n точно загине";
+                            }
+                            else
+                            {
+                                if (variable_monster.monster_health - maximum_damage_to_monster > 0)
+                                {
+                                    if (maximum_damage_to_monster == minimum_damage_to_monster)
+                                    {
+                                        battle_result += "\n\t" + variable_monster.name + ":\n зазнає поранень (" + maximum_damage_to_monster + "), проте не загине.";
+                                    }
+                                    else
+                                    {
+                                        battle_result += "\n\t" + variable_monster.name + ":\n зазнає поранень (" + minimum_damage_to_monster + "-" + maximum_damage_to_monster + "), проте не загине.";
+                                    }
+                                }
+                                else
+                                {
+                                    if (maximum_damage_to_monster == minimum_damage_to_monster)
+                                    {
+                                        battle_result = "\n\t" + variable_monster.name + ":\n зазнає поранень (" + maximum_damage_to_monster + "), можливо загине.";
+                                    }
+                                    else
+                                    {
+                                        battle_result = "\n\t" + variable_monster.name + ":\n зазнає поранень (" + minimum_damage_to_monster + "-" + maximum_damage_to_monster + "), можливо загине.";
+                                    }
+                                }
+                            }
+                        }
+                        level_monsterobjinfo_posibilities_consequences_lbl.Text = battle_result;
 
-                        
-
-                        
-                        
                         level_monsterinfo_battle_panel.Visible = true;
                         level_monsterobjinfo_posibilities_hero_strength_lbl.ForeColor = Color.Green;                  
                         level_monsterobjinfo_posibilities_hero_defense_lbl.ForeColor = Color.Green;
@@ -320,51 +385,8 @@ namespace Castle_Crushers
                         level_monsterobjinfo_posibilities_monster_defense_lbl.Text = variable_monster.monster_defense.ToString() + " (" + variable_monster.monster_random_defense + ")";
                         level_monsterobjinfo_posibilities_monster_health_lbl.Text = variable_monster.monster_health.ToString();
 
-                        if (maximum_damage_to_monster <= 0)
-                        {
-                            battle_result = variable_monster.name + ": не отримає поранень";
-                        }
-                        else
-                        {
-                            if (variable_monster.monster_health - minimum_damage_to_monster < 0)
-                            {
-                                battle_result = variable_monster.name + ": точно загине";
-                            }
-                            else
-                            {
-                                if (variable_monster.monster_health - maximum_damage_to_monster <= 0)
-                                {
-                                    battle_result = variable_monster.name + ": зазнає поранень (" + minimum_damage_to_monster + "-" + maximum_damage_to_monster + "), можливо загине.";
-                                }
-                                else
-                                {
-                                    battle_result = variable_monster.name + ": зазнає поранень (" + minimum_damage_to_monster + "-" + maximum_damage_to_monster + "), проте не загине.";
-                                }
-                            }                           
-                        }
-                        if (maximum_damage_to_hero <= 0)
-                        {
-                            battle_result += hero.name + ": не отримає поранень";
-                        }
-                        else
-                        {
-                            if (hero.current_health - minimum_damage_to_hero < 0)
-                            {
-                                battle_result += "\n" + hero.name + ": точно загине";
-                            }
-                            else
-                            {
-                                if (hero.current_health - maximum_damage_to_hero <= 0)
-                                {
-                                    battle_result += "\n" + hero.name + ": зазнає поранень (" + minimum_damage_to_hero + "-" + maximum_damage_to_hero + "), можливо загине.";
-                                }
-                                else
-                                {
-                                    battle_result += "\n" + hero.name + ": зазнає поранень (" + minimum_damage_to_hero + "-" + maximum_damage_to_hero + "), проте не загине.";
-                                }
-                            }
-                        }
-                        level_monsterobjinfo_posibilities_consequences_lbl.Text = battle_result;
+                        
+                        
                         //        = hero.name + " атакує " + variable_monster.name + " з силою - " + hero.current_strength + ", може нанести " + hero.current_random_strength + " додаткових ушкодженнь. \n" +
                         //         variable_monster.name + " обороняється - зможе відбити атаку з силою " + variable_monster.monster_defense + ", може додатково відбити атаку з силою " + variable_monster.monster_random_defense + " і атакує у відповідь з силою " + hero.current_strength + ", і може нанести " + variable_monster.monster_random_strength + " додаткових ушкодженнь. \n"+
                         //         hero.name + " зможе відбити ворожу атаку " + variable_monster.name + " із силою " + hero.current_defense + " зможе додатково заблокувати " + hero.current_random_defense + "ушкоджень.";
@@ -1526,6 +1548,16 @@ namespace Castle_Crushers
         }
 
         private void pl3_show_info_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Level_next_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void background_parallax_panel_Paint(object sender, PaintEventArgs e)
         {
 
         }

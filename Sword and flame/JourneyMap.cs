@@ -135,6 +135,7 @@ namespace Castle_Crushers
                 case "5":
                     level_5.Checked = true;
                     level_5.BackColor = Color.Blue;
+                    city_equinset.Visible = true;
                     level_5.Visible = true;                
                     level_4.Visible = true;
                     level_6.Visible = true;
@@ -158,6 +159,7 @@ namespace Castle_Crushers
                 case "8":
                     level_8.Checked = true;
                     level_8.BackColor = Color.Blue;
+                    level_16.Visible = true;
                     level_8.Visible = true;                  
                     level_7.Visible = true;
                     level_9.Visible = true;
@@ -253,6 +255,7 @@ namespace Castle_Crushers
                     level_20.Checked = true;
                     level_20.BackColor = Color.Blue;
                     level_20.Visible = true;
+                    city_keverwood.Visible = true;
                     city_arbinat.Visible = true;
                     city_akarayn.Visible = true;
                     break;
@@ -350,14 +353,14 @@ namespace Castle_Crushers
                     level_32.BackColor = Color.Blue;
                     level_32.Visible = true;
                     level_31.Visible = true;
-                    level_40.Visible = true;
+                    level_39.Visible = true;
                     break;
                 case "33":
                     level_33.Checked = true;
                     level_33.BackColor = Color.Blue;
                     level_33.Visible = true;
                     city_talobane.Visible = true;
-                    level_35.Visible = true;
+                    level_25.Visible = true;
                     break;
                 case "34":
                     level_34.Checked = true;
@@ -379,21 +382,22 @@ namespace Castle_Crushers
                     level_36.Checked = true;
                     level_36.BackColor = Color.Blue;
                     level_36.Visible = true;
+                    city_rivenport.Visible = true;
                     level_37.Visible = true;
                     level_26.Visible = true;
                     break;
                 case "37":
                     level_37.Checked = true;
                     level_37.BackColor = Color.Blue;
-                    level_13.Visible = true;
-                    city_talde.Visible = true;
+                    level_37.Visible = true;
+                    city_rivenport.Visible = true;
                     level_38.Visible = true;
                     break;
                 case "38":
                     level_38.Checked = true;
                     level_38.BackColor = Color.Blue;
                     level_38.Visible = true;
-                    level_37.Checked = true;
+                    level_37.Visible = true;
                     city_talde.Visible = true;
                     break;
                 case "39":
@@ -436,6 +440,7 @@ namespace Castle_Crushers
                 case "44":
                     level_44.Checked = true;
                     level_44.BackColor = Color.Blue;
+                    level_44.Visible = true;
                     level_13.Visible = true;
                     level_42.Visible = true;
                     object_capeofmisery.Visible = true;
@@ -520,9 +525,9 @@ namespace Castle_Crushers
                     city_arbinat.Checked = true;
                     city_arbinat.BackColor = Color.Blue;
                     city_arbinat.Visible = true;
+                    level_20.Visible = true;
                     level_21.Visible = true;
                     level_22.Visible = true;
-                    level_23.Visible = true;
                     break;
                 case "55":
                     city_keverwood.Checked = true;
@@ -554,7 +559,7 @@ namespace Castle_Crushers
                     city_mnghagat.Checked = true;
                     city_mnghagat.BackColor = Color.Blue;
                     city_mnghagat.Visible = true;
-                    level_32.Visible = true;
+                    level_30.Visible = true;
                     level_31.Visible = true;
                     level_34.Visible = true;
                     break;
@@ -571,7 +576,7 @@ namespace Castle_Crushers
                     city_rivenport.Visible = true;
                     object_rivenpeak.Visible = true;                                    
                     level_36.Visible = true;
-                    level_38.Visible = true;
+                    level_37.Visible = true;
                     break;
                 case "61":
                     city_talde.Checked = true;
@@ -824,7 +829,7 @@ namespace Castle_Crushers
             {
                 LevelProperties.journey_map_go_TO = LevelProperties.level_list[51];
             }
-            if (city_asemel.Checked)
+            if (city_aureastrum.Checked)
             {
                 LevelProperties.journey_map_go_TO = LevelProperties.level_list[52];
             }
@@ -888,14 +893,14 @@ namespace Castle_Crushers
             }
             GameGlobalData.count_of_journeymoves++;
 
-            LevelProperties.journey_map_current_level_position = LevelProperties.journey_map_go_TO;
+            
             if (int.Parse(LevelProperties.journey_map_go_TO.level_index) < 45) // ЯКЩО ЦЕ РІВЕНЬ
             {
                 Hide();
-                JourneyMap j = new JourneyMap();
-                j.ShowDialog();
-                //LevelPreviewNew level_preview_obj = new LevelPreviewNew();
-                //level_preview_obj.ShowDialog();
+                //JourneyMap j = new JourneyMap();
+                //j.ShowDialog();
+                LevelPreviewNew level_preview_obj = new LevelPreviewNew();
+                level_preview_obj.ShowDialog();
             }
             else if (int.Parse(LevelProperties.journey_map_go_TO.level_index) > 61) // ЯКЩО ЦЕ ЦІКАВА ЗНАХІДКА
             {
@@ -903,6 +908,7 @@ namespace Castle_Crushers
             }
             else // ЯКЩО ЦЕ МІСТО
             {
+                Hide();
                 JourneyMap j = new JourneyMap();
                 j.ShowDialog();
                 //City city_obj = new City();

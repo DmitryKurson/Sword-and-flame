@@ -35,9 +35,10 @@ namespace Castle_Crushers
             // 
             // ShowMessage_OK_btn
             // 
-            this.ShowMessage_OK_btn.Location = new System.Drawing.Point(136, 207);
+            this.ShowMessage_OK_btn.Location = new System.Drawing.Point(162, 211);
+            this.ShowMessage_OK_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ShowMessage_OK_btn.Name = "ShowMessage_OK_btn";
-            this.ShowMessage_OK_btn.Size = new System.Drawing.Size(75, 23);
+            this.ShowMessage_OK_btn.Size = new System.Drawing.Size(75, 29);
             this.ShowMessage_OK_btn.TabIndex = 0;
             this.ShowMessage_OK_btn.Text = "OK";
             this.ShowMessage_OK_btn.UseVisualStyleBackColor = true;
@@ -46,19 +47,20 @@ namespace Castle_Crushers
             // ShowMessage_Main_lbl
             // 
             this.ShowMessage_Main_lbl.AutoSize = true;
-            this.ShowMessage_Main_lbl.Location = new System.Drawing.Point(149, 93);
+            this.ShowMessage_Main_lbl.Location = new System.Drawing.Point(50, 100);
             this.ShowMessage_Main_lbl.Name = "ShowMessage_Main_lbl";
-            this.ShowMessage_Main_lbl.Size = new System.Drawing.Size(46, 17);
+            this.ShowMessage_Main_lbl.Size = new System.Drawing.Size(50, 20);
             this.ShowMessage_Main_lbl.TabIndex = 1;
             this.ShowMessage_Main_lbl.Text = "label1";
             // 
             // ShowMessage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(349, 242);
+            this.ClientSize = new System.Drawing.Size(382, 253);
             this.Controls.Add(this.ShowMessage_Main_lbl);
             this.Controls.Add(this.ShowMessage_OK_btn);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ShowMessage";
             this.Text = "ShowMessage";
             this.Load += new System.EventHandler(this.ShowMessage_Load);

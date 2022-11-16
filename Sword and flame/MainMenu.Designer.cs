@@ -1,5 +1,5 @@
 ﻿
-namespace Castle_Crushers
+namespace Sword_and_flame
 {
     partial class MainMenu
     {

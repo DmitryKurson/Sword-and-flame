@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Threading;
-
-namespace Castle_Crushers
+﻿namespace Sword_and_flame
 {
-
     public partial class Level : Form
     {
         public static LevelObjects[,] level_map = new LevelObjects[GameGlobalData.level_size_x, GameGlobalData.level_size_y];
@@ -41,6 +29,7 @@ namespace Castle_Crushers
         private void Level_Load(object sender, EventArgs e)
         {
             WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            level_name_lbl.Text = level_name;
 
             //ЗАЛЕЖНІСТЬ ФОНОВОГО МАЛЮНКУ РІВНЯ ВІД ІНДЕКСУ РІВНЯ
             switch(level_name)

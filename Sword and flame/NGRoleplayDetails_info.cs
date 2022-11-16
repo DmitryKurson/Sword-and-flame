@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Castle_Crushers
+﻿namespace Sword_and_flame
 {
     public partial class NGRoleplayDetails_info : Form
     {
@@ -53,6 +43,24 @@ namespace Castle_Crushers
         }
 
         private void Gameplay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void InitializeComponent()
+        //{
+        //    this.SuspendLayout();
+        //    // 
+        //    // NGRoleplayDetails_info
+        //    // 
+        //    this.ClientSize = new System.Drawing.Size(282, 253);
+        //    this.Name = "NGRoleplayDetails_info";
+        //    this.Load += new System.EventHandler(this.NGRoleplayDetails_info_Load);
+        //    this.ResumeLayout(false);
+
+        //}
+
+        private void NGRoleplayDetails_info_Load(object sender, EventArgs e)
         {
 
         }

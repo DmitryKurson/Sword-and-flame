@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Castle_Crushers
+namespace Sword_and_flame
 {
     public partial class ExitSure : Form
     {
@@ -34,6 +34,13 @@ namespace Castle_Crushers
         }
 
         private void ExitSure_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void ExitSure_Load_1(object sender, EventArgs e)
         {
 
         }

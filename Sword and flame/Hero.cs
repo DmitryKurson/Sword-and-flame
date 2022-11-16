@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Castle_Crushers
+﻿namespace Sword_and_flame
 {
     public class Hero : LevelObjects
     {

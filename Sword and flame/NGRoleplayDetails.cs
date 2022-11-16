@@ -405,7 +405,7 @@
                 List<Loot> empty_equipped = new List<Loot>(3) { };
                 for (int i = 1; i < GameGlobalData.count_of_players + 1; i++)
                 {
-                    Hero.generate_player(i, pl1_name_tbx.Text, pl1_class_CB.Text, pl2_name_tbx.Text, pl2_class_CB.Text, pl3_name_tbx.Text, pl3_class_CB.Text, pl4_name_tbx.Text, pl4_class_CB.Text, 1, 0, 0, 0, 0, 0, 0, 0, 0, empty_inventory, empty_equipped);
+                    Hero.generate_players(i, pl1_name_tbx.Text, pl1_class_CB.Text, pl2_name_tbx.Text, pl2_class_CB.Text, pl3_name_tbx.Text, pl3_class_CB.Text, pl4_name_tbx.Text, pl4_class_CB.Text, 1, 0, 0, 0, 0, 0, 0, 0, 0, empty_inventory, empty_equipped);
                 }
                 Hide();
                 //LevelPreviewNew level_preview_obj = new LevelPreviewNew();

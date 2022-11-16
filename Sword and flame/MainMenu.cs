@@ -526,7 +526,7 @@
                         some_equipped.Add(Loot.LootList[j]);
                     }
                 }
-                Hero.generate_player(i, load_hash[0], load_hash[1], load_hash[18], load_hash[19], load_hash[36], load_hash[37], load_hash[54], load_hash[55], int.Parse(variable_level), int.Parse(variable_XP), int.Parse(variable_count_of_gold), int.Parse(variable_level_strength_bonus), int.Parse(variable_level_random_strength_bonus), int.Parse(variable_level_defense_bonus), int.Parse(variable_level_random_defense_bonus), int.Parse(variable_level_health_bonus), int.Parse(variable_level_speed_bonus), some_inventory, some_equipped);                
+                Hero.generate_players(i, load_hash[0], load_hash[1], load_hash[18], load_hash[19], load_hash[36], load_hash[37], load_hash[54], load_hash[55], int.Parse(variable_level), int.Parse(variable_XP), int.Parse(variable_count_of_gold), int.Parse(variable_level_strength_bonus), int.Parse(variable_level_random_strength_bonus), int.Parse(variable_level_defense_bonus), int.Parse(variable_level_random_defense_bonus), int.Parse(variable_level_health_bonus), int.Parse(variable_level_speed_bonus), some_inventory, some_equipped);                
             }
             LevelProperties.journey_map_current_level_position = LevelProperties.level_list[int.Parse(load_hash[72])-1];
             //text[ 0] = ;

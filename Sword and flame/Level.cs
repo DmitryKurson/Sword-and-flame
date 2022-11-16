@@ -288,19 +288,22 @@
                         int maximum_damage_to_hero = variable_monster.monster_strength + variable_monster.monster_random_strength - hero.current_defense;
                         int minimum_damage_to_monster = hero.current_strength - (variable_monster.monster_defense + variable_monster.monster_random_defense);
                         int maximum_damage_to_monster = hero.current_strength + hero.current_random_strength - variable_monster.monster_defense;
-                        if (minimum_damage_to_hero <= 0)
+                        if (maximum_damage_to_hero <= 0)
                         {
-                            minimum_damage_to_hero = 0;
                             battle_result = "\t"+ hero.name + ":\n не отримає поранень";
                         }
                         else
                         {
-                            if (hero.current_health - minimum_damage_to_hero < 0)
+                            if (hero.current_health - minimum_damage_to_hero <= 0)
                             {
                                 battle_result = "\t" + hero.name + ":\n точно загине";
                             }
                             else
                             {
+                                if (minimum_damage_to_hero < 0)
+                                {
+                                    minimum_damage_to_hero = 0;
+                                }
                                 if (hero.current_health - maximum_damage_to_hero > 0)
                                 {
                                     if (maximum_damage_to_monster == minimum_damage_to_monster)
@@ -325,21 +328,26 @@
                                 }
                             }
                         }
-                        if (minimum_damage_to_monster <= 0)
+                        if (maximum_damage_to_monster <= 0)
                         {
-                            minimum_damage_to_monster = 0;
                             battle_result += "\n\t" + variable_monster.name + ":\n не отримає поранень";
                         }
                         else
                         {
                             if (variable_monster.monster_health - minimum_damage_to_monster <= 0)
                             {
+                                
                                 battle_result += "\n\t" + variable_monster.name + ":\n точно загине";
                             }
                             else
                             {
+                                if (minimum_damage_to_monster < 0)
+                                {
+                                    minimum_damage_to_monster = 0;
+                                }
                                 if (variable_monster.monster_health - maximum_damage_to_monster > 0)
                                 {
+                                    
                                     if (maximum_damage_to_monster == minimum_damage_to_monster)
                                     {
                                         battle_result += "\n\t" + variable_monster.name + ":\n зазнає поранень (" + maximum_damage_to_monster + "), проте не загине.";

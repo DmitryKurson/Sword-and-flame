@@ -403,7 +403,7 @@ namespace Castle_Crushers
                 show_loot_info_set_visible_settings();
                 Loot variable_loot = (Loot)level_map[x, y];
                 level_lootobjinfo_nameValue_lbl.Text = level_map[x, y].name;
-                level_lootobjinfo_typeValue_lbl.Text = "Спорядження " + "(" + variable_loot.type_of_bodypart + ")" + ".";
+                level_lootobjinfo_typeValue_lbl.Text = "Спорядження " + "(" + variable_loot.type_of_bodypart + ")";
                 level_lootobjinfo_playerclassValue_lbl.Text = variable_loot.equipment_class;
                 level_lootobjinfo_strengthBonusValue_lbl.Text = variable_loot.strength_bonus.ToString() +" (" + variable_loot.random_strength_bonus.ToString() + ")";
                 level_lootobjinfo_defenseBonusValue_lbl.Text = variable_loot.defense_bonus.ToString() + " (" + variable_loot.random_defense_bonus.ToString() + ")";

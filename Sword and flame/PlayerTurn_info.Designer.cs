@@ -35,9 +35,11 @@ namespace Castle_Crushers
             // 
             // PlayerTurn_info_ok_btn
             // 
-            this.PlayerTurn_info_ok_btn.Location = new System.Drawing.Point(104, 68);
+            this.PlayerTurn_info_ok_btn.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerTurn_info_ok_btn.Location = new System.Drawing.Point(104, 85);
+            this.PlayerTurn_info_ok_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlayerTurn_info_ok_btn.Name = "PlayerTurn_info_ok_btn";
-            this.PlayerTurn_info_ok_btn.Size = new System.Drawing.Size(153, 104);
+            this.PlayerTurn_info_ok_btn.Size = new System.Drawing.Size(153, 130);
             this.PlayerTurn_info_ok_btn.TabIndex = 0;
             this.PlayerTurn_info_ok_btn.Text = "ОК";
             this.PlayerTurn_info_ok_btn.UseVisualStyleBackColor = true;
@@ -46,19 +48,21 @@ namespace Castle_Crushers
             // PlayerTurn_info_Main_lbl
             // 
             this.PlayerTurn_info_Main_lbl.AutoSize = true;
+            this.PlayerTurn_info_Main_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerTurn_info_Main_lbl.Location = new System.Drawing.Point(145, -1);
             this.PlayerTurn_info_Main_lbl.Name = "PlayerTurn_info_Main_lbl";
-            this.PlayerTurn_info_Main_lbl.Size = new System.Drawing.Size(46, 17);
+            this.PlayerTurn_info_Main_lbl.Size = new System.Drawing.Size(52, 16);
             this.PlayerTurn_info_Main_lbl.TabIndex = 1;
             this.PlayerTurn_info_Main_lbl.Text = "label1";
             // 
             // PlayerTurn_info
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 215);
+            this.ClientSize = new System.Drawing.Size(366, 269);
             this.Controls.Add(this.PlayerTurn_info_Main_lbl);
             this.Controls.Add(this.PlayerTurn_info_ok_btn);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PlayerTurn_info";
             this.Text = "PlayerTurn_info";
             this.Load += new System.EventHandler(this.PlayerTurn_info_Load);

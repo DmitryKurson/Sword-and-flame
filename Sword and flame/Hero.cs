@@ -60,9 +60,9 @@ namespace Castle_Crushers
         public static int variable_class_health { get; set; }
         public static int variable_class_speed { get; set; }  
 
-        public static int default_Warrior_Strength { get; } = 4;
-        public static int default_Warrior_random_Strength { get; } = 0;
-        public static int default_Warrior_Defense { get; } = 1;
+        public static int default_Warrior_Strength { get; } = 0;
+        public static int default_Warrior_random_Strength { get; } = 5;
+        public static int default_Warrior_Defense { get; } = 0;
         public static int default_Warrior_random_Defense { get; } = 0;
         public static int default_Warrior_Health { get; } = 3;
         public static int default_Warrior_Speed { get; } = 3;
@@ -211,7 +211,7 @@ namespace Castle_Crushers
             for (int i = 0; i < random_basic + random_equipments; i++)
             {
                 Random ran = new Random();
-                int random = ran.Next(0, 1);
+                int random = ran.Next(0, 2);
                 if (random == 1)
                 {
                     count += random;
@@ -303,7 +303,7 @@ namespace Castle_Crushers
         public static Hero generate_player(int i, string player1_name, string player1_class, string player2_name, string player2_class, string player3_name, string player3_class, string player4_name, string player4_class, int level, int XP, int count_of_gold, int level_strength_bonus, int level_random_strength_bonus, int level_defense_bonus, int level_random_defense_bonus, int level_health_bonus, int level_speed_bonus, List<Loot> variable_inventory, List<Loot> some_equipped)
         {
             int variable_coordinateX = 0;
-            int variable_coordinateY = 0;          
+            int variable_coordinateY = 0;
             switch (i)
             {                
                 case 1:

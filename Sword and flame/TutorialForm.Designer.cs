@@ -37,9 +37,11 @@ namespace Castle_Crushers
             // 
             // TF_ok_btn
             // 
-            this.TF_ok_btn.Location = new System.Drawing.Point(367, 264);
+            this.TF_ok_btn.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TF_ok_btn.Location = new System.Drawing.Point(367, 330);
+            this.TF_ok_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TF_ok_btn.Name = "TF_ok_btn";
-            this.TF_ok_btn.Size = new System.Drawing.Size(75, 23);
+            this.TF_ok_btn.Size = new System.Drawing.Size(75, 29);
             this.TF_ok_btn.TabIndex = 0;
             this.TF_ok_btn.Text = "ОК";
             this.TF_ok_btn.UseVisualStyleBackColor = true;
@@ -48,9 +50,11 @@ namespace Castle_Crushers
             // TF_skiptutorial_cb
             // 
             this.TF_skiptutorial_cb.AutoSize = true;
-            this.TF_skiptutorial_cb.Location = new System.Drawing.Point(342, 326);
+            this.TF_skiptutorial_cb.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TF_skiptutorial_cb.Location = new System.Drawing.Point(342, 408);
+            this.TF_skiptutorial_cb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TF_skiptutorial_cb.Name = "TF_skiptutorial_cb";
-            this.TF_skiptutorial_cb.Size = new System.Drawing.Size(187, 21);
+            this.TF_skiptutorial_cb.Size = new System.Drawing.Size(209, 20);
             this.TF_skiptutorial_cb.TabIndex = 1;
             this.TF_skiptutorial_cb.Text = "Не показувати підказки";
             this.TF_skiptutorial_cb.UseVisualStyleBackColor = true;
@@ -59,30 +63,33 @@ namespace Castle_Crushers
             // TF_main_lbl
             // 
             this.TF_main_lbl.AutoSize = true;
-            this.TF_main_lbl.Location = new System.Drawing.Point(364, 25);
+            this.TF_main_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TF_main_lbl.Location = new System.Drawing.Point(364, 31);
             this.TF_main_lbl.Name = "TF_main_lbl";
-            this.TF_main_lbl.Size = new System.Drawing.Size(63, 17);
+            this.TF_main_lbl.Size = new System.Drawing.Size(67, 16);
             this.TF_main_lbl.TabIndex = 2;
             this.TF_main_lbl.Text = "Головна";
             // 
             // TF_tutorialtext_lbl
             // 
             this.TF_tutorialtext_lbl.AutoSize = true;
-            this.TF_tutorialtext_lbl.Location = new System.Drawing.Point(364, 150);
+            this.TF_tutorialtext_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TF_tutorialtext_lbl.Location = new System.Drawing.Point(364, 188);
             this.TF_tutorialtext_lbl.Name = "TF_tutorialtext_lbl";
-            this.TF_tutorialtext_lbl.Size = new System.Drawing.Size(66, 17);
+            this.TF_tutorialtext_lbl.Size = new System.Drawing.Size(73, 16);
             this.TF_tutorialtext_lbl.TabIndex = 3;
             this.TF_tutorialtext_lbl.Text = "Підказки";
             // 
             // TutorialForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 562);
             this.Controls.Add(this.TF_tutorialtext_lbl);
             this.Controls.Add(this.TF_main_lbl);
             this.Controls.Add(this.TF_skiptutorial_cb);
             this.Controls.Add(this.TF_ok_btn);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TutorialForm";
             this.Text = "Підказки";
             this.Load += new System.EventHandler(this.TutorialForm_Load);

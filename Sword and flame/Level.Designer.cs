@@ -170,15 +170,16 @@ namespace Castle_Crushers
             // Main_level_lbl
             // 
             this.Main_level_lbl.AutoSize = true;
-            this.Main_level_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Main_level_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Main_level_lbl.Location = new System.Drawing.Point(116, 96);
             this.Main_level_lbl.Name = "Main_level_lbl";
-            this.Main_level_lbl.Size = new System.Drawing.Size(58, 22);
+            this.Main_level_lbl.Size = new System.Drawing.Size(63, 19);
             this.Main_level_lbl.TabIndex = 1;
             this.Main_level_lbl.Text = "label1";
             // 
             // level_btn84
             // 
+            this.level_btn84.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn84.Location = new System.Drawing.Point(1200, 500);
             this.level_btn84.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn84.Name = "level_btn84";
@@ -191,8 +192,8 @@ namespace Castle_Crushers
             // 
             // next_turn_btn
             // 
-            this.next_turn_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(210)))), ((int)(((byte)(173)))));
-            this.next_turn_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.next_turn_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(233)))), ((int)(((byte)(188)))));
+            this.next_turn_btn.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.next_turn_btn.Location = new System.Drawing.Point(107, 240);
             this.next_turn_btn.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.next_turn_btn.Name = "next_turn_btn";
@@ -215,20 +216,20 @@ namespace Castle_Crushers
             // level_heroobjinfo_nameValue_lbl
             // 
             this.level_heroobjinfo_nameValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_nameValue_lbl.Location = new System.Drawing.Point(105, 45);
+            this.level_heroobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_nameValue_lbl.Location = new System.Drawing.Point(62, 45);
             this.level_heroobjinfo_nameValue_lbl.Name = "level_heroobjinfo_nameValue_lbl";
-            this.level_heroobjinfo_nameValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_heroobjinfo_nameValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_nameValue_lbl.TabIndex = 34;
             this.level_heroobjinfo_nameValue_lbl.Text = "label2";
             // 
             // level_heroobjinfo_main_lbl
             // 
             this.level_heroobjinfo_main_lbl.AutoSize = true;
-            this.level_heroobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_main_lbl.Font = new System.Drawing.Font("Bangkok", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_main_lbl.Location = new System.Drawing.Point(62, 0);
             this.level_heroobjinfo_main_lbl.Name = "level_heroobjinfo_main_lbl";
-            this.level_heroobjinfo_main_lbl.Size = new System.Drawing.Size(123, 25);
+            this.level_heroobjinfo_main_lbl.Size = new System.Drawing.Size(126, 21);
             this.level_heroobjinfo_main_lbl.TabIndex = 35;
             this.level_heroobjinfo_main_lbl.Text = "Інформація";
             this.level_heroobjinfo_main_lbl.Click += new System.EventHandler(this.label3_Click);
@@ -236,75 +237,76 @@ namespace Castle_Crushers
             // level_heroobjinfo_typeValue_lbl
             // 
             this.level_heroobjinfo_typeValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_typeValue_lbl.Location = new System.Drawing.Point(105, 80);
+            this.level_heroobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_typeValue_lbl.Location = new System.Drawing.Point(62, 80);
             this.level_heroobjinfo_typeValue_lbl.Name = "level_heroobjinfo_typeValue_lbl";
-            this.level_heroobjinfo_typeValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_heroobjinfo_typeValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_typeValue_lbl.TabIndex = 36;
             this.level_heroobjinfo_typeValue_lbl.Text = "label4";
             // 
             // level_heroobjinfo_inventory_lbl
             // 
             this.level_heroobjinfo_inventory_lbl.AutoSize = true;
-            this.level_heroobjinfo_inventory_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_inventory_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_inventory_lbl.Location = new System.Drawing.Point(5, 290);
             this.level_heroobjinfo_inventory_lbl.Name = "level_heroobjinfo_inventory_lbl";
-            this.level_heroobjinfo_inventory_lbl.Size = new System.Drawing.Size(87, 22);
+            this.level_heroobjinfo_inventory_lbl.Size = new System.Drawing.Size(94, 19);
             this.level_heroobjinfo_inventory_lbl.TabIndex = 37;
             this.level_heroobjinfo_inventory_lbl.Text = "Інвентар:";
             // 
             // level_heroobjinfo_defense_lbl
             // 
             this.level_heroobjinfo_defense_lbl.AutoSize = true;
-            this.level_heroobjinfo_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_defense_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_defense_lbl.Location = new System.Drawing.Point(5, 150);
             this.level_heroobjinfo_defense_lbl.Name = "level_heroobjinfo_defense_lbl";
-            this.level_heroobjinfo_defense_lbl.Size = new System.Drawing.Size(72, 22);
+            this.level_heroobjinfo_defense_lbl.Size = new System.Drawing.Size(78, 19);
             this.level_heroobjinfo_defense_lbl.TabIndex = 38;
             this.level_heroobjinfo_defense_lbl.Text = "Захист:";
             // 
             // level_heroobjinfo_speed_lbl
             // 
             this.level_heroobjinfo_speed_lbl.AutoSize = true;
-            this.level_heroobjinfo_speed_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_speed_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_speed_lbl.Location = new System.Drawing.Point(5, 220);
             this.level_heroobjinfo_speed_lbl.Name = "level_heroobjinfo_speed_lbl";
-            this.level_heroobjinfo_speed_lbl.Size = new System.Drawing.Size(100, 22);
+            this.level_heroobjinfo_speed_lbl.Size = new System.Drawing.Size(108, 19);
             this.level_heroobjinfo_speed_lbl.TabIndex = 39;
             this.level_heroobjinfo_speed_lbl.Text = "Швидкість:";
             // 
             // level_heroobjinfo_type_lbl
             // 
             this.level_heroobjinfo_type_lbl.AutoSize = true;
-            this.level_heroobjinfo_type_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_type_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_type_lbl.Location = new System.Drawing.Point(5, 80);
             this.level_heroobjinfo_type_lbl.Name = "level_heroobjinfo_type_lbl";
-            this.level_heroobjinfo_type_lbl.Size = new System.Drawing.Size(47, 22);
+            this.level_heroobjinfo_type_lbl.Size = new System.Drawing.Size(47, 19);
             this.level_heroobjinfo_type_lbl.TabIndex = 40;
             this.level_heroobjinfo_type_lbl.Text = "Тип:";
             // 
             // level_heroobjinfo_strength_lbl
             // 
             this.level_heroobjinfo_strength_lbl.AutoSize = true;
-            this.level_heroobjinfo_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_strength_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_strength_lbl.Location = new System.Drawing.Point(5, 115);
             this.level_heroobjinfo_strength_lbl.Name = "level_heroobjinfo_strength_lbl";
-            this.level_heroobjinfo_strength_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_heroobjinfo_strength_lbl.Size = new System.Drawing.Size(59, 19);
             this.level_heroobjinfo_strength_lbl.TabIndex = 41;
             this.level_heroobjinfo_strength_lbl.Text = "Сила:";
             // 
             // level_heroobjinfo_health_lbl
             // 
             this.level_heroobjinfo_health_lbl.AutoSize = true;
-            this.level_heroobjinfo_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_health_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_health_lbl.Location = new System.Drawing.Point(5, 185);
             this.level_heroobjinfo_health_lbl.Name = "level_heroobjinfo_health_lbl";
-            this.level_heroobjinfo_health_lbl.Size = new System.Drawing.Size(91, 22);
+            this.level_heroobjinfo_health_lbl.Size = new System.Drawing.Size(95, 19);
             this.level_heroobjinfo_health_lbl.TabIndex = 42;
             this.level_heroobjinfo_health_lbl.Text = "Здоров\'я:";
             // 
             // level_btn44
             // 
+            this.level_btn44.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn44.Location = new System.Drawing.Point(600, 500);
             this.level_btn44.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn44.Name = "level_btn44";
@@ -317,6 +319,7 @@ namespace Castle_Crushers
             // 
             // level_btn41
             // 
+            this.level_btn41.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn41.Location = new System.Drawing.Point(600, 125);
             this.level_btn41.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn41.Name = "level_btn41";
@@ -329,6 +332,7 @@ namespace Castle_Crushers
             // 
             // level_btn32
             // 
+            this.level_btn32.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn32.Location = new System.Drawing.Point(450, 250);
             this.level_btn32.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn32.Name = "level_btn32";
@@ -341,6 +345,7 @@ namespace Castle_Crushers
             // 
             // level_btn42
             // 
+            this.level_btn42.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn42.Location = new System.Drawing.Point(600, 250);
             this.level_btn42.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn42.Name = "level_btn42";
@@ -353,6 +358,7 @@ namespace Castle_Crushers
             // 
             // level_btn34
             // 
+            this.level_btn34.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn34.Location = new System.Drawing.Point(450, 500);
             this.level_btn34.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn34.Name = "level_btn34";
@@ -365,6 +371,7 @@ namespace Castle_Crushers
             // 
             // level_btn43
             // 
+            this.level_btn43.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn43.Location = new System.Drawing.Point(600, 375);
             this.level_btn43.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn43.Name = "level_btn43";
@@ -377,6 +384,7 @@ namespace Castle_Crushers
             // 
             // level_btn33
             // 
+            this.level_btn33.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn33.Location = new System.Drawing.Point(450, 375);
             this.level_btn33.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn33.Name = "level_btn33";
@@ -389,6 +397,7 @@ namespace Castle_Crushers
             // 
             // level_btn31
             // 
+            this.level_btn31.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn31.Location = new System.Drawing.Point(450, 125);
             this.level_btn31.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn31.Name = "level_btn31";
@@ -401,6 +410,7 @@ namespace Castle_Crushers
             // 
             // level_btn80
             // 
+            this.level_btn80.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn80.Location = new System.Drawing.Point(1200, 0);
             this.level_btn80.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn80.Name = "level_btn80";
@@ -413,6 +423,7 @@ namespace Castle_Crushers
             // 
             // level_btn40
             // 
+            this.level_btn40.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn40.Location = new System.Drawing.Point(600, 0);
             this.level_btn40.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn40.Name = "level_btn40";
@@ -425,6 +436,7 @@ namespace Castle_Crushers
             // 
             // level_btn82
             // 
+            this.level_btn82.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn82.Location = new System.Drawing.Point(1200, 250);
             this.level_btn82.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn82.Name = "level_btn82";
@@ -437,6 +449,7 @@ namespace Castle_Crushers
             // 
             // level_btn93
             // 
+            this.level_btn93.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn93.Location = new System.Drawing.Point(1350, 375);
             this.level_btn93.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn93.Name = "level_btn93";
@@ -449,6 +462,7 @@ namespace Castle_Crushers
             // 
             // level_btn83
             // 
+            this.level_btn83.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn83.Location = new System.Drawing.Point(1200, 375);
             this.level_btn83.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn83.Name = "level_btn83";
@@ -461,6 +475,7 @@ namespace Castle_Crushers
             // 
             // level_btn30
             // 
+            this.level_btn30.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn30.Location = new System.Drawing.Point(450, 0);
             this.level_btn30.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn30.Name = "level_btn30";
@@ -473,6 +488,7 @@ namespace Castle_Crushers
             // 
             // level_btn74
             // 
+            this.level_btn74.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn74.Location = new System.Drawing.Point(1050, 500);
             this.level_btn74.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn74.Name = "level_btn74";
@@ -485,6 +501,7 @@ namespace Castle_Crushers
             // 
             // level_btn73
             // 
+            this.level_btn73.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn73.Location = new System.Drawing.Point(1050, 375);
             this.level_btn73.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn73.Name = "level_btn73";
@@ -497,6 +514,7 @@ namespace Castle_Crushers
             // 
             // level_btn72
             // 
+            this.level_btn72.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn72.Location = new System.Drawing.Point(1050, 250);
             this.level_btn72.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn72.Name = "level_btn72";
@@ -509,6 +527,7 @@ namespace Castle_Crushers
             // 
             // level_btn71
             // 
+            this.level_btn71.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn71.Location = new System.Drawing.Point(1050, 125);
             this.level_btn71.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn71.Name = "level_btn71";
@@ -521,6 +540,7 @@ namespace Castle_Crushers
             // 
             // level_btn63
             // 
+            this.level_btn63.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn63.Location = new System.Drawing.Point(900, 375);
             this.level_btn63.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn63.Name = "level_btn63";
@@ -533,6 +553,7 @@ namespace Castle_Crushers
             // 
             // level_btn60
             // 
+            this.level_btn60.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn60.Location = new System.Drawing.Point(900, 0);
             this.level_btn60.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn60.Name = "level_btn60";
@@ -545,6 +566,7 @@ namespace Castle_Crushers
             // 
             // level_btn54
             // 
+            this.level_btn54.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn54.Location = new System.Drawing.Point(750, 500);
             this.level_btn54.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn54.Name = "level_btn54";
@@ -557,6 +579,7 @@ namespace Castle_Crushers
             // 
             // level_btn53
             // 
+            this.level_btn53.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn53.Location = new System.Drawing.Point(750, 375);
             this.level_btn53.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn53.Name = "level_btn53";
@@ -569,6 +592,7 @@ namespace Castle_Crushers
             // 
             // level_btn81
             // 
+            this.level_btn81.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn81.Location = new System.Drawing.Point(1200, 125);
             this.level_btn81.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn81.Name = "level_btn81";
@@ -581,6 +605,7 @@ namespace Castle_Crushers
             // 
             // level_btn70
             // 
+            this.level_btn70.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn70.Location = new System.Drawing.Point(1050, 0);
             this.level_btn70.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn70.Name = "level_btn70";
@@ -593,6 +618,7 @@ namespace Castle_Crushers
             // 
             // level_btn50
             // 
+            this.level_btn50.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn50.Location = new System.Drawing.Point(750, 0);
             this.level_btn50.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn50.Name = "level_btn50";
@@ -605,6 +631,7 @@ namespace Castle_Crushers
             // 
             // level_btn52
             // 
+            this.level_btn52.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn52.Location = new System.Drawing.Point(750, 250);
             this.level_btn52.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn52.Name = "level_btn52";
@@ -617,6 +644,7 @@ namespace Castle_Crushers
             // 
             // level_btn61
             // 
+            this.level_btn61.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn61.Location = new System.Drawing.Point(900, 125);
             this.level_btn61.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn61.Name = "level_btn61";
@@ -629,6 +657,7 @@ namespace Castle_Crushers
             // 
             // level_btn62
             // 
+            this.level_btn62.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn62.Location = new System.Drawing.Point(900, 250);
             this.level_btn62.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn62.Name = "level_btn62";
@@ -641,6 +670,7 @@ namespace Castle_Crushers
             // 
             // level_btn64
             // 
+            this.level_btn64.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn64.Location = new System.Drawing.Point(900, 500);
             this.level_btn64.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn64.Name = "level_btn64";
@@ -653,6 +683,7 @@ namespace Castle_Crushers
             // 
             // level_btn51
             // 
+            this.level_btn51.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn51.Location = new System.Drawing.Point(750, 125);
             this.level_btn51.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn51.Name = "level_btn51";
@@ -665,6 +696,7 @@ namespace Castle_Crushers
             // 
             // level_btn00
             // 
+            this.level_btn00.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn00.Location = new System.Drawing.Point(0, 0);
             this.level_btn00.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn00.Name = "level_btn00";
@@ -678,6 +710,7 @@ namespace Castle_Crushers
             // 
             // level_btn90
             // 
+            this.level_btn90.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn90.Location = new System.Drawing.Point(1350, 0);
             this.level_btn90.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn90.Name = "level_btn90";
@@ -690,6 +723,7 @@ namespace Castle_Crushers
             // 
             // level_btn91
             // 
+            this.level_btn91.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn91.Location = new System.Drawing.Point(1350, 125);
             this.level_btn91.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn91.Name = "level_btn91";
@@ -702,6 +736,7 @@ namespace Castle_Crushers
             // 
             // level_btn04
             // 
+            this.level_btn04.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn04.Location = new System.Drawing.Point(0, 500);
             this.level_btn04.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn04.Name = "level_btn04";
@@ -714,6 +749,7 @@ namespace Castle_Crushers
             // 
             // level_btn92
             // 
+            this.level_btn92.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn92.Location = new System.Drawing.Point(1350, 250);
             this.level_btn92.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn92.Name = "level_btn92";
@@ -726,6 +762,7 @@ namespace Castle_Crushers
             // 
             // level_btn94
             // 
+            this.level_btn94.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn94.Location = new System.Drawing.Point(1350, 500);
             this.level_btn94.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn94.Name = "level_btn94";
@@ -738,6 +775,7 @@ namespace Castle_Crushers
             // 
             // level_btn13
             // 
+            this.level_btn13.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn13.Location = new System.Drawing.Point(150, 375);
             this.level_btn13.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn13.Name = "level_btn13";
@@ -750,6 +788,7 @@ namespace Castle_Crushers
             // 
             // level_btn24
             // 
+            this.level_btn24.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn24.Location = new System.Drawing.Point(300, 500);
             this.level_btn24.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn24.Name = "level_btn24";
@@ -762,6 +801,7 @@ namespace Castle_Crushers
             // 
             // level_btn23
             // 
+            this.level_btn23.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn23.Location = new System.Drawing.Point(300, 375);
             this.level_btn23.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn23.Name = "level_btn23";
@@ -774,6 +814,7 @@ namespace Castle_Crushers
             // 
             // level_btn22
             // 
+            this.level_btn22.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn22.Location = new System.Drawing.Point(300, 250);
             this.level_btn22.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn22.Name = "level_btn22";
@@ -786,6 +827,7 @@ namespace Castle_Crushers
             // 
             // level_btn21
             // 
+            this.level_btn21.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn21.Location = new System.Drawing.Point(300, 125);
             this.level_btn21.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn21.Name = "level_btn21";
@@ -798,6 +840,7 @@ namespace Castle_Crushers
             // 
             // level_btn20
             // 
+            this.level_btn20.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn20.Location = new System.Drawing.Point(300, 0);
             this.level_btn20.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn20.Name = "level_btn20";
@@ -810,6 +853,7 @@ namespace Castle_Crushers
             // 
             // level_btn03
             // 
+            this.level_btn03.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn03.Location = new System.Drawing.Point(0, 375);
             this.level_btn03.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn03.Name = "level_btn03";
@@ -822,6 +866,7 @@ namespace Castle_Crushers
             // 
             // level_btn02
             // 
+            this.level_btn02.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn02.Location = new System.Drawing.Point(0, 250);
             this.level_btn02.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn02.Name = "level_btn02";
@@ -834,6 +879,7 @@ namespace Castle_Crushers
             // 
             // level_btn01
             // 
+            this.level_btn01.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn01.Location = new System.Drawing.Point(0, 125);
             this.level_btn01.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn01.Name = "level_btn01";
@@ -846,6 +892,7 @@ namespace Castle_Crushers
             // 
             // level_btn10
             // 
+            this.level_btn10.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn10.Location = new System.Drawing.Point(150, 0);
             this.level_btn10.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn10.Name = "level_btn10";
@@ -858,6 +905,7 @@ namespace Castle_Crushers
             // 
             // level_btn11
             // 
+            this.level_btn11.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn11.Location = new System.Drawing.Point(150, 125);
             this.level_btn11.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn11.Name = "level_btn11";
@@ -870,6 +918,7 @@ namespace Castle_Crushers
             // 
             // level_btn12
             // 
+            this.level_btn12.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn12.Location = new System.Drawing.Point(150, 250);
             this.level_btn12.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn12.Name = "level_btn12";
@@ -882,6 +931,7 @@ namespace Castle_Crushers
             // 
             // level_btn14
             // 
+            this.level_btn14.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_btn14.Location = new System.Drawing.Point(150, 500);
             this.level_btn14.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.level_btn14.Name = "level_btn14";
@@ -895,10 +945,10 @@ namespace Castle_Crushers
             // level_heroobjinfo_name_lbl
             // 
             this.level_heroobjinfo_name_lbl.AutoSize = true;
-            this.level_heroobjinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_name_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_name_lbl.Location = new System.Drawing.Point(5, 45);
             this.level_heroobjinfo_name_lbl.Name = "level_heroobjinfo_name_lbl";
-            this.level_heroobjinfo_name_lbl.Size = new System.Drawing.Size(46, 22);
+            this.level_heroobjinfo_name_lbl.Size = new System.Drawing.Size(50, 19);
             this.level_heroobjinfo_name_lbl.TabIndex = 0;
             this.level_heroobjinfo_name_lbl.Text = "Ім\'я:";
             // 
@@ -933,91 +983,91 @@ namespace Castle_Crushers
             // level_heroobjinfo_level_lbl
             // 
             this.level_heroobjinfo_level_lbl.AutoSize = true;
-            this.level_heroobjinfo_level_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_level_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_level_lbl.Location = new System.Drawing.Point(5, 255);
             this.level_heroobjinfo_level_lbl.Name = "level_heroobjinfo_level_lbl";
-            this.level_heroobjinfo_level_lbl.Size = new System.Drawing.Size(70, 22);
+            this.level_heroobjinfo_level_lbl.Size = new System.Drawing.Size(71, 19);
             this.level_heroobjinfo_level_lbl.TabIndex = 100;
             this.level_heroobjinfo_level_lbl.Text = "Рівень:";
             // 
             // level_heroobjinfo_levelValue_lbl
             // 
             this.level_heroobjinfo_levelValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_levelValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_levelValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_levelValue_lbl.Location = new System.Drawing.Point(105, 255);
             this.level_heroobjinfo_levelValue_lbl.Name = "level_heroobjinfo_levelValue_lbl";
-            this.level_heroobjinfo_levelValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_heroobjinfo_levelValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_levelValue_lbl.TabIndex = 99;
             this.level_heroobjinfo_levelValue_lbl.Text = "label2";
             // 
             // level_heroobjInfo_able_reanimate_lbl
             // 
             this.level_heroobjInfo_able_reanimate_lbl.AutoSize = true;
-            this.level_heroobjInfo_able_reanimate_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjInfo_able_reanimate_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjInfo_able_reanimate_lbl.ForeColor = System.Drawing.Color.Lime;
             this.level_heroobjInfo_able_reanimate_lbl.Location = new System.Drawing.Point(36, 370);
             this.level_heroobjInfo_able_reanimate_lbl.Name = "level_heroobjInfo_able_reanimate_lbl";
-            this.level_heroobjInfo_able_reanimate_lbl.Size = new System.Drawing.Size(177, 22);
+            this.level_heroobjInfo_able_reanimate_lbl.Size = new System.Drawing.Size(188, 19);
             this.level_heroobjInfo_able_reanimate_lbl.TabIndex = 50;
             this.level_heroobjInfo_able_reanimate_lbl.Text = "Можна реанімувати";
             // 
             // level_heroobjinfo_inventory02Value_lbl
             // 
             this.level_heroobjinfo_inventory02Value_lbl.AutoSize = true;
-            this.level_heroobjinfo_inventory02Value_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_inventory02Value_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_inventory02Value_lbl.Location = new System.Drawing.Point(105, 325);
             this.level_heroobjinfo_inventory02Value_lbl.Name = "level_heroobjinfo_inventory02Value_lbl";
-            this.level_heroobjinfo_inventory02Value_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_heroobjinfo_inventory02Value_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_inventory02Value_lbl.TabIndex = 98;
             this.level_heroobjinfo_inventory02Value_lbl.Text = "label1";
             // 
             // level_heroobjinfo_strengthValue_lbl
             // 
             this.level_heroobjinfo_strengthValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_strengthValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_strengthValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(105, 115);
             this.level_heroobjinfo_strengthValue_lbl.Name = "level_heroobjinfo_strengthValue_lbl";
-            this.level_heroobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(68, 22);
+            this.level_heroobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(75, 19);
             this.level_heroobjinfo_strengthValue_lbl.TabIndex = 49;
             this.level_heroobjinfo_strengthValue_lbl.Text = "label10";
             // 
             // level_heroobjinfo_inventory01Value_lbl
             // 
             this.level_heroobjinfo_inventory01Value_lbl.AutoSize = true;
-            this.level_heroobjinfo_inventory01Value_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_inventory01Value_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_inventory01Value_lbl.Location = new System.Drawing.Point(105, 290);
             this.level_heroobjinfo_inventory01Value_lbl.Name = "level_heroobjinfo_inventory01Value_lbl";
-            this.level_heroobjinfo_inventory01Value_lbl.Size = new System.Drawing.Size(250, 22);
+            this.level_heroobjinfo_inventory01Value_lbl.Size = new System.Drawing.Size(249, 19);
             this.level_heroobjinfo_inventory01Value_lbl.TabIndex = 48;
             this.level_heroobjinfo_inventory01Value_lbl.Text = "XXXXXXXXXXXXXXXXXXXX";
             // 
             // level_heroobjinfo_defenseValue_lbl
             // 
             this.level_heroobjinfo_defenseValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_defenseValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_defenseValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(105, 150);
             this.level_heroobjinfo_defenseValue_lbl.Name = "level_heroobjinfo_defenseValue_lbl";
-            this.level_heroobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_heroobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_defenseValue_lbl.TabIndex = 45;
             this.level_heroobjinfo_defenseValue_lbl.Text = "label6";
             // 
             // level_heroobjinfo_healthValue_lbl
             // 
             this.level_heroobjinfo_healthValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_healthValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_healthValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_healthValue_lbl.Location = new System.Drawing.Point(105, 185);
             this.level_heroobjinfo_healthValue_lbl.Name = "level_heroobjinfo_healthValue_lbl";
-            this.level_heroobjinfo_healthValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_heroobjinfo_healthValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_healthValue_lbl.TabIndex = 44;
             this.level_heroobjinfo_healthValue_lbl.Text = "label5";
             // 
             // level_heroobjinfo_speedValue_lbl
             // 
             this.level_heroobjinfo_speedValue_lbl.AutoSize = true;
-            this.level_heroobjinfo_speedValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_heroobjinfo_speedValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_heroobjinfo_speedValue_lbl.Location = new System.Drawing.Point(105, 220);
             this.level_heroobjinfo_speedValue_lbl.Name = "level_heroobjinfo_speedValue_lbl";
-            this.level_heroobjinfo_speedValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_heroobjinfo_speedValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_speedValue_lbl.TabIndex = 43;
             this.level_heroobjinfo_speedValue_lbl.Text = "label1";
             // 
@@ -1053,40 +1103,40 @@ namespace Castle_Crushers
             // level_lootobjinfo_lootPriceValue_lbl
             // 
             this.level_lootobjinfo_lootPriceValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_lootPriceValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_lootPriceValue_lbl.Location = new System.Drawing.Point(189, 325);
+            this.level_lootobjinfo_lootPriceValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_lootPriceValue_lbl.Location = new System.Drawing.Point(193, 325);
             this.level_lootobjinfo_lootPriceValue_lbl.Name = "level_lootobjinfo_lootPriceValue_lbl";
-            this.level_lootobjinfo_lootPriceValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_lootobjinfo_lootPriceValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_lootPriceValue_lbl.TabIndex = 101;
             this.level_lootobjinfo_lootPriceValue_lbl.Text = "label4";
             // 
             // level_lootobjinfo_playerclassValue_lbl
             // 
             this.level_lootobjinfo_playerclassValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_playerclassValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_playerclassValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_playerclassValue_lbl.Location = new System.Drawing.Point(74, 115);
             this.level_lootobjinfo_playerclassValue_lbl.Name = "level_lootobjinfo_playerclassValue_lbl";
-            this.level_lootobjinfo_playerclassValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_lootobjinfo_playerclassValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_playerclassValue_lbl.TabIndex = 109;
             this.level_lootobjinfo_playerclassValue_lbl.Text = "label1";
             // 
             // level_lootobjinfo_minlevelValue_lbl
             // 
             this.level_lootobjinfo_minlevelValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_minlevelValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_minlevelValue_lbl.Location = new System.Drawing.Point(189, 290);
+            this.level_lootobjinfo_minlevelValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_minlevelValue_lbl.Location = new System.Drawing.Point(193, 290);
             this.level_lootobjinfo_minlevelValue_lbl.Name = "level_lootobjinfo_minlevelValue_lbl";
-            this.level_lootobjinfo_minlevelValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_lootobjinfo_minlevelValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_minlevelValue_lbl.TabIndex = 108;
             this.level_lootobjinfo_minlevelValue_lbl.Text = "label1";
             // 
             // level_lootobjinfo_lootPrice_lbl
             // 
             this.level_lootobjinfo_lootPrice_lbl.AutoSize = true;
-            this.level_lootobjinfo_lootPrice_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_lootPrice_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_lootPrice_lbl.Location = new System.Drawing.Point(5, 325);
             this.level_lootobjinfo_lootPrice_lbl.Name = "level_lootobjinfo_lootPrice_lbl";
-            this.level_lootobjinfo_lootPrice_lbl.Size = new System.Drawing.Size(52, 22);
+            this.level_lootobjinfo_lootPrice_lbl.Size = new System.Drawing.Size(54, 19);
             this.level_lootobjinfo_lootPrice_lbl.TabIndex = 46;
             this.level_lootobjinfo_lootPrice_lbl.Text = "Ціна:";
             this.level_lootobjinfo_lootPrice_lbl.Click += new System.EventHandler(this.level_objinfo_lootPrice_lbl_Click);
@@ -1094,161 +1144,161 @@ namespace Castle_Crushers
             // level_lootobjinfo_playerclass_lbl
             // 
             this.level_lootobjinfo_playerclass_lbl.AutoSize = true;
-            this.level_lootobjinfo_playerclass_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_playerclass_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_playerclass_lbl.Location = new System.Drawing.Point(5, 115);
             this.level_lootobjinfo_playerclass_lbl.Name = "level_lootobjinfo_playerclass_lbl";
-            this.level_lootobjinfo_playerclass_lbl.Size = new System.Drawing.Size(56, 22);
+            this.level_lootobjinfo_playerclass_lbl.Size = new System.Drawing.Size(57, 19);
             this.level_lootobjinfo_playerclass_lbl.TabIndex = 106;
             this.level_lootobjinfo_playerclass_lbl.Text = "Клас:";
             // 
             // level_lootobjinfo_minlevel_lbl
             // 
             this.level_lootobjinfo_minlevel_lbl.AutoSize = true;
-            this.level_lootobjinfo_minlevel_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_minlevel_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_minlevel_lbl.Location = new System.Drawing.Point(5, 290);
             this.level_lootobjinfo_minlevel_lbl.Name = "level_lootobjinfo_minlevel_lbl";
-            this.level_lootobjinfo_minlevel_lbl.Size = new System.Drawing.Size(177, 22);
+            this.level_lootobjinfo_minlevel_lbl.Size = new System.Drawing.Size(190, 19);
             this.level_lootobjinfo_minlevel_lbl.TabIndex = 100;
             this.level_lootobjinfo_minlevel_lbl.Text = "Мінімальний рівень:";
             // 
             // level_lootobjinfo_healthBonusValue_lbl
             // 
             this.level_lootobjinfo_healthBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_healthBonusValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(189, 220);
+            this.level_lootobjinfo_healthBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(193, 220);
             this.level_lootobjinfo_healthBonusValue_lbl.Name = "level_lootobjinfo_healthBonusValue_lbl";
-            this.level_lootobjinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_lootobjinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_healthBonusValue_lbl.TabIndex = 99;
             this.level_lootobjinfo_healthBonusValue_lbl.Text = "label2";
             // 
             // level_lootobjinfo_able_to_pickup_lbl
             // 
             this.level_lootobjinfo_able_to_pickup_lbl.AutoSize = true;
-            this.level_lootobjinfo_able_to_pickup_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_able_to_pickup_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_able_to_pickup_lbl.ForeColor = System.Drawing.Color.Lime;
             this.level_lootobjinfo_able_to_pickup_lbl.Location = new System.Drawing.Point(50, 370);
             this.level_lootobjinfo_able_to_pickup_lbl.Name = "level_lootobjinfo_able_to_pickup_lbl";
-            this.level_lootobjinfo_able_to_pickup_lbl.Size = new System.Drawing.Size(150, 22);
+            this.level_lootobjinfo_able_to_pickup_lbl.Size = new System.Drawing.Size(162, 19);
             this.level_lootobjinfo_able_to_pickup_lbl.TabIndex = 50;
             this.level_lootobjinfo_able_to_pickup_lbl.Text = "Можна підібрати";
             // 
             // level_lootobjinfo_strengthBonusValue_lbl
             // 
             this.level_lootobjinfo_strengthBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_strengthBonusValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(189, 150);
+            this.level_lootobjinfo_strengthBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(193, 150);
             this.level_lootobjinfo_strengthBonusValue_lbl.Name = "level_lootobjinfo_strengthBonusValue_lbl";
-            this.level_lootobjinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(68, 22);
+            this.level_lootobjinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(75, 19);
             this.level_lootobjinfo_strengthBonusValue_lbl.TabIndex = 49;
             this.level_lootobjinfo_strengthBonusValue_lbl.Text = "label10";
             // 
             // level_lootobjinfo_speedBonusValue_lbl
             // 
             this.level_lootobjinfo_speedBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_speedBonusValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(189, 255);
+            this.level_lootobjinfo_speedBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(193, 255);
             this.level_lootobjinfo_speedBonusValue_lbl.Name = "level_lootobjinfo_speedBonusValue_lbl";
-            this.level_lootobjinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_lootobjinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_speedBonusValue_lbl.TabIndex = 48;
             this.level_lootobjinfo_speedBonusValue_lbl.Text = "label9";
             // 
             // level_lootobjinfo_defenseBonusValue_lbl
             // 
             this.level_lootobjinfo_defenseBonusValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_defenseBonusValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(189, 185);
+            this.level_lootobjinfo_defenseBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(193, 185);
             this.level_lootobjinfo_defenseBonusValue_lbl.Name = "level_lootobjinfo_defenseBonusValue_lbl";
-            this.level_lootobjinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_lootobjinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_defenseBonusValue_lbl.TabIndex = 44;
             this.level_lootobjinfo_defenseBonusValue_lbl.Text = "label5";
             // 
             // level_lootobjinfo_name_lbl
             // 
             this.level_lootobjinfo_name_lbl.AutoSize = true;
-            this.level_lootobjinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_name_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_name_lbl.Location = new System.Drawing.Point(5, 45);
             this.level_lootobjinfo_name_lbl.Name = "level_lootobjinfo_name_lbl";
-            this.level_lootobjinfo_name_lbl.Size = new System.Drawing.Size(67, 22);
+            this.level_lootobjinfo_name_lbl.Size = new System.Drawing.Size(67, 19);
             this.level_lootobjinfo_name_lbl.TabIndex = 0;
             this.level_lootobjinfo_name_lbl.Text = "Назва:";
             // 
             // level_lootobjinfo_type_lbl
             // 
             this.level_lootobjinfo_type_lbl.AutoSize = true;
-            this.level_lootobjinfo_type_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_type_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_type_lbl.Location = new System.Drawing.Point(5, 80);
             this.level_lootobjinfo_type_lbl.Name = "level_lootobjinfo_type_lbl";
-            this.level_lootobjinfo_type_lbl.Size = new System.Drawing.Size(47, 22);
+            this.level_lootobjinfo_type_lbl.Size = new System.Drawing.Size(47, 19);
             this.level_lootobjinfo_type_lbl.TabIndex = 40;
             this.level_lootobjinfo_type_lbl.Text = "Тип:";
             // 
             // level_lootobjinfo_strengthBonus_lbl
             // 
             this.level_lootobjinfo_strengthBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_strengthBonus_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_strengthBonus_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_strengthBonus_lbl.Location = new System.Drawing.Point(5, 150);
             this.level_lootobjinfo_strengthBonus_lbl.Name = "level_lootobjinfo_strengthBonus_lbl";
-            this.level_lootobjinfo_strengthBonus_lbl.Size = new System.Drawing.Size(135, 22);
+            this.level_lootobjinfo_strengthBonus_lbl.Size = new System.Drawing.Size(143, 19);
             this.level_lootobjinfo_strengthBonus_lbl.TabIndex = 41;
             this.level_lootobjinfo_strengthBonus_lbl.Text = "Бонус до сили:";
             // 
             // level_lootobjinfo_defenseBonus_lbl
             // 
             this.level_lootobjinfo_defenseBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_defenseBonus_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_defenseBonus_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_defenseBonus_lbl.Location = new System.Drawing.Point(5, 185);
             this.level_lootobjinfo_defenseBonus_lbl.Name = "level_lootobjinfo_defenseBonus_lbl";
-            this.level_lootobjinfo_defenseBonus_lbl.Size = new System.Drawing.Size(160, 22);
+            this.level_lootobjinfo_defenseBonus_lbl.Size = new System.Drawing.Size(170, 19);
             this.level_lootobjinfo_defenseBonus_lbl.TabIndex = 38;
             this.level_lootobjinfo_defenseBonus_lbl.Text = "Бонус до захисту:";
             // 
             // level_lootobjinfo_speedBonus_lbl
             // 
             this.level_lootobjinfo_speedBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_speedBonus_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_speedBonus_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_speedBonus_lbl.Location = new System.Drawing.Point(5, 255);
             this.level_lootobjinfo_speedBonus_lbl.Name = "level_lootobjinfo_speedBonus_lbl";
-            this.level_lootobjinfo_speedBonus_lbl.Size = new System.Drawing.Size(181, 22);
+            this.level_lootobjinfo_speedBonus_lbl.Size = new System.Drawing.Size(195, 19);
             this.level_lootobjinfo_speedBonus_lbl.TabIndex = 39;
             this.level_lootobjinfo_speedBonus_lbl.Text = "Бонус до швидкості:";
             // 
             // level_lootobjinfo_healthBonus_lbl
             // 
             this.level_lootobjinfo_healthBonus_lbl.AutoSize = true;
-            this.level_lootobjinfo_healthBonus_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_healthBonus_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_healthBonus_lbl.Location = new System.Drawing.Point(5, 220);
             this.level_lootobjinfo_healthBonus_lbl.Name = "level_lootobjinfo_healthBonus_lbl";
-            this.level_lootobjinfo_healthBonus_lbl.Size = new System.Drawing.Size(170, 22);
+            this.level_lootobjinfo_healthBonus_lbl.Size = new System.Drawing.Size(178, 19);
             this.level_lootobjinfo_healthBonus_lbl.TabIndex = 42;
             this.level_lootobjinfo_healthBonus_lbl.Text = "Бонус до здоров\'я:";
             // 
             // level_lootobjinfo_nameValue_lbl
             // 
             this.level_lootobjinfo_nameValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_nameValue_lbl.Location = new System.Drawing.Point(74, 45);
             this.level_lootobjinfo_nameValue_lbl.Name = "level_lootobjinfo_nameValue_lbl";
-            this.level_lootobjinfo_nameValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_lootobjinfo_nameValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_nameValue_lbl.TabIndex = 34;
             this.level_lootobjinfo_nameValue_lbl.Text = "label2";
             // 
             // level_lootobjinfo_main_lbl
             // 
             this.level_lootobjinfo_main_lbl.AutoSize = true;
-            this.level_lootobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_main_lbl.Font = new System.Drawing.Font("Bangkok", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_main_lbl.Location = new System.Drawing.Point(62, 0);
             this.level_lootobjinfo_main_lbl.Name = "level_lootobjinfo_main_lbl";
-            this.level_lootobjinfo_main_lbl.Size = new System.Drawing.Size(123, 25);
+            this.level_lootobjinfo_main_lbl.Size = new System.Drawing.Size(126, 21);
             this.level_lootobjinfo_main_lbl.TabIndex = 35;
             this.level_lootobjinfo_main_lbl.Text = "Інформація";
             // 
             // level_lootobjinfo_typeValue_lbl
             // 
             this.level_lootobjinfo_typeValue_lbl.AutoSize = true;
-            this.level_lootobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_lootobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_lootobjinfo_typeValue_lbl.Location = new System.Drawing.Point(74, 80);
             this.level_lootobjinfo_typeValue_lbl.Name = "level_lootobjinfo_typeValue_lbl";
-            this.level_lootobjinfo_typeValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_lootobjinfo_typeValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_typeValue_lbl.TabIndex = 36;
             this.level_lootobjinfo_typeValue_lbl.Text = "label4";
             // 
@@ -1278,30 +1328,30 @@ namespace Castle_Crushers
             // level_monsterobjinfo_strengthValue_lbl
             // 
             this.level_monsterobjinfo_strengthValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_strengthValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_strengthValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(105, 115);
             this.level_monsterobjinfo_strengthValue_lbl.Name = "level_monsterobjinfo_strengthValue_lbl";
-            this.level_monsterobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(68, 22);
+            this.level_monsterobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(75, 19);
             this.level_monsterobjinfo_strengthValue_lbl.TabIndex = 49;
             this.level_monsterobjinfo_strengthValue_lbl.Text = "label10";
             // 
             // level_monsterobjinfo_defenseValue_lbl
             // 
             this.level_monsterobjinfo_defenseValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_defenseValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_defenseValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(105, 150);
             this.level_monsterobjinfo_defenseValue_lbl.Name = "level_monsterobjinfo_defenseValue_lbl";
-            this.level_monsterobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_monsterobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_defenseValue_lbl.TabIndex = 45;
             this.level_monsterobjinfo_defenseValue_lbl.Text = "label6";
             // 
             // level_monsterobjinfo_healthValue_lbl
             // 
             this.level_monsterobjinfo_healthValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_healthValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_healthValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_healthValue_lbl.Location = new System.Drawing.Point(105, 185);
             this.level_monsterobjinfo_healthValue_lbl.Name = "level_monsterobjinfo_healthValue_lbl";
-            this.level_monsterobjinfo_healthValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_monsterobjinfo_healthValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_healthValue_lbl.TabIndex = 44;
             this.level_monsterobjinfo_healthValue_lbl.Text = "label5";
             // 
@@ -1326,50 +1376,50 @@ namespace Castle_Crushers
             // level_monsterobjinfo_posibilities_main_lbl
             // 
             this.level_monsterobjinfo_posibilities_main_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_main_lbl.Font = new System.Drawing.Font("Bangkok", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_main_lbl.Location = new System.Drawing.Point(107, 0);
             this.level_monsterobjinfo_posibilities_main_lbl.Name = "level_monsterobjinfo_posibilities_main_lbl";
-            this.level_monsterobjinfo_posibilities_main_lbl.Size = new System.Drawing.Size(39, 25);
+            this.level_monsterobjinfo_posibilities_main_lbl.Size = new System.Drawing.Size(41, 21);
             this.level_monsterobjinfo_posibilities_main_lbl.TabIndex = 50;
             this.level_monsterobjinfo_posibilities_main_lbl.Text = "Бій";
             // 
             // level_monsterobjinfo_posibilities_main_defense_lbl
             // 
             this.level_monsterobjinfo_posibilities_main_defense_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_main_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_main_defense_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_main_defense_lbl.Location = new System.Drawing.Point(91, 119);
             this.level_monsterobjinfo_posibilities_main_defense_lbl.Name = "level_monsterobjinfo_posibilities_main_defense_lbl";
-            this.level_monsterobjinfo_posibilities_main_defense_lbl.Size = new System.Drawing.Size(67, 22);
+            this.level_monsterobjinfo_posibilities_main_defense_lbl.Size = new System.Drawing.Size(72, 19);
             this.level_monsterobjinfo_posibilities_main_defense_lbl.TabIndex = 114;
             this.level_monsterobjinfo_posibilities_main_defense_lbl.Text = "Захист";
             // 
             // level_monsterobjinfo_posibilities_hero_health_lbl
             // 
             this.level_monsterobjinfo_posibilities_hero_health_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_hero_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_hero_health_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_hero_health_lbl.Location = new System.Drawing.Point(60, 231);
             this.level_monsterobjinfo_posibilities_hero_health_lbl.Name = "level_monsterobjinfo_posibilities_hero_health_lbl";
-            this.level_monsterobjinfo_posibilities_hero_health_lbl.Size = new System.Drawing.Size(20, 22);
+            this.level_monsterobjinfo_posibilities_hero_health_lbl.Size = new System.Drawing.Size(21, 19);
             this.level_monsterobjinfo_posibilities_hero_health_lbl.TabIndex = 111;
             this.level_monsterobjinfo_posibilities_hero_health_lbl.Text = "0";
             // 
             // level_monsterobjinfo_posibilities_main_health_lbl
             // 
             this.level_monsterobjinfo_posibilities_main_health_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_main_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_main_health_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_main_health_lbl.Location = new System.Drawing.Point(82, 194);
             this.level_monsterobjinfo_posibilities_main_health_lbl.Name = "level_monsterobjinfo_posibilities_main_health_lbl";
-            this.level_monsterobjinfo_posibilities_main_health_lbl.Size = new System.Drawing.Size(86, 22);
+            this.level_monsterobjinfo_posibilities_main_health_lbl.Size = new System.Drawing.Size(89, 19);
             this.level_monsterobjinfo_posibilities_main_health_lbl.TabIndex = 112;
             this.level_monsterobjinfo_posibilities_main_health_lbl.Text = "Здоров\'я";
             // 
             // level_monsterobjinfo_posibilities_monster_health_lbl
             // 
             this.level_monsterobjinfo_posibilities_monster_health_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_monster_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_monster_health_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_monster_health_lbl.Location = new System.Drawing.Point(170, 231);
             this.level_monsterobjinfo_posibilities_monster_health_lbl.Name = "level_monsterobjinfo_posibilities_monster_health_lbl";
-            this.level_monsterobjinfo_posibilities_monster_health_lbl.Size = new System.Drawing.Size(20, 22);
+            this.level_monsterobjinfo_posibilities_monster_health_lbl.Size = new System.Drawing.Size(21, 19);
             this.level_monsterobjinfo_posibilities_monster_health_lbl.TabIndex = 106;
             this.level_monsterobjinfo_posibilities_monster_health_lbl.Text = "0";
             this.level_monsterobjinfo_posibilities_monster_health_lbl.Click += new System.EventHandler(this.level_monsterobjinfo_posibilities_monster_health_lbl_Click);
@@ -1377,157 +1427,157 @@ namespace Castle_Crushers
             // level_monsterobjinfo_posibilities_main_strength_lbl
             // 
             this.level_monsterobjinfo_posibilities_main_strength_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_main_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_main_strength_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_main_strength_lbl.Location = new System.Drawing.Point(98, 44);
             this.level_monsterobjinfo_posibilities_main_strength_lbl.Name = "level_monsterobjinfo_posibilities_main_strength_lbl";
-            this.level_monsterobjinfo_posibilities_main_strength_lbl.Size = new System.Drawing.Size(53, 22);
+            this.level_monsterobjinfo_posibilities_main_strength_lbl.Size = new System.Drawing.Size(53, 19);
             this.level_monsterobjinfo_posibilities_main_strength_lbl.TabIndex = 107;
             this.level_monsterobjinfo_posibilities_main_strength_lbl.Text = "Сила";
             // 
             // level_monsterobjinfo_posibilities_hero_strength_lbl
             // 
             this.level_monsterobjinfo_posibilities_hero_strength_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_hero_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_hero_strength_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_hero_strength_lbl.Location = new System.Drawing.Point(50, 81);
             this.level_monsterobjinfo_posibilities_hero_strength_lbl.Name = "level_monsterobjinfo_posibilities_hero_strength_lbl";
-            this.level_monsterobjinfo_posibilities_hero_strength_lbl.Size = new System.Drawing.Size(47, 22);
+            this.level_monsterobjinfo_posibilities_hero_strength_lbl.Size = new System.Drawing.Size(51, 19);
             this.level_monsterobjinfo_posibilities_hero_strength_lbl.TabIndex = 47;
             this.level_monsterobjinfo_posibilities_hero_strength_lbl.Text = "0 (0)";
             // 
             // level_monsterobjinfo_posibilities_monster_strength_lbl
             // 
             this.level_monsterobjinfo_posibilities_monster_strength_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_monster_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_monster_strength_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_monster_strength_lbl.Location = new System.Drawing.Point(153, 81);
             this.level_monsterobjinfo_posibilities_monster_strength_lbl.Name = "level_monsterobjinfo_posibilities_monster_strength_lbl";
-            this.level_monsterobjinfo_posibilities_monster_strength_lbl.Size = new System.Drawing.Size(47, 22);
+            this.level_monsterobjinfo_posibilities_monster_strength_lbl.Size = new System.Drawing.Size(51, 19);
             this.level_monsterobjinfo_posibilities_monster_strength_lbl.TabIndex = 110;
             this.level_monsterobjinfo_posibilities_monster_strength_lbl.Text = "0 (0)";
             // 
             // level_monsterobjinfo_posibilities_monster_defense_lbl
             // 
             this.level_monsterobjinfo_posibilities_monster_defense_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_monster_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_monster_defense_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_monster_defense_lbl.Location = new System.Drawing.Point(153, 156);
             this.level_monsterobjinfo_posibilities_monster_defense_lbl.Name = "level_monsterobjinfo_posibilities_monster_defense_lbl";
-            this.level_monsterobjinfo_posibilities_monster_defense_lbl.Size = new System.Drawing.Size(47, 22);
+            this.level_monsterobjinfo_posibilities_monster_defense_lbl.Size = new System.Drawing.Size(51, 19);
             this.level_monsterobjinfo_posibilities_monster_defense_lbl.TabIndex = 108;
             this.level_monsterobjinfo_posibilities_monster_defense_lbl.Text = "0 (0)";
             // 
             // level_monsterobjinfo_posibilities_hero_defense_lbl
             // 
             this.level_monsterobjinfo_posibilities_hero_defense_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_hero_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_posibilities_hero_defense_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_posibilities_hero_defense_lbl.Location = new System.Drawing.Point(50, 156);
             this.level_monsterobjinfo_posibilities_hero_defense_lbl.Name = "level_monsterobjinfo_posibilities_hero_defense_lbl";
-            this.level_monsterobjinfo_posibilities_hero_defense_lbl.Size = new System.Drawing.Size(47, 22);
+            this.level_monsterobjinfo_posibilities_hero_defense_lbl.Size = new System.Drawing.Size(51, 19);
             this.level_monsterobjinfo_posibilities_hero_defense_lbl.TabIndex = 109;
             this.level_monsterobjinfo_posibilities_hero_defense_lbl.Text = "0 (0)";
             // 
             // level_monsterobjinfo_speedValue_lbl
             // 
             this.level_monsterobjinfo_speedValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_speedValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_speedValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_speedValue_lbl.Location = new System.Drawing.Point(105, 220);
             this.level_monsterobjinfo_speedValue_lbl.Name = "level_monsterobjinfo_speedValue_lbl";
-            this.level_monsterobjinfo_speedValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_monsterobjinfo_speedValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_speedValue_lbl.TabIndex = 43;
             this.level_monsterobjinfo_speedValue_lbl.Text = "label1";
             // 
             // level_monsterobjinfo_name_lbl
             // 
             this.level_monsterobjinfo_name_lbl.AutoSize = true;
-            this.level_monsterobjinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_name_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_name_lbl.Location = new System.Drawing.Point(5, 45);
             this.level_monsterobjinfo_name_lbl.Name = "level_monsterobjinfo_name_lbl";
-            this.level_monsterobjinfo_name_lbl.Size = new System.Drawing.Size(67, 22);
+            this.level_monsterobjinfo_name_lbl.Size = new System.Drawing.Size(67, 19);
             this.level_monsterobjinfo_name_lbl.TabIndex = 0;
             this.level_monsterobjinfo_name_lbl.Text = "Назва:";
             // 
             // level_monsterobjinfo_type_lbl
             // 
             this.level_monsterobjinfo_type_lbl.AutoSize = true;
-            this.level_monsterobjinfo_type_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_type_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_type_lbl.Location = new System.Drawing.Point(5, 80);
             this.level_monsterobjinfo_type_lbl.Name = "level_monsterobjinfo_type_lbl";
-            this.level_monsterobjinfo_type_lbl.Size = new System.Drawing.Size(47, 22);
+            this.level_monsterobjinfo_type_lbl.Size = new System.Drawing.Size(47, 19);
             this.level_monsterobjinfo_type_lbl.TabIndex = 40;
             this.level_monsterobjinfo_type_lbl.Text = "Тип:";
             // 
             // level_monsterobjinfo_strength_lbl
             // 
             this.level_monsterobjinfo_strength_lbl.AutoSize = true;
-            this.level_monsterobjinfo_strength_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_strength_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_strength_lbl.Location = new System.Drawing.Point(5, 115);
             this.level_monsterobjinfo_strength_lbl.Name = "level_monsterobjinfo_strength_lbl";
-            this.level_monsterobjinfo_strength_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_monsterobjinfo_strength_lbl.Size = new System.Drawing.Size(59, 19);
             this.level_monsterobjinfo_strength_lbl.TabIndex = 41;
             this.level_monsterobjinfo_strength_lbl.Text = "Сила:";
             // 
             // level_monsterobjinfo_defense_lbl
             // 
             this.level_monsterobjinfo_defense_lbl.AutoSize = true;
-            this.level_monsterobjinfo_defense_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_defense_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_defense_lbl.Location = new System.Drawing.Point(5, 150);
             this.level_monsterobjinfo_defense_lbl.Name = "level_monsterobjinfo_defense_lbl";
-            this.level_monsterobjinfo_defense_lbl.Size = new System.Drawing.Size(72, 22);
+            this.level_monsterobjinfo_defense_lbl.Size = new System.Drawing.Size(78, 19);
             this.level_monsterobjinfo_defense_lbl.TabIndex = 38;
             this.level_monsterobjinfo_defense_lbl.Text = "Захист:";
             // 
             // level_monsterobjinfo_speed_lbl
             // 
             this.level_monsterobjinfo_speed_lbl.AutoSize = true;
-            this.level_monsterobjinfo_speed_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_speed_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_speed_lbl.Location = new System.Drawing.Point(5, 220);
             this.level_monsterobjinfo_speed_lbl.Name = "level_monsterobjinfo_speed_lbl";
-            this.level_monsterobjinfo_speed_lbl.Size = new System.Drawing.Size(100, 22);
+            this.level_monsterobjinfo_speed_lbl.Size = new System.Drawing.Size(108, 19);
             this.level_monsterobjinfo_speed_lbl.TabIndex = 39;
             this.level_monsterobjinfo_speed_lbl.Text = "Швидкість:";
             // 
             // level_monsterobjinfo_health_lbl
             // 
             this.level_monsterobjinfo_health_lbl.AutoSize = true;
-            this.level_monsterobjinfo_health_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_health_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_health_lbl.Location = new System.Drawing.Point(5, 185);
             this.level_monsterobjinfo_health_lbl.Name = "level_monsterobjinfo_health_lbl";
-            this.level_monsterobjinfo_health_lbl.Size = new System.Drawing.Size(91, 22);
+            this.level_monsterobjinfo_health_lbl.Size = new System.Drawing.Size(95, 19);
             this.level_monsterobjinfo_health_lbl.TabIndex = 42;
             this.level_monsterobjinfo_health_lbl.Text = "Здоров\'я:";
             // 
             // level_monsterobjinfo_nameValue_lbl
             // 
             this.level_monsterobjinfo_nameValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_nameValue_lbl.Location = new System.Drawing.Point(105, 45);
             this.level_monsterobjinfo_nameValue_lbl.Name = "level_monsterobjinfo_nameValue_lbl";
-            this.level_monsterobjinfo_nameValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_monsterobjinfo_nameValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_nameValue_lbl.TabIndex = 34;
             this.level_monsterobjinfo_nameValue_lbl.Text = "label2";
             // 
             // level_monsterobjinfo_main_lbl
             // 
             this.level_monsterobjinfo_main_lbl.AutoSize = true;
-            this.level_monsterobjinfo_main_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_main_lbl.Font = new System.Drawing.Font("Bangkok", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_main_lbl.Location = new System.Drawing.Point(62, 0);
             this.level_monsterobjinfo_main_lbl.Name = "level_monsterobjinfo_main_lbl";
-            this.level_monsterobjinfo_main_lbl.Size = new System.Drawing.Size(123, 25);
+            this.level_monsterobjinfo_main_lbl.Size = new System.Drawing.Size(126, 21);
             this.level_monsterobjinfo_main_lbl.TabIndex = 35;
             this.level_monsterobjinfo_main_lbl.Text = "Інформація";
             // 
             // level_monsterobjinfo_typeValue_lbl
             // 
             this.level_monsterobjinfo_typeValue_lbl.AutoSize = true;
-            this.level_monsterobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_monsterobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_monsterobjinfo_typeValue_lbl.Location = new System.Drawing.Point(105, 80);
             this.level_monsterobjinfo_typeValue_lbl.Name = "level_monsterobjinfo_typeValue_lbl";
-            this.level_monsterobjinfo_typeValue_lbl.Size = new System.Drawing.Size(58, 22);
+            this.level_monsterobjinfo_typeValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_typeValue_lbl.TabIndex = 36;
             this.level_monsterobjinfo_typeValue_lbl.Text = "label4";
             // 
             // level_monsterobjinfo_posibilities_consequences_lbl
             // 
             this.level_monsterobjinfo_posibilities_consequences_lbl.AutoSize = true;
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Location = new System.Drawing.Point(3, 624);
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Location = new System.Drawing.Point(457, 23);
             this.level_monsterobjinfo_posibilities_consequences_lbl.Name = "level_monsterobjinfo_posibilities_consequences_lbl";
             this.level_monsterobjinfo_posibilities_consequences_lbl.Size = new System.Drawing.Size(76, 20);
             this.level_monsterobjinfo_posibilities_consequences_lbl.TabIndex = 113;
@@ -1537,7 +1587,6 @@ namespace Castle_Crushers
             // battle_panel
             // 
             this.battle_panel.Controls.Add(this.level_btn00);
-            this.battle_panel.Controls.Add(this.level_monsterobjinfo_posibilities_consequences_lbl);
             this.battle_panel.Controls.Add(this.level_btn10);
             this.battle_panel.Controls.Add(this.level_btn01);
             this.battle_panel.Controls.Add(this.level_btn94);
@@ -1596,50 +1645,50 @@ namespace Castle_Crushers
             // turn_owner_lbl
             // 
             this.turn_owner_lbl.AutoSize = true;
-            this.turn_owner_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.turn_owner_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.turn_owner_lbl.Location = new System.Drawing.Point(41, 131);
             this.turn_owner_lbl.Name = "turn_owner_lbl";
-            this.turn_owner_lbl.Size = new System.Drawing.Size(75, 22);
+            this.turn_owner_lbl.Size = new System.Drawing.Size(79, 19);
             this.turn_owner_lbl.TabIndex = 43;
             this.turn_owner_lbl.Text = "Ходить:";
             // 
             // turn_owner
             // 
             this.turn_owner.AutoSize = true;
-            this.turn_owner.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.turn_owner.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.turn_owner.Location = new System.Drawing.Point(116, 131);
             this.turn_owner.Name = "turn_owner";
-            this.turn_owner.Size = new System.Drawing.Size(108, 22);
+            this.turn_owner.Size = new System.Drawing.Size(112, 19);
             this.turn_owner.TabIndex = 101;
             this.turn_owner.Text = "ShackMulda";
             // 
             // level_round_count_lbl
             // 
             this.level_round_count_lbl.AutoSize = true;
-            this.level_round_count_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_round_count_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_round_count_lbl.Location = new System.Drawing.Point(41, 166);
             this.level_round_count_lbl.Name = "level_round_count_lbl";
-            this.level_round_count_lbl.Size = new System.Drawing.Size(67, 22);
+            this.level_round_count_lbl.Size = new System.Drawing.Size(65, 19);
             this.level_round_count_lbl.TabIndex = 103;
             this.level_round_count_lbl.Text = "Раунд:";
             // 
             // level_round_count
             // 
             this.level_round_count.AutoSize = true;
-            this.level_round_count.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_round_count.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_round_count.Location = new System.Drawing.Point(116, 166);
             this.level_round_count.Name = "level_round_count";
-            this.level_round_count.Size = new System.Drawing.Size(20, 22);
+            this.level_round_count.Size = new System.Drawing.Size(21, 19);
             this.level_round_count.TabIndex = 104;
             this.level_round_count.Text = "0";
             // 
             // level_name_lbl
             // 
             this.level_name_lbl.AutoSize = true;
-            this.level_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_name_lbl.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_name_lbl.Location = new System.Drawing.Point(104, 50);
             this.level_name_lbl.Name = "level_name_lbl";
-            this.level_name_lbl.Size = new System.Drawing.Size(176, 29);
+            this.level_name_lbl.Size = new System.Drawing.Size(175, 25);
             this.level_name_lbl.TabIndex = 105;
             this.level_name_lbl.Text = "level_name_lbl";
             // 
@@ -1648,9 +1697,9 @@ namespace Castle_Crushers
             this.level_maininfo_panel.BackColor = System.Drawing.Color.Transparent;
             this.level_maininfo_panel.BackgroundImage = global::Sword_and_flame.Properties.Resources.first_ch_removebg_preview___копія_removebg_preview__1_;
             this.level_maininfo_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.level_maininfo_panel.Controls.Add(this.level_lootinfo_panel);
             this.level_maininfo_panel.Controls.Add(this.level_heroinfo_panel);
             this.level_maininfo_panel.Controls.Add(this.level_monsterinfo_panel);
-            this.level_maininfo_panel.Controls.Add(this.level_lootinfo_panel);
             this.level_maininfo_panel.Controls.Add(this.level_count_of_moves_lbl);
             this.level_maininfo_panel.Controls.Add(this.level_main_mission_lbl);
             this.level_maininfo_panel.Controls.Add(this.turn_owner_lbl);
@@ -1670,30 +1719,30 @@ namespace Castle_Crushers
             // level_count_of_moves_lbl
             // 
             this.level_count_of_moves_lbl.AutoSize = true;
-            this.level_count_of_moves_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_count_of_moves_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_count_of_moves_lbl.Location = new System.Drawing.Point(41, 201);
             this.level_count_of_moves_lbl.Name = "level_count_of_moves_lbl";
-            this.level_count_of_moves_lbl.Size = new System.Drawing.Size(268, 22);
+            this.level_count_of_moves_lbl.Size = new System.Drawing.Size(293, 19);
             this.level_count_of_moves_lbl.TabIndex = 113;
             this.level_count_of_moves_lbl.Text = "Поточна кількість переміщень:";
             // 
             // level_main_mission_lbl
             // 
             this.level_main_mission_lbl.AutoSize = true;
-            this.level_main_mission_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_main_mission_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.level_main_mission_lbl.Location = new System.Drawing.Point(41, 96);
             this.level_main_mission_lbl.Name = "level_main_mission_lbl";
-            this.level_main_mission_lbl.Size = new System.Drawing.Size(57, 22);
+            this.level_main_mission_lbl.Size = new System.Drawing.Size(59, 19);
             this.level_main_mission_lbl.TabIndex = 111;
             this.level_main_mission_lbl.Text = "Мета:";
             // 
             // level_count_of_moves
             // 
             this.level_count_of_moves.AutoSize = true;
-            this.level_count_of_moves.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_count_of_moves.Location = new System.Drawing.Point(315, 201);
+            this.level_count_of_moves.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.level_count_of_moves.Location = new System.Drawing.Point(330, 201);
             this.level_count_of_moves.Name = "level_count_of_moves";
-            this.level_count_of_moves.Size = new System.Drawing.Size(20, 22);
+            this.level_count_of_moves.Size = new System.Drawing.Size(21, 19);
             this.level_count_of_moves.TabIndex = 106;
             this.level_count_of_moves.Text = "0";
             // 
@@ -1703,6 +1752,7 @@ namespace Castle_Crushers
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.battle_panel);
+            this.Controls.Add(this.level_monsterobjinfo_posibilities_consequences_lbl);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.level_maininfo_panel);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -1719,10 +1769,10 @@ namespace Castle_Crushers
             this.level_monsterinfo_battle_panel.ResumeLayout(false);
             this.level_monsterinfo_battle_panel.PerformLayout();
             this.battle_panel.ResumeLayout(false);
-            this.battle_panel.PerformLayout();
             this.level_maininfo_panel.ResumeLayout(false);
             this.level_maininfo_panel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

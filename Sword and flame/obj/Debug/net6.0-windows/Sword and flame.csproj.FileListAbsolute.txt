@@ -6,7 +6,6 @@ C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-wi
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.Hero_level.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.JourneyMap.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.Level.resources
-C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.LevelPreviewNew.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.MainMenu.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.NGGlobalDetails.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.RoleplayDetails.resources
@@ -31,3 +30,4 @@ C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-wi
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.pdb
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword and flame.genruntimeconfig.cache
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\ref\Sword and flame.dll
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Castle_Crushers.LevelPreview.resources

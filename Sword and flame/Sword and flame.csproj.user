@@ -22,7 +22,7 @@
     <Compile Update="Level.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LevelPreviewNew.cs">
+    <Compile Update="LevelPreview.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainMenu.cs">

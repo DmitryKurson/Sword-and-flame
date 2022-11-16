@@ -106,37 +106,37 @@ namespace Castle_Crushers
             // pl2_class_CB
             // 
             this.pl2_class_CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(182)))), ((int)(((byte)(5)))));
-            this.pl2_class_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl2_class_CB.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl2_class_CB.FormattingEnabled = true;
             this.pl2_class_CB.Items.AddRange(new object[] {
             "Воїн",
             "Паладін",
             "Лучник",
             "Чарівник"});
-            this.pl2_class_CB.Location = new System.Drawing.Point(200, 224);
+            this.pl2_class_CB.Location = new System.Drawing.Point(200, 221);
             this.pl2_class_CB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl2_class_CB.Name = "pl2_class_CB";
-            this.pl2_class_CB.Size = new System.Drawing.Size(150, 34);
+            this.pl2_class_CB.Size = new System.Drawing.Size(150, 32);
             this.pl2_class_CB.TabIndex = 18;
             this.pl2_class_CB.SelectedIndexChanged += new System.EventHandler(this.pl2_class_CB_SelectedIndexChanged_1);
             // 
             // pl2_main_RPD_lbl
             // 
             this.pl2_main_RPD_lbl.AutoSize = true;
-            this.pl2_main_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl2_main_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl2_main_RPD_lbl.Location = new System.Drawing.Point(122, 94);
             this.pl2_main_RPD_lbl.Name = "pl2_main_RPD_lbl";
-            this.pl2_main_RPD_lbl.Size = new System.Drawing.Size(155, 29);
+            this.pl2_main_RPD_lbl.Size = new System.Drawing.Size(138, 26);
             this.pl2_main_RPD_lbl.TabIndex = 0;
-            this.pl2_main_RPD_lbl.Text = "Гравець №2";
+            this.pl2_main_RPD_lbl.Text = "Гравець 2";
             // 
             // pl2_name_RPD_lbl
             // 
             this.pl2_name_RPD_lbl.AutoSize = true;
-            this.pl2_name_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl2_name_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl2_name_RPD_lbl.Location = new System.Drawing.Point(45, 165);
             this.pl2_name_RPD_lbl.Name = "pl2_name_RPD_lbl";
-            this.pl2_name_RPD_lbl.Size = new System.Drawing.Size(134, 26);
+            this.pl2_name_RPD_lbl.Size = new System.Drawing.Size(147, 25);
             this.pl2_name_RPD_lbl.TabIndex = 2;
             this.pl2_name_RPD_lbl.Text = "Введіть ім\'я";
             // 
@@ -144,21 +144,21 @@ namespace Castle_Crushers
             // 
             this.pl2_name_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(182)))), ((int)(((byte)(5)))));
             this.pl2_name_tbx.CausesValidation = false;
-            this.pl2_name_tbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl2_name_tbx.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl2_name_tbx.Location = new System.Drawing.Point(200, 162);
             this.pl2_name_tbx.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl2_name_tbx.Name = "pl2_name_tbx";
-            this.pl2_name_tbx.Size = new System.Drawing.Size(150, 32);
+            this.pl2_name_tbx.Size = new System.Drawing.Size(150, 31);
             this.pl2_name_tbx.TabIndex = 16;
             this.pl2_name_tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pl2_class_RPD_lbl
             // 
             this.pl2_class_RPD_lbl.AutoSize = true;
-            this.pl2_class_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl2_class_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl2_class_RPD_lbl.Location = new System.Drawing.Point(45, 224);
             this.pl2_class_RPD_lbl.Name = "pl2_class_RPD_lbl";
-            this.pl2_class_RPD_lbl.Size = new System.Drawing.Size(146, 26);
+            this.pl2_class_RPD_lbl.Size = new System.Drawing.Size(161, 25);
             this.pl2_class_RPD_lbl.TabIndex = 11;
             this.pl2_class_RPD_lbl.Text = "Оберіть клас";
             // 
@@ -192,57 +192,57 @@ namespace Castle_Crushers
             // pl3_class_CB
             // 
             this.pl3_class_CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pl3_class_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl3_class_CB.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl3_class_CB.FormattingEnabled = true;
             this.pl3_class_CB.Items.AddRange(new object[] {
             "Воїн",
             "Паладін",
             "Лучник",
             "Чарівник"});
-            this.pl3_class_CB.Location = new System.Drawing.Point(200, 224);
+            this.pl3_class_CB.Location = new System.Drawing.Point(200, 221);
             this.pl3_class_CB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl3_class_CB.Name = "pl3_class_CB";
-            this.pl3_class_CB.Size = new System.Drawing.Size(150, 34);
+            this.pl3_class_CB.Size = new System.Drawing.Size(150, 32);
             this.pl3_class_CB.TabIndex = 18;
             // 
             // pl3_main_RPD_lbl
             // 
             this.pl3_main_RPD_lbl.AutoSize = true;
-            this.pl3_main_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl3_main_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl3_main_RPD_lbl.Location = new System.Drawing.Point(122, 94);
             this.pl3_main_RPD_lbl.Name = "pl3_main_RPD_lbl";
-            this.pl3_main_RPD_lbl.Size = new System.Drawing.Size(155, 29);
+            this.pl3_main_RPD_lbl.Size = new System.Drawing.Size(138, 26);
             this.pl3_main_RPD_lbl.TabIndex = 0;
-            this.pl3_main_RPD_lbl.Text = "Гравець №3";
+            this.pl3_main_RPD_lbl.Text = "Гравець 3";
             // 
             // pl3_name_RPD_lbl
             // 
             this.pl3_name_RPD_lbl.AutoSize = true;
-            this.pl3_name_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl3_name_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl3_name_RPD_lbl.Location = new System.Drawing.Point(45, 165);
             this.pl3_name_RPD_lbl.Name = "pl3_name_RPD_lbl";
-            this.pl3_name_RPD_lbl.Size = new System.Drawing.Size(134, 26);
+            this.pl3_name_RPD_lbl.Size = new System.Drawing.Size(147, 25);
             this.pl3_name_RPD_lbl.TabIndex = 2;
             this.pl3_name_RPD_lbl.Text = "Введіть ім\'я";
             // 
             // pl3_name_tbx
             // 
             this.pl3_name_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pl3_name_tbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl3_name_tbx.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl3_name_tbx.Location = new System.Drawing.Point(200, 162);
             this.pl3_name_tbx.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl3_name_tbx.Name = "pl3_name_tbx";
-            this.pl3_name_tbx.Size = new System.Drawing.Size(150, 32);
+            this.pl3_name_tbx.Size = new System.Drawing.Size(150, 31);
             this.pl3_name_tbx.TabIndex = 16;
             this.pl3_name_tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pl3_class_RPD_lbl
             // 
             this.pl3_class_RPD_lbl.AutoSize = true;
-            this.pl3_class_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl3_class_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl3_class_RPD_lbl.Location = new System.Drawing.Point(45, 224);
             this.pl3_class_RPD_lbl.Name = "pl3_class_RPD_lbl";
-            this.pl3_class_RPD_lbl.Size = new System.Drawing.Size(146, 26);
+            this.pl3_class_RPD_lbl.Size = new System.Drawing.Size(161, 25);
             this.pl3_class_RPD_lbl.TabIndex = 11;
             this.pl3_class_RPD_lbl.Text = "Оберіть клас";
             // 
@@ -275,57 +275,57 @@ namespace Castle_Crushers
             // pl4_class_CB
             // 
             this.pl4_class_CB.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pl4_class_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl4_class_CB.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl4_class_CB.FormattingEnabled = true;
             this.pl4_class_CB.Items.AddRange(new object[] {
             "Воїн",
             "Паладін",
             "Лучник",
             "Чарівник"});
-            this.pl4_class_CB.Location = new System.Drawing.Point(200, 224);
+            this.pl4_class_CB.Location = new System.Drawing.Point(200, 221);
             this.pl4_class_CB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl4_class_CB.Name = "pl4_class_CB";
-            this.pl4_class_CB.Size = new System.Drawing.Size(150, 34);
+            this.pl4_class_CB.Size = new System.Drawing.Size(150, 32);
             this.pl4_class_CB.TabIndex = 19;
             // 
             // pl4_main_RPD_lbl
             // 
             this.pl4_main_RPD_lbl.AutoSize = true;
-            this.pl4_main_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl4_main_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl4_main_RPD_lbl.Location = new System.Drawing.Point(122, 94);
             this.pl4_main_RPD_lbl.Name = "pl4_main_RPD_lbl";
-            this.pl4_main_RPD_lbl.Size = new System.Drawing.Size(155, 29);
+            this.pl4_main_RPD_lbl.Size = new System.Drawing.Size(138, 26);
             this.pl4_main_RPD_lbl.TabIndex = 0;
-            this.pl4_main_RPD_lbl.Text = "Гравець №4";
+            this.pl4_main_RPD_lbl.Text = "Гравець 4";
             // 
             // pl4_name_RPD_lbl
             // 
             this.pl4_name_RPD_lbl.AutoSize = true;
-            this.pl4_name_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl4_name_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl4_name_RPD_lbl.Location = new System.Drawing.Point(45, 165);
             this.pl4_name_RPD_lbl.Name = "pl4_name_RPD_lbl";
-            this.pl4_name_RPD_lbl.Size = new System.Drawing.Size(134, 26);
+            this.pl4_name_RPD_lbl.Size = new System.Drawing.Size(147, 25);
             this.pl4_name_RPD_lbl.TabIndex = 2;
             this.pl4_name_RPD_lbl.Text = "Введіть ім\'я";
             // 
             // pl4_name_tbx
             // 
             this.pl4_name_tbx.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pl4_name_tbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl4_name_tbx.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl4_name_tbx.Location = new System.Drawing.Point(200, 162);
             this.pl4_name_tbx.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl4_name_tbx.Name = "pl4_name_tbx";
-            this.pl4_name_tbx.Size = new System.Drawing.Size(150, 32);
+            this.pl4_name_tbx.Size = new System.Drawing.Size(150, 31);
             this.pl4_name_tbx.TabIndex = 16;
             this.pl4_name_tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pl4_class_RPD_lbl
             // 
             this.pl4_class_RPD_lbl.AutoSize = true;
-            this.pl4_class_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl4_class_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl4_class_RPD_lbl.Location = new System.Drawing.Point(45, 224);
             this.pl4_class_RPD_lbl.Name = "pl4_class_RPD_lbl";
-            this.pl4_class_RPD_lbl.Size = new System.Drawing.Size(146, 26);
+            this.pl4_class_RPD_lbl.Size = new System.Drawing.Size(161, 25);
             this.pl4_class_RPD_lbl.TabIndex = 11;
             this.pl4_class_RPD_lbl.Text = "Оберіть клас";
             // 
@@ -360,38 +360,38 @@ namespace Castle_Crushers
             // pl1_class_CB
             // 
             this.pl1_class_CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pl1_class_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl1_class_CB.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl1_class_CB.FormattingEnabled = true;
             this.pl1_class_CB.Items.AddRange(new object[] {
             "Воїн",
             "Паладін",
             "Лучник",
             "Чарівник"});
-            this.pl1_class_CB.Location = new System.Drawing.Point(200, 224);
+            this.pl1_class_CB.Location = new System.Drawing.Point(200, 221);
             this.pl1_class_CB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl1_class_CB.Name = "pl1_class_CB";
-            this.pl1_class_CB.Size = new System.Drawing.Size(150, 34);
+            this.pl1_class_CB.Size = new System.Drawing.Size(150, 32);
             this.pl1_class_CB.TabIndex = 17;
             this.pl1_class_CB.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pl1_main_RPD_lbl
             // 
             this.pl1_main_RPD_lbl.AutoSize = true;
-            this.pl1_main_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl1_main_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl1_main_RPD_lbl.Location = new System.Drawing.Point(122, 94);
             this.pl1_main_RPD_lbl.Name = "pl1_main_RPD_lbl";
-            this.pl1_main_RPD_lbl.Size = new System.Drawing.Size(155, 29);
+            this.pl1_main_RPD_lbl.Size = new System.Drawing.Size(138, 26);
             this.pl1_main_RPD_lbl.TabIndex = 0;
-            this.pl1_main_RPD_lbl.Text = "Гравець №1";
+            this.pl1_main_RPD_lbl.Text = "Гравець 1";
             this.pl1_main_RPD_lbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // pl1_name_RPD_lbl
             // 
             this.pl1_name_RPD_lbl.AutoSize = true;
-            this.pl1_name_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl1_name_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl1_name_RPD_lbl.Location = new System.Drawing.Point(45, 165);
             this.pl1_name_RPD_lbl.Name = "pl1_name_RPD_lbl";
-            this.pl1_name_RPD_lbl.Size = new System.Drawing.Size(134, 26);
+            this.pl1_name_RPD_lbl.Size = new System.Drawing.Size(147, 25);
             this.pl1_name_RPD_lbl.TabIndex = 2;
             this.pl1_name_RPD_lbl.Text = "Введіть ім\'я";
             this.pl1_name_RPD_lbl.Click += new System.EventHandler(this.pl1_name_RPD_lbl_Click);
@@ -399,32 +399,32 @@ namespace Castle_Crushers
             // pl1_name_tbx
             // 
             this.pl1_name_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pl1_name_tbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl1_name_tbx.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl1_name_tbx.Location = new System.Drawing.Point(200, 162);
             this.pl1_name_tbx.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pl1_name_tbx.Name = "pl1_name_tbx";
-            this.pl1_name_tbx.Size = new System.Drawing.Size(150, 32);
+            this.pl1_name_tbx.Size = new System.Drawing.Size(150, 31);
             this.pl1_name_tbx.TabIndex = 16;
             this.pl1_name_tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pl1_class_RPD_lbl
             // 
             this.pl1_class_RPD_lbl.AutoSize = true;
-            this.pl1_class_RPD_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pl1_class_RPD_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pl1_class_RPD_lbl.Location = new System.Drawing.Point(45, 224);
             this.pl1_class_RPD_lbl.Name = "pl1_class_RPD_lbl";
-            this.pl1_class_RPD_lbl.Size = new System.Drawing.Size(146, 26);
+            this.pl1_class_RPD_lbl.Size = new System.Drawing.Size(161, 25);
             this.pl1_class_RPD_lbl.TabIndex = 11;
             this.pl1_class_RPD_lbl.Text = "Оберіть клас";
             // 
             // NGRD_back_btn
             // 
             this.NGRD_back_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.NGRD_back_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGRD_back_btn.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGRD_back_btn.Location = new System.Drawing.Point(100, 905);
             this.NGRD_back_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGRD_back_btn.Name = "NGRD_back_btn";
-            this.NGRD_back_btn.Size = new System.Drawing.Size(150, 100);
+            this.NGRD_back_btn.Size = new System.Drawing.Size(150, 90);
             this.NGRD_back_btn.TabIndex = 27;
             this.NGRD_back_btn.Text = "Назад";
             this.NGRD_back_btn.UseVisualStyleBackColor = false;
@@ -433,11 +433,11 @@ namespace Castle_Crushers
             // NGRD_next_btn
             // 
             this.NGRD_next_btn.BackColor = System.Drawing.Color.White;
-            this.NGRD_next_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGRD_next_btn.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGRD_next_btn.Location = new System.Drawing.Point(1670, 905);
             this.NGRD_next_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGRD_next_btn.Name = "NGRD_next_btn";
-            this.NGRD_next_btn.Size = new System.Drawing.Size(150, 100);
+            this.NGRD_next_btn.Size = new System.Drawing.Size(150, 90);
             this.NGRD_next_btn.TabIndex = 26;
             this.NGRD_next_btn.Text = "Далі";
             this.NGRD_next_btn.UseVisualStyleBackColor = false;

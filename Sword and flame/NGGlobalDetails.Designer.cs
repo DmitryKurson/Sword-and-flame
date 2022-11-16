@@ -54,21 +54,21 @@ namespace Castle_Crushers
             // NGGD_count_of_players_lbl
             // 
             this.NGGD_count_of_players_lbl.AutoSize = true;
-            this.NGGD_count_of_players_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_count_of_players_lbl.Font = new System.Drawing.Font("Bangkok", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_count_of_players_lbl.Location = new System.Drawing.Point(0, 0);
             this.NGGD_count_of_players_lbl.Name = "NGGD_count_of_players_lbl";
-            this.NGGD_count_of_players_lbl.Size = new System.Drawing.Size(304, 29);
+            this.NGGD_count_of_players_lbl.Size = new System.Drawing.Size(336, 26);
             this.NGGD_count_of_players_lbl.TabIndex = 0;
             this.NGGD_count_of_players_lbl.Text = "Оберіть кількість гравців";
             // 
             // NGGD_next_btn
             // 
             this.NGGD_next_btn.BackColor = System.Drawing.Color.White;
-            this.NGGD_next_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_next_btn.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_next_btn.Location = new System.Drawing.Point(1670, 905);
             this.NGGD_next_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGGD_next_btn.Name = "NGGD_next_btn";
-            this.NGGD_next_btn.Size = new System.Drawing.Size(150, 94);
+            this.NGGD_next_btn.Size = new System.Drawing.Size(150, 90);
             this.NGGD_next_btn.TabIndex = 4;
             this.NGGD_next_btn.Text = "Далі";
             this.NGGD_next_btn.UseVisualStyleBackColor = false;
@@ -94,11 +94,11 @@ namespace Castle_Crushers
             // NGGD_count_of_players_2pl_rb
             // 
             this.NGGD_count_of_players_2pl_rb.AutoSize = true;
-            this.NGGD_count_of_players_2pl_rb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_count_of_players_2pl_rb.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_count_of_players_2pl_rb.Location = new System.Drawing.Point(40, 85);
             this.NGGD_count_of_players_2pl_rb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGGD_count_of_players_2pl_rb.Name = "NGGD_count_of_players_2pl_rb";
-            this.NGGD_count_of_players_2pl_rb.Size = new System.Drawing.Size(113, 30);
+            this.NGGD_count_of_players_2pl_rb.Size = new System.Drawing.Size(126, 29);
             this.NGGD_count_of_players_2pl_rb.TabIndex = 9;
             this.NGGD_count_of_players_2pl_rb.TabStop = true;
             this.NGGD_count_of_players_2pl_rb.Text = "2 гравці";
@@ -107,11 +107,11 @@ namespace Castle_Crushers
             // NGGD_count_of_players_1pl_rb
             // 
             this.NGGD_count_of_players_1pl_rb.AutoSize = true;
-            this.NGGD_count_of_players_1pl_rb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_count_of_players_1pl_rb.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_count_of_players_1pl_rb.Location = new System.Drawing.Point(40, 45);
             this.NGGD_count_of_players_1pl_rb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGGD_count_of_players_1pl_rb.Name = "NGGD_count_of_players_1pl_rb";
-            this.NGGD_count_of_players_1pl_rb.Size = new System.Drawing.Size(132, 30);
+            this.NGGD_count_of_players_1pl_rb.Size = new System.Drawing.Size(146, 29);
             this.NGGD_count_of_players_1pl_rb.TabIndex = 10;
             this.NGGD_count_of_players_1pl_rb.TabStop = true;
             this.NGGD_count_of_players_1pl_rb.Text = "1 гравець";
@@ -120,11 +120,11 @@ namespace Castle_Crushers
             // NGGD_count_of_players_3pl_rb
             // 
             this.NGGD_count_of_players_3pl_rb.AutoSize = true;
-            this.NGGD_count_of_players_3pl_rb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_count_of_players_3pl_rb.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_count_of_players_3pl_rb.Location = new System.Drawing.Point(40, 125);
             this.NGGD_count_of_players_3pl_rb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGGD_count_of_players_3pl_rb.Name = "NGGD_count_of_players_3pl_rb";
-            this.NGGD_count_of_players_3pl_rb.Size = new System.Drawing.Size(113, 30);
+            this.NGGD_count_of_players_3pl_rb.Size = new System.Drawing.Size(126, 29);
             this.NGGD_count_of_players_3pl_rb.TabIndex = 11;
             this.NGGD_count_of_players_3pl_rb.TabStop = true;
             this.NGGD_count_of_players_3pl_rb.Text = "3 гравці";
@@ -133,11 +133,11 @@ namespace Castle_Crushers
             // NGGD_count_of_players_4pl_rb
             // 
             this.NGGD_count_of_players_4pl_rb.AutoSize = true;
-            this.NGGD_count_of_players_4pl_rb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_count_of_players_4pl_rb.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_count_of_players_4pl_rb.Location = new System.Drawing.Point(40, 165);
             this.NGGD_count_of_players_4pl_rb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGGD_count_of_players_4pl_rb.Name = "NGGD_count_of_players_4pl_rb";
-            this.NGGD_count_of_players_4pl_rb.Size = new System.Drawing.Size(113, 30);
+            this.NGGD_count_of_players_4pl_rb.Size = new System.Drawing.Size(126, 29);
             this.NGGD_count_of_players_4pl_rb.TabIndex = 12;
             this.NGGD_count_of_players_4pl_rb.TabStop = true;
             this.NGGD_count_of_players_4pl_rb.Text = "4 гравці";
@@ -161,10 +161,10 @@ namespace Castle_Crushers
             // newgame_lbl
             // 
             this.newgame_lbl.AutoSize = true;
-            this.newgame_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.newgame_lbl.Font = new System.Drawing.Font("Bangkok", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.newgame_lbl.Location = new System.Drawing.Point(171, 70);
             this.newgame_lbl.Name = "newgame_lbl";
-            this.newgame_lbl.Size = new System.Drawing.Size(158, 39);
+            this.newgame_lbl.Size = new System.Drawing.Size(167, 36);
             this.newgame_lbl.TabIndex = 13;
             this.newgame_lbl.Text = "Нова гра";
             // 
@@ -178,17 +178,17 @@ namespace Castle_Crushers
             this.difficulty_panel.Location = new System.Drawing.Point(91, 370);
             this.difficulty_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.difficulty_panel.Name = "difficulty_panel";
-            this.difficulty_panel.Size = new System.Drawing.Size(320, 172);
+            this.difficulty_panel.Size = new System.Drawing.Size(330, 170);
             this.difficulty_panel.TabIndex = 16;
             // 
             // NGGD_difficulty_hard_rb
             // 
             this.NGGD_difficulty_hard_rb.AutoSize = true;
-            this.NGGD_difficulty_hard_rb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_difficulty_hard_rb.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_difficulty_hard_rb.Location = new System.Drawing.Point(40, 125);
             this.NGGD_difficulty_hard_rb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGGD_difficulty_hard_rb.Name = "NGGD_difficulty_hard_rb";
-            this.NGGD_difficulty_hard_rb.Size = new System.Drawing.Size(99, 30);
+            this.NGGD_difficulty_hard_rb.Size = new System.Drawing.Size(109, 29);
             this.NGGD_difficulty_hard_rb.TabIndex = 16;
             this.NGGD_difficulty_hard_rb.TabStop = true;
             this.NGGD_difficulty_hard_rb.Text = "Важко";
@@ -197,21 +197,21 @@ namespace Castle_Crushers
             // NGGD_difficulty_lbl
             // 
             this.NGGD_difficulty_lbl.AutoSize = true;
-            this.NGGD_difficulty_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_difficulty_lbl.Font = new System.Drawing.Font("Bangkok", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_difficulty_lbl.Location = new System.Drawing.Point(11, 0);
             this.NGGD_difficulty_lbl.Name = "NGGD_difficulty_lbl";
-            this.NGGD_difficulty_lbl.Size = new System.Drawing.Size(282, 29);
+            this.NGGD_difficulty_lbl.Size = new System.Drawing.Size(304, 26);
             this.NGGD_difficulty_lbl.TabIndex = 13;
             this.NGGD_difficulty_lbl.Text = "Оберіть складність гри";
             // 
             // NGGD_difficulty_normal_rb
             // 
             this.NGGD_difficulty_normal_rb.AutoSize = true;
-            this.NGGD_difficulty_normal_rb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_difficulty_normal_rb.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_difficulty_normal_rb.Location = new System.Drawing.Point(40, 85);
             this.NGGD_difficulty_normal_rb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGGD_difficulty_normal_rb.Name = "NGGD_difficulty_normal_rb";
-            this.NGGD_difficulty_normal_rb.Size = new System.Drawing.Size(150, 30);
+            this.NGGD_difficulty_normal_rb.Size = new System.Drawing.Size(161, 29);
             this.NGGD_difficulty_normal_rb.TabIndex = 14;
             this.NGGD_difficulty_normal_rb.TabStop = true;
             this.NGGD_difficulty_normal_rb.Text = "Нормально";
@@ -220,11 +220,11 @@ namespace Castle_Crushers
             // NGGD_difficulty_easy_rb
             // 
             this.NGGD_difficulty_easy_rb.AutoSize = true;
-            this.NGGD_difficulty_easy_rb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_difficulty_easy_rb.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_difficulty_easy_rb.Location = new System.Drawing.Point(40, 45);
             this.NGGD_difficulty_easy_rb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGGD_difficulty_easy_rb.Name = "NGGD_difficulty_easy_rb";
-            this.NGGD_difficulty_easy_rb.Size = new System.Drawing.Size(92, 30);
+            this.NGGD_difficulty_easy_rb.Size = new System.Drawing.Size(99, 29);
             this.NGGD_difficulty_easy_rb.TabIndex = 15;
             this.NGGD_difficulty_easy_rb.TabStop = true;
             this.NGGD_difficulty_easy_rb.Text = "Легко";
@@ -241,17 +241,17 @@ namespace Castle_Crushers
             this.cop_panel.Location = new System.Drawing.Point(91, 150);
             this.cop_panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cop_panel.Name = "cop_panel";
-            this.cop_panel.Size = new System.Drawing.Size(320, 210);
+            this.cop_panel.Size = new System.Drawing.Size(330, 210);
             this.cop_panel.TabIndex = 15;
             // 
             // NGGD_back_btn
             // 
             this.NGGD_back_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.NGGD_back_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_back_btn.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_back_btn.Location = new System.Drawing.Point(100, 905);
             this.NGGD_back_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NGGD_back_btn.Name = "NGGD_back_btn";
-            this.NGGD_back_btn.Size = new System.Drawing.Size(150, 94);
+            this.NGGD_back_btn.Size = new System.Drawing.Size(150, 90);
             this.NGGD_back_btn.TabIndex = 17;
             this.NGGD_back_btn.Text = "Назад";
             this.NGGD_back_btn.UseVisualStyleBackColor = false;

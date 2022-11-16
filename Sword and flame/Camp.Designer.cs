@@ -166,73 +166,80 @@ namespace Castle_Crushers
             // camp_lootinfo_name_lbl
             // 
             this.camp_lootinfo_name_lbl.AutoSize = true;
-            this.camp_lootinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.camp_lootinfo_name_lbl.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_name_lbl.Location = new System.Drawing.Point(35, 0);
             this.camp_lootinfo_name_lbl.Name = "camp_lootinfo_name_lbl";
-            this.camp_lootinfo_name_lbl.Size = new System.Drawing.Size(229, 20);
+            this.camp_lootinfo_name_lbl.Size = new System.Drawing.Size(248, 18);
             this.camp_lootinfo_name_lbl.TabIndex = 101;
             this.camp_lootinfo_name_lbl.Text = "XXXXXXXXXXXXXXXXXXXX";
             // 
             // camp_lootinfo_PriceValue_lbl
             // 
             this.camp_lootinfo_PriceValue_lbl.AutoSize = true;
+            this.camp_lootinfo_PriceValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_PriceValue_lbl.Location = new System.Drawing.Point(155, 240);
             this.camp_lootinfo_PriceValue_lbl.Name = "camp_lootinfo_PriceValue_lbl";
-            this.camp_lootinfo_PriceValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.camp_lootinfo_PriceValue_lbl.Size = new System.Drawing.Size(52, 16);
             this.camp_lootinfo_PriceValue_lbl.TabIndex = 101;
             this.camp_lootinfo_PriceValue_lbl.Text = "label4";
             // 
             // camp_lootinfo_playerclassValue_lbl
             // 
             this.camp_lootinfo_playerclassValue_lbl.AutoSize = true;
+            this.camp_lootinfo_playerclassValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_playerclassValue_lbl.Location = new System.Drawing.Point(53, 60);
             this.camp_lootinfo_playerclassValue_lbl.Name = "camp_lootinfo_playerclassValue_lbl";
-            this.camp_lootinfo_playerclassValue_lbl.Size = new System.Drawing.Size(231, 20);
+            this.camp_lootinfo_playerclassValue_lbl.Size = new System.Drawing.Size(245, 16);
             this.camp_lootinfo_playerclassValue_lbl.TabIndex = 109;
             this.camp_lootinfo_playerclassValue_lbl.Text = "Воїн, Паладін, Лучник, Чарівник";
             // 
             // camp_lootinfo_minlevelValue_lbl
             // 
             this.camp_lootinfo_minlevelValue_lbl.AutoSize = true;
+            this.camp_lootinfo_minlevelValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_minlevelValue_lbl.Location = new System.Drawing.Point(155, 90);
             this.camp_lootinfo_minlevelValue_lbl.Name = "camp_lootinfo_minlevelValue_lbl";
-            this.camp_lootinfo_minlevelValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.camp_lootinfo_minlevelValue_lbl.Size = new System.Drawing.Size(52, 16);
             this.camp_lootinfo_minlevelValue_lbl.TabIndex = 108;
             this.camp_lootinfo_minlevelValue_lbl.Text = "label1";
             // 
             // camp_lootinfo_Price_lbl
             // 
             this.camp_lootinfo_Price_lbl.AutoSize = true;
+            this.camp_lootinfo_Price_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_Price_lbl.Location = new System.Drawing.Point(3, 240);
             this.camp_lootinfo_Price_lbl.Name = "camp_lootinfo_Price_lbl";
-            this.camp_lootinfo_Price_lbl.Size = new System.Drawing.Size(44, 20);
+            this.camp_lootinfo_Price_lbl.Size = new System.Drawing.Size(44, 16);
             this.camp_lootinfo_Price_lbl.TabIndex = 46;
             this.camp_lootinfo_Price_lbl.Text = "Ціна:";
             // 
             // camp_lootinfo_playerclass_lbl
             // 
             this.camp_lootinfo_playerclass_lbl.AutoSize = true;
+            this.camp_lootinfo_playerclass_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_playerclass_lbl.Location = new System.Drawing.Point(3, 60);
             this.camp_lootinfo_playerclass_lbl.Name = "camp_lootinfo_playerclass_lbl";
-            this.camp_lootinfo_playerclass_lbl.Size = new System.Drawing.Size(44, 20);
+            this.camp_lootinfo_playerclass_lbl.Size = new System.Drawing.Size(46, 16);
             this.camp_lootinfo_playerclass_lbl.TabIndex = 106;
             this.camp_lootinfo_playerclass_lbl.Text = "Клас:";
             // 
             // camp_lootinfo_minlevel_lbl
             // 
             this.camp_lootinfo_minlevel_lbl.AutoSize = true;
+            this.camp_lootinfo_minlevel_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_minlevel_lbl.Location = new System.Drawing.Point(3, 90);
             this.camp_lootinfo_minlevel_lbl.Name = "camp_lootinfo_minlevel_lbl";
-            this.camp_lootinfo_minlevel_lbl.Size = new System.Drawing.Size(154, 20);
+            this.camp_lootinfo_minlevel_lbl.Size = new System.Drawing.Size(156, 16);
             this.camp_lootinfo_minlevel_lbl.TabIndex = 100;
             this.camp_lootinfo_minlevel_lbl.Text = "Мінімальний рівень:";
             // 
             // camp_lootinfo_healthBonusValue_lbl
             // 
             this.camp_lootinfo_healthBonusValue_lbl.AutoSize = true;
+            this.camp_lootinfo_healthBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(155, 180);
             this.camp_lootinfo_healthBonusValue_lbl.Name = "camp_lootinfo_healthBonusValue_lbl";
-            this.camp_lootinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.camp_lootinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(52, 16);
             this.camp_lootinfo_healthBonusValue_lbl.TabIndex = 99;
             this.camp_lootinfo_healthBonusValue_lbl.Text = "label2";
             // 
@@ -248,18 +255,20 @@ namespace Castle_Crushers
             // camp_lootinfo_strengthBonusValue_lbl
             // 
             this.camp_lootinfo_strengthBonusValue_lbl.AutoSize = true;
+            this.camp_lootinfo_strengthBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(155, 120);
             this.camp_lootinfo_strengthBonusValue_lbl.Name = "camp_lootinfo_strengthBonusValue_lbl";
-            this.camp_lootinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(58, 20);
+            this.camp_lootinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(62, 16);
             this.camp_lootinfo_strengthBonusValue_lbl.TabIndex = 49;
             this.camp_lootinfo_strengthBonusValue_lbl.Text = "label10";
             // 
             // camp_lootinfo_speedBonusValue_lbl
             // 
             this.camp_lootinfo_speedBonusValue_lbl.AutoSize = true;
+            this.camp_lootinfo_speedBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(155, 210);
             this.camp_lootinfo_speedBonusValue_lbl.Name = "camp_lootinfo_speedBonusValue_lbl";
-            this.camp_lootinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.camp_lootinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(52, 16);
             this.camp_lootinfo_speedBonusValue_lbl.TabIndex = 48;
             this.camp_lootinfo_speedBonusValue_lbl.Text = "label9";
             // 
@@ -275,73 +284,80 @@ namespace Castle_Crushers
             // camp_lootinfo_defenseBonusValue_lbl
             // 
             this.camp_lootinfo_defenseBonusValue_lbl.AutoSize = true;
+            this.camp_lootinfo_defenseBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(155, 150);
             this.camp_lootinfo_defenseBonusValue_lbl.Name = "camp_lootinfo_defenseBonusValue_lbl";
-            this.camp_lootinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.camp_lootinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(52, 16);
             this.camp_lootinfo_defenseBonusValue_lbl.TabIndex = 44;
             this.camp_lootinfo_defenseBonusValue_lbl.Text = "label5";
             // 
             // camp_lootinfo_type_lbl
             // 
             this.camp_lootinfo_type_lbl.AutoSize = true;
+            this.camp_lootinfo_type_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_type_lbl.Location = new System.Drawing.Point(3, 30);
             this.camp_lootinfo_type_lbl.Name = "camp_lootinfo_type_lbl";
-            this.camp_lootinfo_type_lbl.Size = new System.Drawing.Size(38, 20);
+            this.camp_lootinfo_type_lbl.Size = new System.Drawing.Size(39, 16);
             this.camp_lootinfo_type_lbl.TabIndex = 40;
             this.camp_lootinfo_type_lbl.Text = "Тип:";
             // 
             // camp_lootinfo_strengthBonus_lbl
             // 
             this.camp_lootinfo_strengthBonus_lbl.AutoSize = true;
+            this.camp_lootinfo_strengthBonus_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_strengthBonus_lbl.Location = new System.Drawing.Point(3, 120);
             this.camp_lootinfo_strengthBonus_lbl.Name = "camp_lootinfo_strengthBonus_lbl";
-            this.camp_lootinfo_strengthBonus_lbl.Size = new System.Drawing.Size(111, 20);
+            this.camp_lootinfo_strengthBonus_lbl.Size = new System.Drawing.Size(117, 16);
             this.camp_lootinfo_strengthBonus_lbl.TabIndex = 41;
             this.camp_lootinfo_strengthBonus_lbl.Text = "Бонус до сили:";
             // 
             // camp_lootinfo_defenseBonus_lbl
             // 
             this.camp_lootinfo_defenseBonus_lbl.AutoSize = true;
+            this.camp_lootinfo_defenseBonus_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_defenseBonus_lbl.Location = new System.Drawing.Point(3, 150);
             this.camp_lootinfo_defenseBonus_lbl.Name = "camp_lootinfo_defenseBonus_lbl";
-            this.camp_lootinfo_defenseBonus_lbl.Size = new System.Drawing.Size(129, 20);
+            this.camp_lootinfo_defenseBonus_lbl.Size = new System.Drawing.Size(141, 16);
             this.camp_lootinfo_defenseBonus_lbl.TabIndex = 38;
             this.camp_lootinfo_defenseBonus_lbl.Text = "Бонус до захисту:";
             // 
             // camp_lootinfo_speedBonus_lbl
             // 
             this.camp_lootinfo_speedBonus_lbl.AutoSize = true;
+            this.camp_lootinfo_speedBonus_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_speedBonus_lbl.Location = new System.Drawing.Point(3, 210);
             this.camp_lootinfo_speedBonus_lbl.Name = "camp_lootinfo_speedBonus_lbl";
-            this.camp_lootinfo_speedBonus_lbl.Size = new System.Drawing.Size(148, 20);
+            this.camp_lootinfo_speedBonus_lbl.Size = new System.Drawing.Size(162, 16);
             this.camp_lootinfo_speedBonus_lbl.TabIndex = 39;
             this.camp_lootinfo_speedBonus_lbl.Text = "Бонус до швидкості:";
             // 
             // camp_lootinfo_healthBonus_lbl
             // 
             this.camp_lootinfo_healthBonus_lbl.AutoSize = true;
+            this.camp_lootinfo_healthBonus_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_healthBonus_lbl.Location = new System.Drawing.Point(3, 180);
             this.camp_lootinfo_healthBonus_lbl.Name = "camp_lootinfo_healthBonus_lbl";
-            this.camp_lootinfo_healthBonus_lbl.Size = new System.Drawing.Size(139, 20);
+            this.camp_lootinfo_healthBonus_lbl.Size = new System.Drawing.Size(149, 16);
             this.camp_lootinfo_healthBonus_lbl.TabIndex = 42;
             this.camp_lootinfo_healthBonus_lbl.Text = "Бонус до здоров\'я:";
             // 
             // camp_lootinfo_typeValue_lbl
             // 
             this.camp_lootinfo_typeValue_lbl.AutoSize = true;
+            this.camp_lootinfo_typeValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_lootinfo_typeValue_lbl.Location = new System.Drawing.Point(155, 30);
             this.camp_lootinfo_typeValue_lbl.Name = "camp_lootinfo_typeValue_lbl";
-            this.camp_lootinfo_typeValue_lbl.Size = new System.Drawing.Size(50, 20);
+            this.camp_lootinfo_typeValue_lbl.Size = new System.Drawing.Size(52, 16);
             this.camp_lootinfo_typeValue_lbl.TabIndex = 36;
             this.camp_lootinfo_typeValue_lbl.Text = "label4";
             // 
             // player1_name_lbl
             // 
             this.player1_name_lbl.AutoSize = true;
-            this.player1_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player1_name_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player1_name_lbl.Location = new System.Drawing.Point(119, 0);
             this.player1_name_lbl.Name = "player1_name_lbl";
-            this.player1_name_lbl.Size = new System.Drawing.Size(162, 26);
+            this.player1_name_lbl.Size = new System.Drawing.Size(172, 25);
             this.player1_name_lbl.TabIndex = 0;
             this.player1_name_lbl.Text = "ХХХХХХХХХХ";
             // 
@@ -553,100 +569,110 @@ namespace Castle_Crushers
             // camp_heroinfo_level_lbl
             // 
             this.camp_heroinfo_level_lbl.AutoSize = true;
+            this.camp_heroinfo_level_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_level_lbl.Location = new System.Drawing.Point(3, 30);
             this.camp_heroinfo_level_lbl.Name = "camp_heroinfo_level_lbl";
-            this.camp_heroinfo_level_lbl.Size = new System.Drawing.Size(57, 20);
+            this.camp_heroinfo_level_lbl.Size = new System.Drawing.Size(59, 16);
             this.camp_heroinfo_level_lbl.TabIndex = 100;
             this.camp_heroinfo_level_lbl.Text = "Рівень:";
             // 
             // camp_heroinfo_levelValue_lbl
             // 
             this.camp_heroinfo_levelValue_lbl.AutoSize = true;
+            this.camp_heroinfo_levelValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_levelValue_lbl.Location = new System.Drawing.Point(85, 30);
             this.camp_heroinfo_levelValue_lbl.Name = "camp_heroinfo_levelValue_lbl";
-            this.camp_heroinfo_levelValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_levelValue_lbl.Size = new System.Drawing.Size(17, 16);
             this.camp_heroinfo_levelValue_lbl.TabIndex = 99;
             this.camp_heroinfo_levelValue_lbl.Text = "0";
             // 
             // camp_heroinfo_strengthValue_lbl
             // 
             this.camp_heroinfo_strengthValue_lbl.AutoSize = true;
+            this.camp_heroinfo_strengthValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_strengthValue_lbl.Location = new System.Drawing.Point(85, 60);
             this.camp_heroinfo_strengthValue_lbl.Name = "camp_heroinfo_strengthValue_lbl";
-            this.camp_heroinfo_strengthValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_strengthValue_lbl.Size = new System.Drawing.Size(17, 16);
             this.camp_heroinfo_strengthValue_lbl.TabIndex = 49;
             this.camp_heroinfo_strengthValue_lbl.Text = "0";
             // 
             // camp_heroinfo_defenseValue_lbl
             // 
             this.camp_heroinfo_defenseValue_lbl.AutoSize = true;
+            this.camp_heroinfo_defenseValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_defenseValue_lbl.Location = new System.Drawing.Point(85, 90);
             this.camp_heroinfo_defenseValue_lbl.Name = "camp_heroinfo_defenseValue_lbl";
-            this.camp_heroinfo_defenseValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_defenseValue_lbl.Size = new System.Drawing.Size(17, 16);
             this.camp_heroinfo_defenseValue_lbl.TabIndex = 45;
             this.camp_heroinfo_defenseValue_lbl.Text = "0";
             // 
             // camp_heroinfo_healthValue_lbl
             // 
             this.camp_heroinfo_healthValue_lbl.AutoSize = true;
+            this.camp_heroinfo_healthValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_healthValue_lbl.Location = new System.Drawing.Point(85, 120);
             this.camp_heroinfo_healthValue_lbl.Name = "camp_heroinfo_healthValue_lbl";
-            this.camp_heroinfo_healthValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_healthValue_lbl.Size = new System.Drawing.Size(17, 16);
             this.camp_heroinfo_healthValue_lbl.TabIndex = 44;
             this.camp_heroinfo_healthValue_lbl.Text = "0";
             // 
             // camp_heroinfo_speedValue_lbl
             // 
             this.camp_heroinfo_speedValue_lbl.AutoSize = true;
+            this.camp_heroinfo_speedValue_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_speedValue_lbl.Location = new System.Drawing.Point(85, 150);
             this.camp_heroinfo_speedValue_lbl.Name = "camp_heroinfo_speedValue_lbl";
-            this.camp_heroinfo_speedValue_lbl.Size = new System.Drawing.Size(17, 20);
+            this.camp_heroinfo_speedValue_lbl.Size = new System.Drawing.Size(17, 16);
             this.camp_heroinfo_speedValue_lbl.TabIndex = 43;
             this.camp_heroinfo_speedValue_lbl.Text = "0";
             // 
             // camp_heroinfo_strength_lbl
             // 
             this.camp_heroinfo_strength_lbl.AutoSize = true;
+            this.camp_heroinfo_strength_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_strength_lbl.Location = new System.Drawing.Point(3, 60);
             this.camp_heroinfo_strength_lbl.Name = "camp_heroinfo_strength_lbl";
-            this.camp_heroinfo_strength_lbl.Size = new System.Drawing.Size(46, 20);
+            this.camp_heroinfo_strength_lbl.Size = new System.Drawing.Size(47, 16);
             this.camp_heroinfo_strength_lbl.TabIndex = 41;
             this.camp_heroinfo_strength_lbl.Text = "Сила:";
             // 
             // camp_heroinfo_defense_lbl
             // 
             this.camp_heroinfo_defense_lbl.AutoSize = true;
+            this.camp_heroinfo_defense_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_defense_lbl.Location = new System.Drawing.Point(3, 90);
             this.camp_heroinfo_defense_lbl.Name = "camp_heroinfo_defense_lbl";
-            this.camp_heroinfo_defense_lbl.Size = new System.Drawing.Size(57, 20);
+            this.camp_heroinfo_defense_lbl.Size = new System.Drawing.Size(64, 16);
             this.camp_heroinfo_defense_lbl.TabIndex = 38;
             this.camp_heroinfo_defense_lbl.Text = "Захист:";
             // 
             // camp_heroinfo_speed_lbl
             // 
             this.camp_heroinfo_speed_lbl.AutoSize = true;
+            this.camp_heroinfo_speed_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_speed_lbl.Location = new System.Drawing.Point(3, 150);
             this.camp_heroinfo_speed_lbl.Name = "camp_heroinfo_speed_lbl";
-            this.camp_heroinfo_speed_lbl.Size = new System.Drawing.Size(83, 20);
+            this.camp_heroinfo_speed_lbl.Size = new System.Drawing.Size(90, 16);
             this.camp_heroinfo_speed_lbl.TabIndex = 39;
             this.camp_heroinfo_speed_lbl.Text = "Швидкість:";
             // 
             // camp_heroinfo_health_lbl
             // 
             this.camp_heroinfo_health_lbl.AutoSize = true;
+            this.camp_heroinfo_health_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_health_lbl.Location = new System.Drawing.Point(3, 120);
             this.camp_heroinfo_health_lbl.Name = "camp_heroinfo_health_lbl";
-            this.camp_heroinfo_health_lbl.Size = new System.Drawing.Size(74, 20);
+            this.camp_heroinfo_health_lbl.Size = new System.Drawing.Size(80, 16);
             this.camp_heroinfo_health_lbl.TabIndex = 42;
             this.camp_heroinfo_health_lbl.Text = "Здоров\'я:";
             // 
             // camp_heroinfo_name_lbl
             // 
             this.camp_heroinfo_name_lbl.AutoSize = true;
-            this.camp_heroinfo_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.camp_heroinfo_name_lbl.Font = new System.Drawing.Font("Bangkok", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.camp_heroinfo_name_lbl.Location = new System.Drawing.Point(40, 0);
             this.camp_heroinfo_name_lbl.Name = "camp_heroinfo_name_lbl";
-            this.camp_heroinfo_name_lbl.Size = new System.Drawing.Size(119, 20);
+            this.camp_heroinfo_name_lbl.Size = new System.Drawing.Size(128, 18);
             this.camp_heroinfo_name_lbl.TabIndex = 35;
             this.camp_heroinfo_name_lbl.Text = "XXXXXXXXXX";
             // 
@@ -807,10 +833,10 @@ namespace Castle_Crushers
             // player2_name_lbl
             // 
             this.player2_name_lbl.AutoSize = true;
-            this.player2_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2_name_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player2_name_lbl.Location = new System.Drawing.Point(119, 0);
             this.player2_name_lbl.Name = "player2_name_lbl";
-            this.player2_name_lbl.Size = new System.Drawing.Size(162, 26);
+            this.player2_name_lbl.Size = new System.Drawing.Size(172, 25);
             this.player2_name_lbl.TabIndex = 0;
             this.player2_name_lbl.Text = "ХХХХХХХХХХ";
             // 
@@ -969,10 +995,10 @@ namespace Castle_Crushers
             // player3_name_lbl
             // 
             this.player3_name_lbl.AutoSize = true;
-            this.player3_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player3_name_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player3_name_lbl.Location = new System.Drawing.Point(119, 0);
             this.player3_name_lbl.Name = "player3_name_lbl";
-            this.player3_name_lbl.Size = new System.Drawing.Size(162, 26);
+            this.player3_name_lbl.Size = new System.Drawing.Size(172, 25);
             this.player3_name_lbl.TabIndex = 0;
             this.player3_name_lbl.Text = "ХХХХХХХХХХ";
             // 
@@ -1012,7 +1038,7 @@ namespace Castle_Crushers
             // 
             this.player4_gold_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(192)))), ((int)(((byte)(126)))));
             this.player4_gold_btn.BackgroundImage = global::Sword_and_flame.Properties.Resources.coin;
-            this.player4_gold_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.player4_gold_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.player4_gold_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player4_gold_btn.Location = new System.Drawing.Point(270, 530);
             this.player4_gold_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -1131,10 +1157,10 @@ namespace Castle_Crushers
             // player4_name_lbl
             // 
             this.player4_name_lbl.AutoSize = true;
-            this.player4_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player4_name_lbl.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.player4_name_lbl.Location = new System.Drawing.Point(119, 0);
             this.player4_name_lbl.Name = "player4_name_lbl";
-            this.player4_name_lbl.Size = new System.Drawing.Size(162, 26);
+            this.player4_name_lbl.Size = new System.Drawing.Size(172, 25);
             this.player4_name_lbl.TabIndex = 0;
             this.player4_name_lbl.Text = "ХХХХХХХХХХ";
             // 

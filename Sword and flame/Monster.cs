@@ -22,9 +22,9 @@ namespace Castle_Crushers
         // BASIC MONSTER CHARACTERISTICS
         // 1
         // Грабіжник
-        public static int default_robber_strength { get; } = 2;
-        public static int default_robber_random_strength { get; } = 0;
-        public static int default_robber_defense { get; } = 3;
+        public static int default_robber_strength { get; } = 0;
+        public static int default_robber_random_strength { get; } = 20;
+        public static int default_robber_defense { get; } = 0;
         public static int default_robber_random_defense { get; } = 0;
         public static int default_robber_health { get; } = 3;
         public static int default_robber_speed { get; } = 2;

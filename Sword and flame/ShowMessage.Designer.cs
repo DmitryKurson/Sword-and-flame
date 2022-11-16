@@ -35,6 +35,7 @@ namespace Castle_Crushers
             // 
             // ShowMessage_OK_btn
             // 
+            this.ShowMessage_OK_btn.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ShowMessage_OK_btn.Location = new System.Drawing.Point(162, 211);
             this.ShowMessage_OK_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ShowMessage_OK_btn.Name = "ShowMessage_OK_btn";
@@ -47,9 +48,10 @@ namespace Castle_Crushers
             // ShowMessage_Main_lbl
             // 
             this.ShowMessage_Main_lbl.AutoSize = true;
+            this.ShowMessage_Main_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ShowMessage_Main_lbl.Location = new System.Drawing.Point(50, 100);
             this.ShowMessage_Main_lbl.Name = "ShowMessage_Main_lbl";
-            this.ShowMessage_Main_lbl.Size = new System.Drawing.Size(50, 20);
+            this.ShowMessage_Main_lbl.Size = new System.Drawing.Size(52, 16);
             this.ShowMessage_Main_lbl.TabIndex = 1;
             this.ShowMessage_Main_lbl.Text = "label1";
             // 

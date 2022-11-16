@@ -899,7 +899,7 @@ namespace Castle_Crushers
                 Hide();
                 //JourneyMap j = new JourneyMap();
                 //j.ShowDialog();
-                LevelPreviewNew level_preview_obj = new LevelPreviewNew();
+                LevelPreview level_preview_obj = new LevelPreview();
                 level_preview_obj.ShowDialog();
             }
             else if (int.Parse(LevelProperties.journey_map_go_TO.level_index) > 61) // ЯКЩО ЦЕ ЦІКАВА ЗНАХІДКА

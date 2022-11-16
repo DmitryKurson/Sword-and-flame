@@ -810,11 +810,12 @@ namespace Castle_Crushers
             // 
             // JM_beginjourney_btn
             // 
-            this.JM_beginjourney_btn.Location = new System.Drawing.Point(708, 59);
+            this.JM_beginjourney_btn.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.JM_beginjourney_btn.Location = new System.Drawing.Point(1362, 931);
             this.JM_beginjourney_btn.Name = "JM_beginjourney_btn";
-            this.JM_beginjourney_btn.Size = new System.Drawing.Size(94, 29);
+            this.JM_beginjourney_btn.Size = new System.Drawing.Size(200, 90);
             this.JM_beginjourney_btn.TabIndex = 67;
-            this.JM_beginjourney_btn.Text = "button1";
+            this.JM_beginjourney_btn.Text = "Відправитись";
             this.JM_beginjourney_btn.UseVisualStyleBackColor = true;
             this.JM_beginjourney_btn.Click += new System.EventHandler(this.JM_beginjourney_btn_Click);
             // 

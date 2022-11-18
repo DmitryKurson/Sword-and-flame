@@ -226,6 +226,8 @@ namespace Sword_and_flame
                 case "Важко":
                     generate_monster(hard_difficulty_MB_strength, hard_difficulty_MB_random_strength, hard_difficulty_MB_defense, hard_difficulty_MB_random_defense, hard_difficulty_MB_health, hard_difficulty_MB_speed, hard_difficulty_gold_reward, hard_difficulty_exp_reward, hard_difficulty_loot_chance);
                     break;
+
+                    
             }
         }
 

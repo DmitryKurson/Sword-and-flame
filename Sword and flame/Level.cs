@@ -1,15 +1,17 @@
-﻿namespace Sword_and_flame
+﻿using System.Threading;
+
+namespace Sword_and_flame
 {
     public partial class Level : Form
     {
-        public static LevelObjects[,] level_map = new LevelObjects[GameGlobalData.level_size_x, GameGlobalData.level_size_y];
-        int count_of_monsters = 0;  // Кількість згенерованих монстрів
-        string level_name;          // Назва рівня
-        string basic_monster_name;  
-        int basic_monster_count;
-        string secondary_monster_name;    
-        int secondary_monster_count;
-        
+        private static LevelObjects[,] level_map = new LevelObjects[GameGlobalData.level_size_x, GameGlobalData.level_size_y];
+        int count_of_monsters { get; set; } = 0;  // Кількість згенерованих монстрів
+        string level_name { get; }          // Назва рівня
+        string basic_monster_name { get; }
+        int basic_monster_count { get; }
+        string secondary_monster_name { get; }
+        int secondary_monster_count { get; }
+
         static int level_load_counter = 0;      
         
         public Level (string level_name_, string basic_monster_name_, int basic_monster_count_, string secondary_monster_name_, int secondary_monster_count_)
@@ -922,17 +924,69 @@
             }
             return count_of_monsters;
         }
-        private void MonsterTurn()
+        private void monster_turn_main()
         {
-
+            for (int i = 0; i < count_of_monsters; i++)
+            {
+                Monster monster = monster_turn_find_monster(i);
+                int targeted_hero_index = monster_turn_find_closer_hero(monster);
+                monster_turn_move_or_attack(targeted_hero_index, monster, i);
+            }           
         }
-        ////////////////////////////////////////////////// HOVER
+        private int monster_turn_find_closer_hero (Monster monster)
+        {
+            int distance_to_closer_hero = 99;
+            int closer_hero_index = 0;
+            for (int i = 0; i < GameGlobalData.count_of_players - 1; i++)
+            {
+                int temp_distance_to_closer_hero = Math.Abs(monster.x - GameGlobalData.HeroList[i].x + monster.y - GameGlobalData.HeroList[i].y);
+                if (temp_distance_to_closer_hero < distance_to_closer_hero)
+                {
+                    distance_to_closer_hero = temp_distance_to_closer_hero;
+                    closer_hero_index = i;
+                }
+            }
+            return closer_hero_index;
+        }
+        private Monster monster_turn_find_monster (int monster_index)
+        {
+            int finded_monster = 0;
+            for (int x = 0; x < GameGlobalData.level_size_x; x++)
+            {
+                for (int y = 0; y < GameGlobalData.level_size_y; y++)
+                {
+                    if (level_map[x, y] is Monster)
+                    {
+                        if (finded_monster == monster_index)
+                        {
+                            return (Monster)level_map[x, y];
+                        }
+                        finded_monster++;
+                    }
+                }
+            }
+            return null;
+        }
+        private void monster_turn_move_or_attack(int the_most_closer_hero, Monster selected_monster, int i)
+        {
+            if (Math.Abs(selected_monster.x - GameGlobalData.HeroList[the_most_closer_hero].x) == 1 || Math.Abs(selected_monster.y - GameGlobalData.HeroList[the_most_closer_hero].y) == 1)
+            {
+
+            }
+            else 
+            {
 
 
-        //private void next_turn_btn_Click(object sender, EventArgs e)
-        //{
-        //    //nextplayer_btn_is_pressed.Invoke();
-        //}
+
+            }
+        }
+            ////////////////////////////////////////////////// HOVER
+
+
+            //private void next_turn_btn_Click(object sender, EventArgs e)
+            //{
+            //    //nextplayer_btn_is_pressed.Invoke();
+            //}
         private int get_player_index()
         {
             for (int i = 0; i < GameGlobalData.HeroList.Count; i++)
@@ -1512,7 +1566,7 @@
             
             if (level_load_counter>GameGlobalData.count_of_players)
             {
-                MonsterTurn();
+                monster_turn_main();
                 level_load_counter = 0;
                 Turn(Loot.LootList, GameGlobalData.HeroList, level_map, level_load_counter);
             }

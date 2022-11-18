@@ -729,6 +729,7 @@ namespace Sword_and_flame
             this.LevPrev_level_name_lbl.Size = new System.Drawing.Size(363, 63);
             this.LevPrev_level_name_lbl.TabIndex = 62;
             this.LevPrev_level_name_lbl.Text = "LEVEL_NAME";
+            this.LevPrev_level_name_lbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.LevPrev_level_name_lbl.Click += new System.EventHandler(this.LevPrev_level_name_lbl_Click);
             // 
             // LevPrev_pl1_panel
@@ -880,7 +881,7 @@ namespace Sword_and_flame
             this.level_preview_main_panel.Controls.Add(this.level_preview_main_player_panel);
             this.level_preview_main_panel.Controls.Add(this.LevPrev_level_name_lbl);
             this.level_preview_main_panel.Controls.Add(this.LevPrev_level_story_lbl);
-            this.level_preview_main_panel.Location = new System.Drawing.Point(344, 361);
+            this.level_preview_main_panel.Location = new System.Drawing.Point(311, 335);
             this.level_preview_main_panel.Name = "level_preview_main_panel";
             this.level_preview_main_panel.Size = new System.Drawing.Size(1200, 657);
             this.level_preview_main_panel.TabIndex = 72;
@@ -896,7 +897,7 @@ namespace Sword_and_flame
             this.level_preview_main_player_panel.Size = new System.Drawing.Size(1100, 330);
             this.level_preview_main_player_panel.TabIndex = 67;
             // 
-            // LevelPreviewNew
+            // LevelPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -904,7 +905,7 @@ namespace Sword_and_flame
             this.Controls.Add(this.level_preview_main_panel);
             this.Controls.Add(this.LPN_next_btn);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "LevelPreviewNew";
+            this.Name = "LevelPreview";
             this.Text = "LevelPreviewNew";
             this.Load += new System.EventHandler(this.LevelPreviewNew_Load);
             this.LevPrev_pl1_panel.ResumeLayout(false);

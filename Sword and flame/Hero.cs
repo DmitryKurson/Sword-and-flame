@@ -270,7 +270,6 @@
             }
             return count;
         }
-
         public static int random_count(int random_basic)
         {
             int count = 0;

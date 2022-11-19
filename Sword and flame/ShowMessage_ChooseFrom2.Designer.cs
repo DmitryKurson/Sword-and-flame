@@ -38,9 +38,9 @@ namespace Sword_and_flame
             // 
             this.SM_main_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SM_main_lbl.Font = new System.Drawing.Font("Bangkok", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SM_main_lbl.Location = new System.Drawing.Point(0, 40);
+            this.SM_main_lbl.Location = new System.Drawing.Point(0, 20);
             this.SM_main_lbl.Name = "SM_main_lbl";
-            this.SM_main_lbl.Size = new System.Drawing.Size(480, 100);
+            this.SM_main_lbl.Size = new System.Drawing.Size(480, 150);
             this.SM_main_lbl.TabIndex = 5;
             this.SM_main_lbl.Text = "Some Text";
             this.SM_main_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

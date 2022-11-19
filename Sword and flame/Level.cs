@@ -984,7 +984,7 @@ namespace Sword_and_flame
 
             //}
         }
-            ////////////////////////////////////////////////// HOVER
+           
 
 
             //private void next_turn_btn_Click(object sender, EventArgs e)
@@ -1004,7 +1004,7 @@ namespace Sword_and_flame
             return -1; // WARNING
         }
 
-
+        ////////////////////////////////////////////////// HOVER //////////////////////////////////////////////////
         private void level_btn00_MouseHover(object sender, EventArgs e)
         {
             int x = 0;
@@ -1621,6 +1621,135 @@ namespace Sword_and_flame
         private void background_parallax_panel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        ////////////////////////////////////////////////// LEAVE //////////////////////////////////////////////////
+
+        private void level_btn04_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+
+        private void level_btn03_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn02_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn01_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn10_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn20_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn30_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn40_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn50_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn60_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn70_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn80_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn90_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn91_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn92_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn93_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn94_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn84_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn74_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn64_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn54_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn44_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn34_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn24_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
+        }
+        private void level_btn14_MouseLeave(object sender, EventArgs e)
+        {
+            show_null_info_set_visible_settings();
+            level_monsterobjinfo_posibilities_consequences_lbl.Text = "";
         }
     }
 }

@@ -188,6 +188,7 @@ namespace Sword_and_flame
             this.level_btn84.Text = "8 4";
             this.level_btn84.UseVisualStyleBackColor = true;
             this.level_btn84.Click += new System.EventHandler(this.level_btn84_Click);
+            this.level_btn84.MouseLeave += new System.EventHandler(this.level_btn84_MouseLeave);
             this.level_btn84.MouseHover += new System.EventHandler(this.level_btn84_MouseHover);
             // 
             // next_turn_btn
@@ -315,6 +316,7 @@ namespace Sword_and_flame
             this.level_btn44.Text = "4 4";
             this.level_btn44.UseVisualStyleBackColor = true;
             this.level_btn44.Click += new System.EventHandler(this.level_btn44_Click);
+            this.level_btn44.MouseLeave += new System.EventHandler(this.level_btn44_MouseLeave);
             this.level_btn44.MouseHover += new System.EventHandler(this.level_btn44_MouseHover);
             // 
             // level_btn41
@@ -367,6 +369,7 @@ namespace Sword_and_flame
             this.level_btn34.Text = "3 4";
             this.level_btn34.UseVisualStyleBackColor = true;
             this.level_btn34.Click += new System.EventHandler(this.level_btn34_Click);
+            this.level_btn34.MouseLeave += new System.EventHandler(this.level_btn34_MouseLeave);
             this.level_btn34.MouseHover += new System.EventHandler(this.level_btn34_MouseHover);
             // 
             // level_btn43
@@ -419,6 +422,7 @@ namespace Sword_and_flame
             this.level_btn80.Text = "8 0";
             this.level_btn80.UseVisualStyleBackColor = true;
             this.level_btn80.Click += new System.EventHandler(this.level_btn80_Click);
+            this.level_btn80.MouseLeave += new System.EventHandler(this.level_btn80_MouseLeave);
             this.level_btn80.MouseHover += new System.EventHandler(this.level_btn80_MouseHover);
             // 
             // level_btn40
@@ -432,6 +436,7 @@ namespace Sword_and_flame
             this.level_btn40.Text = "4 0";
             this.level_btn40.UseVisualStyleBackColor = true;
             this.level_btn40.Click += new System.EventHandler(this.level_btn40_Click);
+            this.level_btn40.MouseLeave += new System.EventHandler(this.level_btn40_MouseLeave);
             this.level_btn40.MouseHover += new System.EventHandler(this.level_btn40_MouseHover);
             // 
             // level_btn82
@@ -458,6 +463,7 @@ namespace Sword_and_flame
             this.level_btn93.Text = "9 3";
             this.level_btn93.UseVisualStyleBackColor = true;
             this.level_btn93.Click += new System.EventHandler(this.level_btn93_Click);
+            this.level_btn93.MouseLeave += new System.EventHandler(this.level_btn93_MouseLeave);
             this.level_btn93.MouseHover += new System.EventHandler(this.level_btn93_MouseHover);
             // 
             // level_btn83
@@ -484,6 +490,7 @@ namespace Sword_and_flame
             this.level_btn30.Text = "3 0";
             this.level_btn30.UseVisualStyleBackColor = true;
             this.level_btn30.Click += new System.EventHandler(this.level_btn30_Click);
+            this.level_btn30.MouseLeave += new System.EventHandler(this.level_btn30_MouseLeave);
             this.level_btn30.MouseHover += new System.EventHandler(this.level_btn30_MouseHover);
             // 
             // level_btn74
@@ -497,6 +504,7 @@ namespace Sword_and_flame
             this.level_btn74.Text = "7 4";
             this.level_btn74.UseVisualStyleBackColor = true;
             this.level_btn74.Click += new System.EventHandler(this.level_btn74_Click);
+            this.level_btn74.MouseLeave += new System.EventHandler(this.level_btn74_MouseLeave);
             this.level_btn74.MouseHover += new System.EventHandler(this.level_btn74_MouseHover);
             // 
             // level_btn73
@@ -562,6 +570,7 @@ namespace Sword_and_flame
             this.level_btn60.Text = "6 0";
             this.level_btn60.UseVisualStyleBackColor = true;
             this.level_btn60.Click += new System.EventHandler(this.level_btn60_Click);
+            this.level_btn60.MouseLeave += new System.EventHandler(this.level_btn60_MouseLeave);
             this.level_btn60.MouseHover += new System.EventHandler(this.level_btn60_MouseHover);
             // 
             // level_btn54
@@ -575,6 +584,7 @@ namespace Sword_and_flame
             this.level_btn54.Text = "5 4";
             this.level_btn54.UseVisualStyleBackColor = true;
             this.level_btn54.Click += new System.EventHandler(this.level_btn54_Click);
+            this.level_btn54.MouseLeave += new System.EventHandler(this.level_btn54_MouseLeave);
             this.level_btn54.MouseHover += new System.EventHandler(this.level_btn54_MouseHover);
             // 
             // level_btn53
@@ -614,6 +624,7 @@ namespace Sword_and_flame
             this.level_btn70.Text = "7 0";
             this.level_btn70.UseVisualStyleBackColor = true;
             this.level_btn70.Click += new System.EventHandler(this.level_btn70_Click);
+            this.level_btn70.MouseLeave += new System.EventHandler(this.level_btn70_MouseLeave);
             this.level_btn70.MouseHover += new System.EventHandler(this.level_btn70_MouseHover);
             // 
             // level_btn50
@@ -627,6 +638,7 @@ namespace Sword_and_flame
             this.level_btn50.Text = "5 0";
             this.level_btn50.UseVisualStyleBackColor = true;
             this.level_btn50.Click += new System.EventHandler(this.level_btn50_Click);
+            this.level_btn50.MouseLeave += new System.EventHandler(this.level_btn50_MouseLeave);
             this.level_btn50.MouseHover += new System.EventHandler(this.level_btn50_MouseHover);
             // 
             // level_btn52
@@ -679,6 +691,7 @@ namespace Sword_and_flame
             this.level_btn64.Text = "6 4";
             this.level_btn64.UseVisualStyleBackColor = true;
             this.level_btn64.Click += new System.EventHandler(this.level_btn64_Click);
+            this.level_btn64.MouseLeave += new System.EventHandler(this.level_btn64_MouseLeave);
             this.level_btn64.MouseHover += new System.EventHandler(this.level_btn64_MouseHover);
             // 
             // level_btn51
@@ -719,6 +732,7 @@ namespace Sword_and_flame
             this.level_btn90.Text = "9 0";
             this.level_btn90.UseVisualStyleBackColor = true;
             this.level_btn90.Click += new System.EventHandler(this.level_btn90_Click);
+            this.level_btn90.MouseLeave += new System.EventHandler(this.level_btn90_MouseLeave);
             this.level_btn90.MouseHover += new System.EventHandler(this.level_btn90_MouseHover);
             // 
             // level_btn91
@@ -732,6 +746,7 @@ namespace Sword_and_flame
             this.level_btn91.Text = "9 1";
             this.level_btn91.UseVisualStyleBackColor = true;
             this.level_btn91.Click += new System.EventHandler(this.level_btn91_Click);
+            this.level_btn91.MouseLeave += new System.EventHandler(this.level_btn91_MouseLeave);
             this.level_btn91.MouseHover += new System.EventHandler(this.level_btn91_MouseHover);
             // 
             // level_btn04
@@ -745,6 +760,7 @@ namespace Sword_and_flame
             this.level_btn04.Text = "0 4";
             this.level_btn04.UseVisualStyleBackColor = true;
             this.level_btn04.Click += new System.EventHandler(this.level_btn04_Click);
+            this.level_btn04.MouseLeave += new System.EventHandler(this.level_btn04_MouseLeave);
             this.level_btn04.MouseHover += new System.EventHandler(this.level_btn04_MouseHover);
             // 
             // level_btn92
@@ -758,6 +774,7 @@ namespace Sword_and_flame
             this.level_btn92.Text = "9 2";
             this.level_btn92.UseVisualStyleBackColor = true;
             this.level_btn92.Click += new System.EventHandler(this.level_btn92_Click);
+            this.level_btn92.MouseLeave += new System.EventHandler(this.level_btn92_MouseLeave);
             this.level_btn92.MouseHover += new System.EventHandler(this.level_btn92_MouseHover);
             // 
             // level_btn94
@@ -771,6 +788,7 @@ namespace Sword_and_flame
             this.level_btn94.Text = "9 4";
             this.level_btn94.UseVisualStyleBackColor = true;
             this.level_btn94.Click += new System.EventHandler(this.level_btn94_Click);
+            this.level_btn94.MouseLeave += new System.EventHandler(this.level_btn94_MouseLeave);
             this.level_btn94.MouseHover += new System.EventHandler(this.level_btn94_MouseHover);
             // 
             // level_btn13
@@ -797,6 +815,7 @@ namespace Sword_and_flame
             this.level_btn24.Text = "2 4";
             this.level_btn24.UseVisualStyleBackColor = true;
             this.level_btn24.Click += new System.EventHandler(this.level_btn24_Click);
+            this.level_btn24.MouseLeave += new System.EventHandler(this.level_btn24_MouseLeave);
             this.level_btn24.MouseHover += new System.EventHandler(this.level_btn24_MouseHover);
             // 
             // level_btn23
@@ -849,6 +868,7 @@ namespace Sword_and_flame
             this.level_btn20.Text = "2 0";
             this.level_btn20.UseVisualStyleBackColor = true;
             this.level_btn20.Click += new System.EventHandler(this.level_btn20_Click);
+            this.level_btn20.MouseLeave += new System.EventHandler(this.level_btn20_MouseLeave);
             this.level_btn20.MouseHover += new System.EventHandler(this.level_btn20_MouseHover);
             // 
             // level_btn03
@@ -862,6 +882,7 @@ namespace Sword_and_flame
             this.level_btn03.Text = "0 3";
             this.level_btn03.UseVisualStyleBackColor = true;
             this.level_btn03.Click += new System.EventHandler(this.level_btn03_Click);
+            this.level_btn03.MouseLeave += new System.EventHandler(this.level_btn03_MouseLeave);
             this.level_btn03.MouseHover += new System.EventHandler(this.level_btn03_MouseHover);
             // 
             // level_btn02
@@ -875,6 +896,7 @@ namespace Sword_and_flame
             this.level_btn02.Text = "0 2";
             this.level_btn02.UseVisualStyleBackColor = true;
             this.level_btn02.Click += new System.EventHandler(this.level_btn02_Click);
+            this.level_btn02.MouseLeave += new System.EventHandler(this.level_btn02_MouseLeave);
             this.level_btn02.MouseHover += new System.EventHandler(this.level_btn02_MouseHover);
             // 
             // level_btn01
@@ -888,6 +910,7 @@ namespace Sword_and_flame
             this.level_btn01.Text = "0 1";
             this.level_btn01.UseVisualStyleBackColor = true;
             this.level_btn01.Click += new System.EventHandler(this.level_btn01_Click);
+            this.level_btn01.MouseLeave += new System.EventHandler(this.level_btn01_MouseLeave);
             this.level_btn01.MouseHover += new System.EventHandler(this.level_btn01_MouseHover);
             // 
             // level_btn10
@@ -901,6 +924,7 @@ namespace Sword_and_flame
             this.level_btn10.Text = "1 0";
             this.level_btn10.UseVisualStyleBackColor = true;
             this.level_btn10.Click += new System.EventHandler(this.level_btn10_Click);
+            this.level_btn10.MouseLeave += new System.EventHandler(this.level_btn10_MouseLeave);
             this.level_btn10.MouseHover += new System.EventHandler(this.level_btn10_MouseHover);
             // 
             // level_btn11
@@ -940,6 +964,7 @@ namespace Sword_and_flame
             this.level_btn14.Text = "1 4";
             this.level_btn14.UseVisualStyleBackColor = true;
             this.level_btn14.Click += new System.EventHandler(this.level_btn14_Click);
+            this.level_btn14.MouseLeave += new System.EventHandler(this.level_btn14_MouseLeave);
             this.level_btn14.MouseHover += new System.EventHandler(this.level_btn14_MouseHover);
             // 
             // level_heroobjinfo_name_lbl
@@ -994,7 +1019,7 @@ namespace Sword_and_flame
             // 
             this.level_heroobjinfo_levelValue_lbl.AutoSize = true;
             this.level_heroobjinfo_levelValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_levelValue_lbl.Location = new System.Drawing.Point(105, 255);
+            this.level_heroobjinfo_levelValue_lbl.Location = new System.Drawing.Point(110, 255);
             this.level_heroobjinfo_levelValue_lbl.Name = "level_heroobjinfo_levelValue_lbl";
             this.level_heroobjinfo_levelValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_levelValue_lbl.TabIndex = 99;
@@ -1015,7 +1040,7 @@ namespace Sword_and_flame
             // 
             this.level_heroobjinfo_inventory02Value_lbl.AutoSize = true;
             this.level_heroobjinfo_inventory02Value_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_inventory02Value_lbl.Location = new System.Drawing.Point(105, 325);
+            this.level_heroobjinfo_inventory02Value_lbl.Location = new System.Drawing.Point(110, 326);
             this.level_heroobjinfo_inventory02Value_lbl.Name = "level_heroobjinfo_inventory02Value_lbl";
             this.level_heroobjinfo_inventory02Value_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_inventory02Value_lbl.TabIndex = 98;
@@ -1025,7 +1050,7 @@ namespace Sword_and_flame
             // 
             this.level_heroobjinfo_strengthValue_lbl.AutoSize = true;
             this.level_heroobjinfo_strengthValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(105, 115);
+            this.level_heroobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(110, 115);
             this.level_heroobjinfo_strengthValue_lbl.Name = "level_heroobjinfo_strengthValue_lbl";
             this.level_heroobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(75, 19);
             this.level_heroobjinfo_strengthValue_lbl.TabIndex = 49;
@@ -1035,7 +1060,7 @@ namespace Sword_and_flame
             // 
             this.level_heroobjinfo_inventory01Value_lbl.AutoSize = true;
             this.level_heroobjinfo_inventory01Value_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_inventory01Value_lbl.Location = new System.Drawing.Point(105, 290);
+            this.level_heroobjinfo_inventory01Value_lbl.Location = new System.Drawing.Point(110, 291);
             this.level_heroobjinfo_inventory01Value_lbl.Name = "level_heroobjinfo_inventory01Value_lbl";
             this.level_heroobjinfo_inventory01Value_lbl.Size = new System.Drawing.Size(249, 19);
             this.level_heroobjinfo_inventory01Value_lbl.TabIndex = 48;
@@ -1045,7 +1070,7 @@ namespace Sword_and_flame
             // 
             this.level_heroobjinfo_defenseValue_lbl.AutoSize = true;
             this.level_heroobjinfo_defenseValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(105, 150);
+            this.level_heroobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(110, 150);
             this.level_heroobjinfo_defenseValue_lbl.Name = "level_heroobjinfo_defenseValue_lbl";
             this.level_heroobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_defenseValue_lbl.TabIndex = 45;
@@ -1055,7 +1080,7 @@ namespace Sword_and_flame
             // 
             this.level_heroobjinfo_healthValue_lbl.AutoSize = true;
             this.level_heroobjinfo_healthValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_healthValue_lbl.Location = new System.Drawing.Point(105, 185);
+            this.level_heroobjinfo_healthValue_lbl.Location = new System.Drawing.Point(110, 185);
             this.level_heroobjinfo_healthValue_lbl.Name = "level_heroobjinfo_healthValue_lbl";
             this.level_heroobjinfo_healthValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_healthValue_lbl.TabIndex = 44;
@@ -1065,7 +1090,7 @@ namespace Sword_and_flame
             // 
             this.level_heroobjinfo_speedValue_lbl.AutoSize = true;
             this.level_heroobjinfo_speedValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_heroobjinfo_speedValue_lbl.Location = new System.Drawing.Point(105, 220);
+            this.level_heroobjinfo_speedValue_lbl.Location = new System.Drawing.Point(110, 220);
             this.level_heroobjinfo_speedValue_lbl.Name = "level_heroobjinfo_speedValue_lbl";
             this.level_heroobjinfo_speedValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_heroobjinfo_speedValue_lbl.TabIndex = 43;
@@ -1104,7 +1129,7 @@ namespace Sword_and_flame
             // 
             this.level_lootobjinfo_lootPriceValue_lbl.AutoSize = true;
             this.level_lootobjinfo_lootPriceValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_lootPriceValue_lbl.Location = new System.Drawing.Point(193, 325);
+            this.level_lootobjinfo_lootPriceValue_lbl.Location = new System.Drawing.Point(197, 325);
             this.level_lootobjinfo_lootPriceValue_lbl.Name = "level_lootobjinfo_lootPriceValue_lbl";
             this.level_lootobjinfo_lootPriceValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_lootPriceValue_lbl.TabIndex = 101;
@@ -1124,7 +1149,7 @@ namespace Sword_and_flame
             // 
             this.level_lootobjinfo_minlevelValue_lbl.AutoSize = true;
             this.level_lootobjinfo_minlevelValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_minlevelValue_lbl.Location = new System.Drawing.Point(193, 290);
+            this.level_lootobjinfo_minlevelValue_lbl.Location = new System.Drawing.Point(197, 290);
             this.level_lootobjinfo_minlevelValue_lbl.Name = "level_lootobjinfo_minlevelValue_lbl";
             this.level_lootobjinfo_minlevelValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_minlevelValue_lbl.TabIndex = 108;
@@ -1165,7 +1190,7 @@ namespace Sword_and_flame
             // 
             this.level_lootobjinfo_healthBonusValue_lbl.AutoSize = true;
             this.level_lootobjinfo_healthBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(193, 220);
+            this.level_lootobjinfo_healthBonusValue_lbl.Location = new System.Drawing.Point(197, 220);
             this.level_lootobjinfo_healthBonusValue_lbl.Name = "level_lootobjinfo_healthBonusValue_lbl";
             this.level_lootobjinfo_healthBonusValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_healthBonusValue_lbl.TabIndex = 99;
@@ -1186,7 +1211,7 @@ namespace Sword_and_flame
             // 
             this.level_lootobjinfo_strengthBonusValue_lbl.AutoSize = true;
             this.level_lootobjinfo_strengthBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(193, 150);
+            this.level_lootobjinfo_strengthBonusValue_lbl.Location = new System.Drawing.Point(197, 150);
             this.level_lootobjinfo_strengthBonusValue_lbl.Name = "level_lootobjinfo_strengthBonusValue_lbl";
             this.level_lootobjinfo_strengthBonusValue_lbl.Size = new System.Drawing.Size(75, 19);
             this.level_lootobjinfo_strengthBonusValue_lbl.TabIndex = 49;
@@ -1196,7 +1221,7 @@ namespace Sword_and_flame
             // 
             this.level_lootobjinfo_speedBonusValue_lbl.AutoSize = true;
             this.level_lootobjinfo_speedBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(193, 255);
+            this.level_lootobjinfo_speedBonusValue_lbl.Location = new System.Drawing.Point(197, 255);
             this.level_lootobjinfo_speedBonusValue_lbl.Name = "level_lootobjinfo_speedBonusValue_lbl";
             this.level_lootobjinfo_speedBonusValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_speedBonusValue_lbl.TabIndex = 48;
@@ -1206,7 +1231,7 @@ namespace Sword_and_flame
             // 
             this.level_lootobjinfo_defenseBonusValue_lbl.AutoSize = true;
             this.level_lootobjinfo_defenseBonusValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_lootobjinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(193, 185);
+            this.level_lootobjinfo_defenseBonusValue_lbl.Location = new System.Drawing.Point(197, 185);
             this.level_lootobjinfo_defenseBonusValue_lbl.Name = "level_lootobjinfo_defenseBonusValue_lbl";
             this.level_lootobjinfo_defenseBonusValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_lootobjinfo_defenseBonusValue_lbl.TabIndex = 44;
@@ -1329,7 +1354,7 @@ namespace Sword_and_flame
             // 
             this.level_monsterobjinfo_strengthValue_lbl.AutoSize = true;
             this.level_monsterobjinfo_strengthValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_monsterobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(105, 115);
+            this.level_monsterobjinfo_strengthValue_lbl.Location = new System.Drawing.Point(110, 115);
             this.level_monsterobjinfo_strengthValue_lbl.Name = "level_monsterobjinfo_strengthValue_lbl";
             this.level_monsterobjinfo_strengthValue_lbl.Size = new System.Drawing.Size(75, 19);
             this.level_monsterobjinfo_strengthValue_lbl.TabIndex = 49;
@@ -1339,7 +1364,7 @@ namespace Sword_and_flame
             // 
             this.level_monsterobjinfo_defenseValue_lbl.AutoSize = true;
             this.level_monsterobjinfo_defenseValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_monsterobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(105, 150);
+            this.level_monsterobjinfo_defenseValue_lbl.Location = new System.Drawing.Point(110, 150);
             this.level_monsterobjinfo_defenseValue_lbl.Name = "level_monsterobjinfo_defenseValue_lbl";
             this.level_monsterobjinfo_defenseValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_defenseValue_lbl.TabIndex = 45;
@@ -1349,7 +1374,7 @@ namespace Sword_and_flame
             // 
             this.level_monsterobjinfo_healthValue_lbl.AutoSize = true;
             this.level_monsterobjinfo_healthValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_monsterobjinfo_healthValue_lbl.Location = new System.Drawing.Point(105, 185);
+            this.level_monsterobjinfo_healthValue_lbl.Location = new System.Drawing.Point(110, 185);
             this.level_monsterobjinfo_healthValue_lbl.Name = "level_monsterobjinfo_healthValue_lbl";
             this.level_monsterobjinfo_healthValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_healthValue_lbl.TabIndex = 44;
@@ -1478,7 +1503,7 @@ namespace Sword_and_flame
             // 
             this.level_monsterobjinfo_speedValue_lbl.AutoSize = true;
             this.level_monsterobjinfo_speedValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_monsterobjinfo_speedValue_lbl.Location = new System.Drawing.Point(105, 220);
+            this.level_monsterobjinfo_speedValue_lbl.Location = new System.Drawing.Point(110, 220);
             this.level_monsterobjinfo_speedValue_lbl.Name = "level_monsterobjinfo_speedValue_lbl";
             this.level_monsterobjinfo_speedValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_speedValue_lbl.TabIndex = 43;
@@ -1548,7 +1573,7 @@ namespace Sword_and_flame
             // 
             this.level_monsterobjinfo_nameValue_lbl.AutoSize = true;
             this.level_monsterobjinfo_nameValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_monsterobjinfo_nameValue_lbl.Location = new System.Drawing.Point(105, 45);
+            this.level_monsterobjinfo_nameValue_lbl.Location = new System.Drawing.Point(110, 45);
             this.level_monsterobjinfo_nameValue_lbl.Name = "level_monsterobjinfo_nameValue_lbl";
             this.level_monsterobjinfo_nameValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_nameValue_lbl.TabIndex = 34;
@@ -1568,7 +1593,7 @@ namespace Sword_and_flame
             // 
             this.level_monsterobjinfo_typeValue_lbl.AutoSize = true;
             this.level_monsterobjinfo_typeValue_lbl.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_monsterobjinfo_typeValue_lbl.Location = new System.Drawing.Point(105, 80);
+            this.level_monsterobjinfo_typeValue_lbl.Location = new System.Drawing.Point(110, 80);
             this.level_monsterobjinfo_typeValue_lbl.Name = "level_monsterobjinfo_typeValue_lbl";
             this.level_monsterobjinfo_typeValue_lbl.Size = new System.Drawing.Size(63, 19);
             this.level_monsterobjinfo_typeValue_lbl.TabIndex = 36;
@@ -1683,13 +1708,13 @@ namespace Sword_and_flame
             // 
             // level_name_lbl
             // 
-            this.level_name_lbl.AutoSize = true;
             this.level_name_lbl.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.level_name_lbl.Location = new System.Drawing.Point(104, 50);
+            this.level_name_lbl.Location = new System.Drawing.Point(41, 50);
             this.level_name_lbl.Name = "level_name_lbl";
-            this.level_name_lbl.Size = new System.Drawing.Size(175, 25);
+            this.level_name_lbl.Size = new System.Drawing.Size(310, 25);
             this.level_name_lbl.TabIndex = 105;
             this.level_name_lbl.Text = "level_name_lbl";
+            this.level_name_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // level_maininfo_panel
             // 

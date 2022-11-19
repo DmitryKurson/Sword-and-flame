@@ -48,9 +48,9 @@ namespace Sword_and_flame
             // ShowMessage_Main_lbl
             // 
             this.ShowMessage_Main_lbl.Font = new System.Drawing.Font("Bangkok", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ShowMessage_Main_lbl.Location = new System.Drawing.Point(0, 40);
+            this.ShowMessage_Main_lbl.Location = new System.Drawing.Point(0, 20);
             this.ShowMessage_Main_lbl.Name = "ShowMessage_Main_lbl";
-            this.ShowMessage_Main_lbl.Size = new System.Drawing.Size(480, 100);
+            this.ShowMessage_Main_lbl.Size = new System.Drawing.Size(480, 150);
             this.ShowMessage_Main_lbl.TabIndex = 1;
             this.ShowMessage_Main_lbl.Text = "label1";
             this.ShowMessage_Main_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

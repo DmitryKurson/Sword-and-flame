@@ -18,7 +18,6 @@ C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-wi
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\ref\Sword and flame.dll
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.Camp.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.City.resources
-C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.ExitSure.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.Hero_level.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.JourneyMap.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.Level.resources

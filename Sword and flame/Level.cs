@@ -99,7 +99,7 @@ namespace Sword_and_flame
                 GameGlobalData.count_of_moves = hero[j].current_speed;
                 level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
                 paint_buttons(level_map, hero[j]);
-                ShowMessage player_turn_info = new ShowMessage(hero[j].name);
+                ShowMessage player_turn_info = new ShowMessage(hero[j].name + ", Ваш хід");
                 player_turn_info.ShowDialog();                
             }
             //hero[j].inventory[0].

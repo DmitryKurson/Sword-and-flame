@@ -35,11 +35,11 @@ namespace Sword_and_flame
             // 
             // ShowMessage_OK_btn
             // 
-            this.ShowMessage_OK_btn.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ShowMessage_OK_btn.Location = new System.Drawing.Point(162, 211);
+            this.ShowMessage_OK_btn.Font = new System.Drawing.Font("Bangkok", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShowMessage_OK_btn.Location = new System.Drawing.Point(200, 175);
             this.ShowMessage_OK_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ShowMessage_OK_btn.Name = "ShowMessage_OK_btn";
-            this.ShowMessage_OK_btn.Size = new System.Drawing.Size(75, 29);
+            this.ShowMessage_OK_btn.Size = new System.Drawing.Size(100, 50);
             this.ShowMessage_OK_btn.TabIndex = 0;
             this.ShowMessage_OK_btn.Text = "OK";
             this.ShowMessage_OK_btn.UseVisualStyleBackColor = true;
@@ -47,27 +47,25 @@ namespace Sword_and_flame
             // 
             // ShowMessage_Main_lbl
             // 
-            this.ShowMessage_Main_lbl.AutoSize = true;
-            this.ShowMessage_Main_lbl.Font = new System.Drawing.Font("Bangkok", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ShowMessage_Main_lbl.Location = new System.Drawing.Point(50, 100);
+            this.ShowMessage_Main_lbl.Font = new System.Drawing.Font("Bangkok", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShowMessage_Main_lbl.Location = new System.Drawing.Point(0, 40);
             this.ShowMessage_Main_lbl.Name = "ShowMessage_Main_lbl";
-            this.ShowMessage_Main_lbl.Size = new System.Drawing.Size(52, 16);
+            this.ShowMessage_Main_lbl.Size = new System.Drawing.Size(480, 100);
             this.ShowMessage_Main_lbl.TabIndex = 1;
             this.ShowMessage_Main_lbl.Text = "label1";
+            this.ShowMessage_Main_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ShowMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 253);
+            this.ClientSize = new System.Drawing.Size(482, 253);
             this.Controls.Add(this.ShowMessage_Main_lbl);
             this.Controls.Add(this.ShowMessage_OK_btn);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ShowMessage";
-            this.Text = "ShowMessage";
             this.Load += new System.EventHandler(this.ShowMessage_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

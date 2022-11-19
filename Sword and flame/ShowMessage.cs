@@ -1,13 +1,18 @@
-﻿namespace Sword_and_flame
+﻿using Sword_and_flame;
+using System.Windows.Forms;
+
+namespace Sword_and_flame
 {
     public partial class ShowMessage : Form
     {
         string Message = "";
         public ShowMessage(string Message)
-        {
-            StartPosition = FormStartPosition.CenterScreen;
-            this.Message = Message;
+        {           
             InitializeComponent();
+            this.Message = Message;
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void ShowMessage_Load(object sender, EventArgs e)
@@ -21,3 +26,21 @@
         }
     }
 }
+
+//public ShowMessage_ChooseFrom2 (Form key)
+//{
+//    InitializeComponent();
+    
+   
+//}
+
+//private void ShowMessage_ChooseFrom2_Load(object sender, EventArgs e)
+//{
+//    switch (key_)
+//    {
+//        case MainMenu:
+//            btn_1.Text = "Так";
+//            btn_2.Text = "Ні";
+//            SM_main_lbl.Text = "Ви впевнені, що хочете вийти з гри?";
+//            break;
+//    }

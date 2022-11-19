@@ -559,8 +559,10 @@
 
         private void MM_EG_btn_Click(object sender, EventArgs e)
         {
-            ExitSure exitsure_obj = new ExitSure();
-            exitsure_obj.ShowDialog();
+            ShowMessage_ChooseFrom2 sw_msgF2_obj = new ShowMessage_ChooseFrom2(this);
+            sw_msgF2_obj.ShowDialog();
+            //    ;            ExitSure exitsure_obj = new ExitSure();
+            //exitsure_obj.ShowDialog();
         }
 
         private void MM_main_lbl_Click(object sender, EventArgs e)

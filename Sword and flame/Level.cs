@@ -126,7 +126,7 @@ namespace Sword_and_flame
             }
             if (level_map[x, y] is Hero)
             {
-
+                //if (level_map[x, y])
             }
             if (level_map[x, y] is Loot)
             {
@@ -147,7 +147,7 @@ namespace Sword_and_flame
                     {
                         if (Math.Abs(monster.x - heroes[i].x) == 1 || Math.Abs(monster.y - heroes[i].y) == 1)
                         {
-                            if (Hero.Attack(heroes[i], monster, level_map) == true)
+                            if (heroes[i].Attack(heroes[i], monster, level_map) == true)
                             {
                                 count_of_monsters--;
                                 victory_check();
@@ -363,11 +363,11 @@ namespace Sword_and_flame
                                 {
                                     if (maximum_damage_to_monster == minimum_damage_to_monster)
                                     {
-                                        battle_result = "\n\t" + variable_monster.name + ":\n зазнає поранень (" + maximum_damage_to_monster + "), можливо загине.";
+                                        battle_result += "\n\t" + variable_monster.name + ":\n зазнає поранень (" + maximum_damage_to_monster + "), можливо загине.";
                                     }
                                     else
                                     {
-                                        battle_result = "\n\t" + variable_monster.name + ":\n зазнає поранень (" + minimum_damage_to_monster + "-" + maximum_damage_to_monster + "), можливо загине.";
+                                        battle_result += "\n\t" + variable_monster.name + ":\n зазнає поранень (" + minimum_damage_to_monster + "-" + maximum_damage_to_monster + "), можливо загине.";
                                     }
                                 }
                             }
@@ -969,16 +969,20 @@ namespace Sword_and_flame
         }
         private void monster_turn_move_or_attack(int the_most_closer_hero, Monster selected_monster, int i)
         {
-            if (Math.Abs(selected_monster.x - GameGlobalData.HeroList[the_most_closer_hero].x) == 1 || Math.Abs(selected_monster.y - GameGlobalData.HeroList[the_most_closer_hero].y) == 1)
-            {
-                
-            }
-            else 
-            {
+            //if (Math.Abs(selected_monster.x - GameGlobalData.HeroList[the_most_closer_hero].x) == 1 || Math.Abs(selected_monster.y - GameGlobalData.HeroList[the_most_closer_hero].y) == 1)
+            //{
+            //    if (selected_monster.Attack(the_most_closer_hero, monster, level_map) == true)
+            //    {
+            //        count_of_monsters--;
+            //        victory_check();
+            //    }
+            //}
+            //else 
+            //{
 
 
 
-            }
+            //}
         }
             ////////////////////////////////////////////////// HOVER
 

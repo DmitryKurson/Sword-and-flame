@@ -1576,10 +1576,9 @@ namespace Sword_and_flame
             // 
             // level_monsterobjinfo_posibilities_consequences_lbl
             // 
-            this.level_monsterobjinfo_posibilities_consequences_lbl.AutoSize = true;
             this.level_monsterobjinfo_posibilities_consequences_lbl.Location = new System.Drawing.Point(457, 23);
             this.level_monsterobjinfo_posibilities_consequences_lbl.Name = "level_monsterobjinfo_posibilities_consequences_lbl";
-            this.level_monsterobjinfo_posibilities_consequences_lbl.Size = new System.Drawing.Size(76, 20);
+            this.level_monsterobjinfo_posibilities_consequences_lbl.Size = new System.Drawing.Size(173, 140);
             this.level_monsterobjinfo_posibilities_consequences_lbl.TabIndex = 113;
             this.level_monsterobjinfo_posibilities_consequences_lbl.Text = "Висновок";
             this.level_monsterobjinfo_posibilities_consequences_lbl.Click += new System.EventHandler(this.level_monsterobjinfo_posibilities_consequences_lbl_Click);
@@ -1772,7 +1771,6 @@ namespace Sword_and_flame
             this.level_maininfo_panel.ResumeLayout(false);
             this.level_maininfo_panel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -12,6 +12,7 @@
             this.x = x;
             this.y = y;
         }
+
         public static int generate_random_X()
         {
             Random ran = new Random();

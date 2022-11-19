@@ -23,7 +23,7 @@ namespace Sword_and_flame
             WindowState = System.Windows.Forms.FormWindowState.Maximized;
         }
 
-        private void LevelPreviewNew_Load(object sender, EventArgs e)
+        private void LevelPreview_Load(object sender, EventArgs e)
         {
             //if (GameGlobalData.count_of_journeymoves == 0)
             //{

@@ -15,10 +15,7 @@ namespace Sword_and_flame
             this.y = y;
         }
 
-
-        
-
-        public static bool Attack(Hero hero, Monster monster, LevelObject[,] level_map)
+        public bool Attack(Hero hero, Monster monster, LevelObject[,] level_map)
         {
             string battle_result_message = "";
             bool monster_kill = false;
@@ -29,13 +26,21 @@ namespace Sword_and_flame
             int random_monster_defense = random_count(monster.monster_random_defense);
 
             int damage_to_monster = hero.current_strength + random_hero_damage - monster.monster_defense - random_monster_defense;
+            if (damage_to_monster < 0)
+            {
+                damage_to_monster = 0;
+            }
             int damage_to_hero = monster.monster_strength + random_monster_damage - hero.current_defense - random_hero_defense;
+            if (damage_to_hero < 0)
+            {
+                damage_to_hero = 0;
+            }
 
-            monster.monster_health -= Math.Abs(damage_to_monster);
+            monster.monster_health -= damage_to_monster;
             if (monster.monster_health <= 0)
             {
                 level_map[monster.x, monster.y] = null;
-                hero.current_health -= Math.Abs(damage_to_hero / 2); // Якщо монстр гине, герой отримує половину від завданої монстром шкоди
+                hero.current_health -= damage_to_hero / 2; // Якщо монстр гине, герой отримує половину від завданої монстром шкоди
                 if (hero.current_health < 0)
                 {
                     battle_result_message = "\n\tПОРАЗКА\n" + monster.name + " отримує " + damage_to_monster + " ран.\n " + hero.name + " отримує " + damage_to_hero / 2 + " ран.\n " + hero.name + " непритомніє від ран. " + monster.name + " загинув.";
@@ -48,7 +53,7 @@ namespace Sword_and_flame
             }
             else if (monster.monster_health > 0)
             {
-                hero.current_health -= Math.Abs(damage_to_hero);
+                hero.current_health -= damage_to_hero;
                 if (hero.current_health < 0)
                 {
                     battle_result_message = "\n\tПОРАЗКА\n" + monster.name + " отримує " + damage_to_monster + " ран.\n " + hero.name + " отримує " + damage_to_hero + " ран.\n " + hero.name + " непритомніє від ран. " + monster.name + " виживає.";
@@ -57,6 +62,7 @@ namespace Sword_and_flame
                 {
                     battle_result_message = "\n\tНІЧИЯ\n" + monster.name + " отримує " + damage_to_monster + " ран.\n " + hero.name + " отримує " + damage_to_hero + " ран.\n " + hero.name + " виживає. " + monster.name + " виживає.";
                 }
+                monster_kill = false;
             }
             ShowMessage battle_result = new ShowMessage(battle_result_message);
             battle_result.ShowDialog();
@@ -69,7 +75,7 @@ namespace Sword_and_flame
             for (int i = 0; i < random_basic + random_equipments; i++)
             {
                 Random ran = new Random();
-                int random = ran.Next(1);
+                int random = ran.Next(0,2);
                 if (random == 1)
                 {
                     count += random;
@@ -83,7 +89,7 @@ namespace Sword_and_flame
             for (int i = 0; i < random_basic; i++)
             {
                 Random ran = new Random();
-                int random = ran.Next(1);
+                int random = ran.Next(0,2);
                 if (random == 1)
                 {
                     count += random;

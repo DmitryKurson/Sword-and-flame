@@ -1,6 +1,6 @@
 ﻿namespace Sword_and_flame
 {
-    public class Loot:LevelObjects
+    public class Loot:LevelObject
     {
         public string loot_index { get; set; }
         public string type_of_bodypart { get; set; }

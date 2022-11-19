@@ -4,7 +4,7 @@ namespace Sword_and_flame
 {
     public partial class Level : Form
     {
-        private static LevelObjects[,] level_map = new LevelObjects[GameGlobalData.level_size_x, GameGlobalData.level_size_y];
+        private static LevelObject[,] level_map = new LevelObject[GameGlobalData.level_size_x, GameGlobalData.level_size_y];
         int count_of_monsters { get; set; } = 0;  // Кількість згенерованих монстрів
         string level_name { get; }          // Назва рівня
         string basic_monster_name { get; }
@@ -85,7 +85,7 @@ namespace Sword_and_flame
         }
 
         
-        public void Turn(List<Loot> loot, List<Hero> hero, LevelObjects[,] level_map, int j)
+        public void Turn(List<Loot> loot, List<Hero> hero, LevelObject[,] level_map, int j)
         {           
             if (hero[j].current_health <= 0)
             {
@@ -199,7 +199,7 @@ namespace Sword_and_flame
             }
         }
 
-        public void ShowInfo(LevelObjects[,] level_map, int x, int y, Hero hero)
+        public void ShowInfo(LevelObject[,] level_map, int x, int y, Hero hero)
         {            
             if (level_map[x, y] is Hero)
             {
@@ -448,11 +448,11 @@ namespace Sword_and_flame
             level_monsterinfo_panel.Visible = false;
             level_lootinfo_panel.Visible = false;
         }
-        private void setHero(Hero hero, LevelObjects[,] level_map)
+        private void setHero(Hero hero, LevelObject[,] level_map)
         {
             level_map[hero.x, hero.y] = hero;
         }
-        private void setMonster(Monster monster, LevelObjects[,] level_map)
+        private void setMonster(Monster monster, LevelObject[,] level_map)
         {
             for (int i = 0; ; i++)
             {
@@ -463,8 +463,8 @@ namespace Sword_and_flame
                 }
                 else
                 {
-                    monster.x = LevelObjects.generate_random_X();
-                    monster.y = LevelObjects.generate_random_Y();
+                    monster.x = LifeObject.generate_random_X();
+                    monster.y = LifeObject.generate_random_Y();
                 }
             }
         }
@@ -486,7 +486,7 @@ namespace Sword_and_flame
         //        }
         //    }
         //}// COORD
-        private void setLoot(List<Loot> loot, LevelObjects[,] level_map)
+        private void setLoot(List<Loot> loot, LevelObject[,] level_map)
         {
             Random ran = new Random();
             int random_loot_index = ran.Next(0, Loot.LootList.Count);
@@ -499,13 +499,13 @@ namespace Sword_and_flame
                 }
                 else
                 {
-                    loot[random_loot_index].x = LevelObjects.generate_random_X();
-                    loot[random_loot_index].y = LevelObjects.generate_random_Y();
+                    loot[random_loot_index].x = LevelObject.generate_random_X();
+                    loot[random_loot_index].y = LevelObject.generate_random_Y();
                 }
             }
         }
         // 1 lOOT SET 
-        private void set_null_obj(LevelObjects[,] level_map)
+        private void set_null_obj(LevelObject[,] level_map)
         {
             for (int i = 0; i < level_map.GetLength(0); i++)
             {
@@ -513,14 +513,14 @@ namespace Sword_and_flame
                 {
                     if (level_map[i, j] == null)
                     {
-                        LevelObjects empty1 = new LevelObjects(" ", i, j);
+                        LevelObject empty1 = new LevelObject(" ", i, j);
                         level_map[i, j] = empty1;
                     }
                 }
             }
         }
 
-        private void button_set_text(LevelObjects[,] level_map)
+        private void button_set_text(LevelObject[,] level_map)
         {
             level_btn00.Text = level_map[0, 0].name;
             level_btn10.Text = level_map[1, 0].name;
@@ -815,7 +815,7 @@ namespace Sword_and_flame
                 }
             }
         }
-        private void paint_buttons(LevelObjects[,] level_map, Hero hero)
+        private void paint_buttons(LevelObject[,] level_map, Hero hero)
         {
             set_static_color();
             for (int x = 0; x < level_map.GetLength(0); x++)
@@ -909,7 +909,7 @@ namespace Sword_and_flame
             }
         }
 
-        private int spawn_monsters(string variable_monstertype1_name_, int count_of_monstertype1, string variable_monstertype2_name_, int count_of_monstertype2, LevelObjects[,] level_map)
+        private int spawn_monsters(string variable_monstertype1_name_, int count_of_monstertype1, string variable_monstertype2_name_, int count_of_monstertype2, LevelObject[,] level_map)
         {
             int count_of_monsters = 0;
             for (int i = 0; i < count_of_monstertype1; i++)
@@ -971,7 +971,7 @@ namespace Sword_and_flame
         {
             if (Math.Abs(selected_monster.x - GameGlobalData.HeroList[the_most_closer_hero].x) == 1 || Math.Abs(selected_monster.y - GameGlobalData.HeroList[the_most_closer_hero].y) == 1)
             {
-
+                
             }
             else 
             {

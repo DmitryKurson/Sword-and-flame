@@ -11,13 +11,12 @@ namespace Sword_and_flame
             InitializeComponent();
             this.Message = Message;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            WindowState = System.Windows.Forms.FormWindowState.Maximized;
             StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void ShowMessage_Load(object sender, EventArgs e)
         {            
-            ShowMessage_Main_lbl.Text = Message + ", Ваш хід.";
+            ShowMessage_Main_lbl.Text = Message;
         }
 
         private void ShowMessage_OK_btn_Click(object sender, EventArgs e)

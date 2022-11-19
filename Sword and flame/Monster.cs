@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sword_and_flame
 {
-    public class Monster : LevelObjects
+    public class Monster : LifeObject
     {
         public int monster_strength { get; set; }
         public int monster_random_strength { get; set; }

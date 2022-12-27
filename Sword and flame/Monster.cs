@@ -466,6 +466,7 @@ namespace Sword_and_flame
             return elemental;
         }
 
+        //public static Monster monster_move_check() { }
 
         public static int monster_random_count(int monster_random_basic)
         {

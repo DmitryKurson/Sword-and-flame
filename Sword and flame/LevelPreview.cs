@@ -53,7 +53,7 @@ namespace Sword_and_flame
                     secondary_monster_count = 0;
                     break;
                 case 2:
-                    secondary_monster_count = 1;
+                    secondary_monster_count = 0;
                     break;
                 case 3:
                     secondary_monster_count = 2;
@@ -227,6 +227,19 @@ namespace Sword_and_flame
         private void LevPrev_pl2_panel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void hide_a_paper_btn_Click(object sender, EventArgs e)
+        {
+            if (GameGlobalData.hide_paper_count_of_click%2 == 0)// || GameGlobalData.hide_paper_count_of_click == 0
+            {
+                level_preview_main_panel.Visible = false;             
+            }
+            else
+            {
+                level_preview_main_panel.Visible = true;
+            }
+            GameGlobalData.hide_paper_count_of_click++;
         }
     }
 }

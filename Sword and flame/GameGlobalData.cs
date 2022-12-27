@@ -8,7 +8,8 @@
         public static int players_turnTime { get; } = 6000000; // 10 min
         public static string current_turn_player_name { get; set; } = "";
         public static int count_of_journeymoves { get; set; }
-        public static bool tutorial_skipped { get; set; } 
+        public static bool tutorial_skipped { get; set; }
+        public static int hide_paper_count_of_click { get; set; }
 
         public static int count_of_players = 0;
         public static int level_size_x = 10;

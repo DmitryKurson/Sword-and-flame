@@ -15,8 +15,11 @@
         }
 
         private void NGRoleplayDetails_Load(object sender, EventArgs e)
-        {           
+        { 
             NGRD_pl1_error_lbl.Text = "";
+            NGRD_pl2_error_lbl.Text = "";
+            NGRD_pl3_error_lbl.Text = "";
+            NGRD_pl4_error_lbl.Text = "";
             switch (GameGlobalData.count_of_players)
             {
                 case 1:

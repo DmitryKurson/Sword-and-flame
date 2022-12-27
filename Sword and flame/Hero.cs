@@ -203,13 +203,7 @@
             Console.WriteLine("Ви підібрали - " + loot.name + ".");
         }
 
-        public static void Move(Hero player, int final_player_position_X, int final_player_position_Y, LevelObject[,] level_map)
-        {
-            level_map[player.x, player.y] = null;
-            level_map[final_player_position_X, final_player_position_Y] = player;
-            player.x = final_player_position_X;
-            player.y = final_player_position_Y;
-        }
+        
 
         
 

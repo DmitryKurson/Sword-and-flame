@@ -15,6 +15,14 @@ namespace Sword_and_flame
             this.y = y;
         }
 
+        public void Move(LifeObject someone, int final_position_X, int final_position_Y, LevelObject[,] level_map)
+        {
+            level_map[someone.x, someone.y] = null;
+            level_map[final_position_X, final_position_Y] = someone;
+            someone.x = final_position_X;
+            someone.y = final_position_Y;
+        }
+
         public bool Attack(Hero hero, Monster monster, LevelObject[,] level_map)
         {
             string battle_result_message = "";

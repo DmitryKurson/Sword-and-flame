@@ -102,6 +102,7 @@ namespace Sword_and_flame
             this.LevPrev_pl4_Inventory02Value_lbl = new System.Windows.Forms.Label();
             this.level_preview_main_panel = new System.Windows.Forms.Panel();
             this.level_preview_main_player_panel = new System.Windows.Forms.Panel();
+            this.hide_a_paper_btn = new System.Windows.Forms.Button();
             this.LevPrev_pl1_panel.SuspendLayout();
             this.LevPrev_pl2_panel.SuspendLayout();
             this.LevPrev_pl3_panel.SuspendLayout();
@@ -642,7 +643,7 @@ namespace Sword_and_flame
             // 
             // LPN_next_btn
             // 
-            this.LPN_next_btn.Font = new System.Drawing.Font("IM FELL English", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.LPN_next_btn.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LPN_next_btn.Location = new System.Drawing.Point(1624, 879);
             this.LPN_next_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LPN_next_btn.Name = "LPN_next_btn";
@@ -909,11 +910,24 @@ namespace Sword_and_flame
             this.level_preview_main_player_panel.Size = new System.Drawing.Size(1100, 330);
             this.level_preview_main_player_panel.TabIndex = 67;
             // 
+            // hide_a_paper_btn
+            // 
+            this.hide_a_paper_btn.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.hide_a_paper_btn.Location = new System.Drawing.Point(100, 879);
+            this.hide_a_paper_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.hide_a_paper_btn.Name = "hide_a_paper_btn";
+            this.hide_a_paper_btn.Size = new System.Drawing.Size(150, 90);
+            this.hide_a_paper_btn.TabIndex = 73;
+            this.hide_a_paper_btn.Text = "Сховати пергамент";
+            this.hide_a_paper_btn.UseVisualStyleBackColor = true;
+            this.hide_a_paper_btn.Click += new System.EventHandler(this.hide_a_paper_btn_Click);
+            // 
             // LevelPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1055);
+            this.Controls.Add(this.hide_a_paper_btn);
             this.Controls.Add(this.level_preview_main_panel);
             this.Controls.Add(this.LPN_next_btn);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -1009,5 +1023,6 @@ namespace Sword_and_flame
         private System.Windows.Forms.Label LevPrev_pl4_Inventory02Value_lbl;
         private Panel level_preview_main_panel;
         private Panel level_preview_main_player_panel;
+        private Button hide_a_paper_btn;
     }
 }

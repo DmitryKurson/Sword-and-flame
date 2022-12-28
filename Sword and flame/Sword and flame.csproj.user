@@ -1,49 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Camp.cs">
+    <Compile Update="Forms\Camp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="City.cs">
+    <Compile Update="Forms\City.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="EventEnd.cs">
+    <Compile Update="Forms\EventEnd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Hero_level.cs">
+    <Compile Update="Forms\Hero_level.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="JourneyMap.cs">
+    <Compile Update="Forms\JourneyMap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Level.cs">
+    <Compile Update="Forms\Level.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LevelPreview.cs">
+    <Compile Update="Forms\LevelPreview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MainMenu.cs">
+    <Compile Update="Forms\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NGGlobalDetails.cs">
+    <Compile Update="Forms\NGGlobalDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NGRoleplayDetails.cs">
+    <Compile Update="Forms\NGRoleplayDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NGRoleplayDetails_info.cs">
+    <Compile Update="Forms\NGRoleplayDetails_info.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PlayerTurn_info.cs">
+    <Compile Update="Forms\PlayerTurn_info.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ShowMessage.cs">
+    <Compile Update="Forms\ShowMessage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ShowMessage_ChooseFrom2.cs">
+    <Compile Update="Forms\ShowMessage_ChooseFrom2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TutorialForm.cs">
+    <Compile Update="Forms\TutorialForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

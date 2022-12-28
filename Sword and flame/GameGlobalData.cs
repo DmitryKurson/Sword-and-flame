@@ -1,4 +1,6 @@
-﻿namespace Sword_and_flame
+﻿using Sword_and_flame.Entities;
+
+namespace Sword_and_flame
 {
     static class GameGlobalData
     {

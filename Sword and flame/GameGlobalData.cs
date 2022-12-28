@@ -13,6 +13,8 @@ namespace Sword_and_flame
         public static bool tutorial_skipped { get; set; }
         public static int hide_paper_count_of_click { get; set; }
 
+        public static bool monster_was_defensed { get; set; } = false;
+
         public static int count_of_players = 0;
         public static int level_size_x = 10;
         public static int level_size_y = 5;

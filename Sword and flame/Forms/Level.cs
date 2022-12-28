@@ -111,9 +111,7 @@ namespace Sword_and_flame
                     level_load_counter = i;
                 }                
             }
-        }
-        
-
+        }      
         private void victory_or_defeat_check()
         {
             int alive_heroes = 0;
@@ -135,6 +133,7 @@ namespace Sword_and_flame
             {
                 ShowMessage showMessage_obj = new ShowMessage("Рівень пройдено");
                 showMessage_obj.ShowDialog();
+                //?  Hide();
                 EventEnd eventEnd_obj = new EventEnd();
                 eventEnd_obj.ShowDialog();
             }          
@@ -175,11 +174,11 @@ namespace Sword_and_flame
                 if (Math.Abs(monster.x - hero.x) == 1 || Math.Abs(monster.y - hero.y) == 1)
                 {
                     if (hero.Attack(hero, monster, level_map) == true)
-                    {
-                        GameGlobalData.count_of_moves--;
-                        count_of_monsters--;
-                        victory_or_defeat_check();
+                    {                        
+                        count_of_monsters--; 
                     }
+                    victory_or_defeat_check();
+                    GameGlobalData.count_of_moves--;
                     return true;
                 }            
             }
@@ -302,7 +301,15 @@ namespace Sword_and_flame
                 level_monsterobjinfo_nameValue_lbl.Text = variable_monster.name;
                 level_monsterobjinfo_typeValue_lbl.Text = "Ворог";
                 level_monsterobjinfo_strengthValue_lbl.Text = variable_monster.monster_strength.ToString() + " ("+ variable_monster.monster_random_strength + ")";
-                level_monsterobjinfo_defenseValue_lbl.Text = variable_monster.monster_defense.ToString() + " (" + variable_monster.monster_random_defense + ")"; ;
+                if (GameGlobalData.monster_was_defensed == true)
+                {
+                    level_monsterobjinfo_defenseValue_lbl.ForeColor = Color.Blue;
+                }
+                else
+                {
+                    level_monsterobjinfo_defenseValue_lbl.ForeColor = Color.Black;
+                }
+                level_monsterobjinfo_defenseValue_lbl.Text = variable_monster.monster_defense.ToString() + " (" + variable_monster.monster_random_defense + ")"; 
                 level_monsterobjinfo_healthValue_lbl.Text = variable_monster.monster_health.ToString();
                 level_monsterobjinfo_speedValue_lbl.Text = variable_monster.monster_speed.ToString();
 
@@ -962,10 +969,18 @@ namespace Sword_and_flame
         }
         private void monster_turn_main()
         {
+            int monster_start_position_X, monster_start_position_Y = 0;
             for (int i = 0; i < count_of_monsters; i++)
             {
                 Monster monster = monster_turn_find_monster(i);
                 GameGlobalData.count_of_moves = monster.monster_speed;
+                monster_start_position_X = monster.x;
+                monster_start_position_Y = monster.y;
+                if (GameGlobalData.monster_was_defensed == true)
+                {
+                    monster.monster_defense -= 2;
+                    GameGlobalData.monster_was_defensed = false;
+                }
                 while (GameGlobalData.count_of_moves > 0)
                 {
                     int targeted_hero_index = monster_turn_find_closer_hero(monster);
@@ -973,7 +988,12 @@ namespace Sword_and_flame
                     set_null_obj(level_map);
                     button_set_text(level_map);
                     paint_buttons();
-                }               
+                }
+                if (monster.x == monster_start_position_X && monster.y == monster_start_position_Y)
+                {
+                    monster.monster_defense += 2;
+                    GameGlobalData.monster_was_defensed = true;
+                }
             }
         }
         private int monster_turn_find_closer_hero (Monster monster)

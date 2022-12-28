@@ -49,7 +49,7 @@ namespace Sword_and_flame.Entities
             {
                 level_map[monster.x, monster.y] = null;
                 hero.current_health -= damage_to_hero / 2; // Якщо монстр гине, герой отримує половину від завданої монстром шкоди
-                if (hero.current_health < 0)
+                if (hero.current_health <= 0)
                 {
                     battle_result_message = "\n\tПОРАЗКА\n" + monster.name + " отримує " + damage_to_monster + " ран.\n " + hero.name + " отримує " + damage_to_hero / 2 + " ран.\n " + hero.name + " непритомніє від ран. " + monster.name + " загинув.";
                 }
@@ -62,7 +62,7 @@ namespace Sword_and_flame.Entities
             else if (monster.monster_health > 0)
             {
                 hero.current_health -= damage_to_hero;
-                if (hero.current_health < 0)
+                if (hero.current_health <= 0)
                 {
                     battle_result_message = "\n\tПОРАЗКА\n" + monster.name + " отримує " + damage_to_monster + " ран.\n " + hero.name + " отримує " + damage_to_hero + " ран.\n " + hero.name + " непритомніє від ран. " + monster.name + " виживає.";
                 }

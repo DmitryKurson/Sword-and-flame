@@ -155,7 +155,11 @@ namespace Sword_and_flame
                     }
                     if (level_map[x, y] is Hero)
                     {
-                        //if (level_map[x, y])
+                        Hero h = (Hero)level_map[x, y];
+                        if (h.current_health <= 0)
+                        {
+                            h.current_health = 1;
+                        }
                     }
                     if (level_map[x, y] is Loot)
                     {
@@ -174,10 +178,11 @@ namespace Sword_and_flame
                 if (Math.Abs(monster.x - hero.x) == 1 || Math.Abs(monster.y - hero.y) == 1)
                 {
                     if (hero.Attack(hero, monster, level_map) == true)
-                    {                        
+                    {
+                        monster = null;
+                        GameGlobalData.count_of_moves = 0;
                         count_of_monsters--; 
-                    }
-                    victory_or_defeat_check();
+                    }               
                     GameGlobalData.count_of_moves--;
                     return true;
                 }            

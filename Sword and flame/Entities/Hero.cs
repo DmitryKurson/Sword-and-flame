@@ -56,7 +56,7 @@
         public static int variable_class_health { get; set; }
         public static int variable_class_speed { get; set; }
 
-        public static int default_Warrior_Strength { get; } = 0;
+        public static int default_Warrior_Strength { get; } = 44;
         public static int default_Warrior_random_Strength { get; } = 7;
         public static int default_Warrior_Defense { get; } = 0;
         public static int default_Warrior_random_Defense { get; } = 5;

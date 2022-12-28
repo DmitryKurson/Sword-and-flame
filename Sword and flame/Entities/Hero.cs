@@ -196,11 +196,23 @@
             this.equiped_loot = equiped_loot;
         }
 
-
-        public static void AddToInventory(Hero player, Loot loot)
+        public static bool AddToInventory_check(Hero hero, Loot loot)
         {
-            player.inventory.Add(loot);
-            Console.WriteLine("Ви підібрали - " + loot.name + ".");
+            if (hero.inventory.Capacity - hero.inventory.Count > 1)
+            {
+                hero.AddToInventory(loot);
+                return true;
+            }
+            ShowMessage show_message_obj = new ShowMessage ("Ваш інвентар заповнено. Неможливо підібрати.");
+            show_message_obj.ShowDialog();
+            return false;
+        }
+
+        public void AddToInventory(Loot loot)
+        {
+            inventory.Add(loot);
+            ShowMessage show_message_obj = new ShowMessage ("Ви підібрали " + loot.name + ".");
+            show_message_obj.ShowDialog();
         }
 
 

@@ -43,10 +43,7 @@ namespace Sword_and_flame
                     break;
             }
             int variable_count_of_loot = 0;
-            
-            
-            
-            
+                
             
             // ЗАЛЕЖНІСТЬ КІЛЬКОСТІ СПОРЯДЖЕННЯ ВІД СКЛАДНОСТІ
             switch (GameGlobalData.difficulty)
@@ -151,7 +148,7 @@ namespace Sword_and_flame
                     }
                     if (level_map[x, y] is Monster)
                     {
-                        AttackCheck(GameGlobalData.HeroList[i], (Monster)level_map[x, y]);
+                        AttackCheck(GameGlobalData.HeroList[i], (Monster)level_map[x, y]);                       
                     }
                     if (level_map[x, y] is Hero)
                     {
@@ -163,11 +160,13 @@ namespace Sword_and_flame
                     }
                     if (level_map[x, y] is Loot)
                     {
-
+                        Hero.AddToInventory_check(GameGlobalData.HeroList[i], (Loot)level_map[x, y]);
+                        level_map[x, y] = null;
                     }                   
                     set_null_obj(level_map);
                     button_set_text(level_map);
                     paint_buttons();
+                    victory_or_defeat_check();
                 }
             }          
         }
@@ -214,15 +213,14 @@ namespace Sword_and_flame
                 {
                     if (level_map[position_to_move_X, position_to_move_Y].name == " ")
                     {
-                        someone.Move(someone, position_to_move_X, position_to_move_Y, level_map);
-                        GameGlobalData.count_of_moves--;
-                        level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
-                        return true;                       
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                        if (GameGlobalData.count_of_moves > 0)
+                        {
+                            someone.Move(someone, position_to_move_X, position_to_move_Y, level_map);
+                            GameGlobalData.count_of_moves--;
+                            level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
+                            return true;
+                        }                                      
+                    }                    
                 }
             }
             return false;
@@ -993,6 +991,7 @@ namespace Sword_and_flame
                     set_null_obj(level_map);
                     button_set_text(level_map);
                     paint_buttons();
+                    victory_or_defeat_check();
                 }
                 if (monster.x == monster_start_position_X && monster.y == monster_start_position_Y)
                 {
@@ -1056,7 +1055,7 @@ namespace Sword_and_flame
                 {
                     monster_move_logic_enemy_scan_X(selected_monster, the_most_closer_hero);
                 }               
-            }
+            }            
         }
 
         private void monster_move_logic_enemy_scan_X (Monster selected_monster, int the_most_closer_hero)

@@ -77,7 +77,7 @@ namespace Sword_and_flame
             // NGGD_error_lbl
             // 
             this.NGGD_error_lbl.AutoSize = true;
-            this.NGGD_error_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NGGD_error_lbl.Font = new System.Drawing.Font("Bangkok", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NGGD_error_lbl.Location = new System.Drawing.Point(70, 555);
             this.NGGD_error_lbl.Name = "NGGD_error_lbl";
             this.NGGD_error_lbl.Size = new System.Drawing.Size(0, 24);

@@ -53,7 +53,7 @@ namespace Sword_and_flame
                     secondary_monster_count = 0;
                     break;
                 case 2:
-                    secondary_monster_count = 0;
+                    secondary_monster_count = 1;
                     break;
                 case 3:
                     secondary_monster_count = 2;

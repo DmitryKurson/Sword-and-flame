@@ -1,4 +1,5 @@
 ﻿using Sword_and_flame;
+using System.Diagnostics;
 using System.Threading;
 
 namespace Sword_and_flame
@@ -40,8 +41,6 @@ namespace Sword_and_flame
                 case "":
                     ActiveForm.BackgroundImage = Image.FromFile("1");
                     break;
-
-
             }
             int variable_count_of_loot = 0;
             
@@ -81,55 +80,66 @@ namespace Sword_and_flame
             set_null_obj(level_map);
             button_set_text(level_map);
             show_null_info_set_visible_settings();
-
-            next_turn_btn_Click(sender, e);
+            turn(0);
         }
 
         
-        public void Turn(List<Loot> loot, List<Hero> hero, LevelObject[,] level_map, int j)
-        {           
-            if (hero[j].current_health <= 0)
+        public void turn (int i)
+        {
+            if (i == GameGlobalData.count_of_players)
             {
-                ShowMessage showMessage_obj = new ShowMessage("игрок " + hero[j].name + " мертв. пропуск хода...");
-                Turn(loot, hero, level_map, j + 1);               
+                monster_turn_main();
+                turn(0);
             }
             else
             {
-                turn_owner.Text = hero[j].name;
-                GameGlobalData.current_turn_player_name = hero[j].name;
-                GameGlobalData.count_of_moves = hero[j].current_speed;
-                level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
-                paint_buttons(level_map);
-                ShowMessage player_turn_info = new ShowMessage(hero[j].name + ", Ваш хід");
-                player_turn_info.ShowDialog();                
+                if (GameGlobalData.HeroList[i].current_health <= 0)
+                {
+                    ShowMessage showMessage_obj = new ShowMessage(" Гравець " + GameGlobalData.HeroList[i].name + " непритомний.");
+                    showMessage_obj.ShowDialog();
+                    turn(i + 1);
+                }
+                else
+                {
+                    turn_owner.Text = GameGlobalData.HeroList[i].name;
+                    GameGlobalData.current_turn_player_name = GameGlobalData.HeroList[i].name;
+                    GameGlobalData.count_of_moves = GameGlobalData.HeroList[i].current_speed;
+                    level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
+                    paint_buttons();
+                    ShowMessage player_turn_info = new ShowMessage(GameGlobalData.HeroList[i].name + ", Ваш хід");
+                    player_turn_info.ShowDialog();
+                    level_load_counter = i;
+                }                
             }
-            //hero[j].inventory[0].
-            
-            // ВИВЕДЕННЯ ПОТОЧНОЇ КІЛЬКОСТІ ОЧОК РУХУ ГРАВЦЯ
-            
-
-
-
-
-            //if (j != hero.Count())
-            //{
-            //    nextplayer_btn_is_pressed = turn(loot, hero, level_map, j + 1);
-            //}
-            //Thread.Sleep(GameGlobalData.players_turnTime);
-
-
         }
         
 
-        private void victory_check()
+        private void victory_or_defeat_check()
         {
-            if (count_of_monsters == 0)
+            int alive_heroes = 0;
+            for (int i = 0; i < GameGlobalData.count_of_players; i++)
+            {
+                if (GameGlobalData.HeroList[i].current_health > 0)
+                {
+                    alive_heroes++;
+                }
+            }   
+            if (count_of_monsters > 0 && alive_heroes == 0)
+            {
+                ShowMessage showMessage_obj = new ShowMessage("Всі герої загинули");
+                showMessage_obj.ShowDialog();
+                MainMenu MainMenu_obj= new MainMenu();
+                MainMenu_obj.ShowDialog();
+            }
+            if (count_of_monsters == 0 && alive_heroes > 0)
             {
                 ShowMessage showMessage_obj = new ShowMessage("Рівень пройдено");
                 showMessage_obj.ShowDialog();
                 EventEnd eventEnd_obj = new EventEnd();
                 eventEnd_obj.ShowDialog();
             }
+            
+            
         }
 
         private void Action_Check(int x, int y)
@@ -138,6 +148,10 @@ namespace Sword_and_flame
             {
                 if (GameGlobalData.HeroList[i].name == GameGlobalData.current_turn_player_name)
                 {
+                    if (level_map[x, y].name == " ")
+                    {
+                        MoveCheck(GameGlobalData.HeroList[i], x, y);
+                    }
                     if (level_map[x, y] is Monster)
                     {
                         AttackCheck(GameGlobalData.HeroList[i], (Monster)level_map[x, y]);
@@ -149,15 +163,10 @@ namespace Sword_and_flame
                     if (level_map[x, y] is Loot)
                     {
 
-                    }
-                    if (level_map[x, y].name == " ")
-                    {
-                        MoveCheck(GameGlobalData.HeroList[i], x, y);
-                    }
+                    }                   
                     set_null_obj(level_map);
                     button_set_text(level_map);
-                    set_static_color();
-                    paint_buttons(level_map);
+                    paint_buttons();
                 }
             }          
         }
@@ -169,8 +178,9 @@ namespace Sword_and_flame
                 {
                     if (hero.Attack(hero, monster, level_map) == true)
                     {
+                        GameGlobalData.count_of_moves--;
                         count_of_monsters--;
-                        victory_check();
+                        victory_or_defeat_check();
                     }
                     return true;
                 }            
@@ -200,47 +210,21 @@ namespace Sword_and_flame
             {
                 if (Math.Abs(position_to_move_X - someone.x) == 1 || Math.Abs(position_to_move_Y - someone.y) == 1)
                 {
-                    someone.Move(someone, position_to_move_X, position_to_move_Y, level_map);
-                    GameGlobalData.count_of_moves--;
-                    level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
-                    return true;
+                    if (level_map[position_to_move_X, position_to_move_Y].name == " ")
+                    {
+                        someone.Move(someone, position_to_move_X, position_to_move_Y, level_map);
+                        GameGlobalData.count_of_moves--;
+                        level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
+                        return true;                       
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
             }
             return false;
         }
-
-//for (int i = 0; i < heroes.Count; i++)
-//{
-//    if (heroes[i].name == GameGlobalData.current_turn_player_name)
-//    {
-//        if (GameGlobalData.count_of_moves > 0)
-//        {
-
-        //    private void MoveCheck(List<Hero> heroes, int position_to_move_X, int position_to_move_Y)
-        //{
-        //    for (int i = 0; i < heroes.Count; i++)
-        //    {
-        //        if (heroes[i].name == GameGlobalData.current_turn_player_name)
-        //        {
-        //            if (GameGlobalData.count_of_moves > 0)
-        //            {
-        //                if (position_to_move_X == heroes[i].x || position_to_move_Y == heroes[i].y)
-        //                {
-        //                    if (Math.Abs(position_to_move_X - heroes[i].x) == 1 || Math.Abs(position_to_move_Y - heroes[i].y) == 1)
-        //                    {
-        //                        Hero.Move(heroes[i], position_to_move_X, position_to_move_Y, level_map);
-        //                        set_null_obj(level_map);
-        //                        button_set_text(level_map);
-        //                        set_static_color();
-        //                        GameGlobalData.count_of_moves--;
-        //                        level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
-        //                        paint_buttons(level_map, heroes[i]);
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
 
         public void ShowInfo(LevelObject[,] level_map, int x, int y, Hero hero)
         {            
@@ -643,6 +627,9 @@ namespace Sword_and_flame
                 case "loot":
                     color_container = Color.Orange;
                     break;
+                case "dead_hero":
+                    color_container = Color.Gray;
+                    break;
                 case "clear":
                     color_container = Color.White;
                     break;
@@ -858,7 +845,7 @@ namespace Sword_and_flame
                 }
             }
         }
-        private void paint_buttons(LevelObject[,] level_map)
+        private void paint_buttons()
         {
             set_static_color();
             for (int x = 0; x < level_map.GetLength(0); x++)
@@ -946,8 +933,15 @@ namespace Sword_and_flame
                     }
                     if (level_map[x, y] is Hero && level_map[x, y].name != GameGlobalData.current_turn_player_name)                // PAINT ALLYES
                     {
-                        if ((Hero)level_map[x, y].)
-                        set_static_color(x, y, "ally");
+                        Hero dead_hero = (Hero)level_map[x, y];
+                        if (dead_hero.current_health <= 0)
+                        {
+                            set_static_color(x, y, "dead_hero");
+                        }
+                        else
+                        {
+                            set_static_color(x, y, "ally");
+                        }                     
                     }
                 }
             }
@@ -974,15 +968,14 @@ namespace Sword_and_flame
             {
                 Monster monster = monster_turn_find_monster(i);
                 GameGlobalData.count_of_moves = monster.monster_speed;
-                for (int j = 0; j < GameGlobalData.count_of_moves+1; j++)
+                while (GameGlobalData.count_of_moves > 0)
                 {
                     int targeted_hero_index = monster_turn_find_closer_hero(monster);
                     monster_turn_move_or_attack(targeted_hero_index, monster);
-                }
-                set_null_obj(level_map);
-                button_set_text(level_map);
-                set_static_color();
-                paint_buttons(level_map);
+                    set_null_obj(level_map);
+                    button_set_text(level_map);
+                    paint_buttons();
+                }               
             }
         }
         private int monster_turn_find_closer_hero (Monster monster)
@@ -991,6 +984,10 @@ namespace Sword_and_flame
             int closer_hero_index = 0;
             for (int i = 0; i < GameGlobalData.count_of_players; i++)
             {
+                if (GameGlobalData.HeroList[i].current_health <= 0)
+                {
+                    continue;
+                }
                 int temp_distance_to_closer_hero = Math.Abs(monster.x - GameGlobalData.HeroList[i].x) + Math.Abs(monster.y - GameGlobalData.HeroList[i].y);
                 if (temp_distance_to_closer_hero < distance_to_closer_hero)
                 {
@@ -1095,98 +1092,8 @@ namespace Sword_and_flame
         }
 
 
-                //    }
-                //    if (MoveCheck(selected_monster, selected_monster.x - 1, selected_monster.y) == false)
-                //    {
-                //        if (MoveCheck(selected_monster, selected_monster.x, selected_monster.y + 1) == false)
-                //        {
-                //            if (MoveCheck(selected_monster, selected_monster.x, selected_monster.y - 1) == false)
-                //            {
-                //                if (MoveCheck(selected_monster, selected_monster.x + 1, selected_monster.y) == false)
-                //                {
-
-        //                }
-        //            }
-        //        }
-        //    }
-
-
-
-
-        //int a = selected_monster.x - 1;
-        //int b = GameGlobalData.HeroList[the_most_closer_hero].x;
-        //if ((GameGlobalData.HeroList[the_most_closer_hero].x - selected_monster.x - 1) < (GameGlobalData.HeroList[the_most_closer_hero].x - selected_monster.x))
-        //{
-        //    if (MoveCheck(selected_monster, selected_monster.x - 1, selected_monster.y) == false)
-        //    {
-        //        if (MoveCheck(selected_monster, selected_monster.x, selected_monster.y + 1) == false)
-        //        {
-        //            if (MoveCheck(selected_monster, selected_monster.x, selected_monster.y - 1) == false)
-        //            {
-        //                if (MoveCheck(selected_monster, selected_monster.x + 1, selected_monster.y) == false)
-        //                {
-
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
-        //else if ((GameGlobalData.HeroList[the_most_closer_hero].x - selected_monster.x - 1) == (GameGlobalData.HeroList[the_most_closer_hero].x - selected_monster.x)
-        //{
-
-        //}
-
-
-        //else if ((GameGlobalData.HeroList[the_most_closer_hero].x - selected_monster.x + 1) < (GameGlobalData.HeroList[the_most_closer_hero].x - selected_monster.x))
-        //{
-        //    if (MoveCheck(selected_monster, selected_monster.x + 1, selected_monster.y) == false)
-        //    {
-        //        if (MoveCheck(selected_monster, selected_monster.x, selected_monster.y + 1) == false)
-        //        {
-        //            if (MoveCheck(selected_monster, selected_monster.x, selected_monster.y - 1) == false)
-        //            {
-        //                if (MoveCheck(selected_monster, selected_monster.x - 1, selected_monster.y) == false)
-        //                {
-
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
-        //else
-        //{
-        //    if (Math.Abs(GameGlobalData.HeroList[the_most_closer_hero].y - selected_monster.y - 1) < (Math.Abs(GameGlobalData.HeroList[the_most_closer_hero].y - selected_monster.y)))
-        //    {
-
-        //    }
-        //    else if (Math.Abs(GameGlobalData.HeroList[the_most_closer_hero].y - selected_monster.y + 1) < (Math.Abs(GameGlobalData.HeroList[the_most_closer_hero].y - selected_monster.y)))
-        //    {
-        //        if (MoveCheck(selected_monster, selected_monster.x, selected_monster.y + 1) == false)
-        //        {
-        //            if (MoveCheck(selected_monster, selected_monster.x - 1, selected_monster.y) == false)
-        //            {
-        //                if (MoveCheck(selected_monster, selected_monster.x + 1, selected_monster.y) == false)
-        //                {
-        //                    if (MoveCheck(selected_monster, selected_monster.x, selected_monster.y - 1) == false)
-        //                    {
-
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
-        //}                    
-
-
-
-
-
-
-        //private void next_turn_btn_Click(object sender, EventArgs e)
-        //{
-        //    //nextplayer_btn_is_pressed.Invoke();
-        //}
-                private int get_player_index()
+        
+        private int get_player_index()
         {
             for (int i = 0; i < GameGlobalData.HeroList.Count; i++)
             {
@@ -1761,17 +1668,17 @@ namespace Sword_and_flame
 
         private void next_turn_btn_Click(object sender, EventArgs e)
         {
-            level_load_counter++;
-            
-            if (level_load_counter > GameGlobalData.count_of_players)
-            {
-                monster_turn_main();
-                level_load_counter = 0;
-            }
-            else
-            {
-                Turn(Loot.LootList, GameGlobalData.HeroList, level_map, level_load_counter-1);
-            }
+            turn(level_load_counter+1);
+            //if (level_load_counter > GameGlobalData.count_of_players)
+            //{
+            //    monster_turn_main();
+            //    level_load_counter = 0;
+            //    next_turn_btn_Click(sender, e);
+            //}
+            //else
+            //{
+            //    Turn(Loot.LootList, GameGlobalData.HeroList, level_map);
+            //}
 
 
             //MainGameplay(Loot.LootList, GameGlobalData.HeroList, level_map, current_level_count_of_monsters); //count_of_all_monsters);

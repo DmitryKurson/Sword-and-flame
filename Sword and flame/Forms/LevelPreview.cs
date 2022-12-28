@@ -242,6 +242,11 @@ namespace Sword_and_flame
             }
             GameGlobalData.hide_paper_count_of_click++;
         }
+
+        private void level_preview_main_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

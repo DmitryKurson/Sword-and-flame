@@ -1,4 +1,6 @@
-﻿namespace Sword_and_flame.Entities
+﻿using System.Threading;
+
+namespace Sword_and_flame.Entities
 {
     public class Hero : LifeObject
     {
@@ -26,7 +28,7 @@
 
         public string player_class { get; set; }
         public int level { get; set; }
-        public int XP { get; set; }
+        public double XP { get; set; }
         public int current_strength { get; set; }
         public int current_random_strength { get; set; }
         public int current_defense { get; set; }
@@ -56,27 +58,30 @@
         public static int variable_class_health { get; set; }
         public static int variable_class_speed { get; set; }
 
-        public static int default_Warrior_Strength { get; } = 44;
-        public static int default_Warrior_random_Strength { get; } = 7;
-        public static int default_Warrior_Defense { get; } = 0;
-        public static int default_Warrior_random_Defense { get; } = 5;
+
+        // 13 points (random = 0.5)
+        public static int default_Warrior_Strength { get; } = 3;
+        public static int default_Warrior_random_Strength { get; } = 1;
+        public static int default_Warrior_Defense { get; } = 2;
+        public static int default_Warrior_random_Defense { get; } = 1;
         public static int default_Warrior_Health { get; } = 3;
         public static int default_Warrior_Speed { get; } = 3;
 
-        public static int default_Paladin_Strength { get; } = 3;
-        public static int default_Paladin_random_Strength { get; } = 2;
+        public static int default_Paladin_Strength { get; } = 2;
+        public static int default_Paladin_random_Strength { get; } = 1;
         public static int default_Paladin_Defense { get; } = 3;
-        public static int default_Paladin_random_Defense { get; } = 2;
-        public static int default_Paladin_Health { get; } = 5;
-        public static int default_Paladin_Speed { get; } = 3;
+        public static int default_Paladin_random_Defense { get; } = 1;
+        public static int default_Paladin_Health { get; } = 4;
+        public static int default_Paladin_Speed { get; } = 2;
 
-        public static int default_Archer_Strength { get; } = 1;         //
-        public static int default_Archer_random_Strength { get; } = 1;  //
+        public static int default_Archer_Strength { get; } = 1;       
+        public static int default_Archer_random_Strength { get; } = 3; 
         public static int default_Archer_Defense { get; } = 2;
         public static int default_Archer_random_Defense { get; } = 3;
         public static int default_Archer_Health { get; } = 2;
         public static int default_Archer_Speed { get; } = 4;
 
+        // ?
         public static int default_Wizard_Strength { get; } = 1;         //
         public static int default_Wizard_random_Strength { get; } = 1;  //
         public static int default_Wizard_Defense { get; } = 2;
@@ -84,18 +89,12 @@
         public static int default_Wizard_Health { get; } = 2;           //
         public static int default_Wizard_Speed { get; } = 3;            //
 
-
-
-
         public int equipment_bonus_strength { get; set; }
         public int equipment_bonus_random_strength { get; set; }
         public int equipment_bonus_defense { get; set; }
         public int equipment_bonus_random_defense { get; set; }
         public int equipment_bonus_health { get; set; }
         public int equipment_bonus_speed { get; set; }
-
-
-
 
         public static int return_final_player_strength(int class_strength_, int equipment_bonus_strength_, int level_bonus_strength_)
         {
@@ -176,7 +175,6 @@
             return sum_speed;
         }
 
-
         public Hero(int x, int y, string name, string player_class, int level, int XP, int count_of_gold, int final_strength, int random_strength, int final_defense, int random_defense, int final_health, int final_speed, List<Loot> inventory, List<Loot> equiped_loot) : base(name, x, y)
         {
             this.x = x;
@@ -200,8 +198,14 @@
         {
             if (hero.inventory.Capacity - hero.inventory.Count > 1)
             {
-                hero.AddToInventory(loot);
-                return true;
+                if (loot.x == hero.x || loot.y == hero.y)
+                {
+                    if (Math.Abs(loot.x - hero.x) == 1 || Math.Abs(loot.y - hero.y) == 1)
+                    {
+                        hero.AddToInventory(loot);
+                        return true;
+                    }
+                }                             
             }
             ShowMessage show_message_obj = new ShowMessage ("Ваш інвентар заповнено. Неможливо підібрати.");
             show_message_obj.ShowDialog();
@@ -214,19 +218,6 @@
             ShowMessage show_message_obj = new ShowMessage ("Ви підібрали " + loot.name + ".");
             show_message_obj.ShowDialog();
         }
-
-
-
-
-
-
-        //public static void Equip(Hero player, Loot loot)
-        //{
-        //    player.inventory.Add(loot);
-        //    Console.WriteLine("Ви підібрали - " + loot.name + ".");
-        //}
-
-
 
         public static Hero generate_players(int i, string player1_name, string player1_class, string player2_name, string player2_class, string player3_name, string player3_class, string player4_name, string player4_class, int level, int XP, int count_of_gold, int level_strength_bonus, int level_random_strength_bonus, int level_defense_bonus, int level_random_defense_bonus, int level_health_bonus, int level_speed_bonus, List<Loot> variable_inventory, List<Loot> some_equipped)
         {

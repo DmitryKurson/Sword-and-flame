@@ -27,7 +27,6 @@ namespace Sword_and_flame
             
             secondary_monster_name = secondary_monster_name_;
             secondary_monster_count = secondary_monster_count_;
-            
         }
 
         private void Level_Load(object sender, EventArgs e)
@@ -43,8 +42,6 @@ namespace Sword_and_flame
                     break;
             }
             int variable_count_of_loot = 0;
-                
-            
             // ЗАЛЕЖНІСТЬ КІЛЬКОСТІ СПОРЯДЖЕННЯ ВІД СКЛАДНОСТІ
             switch (GameGlobalData.difficulty)
             {
@@ -79,8 +76,7 @@ namespace Sword_and_flame
             show_null_info_set_visible_settings();
             turn(0);
         }
-
-        
+       
         public void turn (int i)
         {
             if (i == GameGlobalData.count_of_players)
@@ -160,8 +156,10 @@ namespace Sword_and_flame
                     }
                     if (level_map[x, y] is Loot)
                     {
-                        Hero.AddToInventory_check(GameGlobalData.HeroList[i], (Loot)level_map[x, y]);
-                        level_map[x, y] = null;
+                        if (Hero.AddToInventory_check(GameGlobalData.HeroList[i], (Loot)level_map[x, y])==true)
+                        {
+                            level_map[x, y] = null;
+                        }                       
                     }                   
                     set_null_obj(level_map);
                     button_set_text(level_map);
@@ -986,12 +984,22 @@ namespace Sword_and_flame
                 }
                 while (GameGlobalData.count_of_moves > 0)
                 {
-                    int targeted_hero_index = monster_turn_find_closer_hero(monster);
-                    monster_turn_move_or_attack(targeted_hero_index, monster);
-                    set_null_obj(level_map);
-                    button_set_text(level_map);
-                    paint_buttons();
-                    victory_or_defeat_check();
+                    //Stopwatch stopwatch = Stopwatch.StartNew();
+                    //while (true)
+                    //{
+                        int targeted_hero_index = monster_turn_find_closer_hero(monster);
+                        monster_turn_move_or_attack(targeted_hero_index, monster);
+                        set_null_obj(level_map);
+                        button_set_text(level_map);
+                        paint_buttons();
+                        victory_or_defeat_check();
+                    //    if (stopwatch.ElapsedMilliseconds >= 100)
+                    //    {
+                    //        break;
+                    //    }
+                    //}
+
+                    
                 }
                 if (monster.x == monster_start_position_X && monster.y == monster_start_position_Y)
                 {

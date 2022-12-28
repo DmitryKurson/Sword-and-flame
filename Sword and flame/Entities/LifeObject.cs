@@ -48,6 +48,7 @@ namespace Sword_and_flame.Entities
             if (monster.monster_health <= 0)
             {
                 level_map[monster.x, monster.y] = null;
+                double exp = exp_reward_count(hero, monster);
                 hero.current_health -= damage_to_hero / 2; // Якщо монстр гине, герой отримує половину від завданої монстром шкоди
                 if (hero.current_health <= 0)
                 {
@@ -55,8 +56,46 @@ namespace Sword_and_flame.Entities
                 }
                 else
                 {
-                    battle_result_message = "\n\tПЕРЕМОГА\n" + monster.name + " отримує " + damage_to_monster + " ран.\n " + hero.name + " отримує " + damage_to_hero / 2 + " ран.\n " + hero.name + " виживає та отримує " + monster.monster_exp_reward + " досвіду.\n " + monster.name + " загинув.";
+                    battle_result_message = "\n\tПЕРЕМОГА\n" + monster.name + " отримує " + damage_to_monster + " ран.\n " + hero.name + " отримує " + damage_to_hero / 2 + " ран.\n " + hero.name + " виживає та отримує " + exp + " досвіду та " + monster.monster_gold_reward + "золота.\n " + monster.name + " загинув.\n";
                 }
+
+                Random loot_drop_chance = new Random();
+                Random loot = new Random();
+                int low = 0, high = 0;
+                if (loot_drop_chance.NextDouble() < monster.monster_loot_chance)
+                {
+                    switch (LevelProperties.journey_map_current_level_position.level_rank)
+                    {
+                        case 1:
+                            low = 1;
+                            high = 2;
+                            break;
+                        case 2:
+                            low = 1;
+                            high = 2;
+                            break;
+                        case 3:
+                            low = 1;
+                            high = 2;
+                            break;
+                        case 4:
+                            low = 1;
+                            high = 2;
+                            break;
+                        case 5:
+                            low = 1;
+                            high = 2;
+                            break;
+                    }
+                    if (hero.inventory.Capacity - hero.inventory.Count > 1)
+                    {
+                        ShowMessage_ChooseFrom2 showMessage = new ShowMessage_ChooseFrom2(this, " Обшукавши " + monster.name + " ви знайшли " + Loot.LootList[loot.Next(low, high)].name + ". ");
+                        showMessage.ShowDialog();
+                    }                 
+                }
+                
+                hero.XP += exp;
+                hero.count_of_gold += monster.monster_gold_reward;
                 monster_kill = true;
             }
             else if (monster.monster_health > 0)
@@ -74,7 +113,23 @@ namespace Sword_and_flame.Entities
             }
             ShowMessage battle_result = new ShowMessage(battle_result_message);
             battle_result.ShowDialog();
+            
             return monster_kill;
+        }
+
+        public double exp_reward_count(Hero hero, Monster monster)
+        {     
+            double exp_reward = monster.monster_strength - hero.current_strength + monster.monster_random_strength / 2 - hero.current_random_strength / 2 +
+                   monster.monster_defense - hero.current_defense + monster.monster_random_defense / 2 - hero.current_random_defense / 2 +
+                   monster.monster_health - hero.current_health + monster.monster_speed - hero.current_speed;
+            if (exp_reward < 0)
+            {
+                return Math.Abs(exp_reward / 2);
+            }
+            else
+            {
+                return exp_reward;
+            }                      
         }
 
         public static int random_count(int random_basic, int random_equipments)

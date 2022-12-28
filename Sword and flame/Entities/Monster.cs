@@ -16,34 +16,32 @@ namespace Sword_and_flame.Entities
         public int monster_speed { get; set; }
         public int monster_gold_reward { get; set; }
         public int monster_loot_chance { get; set; }
-        public int monster_exp_reward { get; set; }
         public string monster_attack_type { get; set; }
 
         // BASIC MONSTER CHARACTERISTICS
         // 1
         // Грабіжник
-        public static int default_robber_strength { get; } = 0;
-        public static int default_robber_random_strength { get; } = 7;
-        public static int default_robber_defense { get; } = 0;
-        public static int default_robber_random_defense { get; } = 5;
+        public static int default_robber_strength { get; } = 1;
+        public static int default_robber_random_strength { get; } = 2;
+        public static int default_robber_defense { get; } = 1;
+        public static int default_robber_random_defense { get; } = 2;
         public static int default_robber_health { get; } = 3;
         public static int default_robber_speed { get; } = 2;
-        public static int default_robber_gold_reward { get; } = 5;
-        public static int default_robber_loot_chance { get; } = 6;
+        public static int default_robber_gold_reward { get; } = 10;
+        public static int default_robber_loot_chance { get; } = 25;
         public static int default_robber_exp_reward { get; } = 1;
         public static string default_robber_attack_type { get; } = "melee";
 
         // Вбивця
-        public static int default_rogue_strength { get; } = 3;
-        public static int default_rogue_random_strength { get; } = 0;
+        public static int default_rogue_strength { get; } = 2;
+        public static int default_rogue_random_strength { get; } = 1;
         public static int default_rogue_defense { get; } = 2;
-        public static int default_rogue_random_defense { get; } = 0;
+        public static int default_rogue_random_defense { get; } = 1;
         public static int default_rogue_health { get; } = 2;
         public static int default_rogue_speed { get; } = 3;
-        public static int default_rogue_gold_reward { get; }
-        public static int default_rogue_loot_chance { get; }
-        public static int default_rogue_exp_reward { get; }
-        public static string default_rogue_attack_type { get; } = "archer";
+        public static int default_rogue_gold_reward { get; } = 11;
+        public static int default_rogue_loot_chance { get; } = 25; 
+        public static string default_rogue_attack_type { get; } = "melee"; // "archer"
 
         // Головоріз
         public static int default_reaper_strength { get; } = 50;
@@ -243,7 +241,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_robber_health + variable_difficulty_bonus_health;
                     monster_speed = default_robber_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_robber_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_robber_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_robber_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_robber_attack_type;
                     break;
@@ -255,7 +252,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_rogue_health + variable_difficulty_bonus_health;
                     monster_speed = default_rogue_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_rogue_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_rogue_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_rogue_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_rogue_attack_type;
                     break;
@@ -267,7 +263,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_rogue_health + variable_difficulty_bonus_health;
                     monster_speed = default_rogue_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_rogue_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_rogue_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_rogue_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_reaper_attack_type;
                     break;
@@ -279,7 +274,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_barbarian_health + variable_difficulty_bonus_health;
                     monster_speed = default_barbarian_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_barbarian_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_barbarian_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_barbarian_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_barbarian_attack_type;
                     break;
@@ -291,7 +285,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_wolf_health + variable_difficulty_bonus_health;
                     monster_speed = default_wolf_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_wolf_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_wolf_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_wolf_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_wolf_attack_type;
                     break;
@@ -303,7 +296,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_spider_health + variable_difficulty_bonus_health;
                     monster_speed = default_spider_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_spider_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_spider_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_spider_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_spider_attack_type;
                     break;
@@ -315,7 +307,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_druid_health + variable_difficulty_bonus_health;
                     monster_speed = default_druid_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_druid_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_druid_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_druid_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_druid_attack_type;
                     break;
@@ -327,7 +318,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_snowLeopard_health + variable_difficulty_bonus_health;
                     monster_speed = default_snowLeopard_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_snowLeopard_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_snowLeopard_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_snowLeopard_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_snowLeopard_attack_type;
                     break;
@@ -339,7 +329,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_berserker_health + variable_difficulty_bonus_health;
                     monster_speed = default_berserker_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_berserker_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_berserker_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_berserker_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_berserker_attack_type;
                     break;
@@ -355,7 +344,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_skeleton_health + variable_difficulty_bonus_health;
                     monster_speed = default_skeleton_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_skeleton_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_skeleton_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_skeleton_loot_chance + variable_difficulty_loot_chance;
                     break;
                 case "Темний лицар":
@@ -366,7 +354,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_darkKnight_health + variable_difficulty_bonus_health;
                     monster_speed = default_darkKnight_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_darkKnight_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_darkKnight_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_darkKnight_loot_chance + variable_difficulty_loot_chance;
                     break;
                 case "Елементаль":
@@ -377,7 +364,6 @@ namespace Sword_and_flame.Entities
                     monster_health = default_elemental_health + variable_difficulty_bonus_health;
                     monster_speed = default_elemental_speed + variable_difficulty_bonus_speed;
                     monster_gold_reward = default_elemental_gold_reward + variable_difficulty_gold_reward;
-                    monster_exp_reward = default_elemental_exp_reward + variable_difficulty_exp_reward;
                     monster_loot_chance = default_elemental_loot_chance + variable_difficulty_loot_chance;
                     break;
             }

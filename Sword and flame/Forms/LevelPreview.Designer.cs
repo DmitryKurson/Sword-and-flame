@@ -898,6 +898,7 @@ namespace Sword_and_flame
             this.level_preview_main_panel.Name = "level_preview_main_panel";
             this.level_preview_main_panel.Size = new System.Drawing.Size(1200, 657);
             this.level_preview_main_panel.TabIndex = 72;
+            this.level_preview_main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.level_preview_main_panel_Paint);
             // 
             // level_preview_main_player_panel
             // 

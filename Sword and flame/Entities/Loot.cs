@@ -10,6 +10,7 @@
         public int random_defense_bonus { get; set; }
         public int health_bonus { get; set; }
         public int speed_bonus { get; set; }
+        public int rank { get; set; }
         public int min_level { get; set; }
         public string equipment_class { get; set; }
         public int price { get; set; }

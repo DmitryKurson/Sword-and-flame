@@ -4,10 +4,11 @@ namespace Sword_and_flame
 {
     static class GameGlobalData
     {
-        public static string final_project_location { get; set; }
+        private static string assemblyLocation = System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase;
+        public static string final_project_resourses_location { get; } = assemblyLocation.Substring(8, assemblyLocation.Length - 27) + "Resourses/";       
+        public static string final_project_saves_location { get; } = assemblyLocation.Substring(8, assemblyLocation.Length - 27) + "Saves/";
         public static int wistred_midocean_minimum_level { get; } = 5;
         public static int game_global_data_creation_count { get; set; } = 0;
-        public static int players_turnTime { get; } = 6000000; // 10 min
         public static string current_turn_player_name { get; set; } = "";
         public static int count_of_journeymoves { get; set; }
         public static bool tutorial_skipped { get; set; }

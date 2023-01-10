@@ -1,4 +1,5 @@
 ﻿using Sword_and_flame.Entities;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Sword_and_flame
 {
@@ -13,10 +14,6 @@ namespace Sword_and_flame
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            string assemblyLocation = System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase;
-            //assemblyLocation += ;
-            //assemblyLocation.Substring(2);
-            GameGlobalData.final_project_location = assemblyLocation.Substring(8, assemblyLocation.Length - 27) + "Resourses/";
             if (GameGlobalData.game_global_data_creation_count == 0)
             {
                 // // // // // DATA IS NOT STATIC!!! IT WILL BE SET AS A PROJECT LOCATION // // // // //
@@ -286,8 +283,18 @@ namespace Sword_and_flame
             int start_inventory_index = 0;
             //File f = new File;
 
-            string[] load_hash = new string[110];
+            string[] load_hash = new string[200];
+            string save_folder = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "Saves");
+            //dialog.InitialDirectory = 
 
+            OpenFileDialog openFileDialog_obj = new OpenFileDialog();
+            openFileDialog_obj.InitialDirectory = save_folder;
+            openFileDialog_obj.ShowDialog();
+            if (!Directory.EnumerateFiles(save_folder, "*.*", SearchOption.AllDirectories).Any())
+            {
+                ShowMessage showMessage_obj = new ShowMessage(" Поки що немає файлів збереження, які можна було б завантажити.");
+                showMessage_obj.ShowDialog();
+            }
             //Сохранение - присвоение
             {
                 load_hash[0] = "1";

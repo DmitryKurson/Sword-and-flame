@@ -16,6 +16,9 @@
     <Compile Update="Forms\JourneyMap.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\JourneyMapMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Level.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -62,7 +62,7 @@
                     {
                         GameGlobalData.difficulty = NGGD_difficulty_hard_rb.Text;
                     }                    
-                    Hide();
+                    Close();
                     RoleplayDetails NGRoleplayDetails_obj = new RoleplayDetails();
                     NGRoleplayDetails_obj.ShowDialog();
                 }

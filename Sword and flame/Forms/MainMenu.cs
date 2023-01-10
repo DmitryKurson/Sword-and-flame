@@ -260,7 +260,7 @@ namespace Sword_and_flame
 
         private void MM_NG_btn_Click(object sender, EventArgs e)
         {
-            Hide();
+            Close();
             NGGlobalDetails NGGlobalDetails_obj = new NGGlobalDetails();
             NGGlobalDetails_obj.Show();
         }

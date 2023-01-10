@@ -16,5 +16,11 @@ namespace Sword_and_flame.Forms
         {
             InitializeComponent();
         }
+
+        private void jmm_gotomainmenu_btn_Click(object sender, EventArgs e)
+        {
+            ShowMessage_ChooseFrom2 show_msg = new ShowMessage_ChooseFrom2 (this, "Всі незбережені зміни буде втрачено, ви впевнені, що хочете вийти?");
+            show_msg.ShowDialog();
+        }
     }
 }

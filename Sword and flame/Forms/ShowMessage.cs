@@ -21,7 +21,12 @@ namespace Sword_and_flame
 
         private void ShowMessage_OK_btn_Click(object sender, EventArgs e)
         {
-            Hide();
+            Close();
+        }
+
+        private void ShowMessage_Main_lbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,7 +28,7 @@ namespace Castle_Crushers
 
         private void PlayerTurn_info_ok_btn_Click(object sender, EventArgs e)
         {
-            Hide();
+            Close();
         }
     }
 }

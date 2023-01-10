@@ -54,6 +54,7 @@ namespace Sword_and_flame
             this.ShowMessage_Main_lbl.TabIndex = 1;
             this.ShowMessage_Main_lbl.Text = "label1";
             this.ShowMessage_Main_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ShowMessage_Main_lbl.Click += new System.EventHandler(this.ShowMessage_Main_lbl_Click);
             // 
             // ShowMessage
             // 

@@ -68,6 +68,7 @@
             this.jmm_gotomainmenu_btn.TabIndex = 3;
             this.jmm_gotomainmenu_btn.Text = "Вийти в головне меню";
             this.jmm_gotomainmenu_btn.UseVisualStyleBackColor = false;
+            this.jmm_gotomainmenu_btn.Click += new System.EventHandler(this.jmm_gotomainmenu_btn_Click);
             // 
             // jmm_journal_btn
             // 

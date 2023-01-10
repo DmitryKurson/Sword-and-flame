@@ -30,3 +30,4 @@ C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-wi
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.TutorialForm.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.LevelPreview.resources
 C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.EventEnd.resources
+C:\Users\Dmitry\source\repos\Sword and flame\Sword and flame\obj\Debug\net6.0-windows\Sword_and_flame.Forms.JourneyMapMenu.resources

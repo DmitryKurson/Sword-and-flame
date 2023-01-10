@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sword_and_flame.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -918,7 +919,8 @@ namespace Sword_and_flame
 
         private void jm_menu_btn_Click(object sender, EventArgs e)
         {
-
+            JourneyMapMenu journeyMapMenu_obj = new JourneyMapMenu();
+            journeyMapMenu_obj.ShowDialog();
         }
     }
 }

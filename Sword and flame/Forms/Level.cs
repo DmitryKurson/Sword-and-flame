@@ -124,8 +124,10 @@ namespace Sword_and_flame
             }
             if (count_of_monsters == 0 && alive_heroes > 0)
             {
+                Close();
                 ShowMessage showMessage_obj = new ShowMessage("Рівень пройдено");
                 showMessage_obj.ShowDialog();
+                
                 //?  Hide();
                 EventEnd eventEnd_obj = new EventEnd();
                 eventEnd_obj.ShowDialog();
@@ -160,7 +162,8 @@ namespace Sword_and_flame
                         {
                             level_map[x, y] = null;
                         }                       
-                    }                   
+                    }
+                    level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
                     set_null_obj(level_map);
                     button_set_text(level_map);
                     paint_buttons();
@@ -217,8 +220,7 @@ namespace Sword_and_flame
                         if (GameGlobalData.count_of_moves > 0)
                         {
                             someone.Move(someone, position_to_move_X, position_to_move_Y, level_map);
-                            GameGlobalData.count_of_moves--;
-                            level_count_of_moves.Text = GameGlobalData.count_of_moves.ToString();
+                            GameGlobalData.count_of_moves--;                            
                             return true;
                         }                                      
                     }                    

@@ -412,12 +412,7 @@ namespace Sword_and_flame
                 {
                     Hero.generate_players(i, pl1_name_tbx.Text, pl1_class_CB.Text, pl2_name_tbx.Text, pl2_class_CB.Text, pl3_name_tbx.Text, pl3_class_CB.Text, pl4_name_tbx.Text, pl4_class_CB.Text, 1, 0, 0, 0, 0, 0, 0, 0, 0, empty_inventory, empty_equipped);
                 }
-                Hide();
-                //LevelPreviewNew level_preview_obj = new LevelPreviewNew();
-                //level_preview_obj.ShowDialog();
-                //Form1 WO = new Form1();
-                //WO.ShowDialog();
-                //World world_obj = new World();
+                Close();
                 JourneyMap JourneyMap_obj = new JourneyMap();               
                 JourneyMap_obj.ShowDialog();
             }

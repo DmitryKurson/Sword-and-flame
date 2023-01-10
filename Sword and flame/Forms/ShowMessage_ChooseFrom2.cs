@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using Sword_and_flame.Forms;
+using System.Windows.Forms;
 
 namespace Sword_and_flame
 {
@@ -17,14 +18,21 @@ namespace Sword_and_flame
 
         private void ShowMessage_ChooseFrom2_Load(object sender, EventArgs e)
         {
-            switch (key)
-            {
-                case MainMenu:
-                    btn_1.Text = "Так";
-                    btn_2.Text = "Ні";
-                    SM_main_lbl.Text = message;
-                    break;
-            }
+            btn_1.Text = "Так";
+            btn_2.Text = "Ні";
+            SM_main_lbl.Text = message;
+
+            //break;
+            //switch (key)
+            //{
+            //    case MainMenu:
+                    
+            //    case JourneyMapMenu:
+            //        btn_1.Text = "Так";
+            //        btn_2.Text = "Ні";
+            //        SM_main_lbl.Text = message;
+            //        break;
+            //}
         }
 
         private void btn_1_Click(object sender, EventArgs e)
@@ -34,6 +42,10 @@ namespace Sword_and_flame
                 case MainMenu:
                     Application.Exit();                 
                     break;
+                case JourneyMapMenu:
+                    MainMenu main_menu_obj = new MainMenu();
+                    main_menu_obj.ShowDialog();
+                    break;
             }
         }
         private void btn_2_Click(object sender, EventArgs e)
@@ -41,7 +53,10 @@ namespace Sword_and_flame
             switch (key)
             {
                 case MainMenu:
-                    Hide();
+                    Close();
+                    break;
+                case JourneyMapMenu:
+                    Close();
                     break;
             }
         }

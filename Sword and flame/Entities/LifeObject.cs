@@ -61,7 +61,8 @@ namespace Sword_and_flame.Entities
 
                 Random loot_drop_chance = new Random();
                 Random loot = new Random();
-                int low = 0, high = 0;
+                int low = 0, high = 0; // Low and high edge of array of loot that will drop. E.G. for 2ranked level 
+                // will drop loot of 1ranked level and 2ranked level
                 if (loot_drop_chance.NextDouble() < monster.monster_loot_chance)
                 {
                     switch (LevelProperties.journey_map_current_level_position.level_rank)
@@ -87,13 +88,15 @@ namespace Sword_and_flame.Entities
                             high = 2;
                             break;
                     }
-                    if (hero.inventory.Capacity - hero.inventory.Count > 1)
+                    string loot_pickup_message = " Обшукавши " + monster.name + " ви знайшли " + Loot.LootList[loot.Next(low, high)].name + ". ";
+                    if (hero.inventory.Capacity - hero.inventory.Count < 1)
                     {
-                        ShowMessage_ChooseFrom2 showMessage = new ShowMessage_ChooseFrom2(this, " Обшукавши " + monster.name + " ви знайшли " + Loot.LootList[loot.Next(low, high)].name + ". ");
-                        showMessage.ShowDialog();
-                    }                 
-                }
-                
+                        loot_pickup_message += " Інвентар заповнений, доведеться покласти знайдене.";
+                        level_map[monster.x, monster.y] = Loot.LootList[loot.Next(low, high)];
+                    }
+                    ShowMessage_ChooseFrom2 showMessage = new ShowMessage_ChooseFrom2(this, loot_pickup_message);
+                    showMessage.ShowDialog();
+                }                
                 hero.XP += exp;
                 hero.count_of_gold += monster.monster_gold_reward;
                 monster_kill = true;
@@ -124,7 +127,7 @@ namespace Sword_and_flame.Entities
                    monster.monster_health - hero.current_health + monster.monster_speed - hero.current_speed;
             if (exp_reward < 0)
             {
-                return Math.Abs(exp_reward / 2);
+                return Math.Abs(exp_reward / 2);  // return exp/2 if summary of of player characteristics will be bigger than monsters
             }
             else
             {

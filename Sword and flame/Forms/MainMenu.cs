@@ -561,7 +561,7 @@ namespace Sword_and_flame
 
         private void MM_EG_btn_Click(object sender, EventArgs e)
         {
-            ShowMessage_ChooseFrom2 sw_msgF2_obj = new ShowMessage_ChooseFrom2(this);
+            ShowMessage_ChooseFrom2 sw_msgF2_obj = new ShowMessage_ChooseFrom2(this, "Ви впевнені, що хочете вийти з гри?");
             sw_msgF2_obj.ShowDialog();
             //    ;            ExitSure exitsure_obj = new ExitSure();
             //exitsure_obj.ShowDialog();

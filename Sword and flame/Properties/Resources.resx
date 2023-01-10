@@ -148,6 +148,9 @@
   <data name="green_banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\green_banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="camp_info_panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\camp_info_panel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="roleplay_details_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roleplay_details_img.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,7 +175,7 @@
   <data name="first_ch-removebg-preview___копія-removebg-preview (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\first_ch-removebg-preview___копія-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="camp_info_panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\camp_info_panel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jm_menu_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jm_menu_img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

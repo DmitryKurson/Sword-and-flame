@@ -96,6 +96,9 @@ namespace Sword_and_flame
             this.level_24 = new System.Windows.Forms.RadioButton();
             this.object_capeofmisery = new System.Windows.Forms.RadioButton();
             this.JM_beginjourney_btn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.jm_menu_btn = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // city_dankirm
@@ -810,14 +813,39 @@ namespace Sword_and_flame
             // 
             // JM_beginjourney_btn
             // 
+            this.JM_beginjourney_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(210)))), ((int)(((byte)(173)))));
             this.JM_beginjourney_btn.Font = new System.Drawing.Font("Bangkok", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.JM_beginjourney_btn.Location = new System.Drawing.Point(1362, 931);
+            this.JM_beginjourney_btn.Location = new System.Drawing.Point(15, 91);
             this.JM_beginjourney_btn.Name = "JM_beginjourney_btn";
-            this.JM_beginjourney_btn.Size = new System.Drawing.Size(200, 90);
+            this.JM_beginjourney_btn.Size = new System.Drawing.Size(139, 54);
             this.JM_beginjourney_btn.TabIndex = 67;
-            this.JM_beginjourney_btn.Text = "Відправитись";
-            this.JM_beginjourney_btn.UseVisualStyleBackColor = true;
+            this.JM_beginjourney_btn.Text = "В дорогу";
+            this.JM_beginjourney_btn.UseVisualStyleBackColor = false;
             this.JM_beginjourney_btn.Click += new System.EventHandler(this.JM_beginjourney_btn_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Sword_and_flame.Properties.Resources.jm_menu_img;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.jm_menu_btn);
+            this.panel1.Controls.Add(this.JM_beginjourney_btn);
+            this.panel1.Location = new System.Drawing.Point(1723, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(167, 177);
+            this.panel1.TabIndex = 68;
+            // 
+            // jm_menu_btn
+            // 
+            this.jm_menu_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(210)))), ((int)(((byte)(173)))));
+            this.jm_menu_btn.Font = new System.Drawing.Font("Bangkok", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.jm_menu_btn.Location = new System.Drawing.Point(15, 31);
+            this.jm_menu_btn.Name = "jm_menu_btn";
+            this.jm_menu_btn.Size = new System.Drawing.Size(139, 54);
+            this.jm_menu_btn.TabIndex = 68;
+            this.jm_menu_btn.Text = "Меню";
+            this.jm_menu_btn.UseVisualStyleBackColor = false;
+            this.jm_menu_btn.Click += new System.EventHandler(this.jm_menu_btn_Click);
             // 
             // JourneyMap
             // 
@@ -827,7 +855,7 @@ namespace Sword_and_flame
             this.BackgroundImage = global::Sword_and_flame.Properties.Resources.Sword_and_flame_final_map;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
-            this.Controls.Add(this.JM_beginjourney_btn);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.object_capeofmisery);
             this.Controls.Add(this.level_24);
             this.Controls.Add(this.level_23);
@@ -898,6 +926,7 @@ namespace Sword_and_flame
             this.Name = "JourneyMap";
             this.Text = "JourneyMap";
             this.Load += new System.EventHandler(this.JourneyMap_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -971,5 +1000,7 @@ namespace Sword_and_flame
         private RadioButton level_24;
         private RadioButton object_capeofmisery;
         private Button JM_beginjourney_btn;
+        private Panel panel1;
+        private Button jm_menu_btn;
     }
 }

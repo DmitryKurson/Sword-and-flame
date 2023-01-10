@@ -174,14 +174,17 @@ namespace Sword_and_flame
             {
                 if (Math.Abs(monster.x - hero.x) == 1 || Math.Abs(monster.y - hero.y) == 1)
                 {
-                    if (hero.Attack(hero, monster, level_map) == true)
+                    if (GameGlobalData.count_of_moves > 0)
                     {
-                        monster = null;
-                        GameGlobalData.count_of_moves = 0;
-                        count_of_monsters--; 
-                    }               
-                    GameGlobalData.count_of_moves--;
-                    return true;
+                        if (hero.Attack(hero, monster, level_map) == true)
+                        {
+                            monster = null;
+                            GameGlobalData.count_of_moves = 0;
+                            count_of_monsters--;
+                        }
+                        GameGlobalData.count_of_moves--;
+                        return true;
+                    }                   
                 }            
             }
             return false;

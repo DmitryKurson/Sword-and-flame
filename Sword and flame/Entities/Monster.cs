@@ -15,7 +15,7 @@ namespace Sword_and_flame.Entities
         public int monster_health { get; set; }
         public int monster_speed { get; set; }
         public int monster_gold_reward { get; set; }
-        public int monster_loot_chance { get; set; }
+        public double monster_loot_chance { get; set; }
         public string monster_attack_type { get; set; }
 
         // BASIC MONSTER CHARACTERISTICS
@@ -28,7 +28,7 @@ namespace Sword_and_flame.Entities
         public static int default_robber_health { get; } = 3;
         public static int default_robber_speed { get; } = 2;
         public static int default_robber_gold_reward { get; } = 10;
-        public static int default_robber_loot_chance { get; } = 25;
+        public static double default_robber_loot_chance { get; } = 0.25;
         public static int default_robber_exp_reward { get; } = 1;
         public static string default_robber_attack_type { get; } = "melee";
 
@@ -40,7 +40,7 @@ namespace Sword_and_flame.Entities
         public static int default_rogue_health { get; } = 2;
         public static int default_rogue_speed { get; } = 3;
         public static int default_rogue_gold_reward { get; } = 11;
-        public static int default_rogue_loot_chance { get; } = 25; 
+        public static double default_rogue_loot_chance { get; } = 0.25; 
         public static string default_rogue_attack_type { get; } = "melee"; // "archer"
 
         // Головоріз
@@ -51,7 +51,7 @@ namespace Sword_and_flame.Entities
         public static int default_reaper_health { get; } = 3;
         public static int default_reaper_speed { get; } = 2;
         public static int default_reaper_gold_reward { get; } = 5;
-        public static int default_reaper_loot_chance { get; } = 6;
+        public static double default_reaper_loot_chance { get; } = 0.3;
         public static int default_reaper_exp_reward { get; } = 1;
         public static string default_reaper_attack_type { get; } = "melee";
 
@@ -64,7 +64,7 @@ namespace Sword_and_flame.Entities
         public static int default_barbarian_health { get; } = 3;
         public static int default_barbarian_speed { get; } = 2;
         public static int default_barbarian_gold_reward { get; } = 5;
-        public static int default_barbarian_loot_chance { get; } = 6;
+        public static double default_barbarian_loot_chance { get; } = 6;
         public static int default_barbarian_exp_reward { get; } = 1;
         public static string default_barbarian_attack_type { get; } = "melee";
 
@@ -76,7 +76,7 @@ namespace Sword_and_flame.Entities
         public static int default_wolf_health { get; } = 3;
         public static int default_wolf_speed { get; } = 2;
         public static int default_wolf_gold_reward { get; } = 5;
-        public static int default_wolf_loot_chance { get; } = 6;
+        public static double default_wolf_loot_chance { get; } = 6;
         public static int default_wolf_exp_reward { get; } = 1;
         public static string default_wolf_attack_type { get; } = "melee";
 
@@ -88,7 +88,7 @@ namespace Sword_and_flame.Entities
         public static int default_spider_health { get; } = 3;
         public static int default_spider_speed { get; } = 2;
         public static int default_spider_gold_reward { get; } = 5;
-        public static int default_spider_loot_chance { get; } = 6;
+        public static double default_spider_loot_chance { get; } = 6;
         public static int default_spider_exp_reward { get; } = 1;
         public static string default_spider_attack_type { get; } = "melee";
 
@@ -100,7 +100,7 @@ namespace Sword_and_flame.Entities
         public static int default_druid_health { get; } = 3;
         public static int default_druid_speed { get; } = 2;
         public static int default_druid_gold_reward { get; }
-        public static int default_druid_loot_chance { get; }
+        public static double default_druid_loot_chance { get; }
         public static int default_druid_exp_reward { get; }
         public static string default_druid_attack_type { get; } = "???";
 
@@ -112,7 +112,7 @@ namespace Sword_and_flame.Entities
         public static int default_snowLeopard_health { get; } = 3;
         public static int default_snowLeopard_speed { get; } = 2;
         public static int default_snowLeopard_gold_reward { get; } = 5;
-        public static int default_snowLeopard_loot_chance { get; } = 6;
+        public static double default_snowLeopard_loot_chance { get; } = 6;
         public static int default_snowLeopard_exp_reward { get; } = 1;
         public static string default_snowLeopard_attack_type { get; } = "melee";
 
@@ -124,7 +124,7 @@ namespace Sword_and_flame.Entities
         public static int default_berserker_health { get; } = 1;
         public static int default_berserker_speed { get; } = 3;
         public static int default_berserker_gold_reward { get; }
-        public static int default_berserker_loot_chance { get; }
+        public static double default_berserker_loot_chance { get; }
         public static int default_berserker_exp_reward { get; } = 2;
         public static string default_berserker_attack_type { get; } = "melee";
 
@@ -139,7 +139,7 @@ namespace Sword_and_flame.Entities
         public static int default_skeleton_health { get; } = 4;
         public static int default_skeleton_speed { get; } = 2;
         public static int default_skeleton_gold_reward { get; }
-        public static int default_skeleton_loot_chance { get; }
+        public static double default_skeleton_loot_chance { get; }
         public static int default_skeleton_exp_reward { get; }
 
         //public static int default_druid_strength { get; } = 5;
@@ -159,7 +159,7 @@ namespace Sword_and_flame.Entities
         public static int default_darkKnight_health { get; } = 4;
         public static int default_darkKnight_speed { get; } = 1;
         public static int default_darkKnight_gold_reward { get; }
-        public static int default_darkKnight_loot_chance { get; }
+        public static double default_darkKnight_loot_chance { get; }
         public static int default_darkKnight_exp_reward { get; }
 
         public static int default_elemental_strength { get; } = 5;
@@ -169,7 +169,7 @@ namespace Sword_and_flame.Entities
         public static int default_elemental_health { get; } = 5;
         public static int default_elemental_speed { get; } = 2;
         public static int default_elemental_gold_reward { get; }
-        public static int default_elemental_loot_chance { get; }
+        public static double default_elemental_loot_chance { get; }
         public static int default_elemental_exp_reward { get; }
 
         //  BONUSES
@@ -229,7 +229,7 @@ namespace Sword_and_flame.Entities
             }
         }
 
-        private void generate_monster(int variable_difficulty_bonus_strength, int variable_difficulty_bonus_random_strength, int variable_difficulty_bonus_defense, int variable_difficulty_bonus_random_defense, int variable_difficulty_bonus_health, int variable_difficulty_bonus_speed, int variable_difficulty_gold_reward, int variable_difficulty_exp_reward, int variable_difficulty_loot_chance)
+        private void generate_monster(int variable_difficulty_bonus_strength, int variable_difficulty_bonus_random_strength, int variable_difficulty_bonus_defense, int variable_difficulty_bonus_random_defense, int variable_difficulty_bonus_health, int variable_difficulty_bonus_speed, int variable_difficulty_gold_reward, double variable_difficulty_exp_reward, int variable_difficulty_loot_chance)
         {
             switch (name)
             {
@@ -332,7 +332,6 @@ namespace Sword_and_flame.Entities
                     monster_loot_chance = default_berserker_loot_chance + variable_difficulty_loot_chance;
                     monster_attack_type = default_berserker_attack_type;
                     break;
-
 
 
 

@@ -914,6 +914,11 @@ namespace Sword_and_flame
                 //City city_obj = new City();
                 //city_obj.ShowDialog();
             }
-        }    
+        }
+
+        private void jm_menu_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

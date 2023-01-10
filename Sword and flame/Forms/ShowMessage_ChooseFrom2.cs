@@ -4,9 +4,9 @@ namespace Sword_and_flame
 {
     public partial class ShowMessage_ChooseFrom2 : Form
     {
-        private Form key;
+        private object key;
         private string message;
-        public ShowMessage_ChooseFrom2 (Form key, string message)
+        public ShowMessage_ChooseFrom2 (object key, string message)
         {
             InitializeComponent();
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -22,7 +22,7 @@ namespace Sword_and_flame
                 case MainMenu:
                     btn_1.Text = "Так";
                     btn_2.Text = "Ні";
-                    SM_main_lbl.Text = message; //"Ви впевнені, що хочете вийти з гри?"
+                    SM_main_lbl.Text = message;
                     break;
             }
         }
